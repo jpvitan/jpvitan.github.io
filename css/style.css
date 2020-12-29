@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'lemonmilk';
+    src: url('font/lemonmilk.otf');
+}
+.style-navbar{
+    background-color: #ffffff;
+}
+.style-navbar-brand{
+    font-family: lemonmilk; 
+    font-size: 2.00rem !important;
+    color: #2f3542 !important;
+}
+.style-nav-link{
+    font-family: lemonmilk; 
+    color: #2f3542 !important;
+}
+html{
+    background-color: #ffffff;
+}

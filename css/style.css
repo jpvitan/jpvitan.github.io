@@ -14,6 +14,18 @@
     font-family: lemonmilk; 
     color: #2f3542 !important;
 }
+@keyframes text-greeting-animation{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+.text-greeting{
+    animation-name: text-greeting-animation;
+    animation-duration: 4s;
+}
 html{
     background-color: #ffffff;
 }

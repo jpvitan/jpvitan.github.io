@@ -14,7 +14,7 @@
     font-family: lemonmilk; 
     color: #2f3542 !important;
 }
-@keyframes text-greeting-animation{
+@keyframes fade-in-animation{
     from{
         opacity: 0%;
     }
@@ -22,10 +22,13 @@
         opacity: 100%;
     }
 }
-.text-greeting{
-    animation-name: text-greeting-animation;
+.fade-in{
+    animation-name: fade-in-animation;
     animation-duration: 4s;
 }
 html{
-    background-color: #ffffff;
+    background-color: #f1f2f6;
+}
+body{
+    background-color: #f1f2f6;
 }

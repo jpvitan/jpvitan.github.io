@@ -14,6 +14,10 @@
     font-family: lemonmilk; 
     color: #2f3542 !important;
 }
+.style-image-banner{
+    width: 1024px; 
+    border-radius: 15px;
+}
 @keyframes fade-in-animation{
     from{
         opacity: 0%;
@@ -27,8 +31,8 @@
     animation-duration: 4s;
 }
 html{
-    background-color: #f1f2f6;
+    background-color: #ffffff;
 }
 body{
-    background-color: #f1f2f6;
+    background-color: #ffffff;
 }

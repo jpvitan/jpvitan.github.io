@@ -15,20 +15,21 @@
     color: #2f3542 !important;
 }
 .style-image-banner{
-    width: 1024px; 
+    width: 900px; 
     border-radius: 15px;
 }
-@keyframes fade-in-animation{
-    from{
-        opacity: 0%;
-    }
-    to{
-        opacity: 100%;
-    }
+.style-image-banner-text{
+    font-size: 9pt;
+    color: #808e9b;
 }
-.fade-in{
-    animation-name: fade-in-animation;
-    animation-duration: 4s;
+.style-text-greeting-container{
+    background-color: #0fbcf9; 
+    color: #ffffff;
+}
+.style-text-greeting-container-btn{
+    width: 200px;
+    border-width: 2px;
+    font-weight: 500;
 }
 html{
     background-color: #ffffff;

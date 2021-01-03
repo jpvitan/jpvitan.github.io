@@ -35,7 +35,7 @@
     font-weight: 500;
 }
 .style-certificate-heading{
-    color: #485460;
+    color: #747d8c;
 }
 .style-certificate-note{
     font-size: 12pt;
@@ -57,10 +57,28 @@
     font-weight: 500;
 }
 .style-skill-header{
-    color: #485460;
+    color: #0fbcf9;
 }
 .style-skill-text{
-    color: #3498db;
+    color: #747d8c;
+}
+.style-visit-blog-container{
+    background-color: #0fbcf9;
+    color: #ffffff;
+}
+.style-visit-blog-container-btn{
+    width: 170px;
+    height: 50px;
+    border-width: 2px;
+    text-align: center;
+    line-height: 35px;
+    font-weight: 500;
+}
+.style-areas-of-interest-header{
+    color: #2ecc71;
+}
+.style-areas-of-interest-text{
+    color: #747d8c;
 }
 html{
     background-color: #ffffff;

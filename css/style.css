@@ -56,6 +56,12 @@
     line-height: 35px;
     font-weight: 500;
 }
+.style-skill-header{
+    color: #485460;
+}
+.style-skill-text{
+    color: #3498db;
+}
 html{
     background-color: #ffffff;
 }

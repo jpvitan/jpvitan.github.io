@@ -84,6 +84,19 @@
     font-size: 9pt;
     color: #808e9b;
 }
+.style-contact-form-heading{
+    color: #747d8c;
+}
+.style-contact-form-note{
+    font-size: 12pt;
+    color: #808e9b;
+}
+.style-contact-form-submit-btn{
+    border: none;
+    background-color: #0fbcf9; 
+    color: #ffffff;
+    width: 100%;
+}
 html{
     background-color: #ffffff;
 }

@@ -10,7 +10,7 @@
         $destination = 'justinepaulvitan@jpvitan.com';
         $headers = 'From: '.$email;
         
-        $message = '[Sender Details]\nFirst Name: '.$first_name.'\nLast Name: '.$last_name.'\nCountry: '.$country.'\n\n[Message]\n'.$message;
+        $message = "[Sender Details]\nFirst Name: ".$first_name."\nLast Name: ".$last_name."\nCountry: ".$country."\n\n[Message]\n".$message;
         
         $result = mail($destination, $subject, $message, $headers);
         if($result){

@@ -14,9 +14,9 @@
         
         $result = mail($destination, $subject, $message, $headers);
         if($result){
-            
+            echo "Your mail has been sent. <a href='index.html'>Click here</a> to go back to the main page.";
         }else{
-            
+            echo "Your mail has not been sent. <a href='index.html'>Click here</a> to go back to the main page.";
         }
     }
 ?>

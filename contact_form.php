@@ -27,18 +27,31 @@
             <div class="row justify-content-center">
                 <div class="col-sm-auto text-center">
                     <?php
-                        if(isset($_POST['submit'])){
-                            $first_name = $_POST['first_name'];
-                            $last_name = $_POST['last_name'];
-                            $country = $_POST['country'];
-                            $email = $_POST['email'];
-                            $subject = $_POST['subject'];
-                            $message = $_POST['message'];
+                        if(isset($_POST["submit"])){
+                            $first_name = $_POST["first_name"];
+                            $last_name = $_POST["last_name"];
+                            $country = $_POST["country"];
+                            $email = $_POST["email"];
+                            $subject = $_POST["subject"];
+                            $message = $_POST["message"];
 
-                            $destination = 'justinepaulvitan@jpvitan.com';
-                            $headers = 'From: '.$email;
+                            $destination = "justinepaulvitan@jpvitan.com";
+                            $headers = "From: ".$email;
 
                             $message = "[Sender Details]\nFirst Name: ".$first_name."\nLast Name: ".$last_name."\nCountry: ".$country."\n\n[Message]\n".$message;
+                            
+                            if(!isset($_POST["g-recaptcha-response"])){
+                                die("<h1 class='mt-2' style='color: #747d8c;'>Please finish the reCAPTCHA form before submitting.</h1>");
+                            }
+                            
+                            $recaptcha_secret_key = "6Ld_iSQaAAAAAIVvXcH67IRiLbWfG7kaIFeHuip1";
+                            $recaptcha_response =  $_POST["g-recaptcha-response"];
+                            $verification_url = "https://www.google.com/recaptcha/api/siteverify?secret=".urlencode($recaptcha_secret_key)."&response=".urlencode($recaptcha_response);
+                            $verification_result = json_decode(file_get_contents($verification_url), true);
+                            
+                            if(!$verification_result["success"]){
+                                die("<h1 class='mt-2' style='color: #747d8c;'>Are you a robot? If not, please make sure that you've finished the reCAPTCHA form.</h1>");
+                            }
                             
                             $result = mail($destination, $subject, $message, $headers);
                             if($result){

@@ -21,6 +21,9 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
         
+        <!-- reCAPTCHA -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        
         <link href="css/style.css" rel="stylesheet">
         <link href="css/contact.css" rel="stylesheet">
         
@@ -353,7 +356,10 @@
                         <input class="form-control" type="text" id="subject" name="subject" required>
                         <label class="form-label mt-2" for="message">Message</label>
                         <textarea class="form-control" id="message" name="message" required></textarea>
-                        <button class="btn mt-4 style-contact-form-submit-btn" name="submit">Submit</button>
+                        
+                        <div class="g-recaptcha mt-2" data-sitekey="6Ld_iSQaAAAAAKnOsFvTpqkN07iEwfHhdsJcSqxL"></div>
+
+                        <button class="btn mt-2 style-contact-form-submit-btn" name="submit">Submit</button>
                         <p class="style-privacy-policy-notice mt-2">If you want to know how your data is used in this form, please take some time to read our <a href="#" style="text-decoration: none; color: #3498db;">privacy policy</a>.</p>
                     </form>
                 </div>

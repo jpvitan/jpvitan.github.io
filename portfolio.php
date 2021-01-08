@@ -52,44 +52,44 @@
                     <p class="style-portfolio-note"></p>
                 </div>
             </div>
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-2">
-                    <input class="form-control mt-2" type="text" id="search" name="search" placeholder="Search" required>
-                </div>
-                <div class="col-lg-2">
-                    <select class="form-select mt-2" id="platform" name="platform">
-                        <option value="">All Platforms</option>
-                        <option value="Mobile">Mobile</option>
-                        <option value="Web">Web</option>
-                        <option value="Desktop">Desktop</option>
-                        <option value="Others">Others</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-4">
-                <div class="col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="img/banner/1.png">
-                        <div class="card-body">
-                            <h5 class="card-title">SatTrack-X</h5>
-                            <p class="card-text">Satellite tracker app for Android with custom map themes and 2000+ trackable objects.</p>
-                            <div>Technologies Used: Java, Android SDK</div>
-                        </div>
+            <form method="post" id="query">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-2">
+                        <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Project Title" <?php if(isset($_POST["title"]) && $_POST["title"] != ""){ echo "value=".$_POST["title"]; } ?> required>
+                    </div>
+                    <div class="col-lg-2">
+                        <select class="form-select mt-2" id="platform" name="platform" onchange="this.form.submit()">
+                            <option value="all">All Platforms</option>
+                            <option value="mobile" <?php if(isset($_POST["platform"]) && $_POST["platform"] == "mobile"){ echo "selected='selected'"; } ?>>Mobile</option>
+                            <option value="web" <?php if(isset($_POST["platform"]) && $_POST["platform"] == "web"){ echo "selected='selected'"; } ?>>Web</option>
+                            <option value="desktop" <?php if(isset($_POST["platform"]) && $_POST["platform"] == "desktop"){ echo "selected='selected'"; } ?>>Desktop</option>
+                            <option value="others" <?php if(isset($_POST["platform"]) && $_POST["platform"] == "others"){ echo "selected='selected'"; } ?>>Others</option>
+                        </select>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-center mt-4">
-                <div class="col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="img/banner/2.png">
-                        <div class="card-body">
-                            <h5 class="card-title">rsa-jpv</h5>
-                            <p class="card-text">A simple Python library that encrypts your data using the RSA cryptosystem.</p>
-                            <div>Technologies Used: Python</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </form>
+            <?php         
+                ini_set('display_errors', 1);
+
+                $host = "localhost";
+                $username = "root";
+                $password = "";
+                $dbname = "jpvitan_db";
+            
+                $mysqli = new mysqli($host, $username, $password, $dbname);
+                if($mysqli->connect_errno){
+                    die("<div class='row justify-content-center text-center'><h1 style='color: #ff3f34;'>Connection Failure!</h1></div>");
+                }
+            
+                $statement = $mysqli->prepare("SELECT * FROM portfolio");
+            
+                if(isset($_POST["title"]) && isset($_POST["platform"])){
+                    
+                }
+            
+                $statement->execute();
+                $result = $statement->get_result();
+            ?>
         </div>
         
         <footer class="my-2 text-center style-footer">

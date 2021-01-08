@@ -1,8 +1,8 @@
 AOS.init();
 
 var bannerIndex = 0;
-var bannerImage = ["img/banner/1.png", "img/banner/2.png"];
-var bannerText = ["*Google Play and the Google Play logo are trademarks of Google LLC.", "github.com/jpvitan/rsa-jpv"];
+var bannerImage = ["img/banner/1.png", "img/banner/2.png", "img/banner/3.png"];
+var bannerText = ["*Google Play and the Google Play logo are trademarks of Google LLC.", "github.com/jpvitan/rsa-jpv", "Welcome to my website!"];
 
 function updateBanner(){
     document.getElementById("bannerImage").src = bannerImage[bannerIndex];

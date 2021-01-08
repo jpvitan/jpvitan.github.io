@@ -89,6 +89,25 @@
             
                 $statement->execute();
                 $result = $statement->get_result();
+                
+                while($row = $result->fetch_assoc()){
+                    echo "
+                    <div class='row justify-content-center mt-4'>
+                        <div class='col-lg-4'>
+                            <a href='". $row["link"] ."' style='text-decoration: none; color: black;'>
+                                <div class='card'>
+                                    <img class='card-img-top' src='" . $row["image_banner"] . "'>
+                                    <div class='card-body'>
+                                        <h5 class='card-title'>". $row["title"] ."</h5>
+                                        <p class='card-text'>". $row["description"] ."</p>
+                                        <div>Technologies Used: ". $row["technologies_used"] ."</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    ";
+                }
             ?>
         </div>
         

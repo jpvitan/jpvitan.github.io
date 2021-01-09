@@ -55,26 +55,31 @@
             <form method="post" id="query">
                 <div class="row justify-content-center text-center">
                     <div class="col-lg-2">
-                        <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Project Title" <?php if(isset($_POST["title"]) && $_POST["title"] != ""){ echo "value=".$_POST["title"]; } ?> required>
+                        <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Project Title" <?php if(isset($_POST["title"]) && $_POST["title"] != ""){ echo "value=".$_POST["title"]; } ?>>
                     </div>
                     <div class="col-lg-2">
                         <select class="form-select mt-2" id="platform" name="platform" onchange="this.form.submit()">
-                            <option value="all">All Platforms</option>
-                            <option value="mobile" <?php if(isset($_POST["platform"]) && $_POST["platform"] == "mobile"){ echo "selected='selected'"; } ?>>Mobile</option>
-                            <option value="web" <?php if(isset($_POST["platform"]) && $_POST["platform"] == "web"){ echo "selected='selected'"; } ?>>Web</option>
-                            <option value="desktop" <?php if(isset($_POST["platform"]) && $_POST["platform"] == "desktop"){ echo "selected='selected'"; } ?>>Desktop</option>
-                            <option value="others" <?php if(isset($_POST["platform"]) && $_POST["platform"] == "others"){ echo "selected='selected'"; } ?>>Others</option>
+                            <option value="All">All Platforms</option>
+                            <option value="Mobile" <?php if(isset($_POST["platform"]) && $_POST["platform"] == "Mobile"){ echo "selected='selected'"; } ?>>Mobile</option>
+                            <option value="Web" <?php if(isset($_POST["platform"]) && $_POST["platform"] == "Web"){ echo "selected='selected'"; } ?>>Web</option>
+                            <option value="Desktop" <?php if(isset($_POST["platform"]) && $_POST["platform"] == "Desktop"){ echo "selected='selected'"; } ?>>Desktop</option>
+                            <option value="Others" <?php if(isset($_POST["platform"]) && $_POST["platform"] == "Others"){ echo "selected='selected'"; } ?>>Others</option>
                         </select>
                     </div>
                 </div>
             </form>
-            <?php         
-                ini_set('display_errors', 1);
-
+            <?php    
+                // For production server:
                 $host = "localhost";
-                $username = "root";
-                $password = "";
-                $dbname = "jpvitan_db";
+                $username = "jpvitan1_master";
+                $password = "!M,xxii*MKRR";
+                $dbname = "jpvitan1_site";
+            
+                // For local server:
+//                $host = "localhost";
+//                $username = "root";
+//                $password = "";
+//                $dbname = "jpvitan_db";
             
                 $mysqli = new mysqli($host, $username, $password, $dbname);
                 if($mysqli->connect_errno){
@@ -84,23 +89,38 @@
                 $statement = $mysqli->prepare("SELECT * FROM portfolio");
             
                 if(isset($_POST["title"]) && isset($_POST["platform"])){
-                    
+                    $title = $_POST["title"];
+                    $platform = $_POST["platform"];
+                    if($title != "" && $platform != "All"){
+                        $statement = $mysqli->prepare("SELECT * FROM portfolio WHERE title LIKE ? AND platform=?");
+                        $title .= "%";
+                        $statement->bind_param("ss", $title, $platform);
+                    }
+                    else if($title != ""){
+                        $statement = $mysqli->prepare("SELECT * FROM portfolio WHERE title LIKE ?");
+                        $title .= "%";
+                        $statement->bind_param("s", $title);
+                    }
+                    else if($platform != "All"){
+                        $statement = $mysqli->prepare("SELECT * FROM portfolio WHERE platform=?");
+                        $statement->bind_param("s", $platform);
+                    }
                 }
             
                 $statement->execute();
-                $result = $statement->get_result();
-                
-                while($row = $result->fetch_assoc()){
+                $statement->bind_result($id, $image_banner, $title, $description, $technologies_used, $platform, $link);
+            
+                while($statement->fetch()){
                     echo "
                     <div class='row justify-content-center mt-4'>
                         <div class='col-lg-4'>
-                            <a href='". $row["link"] ."' style='text-decoration: none; color: black;'>
+                            <a href='". $link ."' style='text-decoration: none; color: black;'>
                                 <div class='card'>
-                                    <img class='card-img-top' src='" . $row["image_banner"] . "'>
+                                    <img class='card-img-top' src='" . $image_banner . "'>
                                     <div class='card-body'>
-                                        <h5 class='card-title'>". $row["title"] ."</h5>
-                                        <p class='card-text'>". $row["description"] ."</p>
-                                        <div>Technologies Used: ". $row["technologies_used"] ."</div>
+                                        <h5 class='card-title'>". $title ."</h5>
+                                        <p class='card-text'>". $description ."</p>
+                                        <div>Technologies Used: ". $technologies_used ."</div>
                                     </div>
                                 </div>
                             </a>

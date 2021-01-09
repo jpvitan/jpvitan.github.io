@@ -70,16 +70,16 @@
             </form>
             <?php    
                 // For production server:
-                $host = "localhost";
-                $username = "jpvitan1_master";
-                $password = "!M,xxii*MKRR";
-                $dbname = "jpvitan1_site";
+//                $host = "localhost";
+//                $username = "jpvitan1_master";
+//                $password = "!M,xxii*MKRR";
+//                $dbname = "jpvitan1_site";
             
                 // For local server:
-//                $host = "localhost";
-//                $username = "root";
-//                $password = "";
-//                $dbname = "jpvitan_db";
+                $host = "localhost";
+                $username = "root";
+                $password = "";
+                $dbname = "jpvitan_db";
             
                 $mysqli = new mysqli($host, $username, $password, $dbname);
                 if($mysqli->connect_errno){

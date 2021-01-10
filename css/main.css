@@ -46,11 +46,15 @@ body{
     line-height: 35px;
     font-weight: 500;
 }
+.style-skill-card{
+    height: 100%;
+}
 .style-skill-header{
     color: #0fbcf9;
 }
 .style-skill-text{
     color: #747d8c;
+    font-size: 18pt;
 }
 .style-visit-blog-container{
     background-color: #0fbcf9;

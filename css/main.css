@@ -4,9 +4,11 @@ html{
 body{
     background-color: #ffffff;
 }
-.style-image-banner{
-    width: 900px; 
-    border-radius: 15px;
+@media only screen and (min-width: 992px){
+    .style-image-banner{
+        width: 900px; 
+        border-radius: 15px;
+    }    
 }
 .style-image-banner-text{
     font-size: 9pt;

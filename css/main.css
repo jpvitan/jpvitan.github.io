@@ -26,15 +26,19 @@ body{
     line-height: 35px;
     font-weight: 500;
 }
-.style-certificate-heading{
+.style-certificate-card{
+    
+}
+.style-certificate-header{
+    color: #0fbcf9;
+}
+.style-certificate-text{
     color: #747d8c;
+    font-size: 18pt;
 }
 .style-certificate-note{
-    font-size: 12pt;
+    font-size: 11pt;
     color: #808e9b;
-}
-.style-certificate-badge{
-    width: 300px;
 }
 .style-contribute-open-source-container{
     background-color: #2ecc71;

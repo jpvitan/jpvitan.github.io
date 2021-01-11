@@ -70,16 +70,16 @@
             </form>
             <?php    
                 // For production server:
-//                $host = "localhost";
-//                $username = "jpvitan1_master";
-//                $password = "!M,xxii*MKRR";
-//                $dbname = "jpvitan1_site";
+                $host = "localhost";
+                $username = "jpvitan1_master";
+                $password = "!M,xxii*MKRR";
+                $dbname = "jpvitan1_site";
             
                 // For local server:
-                $host = "localhost";
-                $username = "root";
-                $password = "";
-                $dbname = "jpvitan_db";
+//                $host = "localhost";
+//                $username = "root";
+//                $password = "";
+//                $dbname = "jpvitan_db";
             
                 $mysqli = new mysqli($host, $username, $password, $dbname);
                 if($mysqli->connect_errno){
@@ -116,7 +116,7 @@
                         <div class='col-lg-4'>
                             <a href='". $link ."' style='text-decoration: none; color: black;'>
                                 <div class='card shadow border-0'>
-                                    <img class='card-img-top' src='" . $image_banner . "'>
+                                    <img class='card-img-top' alt='banner' src='" . $image_banner . "'>
                                     <div class='card-body'>
                                         <h5 class='card-title'>". $title ."</h5>
                                         <p class='card-text'>". $description ."</p>

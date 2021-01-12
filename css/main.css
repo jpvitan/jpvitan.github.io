@@ -31,10 +31,11 @@ body{
 }
 .style-certificate-header{
     color: #0fbcf9;
+    font-size: 1.75rem;
 }
 .style-certificate-text{
     color: #747d8c;
-    font-size: 18pt;
+    font-size: 1.4rem;
 }
 .style-certificate-note{
     font-size: 11pt;
@@ -57,10 +58,11 @@ body{
 }
 .style-skill-header{
     color: #0fbcf9;
+    font-size: 1.75rem;
 }
 .style-skill-text{
     color: #747d8c;
-    font-size: 18pt;
+    font-size: 1.4rem;
 }
 .style-visit-blog-container{
     background-color: #0fbcf9;

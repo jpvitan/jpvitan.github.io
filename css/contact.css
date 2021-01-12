@@ -1,8 +1,10 @@
 .style-contact-form-heading{
-    color: #747d8c;
+    color: #0fbcf9;
+    font-family: lemonmilk;
+    font-size: 1.75rem;
 }
 .style-contact-form-note{
-    font-size: 12pt;
+     font-size: 10pt;
     color: #808e9b;
 }
 .style-contact-form-submit-btn{
@@ -10,8 +12,17 @@
     background-color: #0fbcf9; 
     color: #ffffff;
     width: 100%;
+    height: 2.5rem;
 }
-.style-privacy-policy-notice{
-    font-size: 9pt;
-    color: #808e9b;
+input{
+    border: 0px !important;
+    border-radius: none;
+    background-color: #ecf0f1 !important;
+    height: 2.8rem;
+}
+textarea{
+    border: 0px !important;
+    border-radius: none;
+    background-color: #ecf0f1 !important;
+    height: 2.8rem;
 }

@@ -117,11 +117,12 @@
                         <div class='col-lg-4'>
                             <a href='". $link ."' style='text-decoration: none; color: black;'>
                                 <div class='card shadow border-0'>
-                                    <img class='card-img-top' alt='banner' src='" . $image_banner . "'>
+                                    <img class='card-img-top' alt='Banner' src='" . $image_banner . "'>
                                     <div class='card-body'>
-                                        <h5 class='card-title'>". $title ."</h5>
-                                        <p class='card-text'>". $description ."</p>
-                                        <div style='color: #808e9b;'>Technologies Used: ". $technologies_used ."</div>
+                                        <div class='card-title' style='font-size: 1.25rem; font-weight: 500;'>". $title ."</div>
+                                        <p class='card-text' style='color: #747d8c;'>". $description ."</p>
+                                        <div style='color: #0fbcf9; font-weight: 500;'>Technologies Used</div>
+                                        <div style='color: #747d8c;'>". $technologies_used ."</div>
                                     </div>
                                 </div>
                             </a>

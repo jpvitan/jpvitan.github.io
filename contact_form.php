@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>JPVitan | Form Submission</title>  
+        <title>JPVITAN | Form Submission</title>  
         
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -30,8 +30,7 @@
                 <div class="col-sm-auto text-center">
                     <?php
                         if(isset($_POST["submit"])){
-                            $first_name = $_POST["first_name"];
-                            $last_name = $_POST["last_name"];
+                            $full_name = $_POST["full_name"];
                             $email = $_POST["email"];
                             $subject = $_POST["subject"];
                             $message = $_POST["message"];
@@ -39,7 +38,7 @@
                             $destination = "justinepaulvitan@jpvitan.com";
                             $headers = "From: ".$email;
 
-                            $message = "[Sender Details]\nFirst Name: ".$first_name."\nLast Name: ".$last_name."\n\n[Message]\n".$message;
+                            $message = "[Sender Details]\nFull Name: ".$full_name."\n\n[Message]\n".$message;
                             
                             if(!isset($_POST["g-recaptcha-response"])){
                                 die("<h1 class='mt-2' style='color: #747d8c;'>Please finish the reCAPTCHA form before submitting.</h1>");

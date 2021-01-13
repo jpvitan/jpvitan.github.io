@@ -27,12 +27,6 @@ input{
     background-color: #ecf0f1 !important;
     height: 3rem;
 }
-textarea{
-    border: 0px !important;
-    border-radius: none;
-    background-color: #ecf0f1 !important;
-    height: 2.8rem;
-}
 .style-card {
     display: block;
     width: 100%;

@@ -1,10 +1,17 @@
+html, body{
+    background-color: #0fbcf9;
+    height: 100%;
+}
+body{
+    display: flex;
+}
 .style-contact-form-heading{
     color: #0fbcf9;
     font-family: lemonmilk;
-    font-size: 1.75rem;
+    font-size: 2.2rem;
 }
-.style-contact-form-note{
-     font-size: 10pt;
+.style-contact-form-note{ 
+    font-size: 0.75rem;
     color: #808e9b;
 }
 .style-contact-form-submit-btn{
@@ -18,11 +25,18 @@ input{
     border: 0px !important;
     border-radius: none;
     background-color: #ecf0f1 !important;
-    height: 2.8rem;
+    height: 3rem;
 }
 textarea{
     border: 0px !important;
     border-radius: none;
     background-color: #ecf0f1 !important;
     height: 2.8rem;
+}
+.style-card {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    padding: 15px;
+    margin: auto;
 }

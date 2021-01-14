@@ -70,21 +70,20 @@
                 </div>
             </form>
             <?php    
-                // For production server:
                 $host = "localhost";
+                $dbname = "jpvitan1_site";
+    
+                // For production server:
                 $username = "jpvitan1_master";
                 $password = "!M,xxii*MKRR";
-                $dbname = "jpvitan1_site";
             
                 // For local server:
-//                $host = "localhost";
-//                $username = "root";
-//                $password = "";
-//                $dbname = "jpvitan_db";
+                $username = "root";
+                $password = "";
             
                 $mysqli = new mysqli($host, $username, $password, $dbname);
                 if($mysqli->connect_errno){
-                    die("<div class='row justify-content-center text-center'><h1 style='color: #ff3f34;'>Connection Failure!</h1></div>");
+                    die("<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>");
                 }
             
                 $statement = $mysqli->prepare("SELECT * FROM portfolio");

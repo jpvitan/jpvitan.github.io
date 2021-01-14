@@ -72,66 +72,21 @@
                 </div>
             </form>
             <?php    
+                $host = "localhost";
+                $dbname = "jpvitan1_site";
+    
                 // For production server:
-//                $host = "localhost";
-//                $username = "jpvitan1_master";
-//                $password = "!M,xxii*MKRR";
-//                $dbname = "jpvitan1_site";
-                        
-                // For local server:
-//                $host = "localhost";
-//                $username = "root";
-//                $password = "";
-//                $dbname = "jpvitan_db";
-//            
-//                $mysqli = new mysqli($host, $username, $password, $dbname);
-//                if($mysqli->connect_errno){
-//                    die("<div class='row justify-content-center text-center'><h1 style='color: #ff3f34;'>Connection Failure!</h1></div>");
-//                }
-//            
-//                $statement = $mysqli->prepare("SELECT * FROM blog");
-//            
-//                if(isset($_POST["title"]) && isset($_POST["category"])){
-//                    $title = $_POST["title"];
-//                    $category = $_POST["category"];
-//                    
-//                    if($title != "" && $category != "All"){
-//                        $statement = $mysqli->prepare("SELECT * FROM portfolio WHERE title LIKE ? AND category=?");
-//                        $title .= "%";
-//                        $statement->bind_param("ss", $title, $category);
-//                    }
-//                    else if($title != ""){
-//                        $statement = $mysqli->prepare("SELECT * FROM portfolio WHERE title LIKE ?");
-//                        $title .= "%";
-//                        $statement->bind_param("s", $title);
-//                    }
-//                    else if($category != "All"){
-//                        $statement = $mysqli->prepare("SELECT * FROM portfolio WHERE category=?");
-//                        $statement->bind_param("s", $category);
-//                    }
-//                }
+                $username = "jpvitan1_master";
+                $password = "!M,xxii*MKRR";
             
-//                $statement->execute();
-//                $statement->bind_result($id, $image_banner, $title, $description, $technologies_used, $platform, $link);
-//            
-//                while($statement->fetch()){
-//                    echo "
-//                    <div class='row justify-content-center mt-4'>
-//                        <div class='col-lg-4'>
-//                            <a href='". $link ."' style='text-decoration: none; color: black;'>
-//                                <div class='card shadow border-0'>
-//                                    <img class='card-img-top' src='" . $image_banner . "'>
-//                                    <div class='card-body'>
-//                                        <h5 class='card-title'>". $title ."</h5>
-//                                        <p class='card-text'>". $description ."</p>
-//                                        <div style='color: #808e9b;'>Technologies Used: ". $technologies_used ."</div>
-//                                    </div>
-//                                </div>
-//                            </a>
-//                        </div>
-//                    </div>
-//                    ";
-//                }
+                // For local server:
+                $username = "root";
+                $password = "";
+            
+                $mysqli = new mysqli($host, $username, $password, $dbname);
+                if($mysqli->connect_errno){
+                    die("<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>");
+                }
             ?>
         </div>
         

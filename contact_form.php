@@ -33,7 +33,7 @@
         <link href="css/contact_form.css" rel="stylesheet">
     </head>
     <body>   
-        <div class="card border-0 shadow-lg text-center style-card" data-aos="fade-up">
+        <div class="card border-0 shadow-lg text-center style-card">
             <div class="card-body">
                 <div class="text-center"> 
                     <?php

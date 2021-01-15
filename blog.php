@@ -92,10 +92,15 @@
             ?>
         </div>
         
-        <footer class="my-2 text-center style-footer">
-            <div class="container-fluid">Developed and Designed by Justine Paul Sanchez Vitan.</div>
-            <div class="container-fluid">Copyright © 2021 Justine Paul Sanchez Vitan. All rights reserved.</div>
+        <footer class="my-2 text-center style-footer" id="footer">
+            
         </footer>
+        
+        <script>
+        $(function(){
+            $("#footer").load("footer.html");
+        });
+        </script>
         
         <!-- Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

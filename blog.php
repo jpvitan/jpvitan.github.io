@@ -82,10 +82,12 @@
                 // For local server:
 //                $username = "root";
 //                $password = "";
-            
+                        
                 $mysqli = new mysqli($host, $username, $password, $dbname);
                 if($mysqli->connect_errno){
-                    die("<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>");
+                    echo "<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>";
+                }else{
+                    
                 }
             ?>
         </div>

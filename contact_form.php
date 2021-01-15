@@ -99,10 +99,6 @@
                         }
                     }
                     ?>
-                    <div class="mt-4 text-center style-footer">
-                        <div>Developed and Designed by Justine Paul Sanchez Vitan.</div>
-                        <div>Copyright © 2021 Justine Paul Sanchez Vitan. All rights reserved.</div>
-                    </div>
                 </div>                                
             </div>
         </div>

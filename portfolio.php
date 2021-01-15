@@ -70,24 +70,23 @@
                 </div>
             </form>
             <?php    
-                $host = "localhost";
-                $dbname = "jpvitan1_site";
-    
-                // For production server:
-                $username = "jpvitan1_master";
-                $password = "!M,xxii*MKRR";
+            $host = "localhost";
+            $dbname = "jpvitan1_site";
+
+            // For production server:
+            $username = "jpvitan1_master";
+            $password = "!M,xxii*MKRR";
+
+            // For local server:
+//            $username = "root";
+//            $password = "";
             
-                // For local server:
-//                $username = "root";
-//                $password = "";
-            
-                $mysqli = new mysqli($host, $username, $password, $dbname);
-                if($mysqli->connect_errno){
-                    die("<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>");
-                }
-            
+            $mysqli = new mysqli($host, $username, $password, $dbname);
+            if($mysqli->connect_errno){
+                echo "<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>";
+            }else{
                 $statement = $mysqli->prepare("SELECT * FROM portfolio");
-            
+
                 if(isset($_POST["title"]) && isset($_POST["platform"])){
                     $title = $_POST["title"];
                     $platform = $_POST["platform"];
@@ -106,10 +105,10 @@
                         $statement->bind_param("s", $platform);
                     }
                 }
-            
+
                 $statement->execute();
                 $statement->bind_result($id, $image_banner, $title, $description, $technologies_used, $platform, $link);
-            
+
                 while($statement->fetch()){
                     echo "
                     <div class='row justify-content-center mt-4'>
@@ -129,6 +128,7 @@
                     </div>
                     ";
                 }
+            }
             ?>
         </div>
         

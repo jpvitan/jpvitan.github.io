@@ -1,0 +1,49 @@
+h1, h2, h3, h4, h5, h6{    
+    font-family: lemonmilk; 
+}
+h1{
+    color: #0fbcf9;
+}
+h2{
+    color: #747d8c;
+}
+h3{   
+    color: #0fbcf9;
+}
+h4{
+    color: #747d8c;
+}
+h5{
+    color: #0fbcf9;
+}
+h6{    
+    color: #747d8c;
+}
+.custom-list{
+    list-style-type: none;
+    padding: 0px;
+}
+.custom-list-element{
+    padding-left: 1.3em;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.custom-list-element::before{
+    content: "•";
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+}
+.platform-list{
+    color: #ff6b81;
+}
+.software-traits-list{
+    color: #ff6b81;
+}
+.style-contact-now-btn{
+    border: none;
+    background-color: #0fbcf9; 
+    color: #ffffff;
+    width: 100%;
+    height: 3rem;
+}

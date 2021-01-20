@@ -54,18 +54,18 @@
                     <p class="style-portfolio-note"></p>
                 </div>
             </div>
-            <form method="post" id="query">
+            <form method="GET" id="query">
                 <div class="row justify-content-center text-center">
                     <div class="col-lg-2">
-                        <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Project Title" <?php if(isset($_POST["title"]) && $_POST["title"] != ""){ echo "value=".$_POST["title"]; } ?>>
+                        <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Project Title" <?php if(isset($_GET["title"]) && $_GET["title"] != ""){ echo "value=".$_GET["title"]; } ?>>
                     </div>
                     <div class="col-lg-2">
                         <select class="form-select mt-2" id="platform" name="platform" onchange="this.form.submit()">
                             <option value="All">All Platforms</option>
-                            <option value="Mobile" <?php if(isset($_POST["platform"]) && $_POST["platform"] == "Mobile"){ echo "selected='selected'"; } ?>>Mobile</option>
-                            <option value="Web" <?php if(isset($_POST["platform"]) && $_POST["platform"] == "Web"){ echo "selected='selected'"; } ?>>Web</option>
-                            <option value="Desktop" <?php if(isset($_POST["platform"]) && $_POST["platform"] == "Desktop"){ echo "selected='selected'"; } ?>>Desktop</option>
-                            <option value="Others" <?php if(isset($_POST["platform"]) && $_POST["platform"] == "Others"){ echo "selected='selected'"; } ?>>Others</option>
+                            <option value="Mobile" <?php if(isset($_GET["platform"]) && $_GET["platform"] == "Mobile"){ echo "selected='selected'"; } ?>>Mobile</option>
+                            <option value="Web" <?php if(isset($_GET["platform"]) && $_GET["platform"] == "Web"){ echo "selected='selected'"; } ?>>Web</option>
+                            <option value="Desktop" <?php if(isset($_GET["platform"]) && $_GET["platform"] == "Desktop"){ echo "selected='selected'"; } ?>>Desktop</option>
+                            <option value="Others" <?php if(isset($_GET["platform"]) && $_GET["platform"] == "Others"){ echo "selected='selected'"; } ?>>Others</option>
                         </select>
                     </div>
                 </div>
@@ -88,9 +88,9 @@
             }else{
                 $statement = $mysqli->prepare("SELECT * FROM portfolio");
 
-                if(isset($_POST["title"]) && isset($_POST["platform"])){
-                    $title = $_POST["title"];
-                    $platform = $_POST["platform"];
+                if(isset($_GET["title"]) && isset($_GET["platform"])){
+                    $title = $_GET["title"];
+                    $platform = $_GET["platform"];
                     if($title != "" && $platform != "All"){
                         $statement = $mysqli->prepare("SELECT * FROM portfolio WHERE title LIKE ? AND platform=?");
                         $title .= "%";

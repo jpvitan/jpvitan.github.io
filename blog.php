@@ -54,20 +54,20 @@
                     <p class="style-blog-note"></p>
                 </div>
             </div>
-            <form method="post" id="query">
+            <form method="GET" id="query">
                 <div class="row justify-content-center text-center">
                     <div class="col-lg-2">
-                        <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Blog Title" <?php if(isset($_POST["title"]) && $_POST["title"] != ""){ echo "value=".$_POST["title"]; } ?>>
+                        <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Blog Title" <?php if(isset($_GET["title"]) && $_GET["title"] != ""){ echo "value=".$_GET["title"]; } ?>>
                     </div>
                     <div class="col-lg-2">
                         <select class="form-select mt-2" id="category" name="category" onchange="this.form.submit()">
                             <option value="All">All Categories</option>
-                            <option value="SoftwareDevelopment" <?php if(isset($_POST["category"]) && $_POST["category"] == "SoftwareDevelopment"){ echo "selected='selected'"; } ?>>Software Development</option>
-                            <option value="ComputerScience" <?php if(isset($_POST["category"]) && $_POST["category"] == "ComputerScience"){ echo "selected='selected'"; } ?>>Computer Science</option>
-                            <option value="ArtificialIntelligence" <?php if(isset($_POST["category"]) && $_POST["category"] == "ArtificialIntelligence"){ echo "selected='selected'"; } ?>>Artificial Intelligence</option>
-                            <option value="Cryptography" <?php if(isset($_POST["category"]) && $_POST["category"] == "Cryptography"){ echo "selected='selected'"; } ?>>Cryptography</option>
-                            <option value="Astronomy" <?php if(isset($_POST["category"]) && $_POST["category"] == "Astronomy"){ echo "selected='selected'"; } ?>>Astronomy</option>
-                            <option value="Others" <?php if(isset($_POST["category"]) && $_POST["category"] == "Others"){ echo "selected='selected'"; } ?>>Others</option>
+                            <option value="SoftwareDevelopment" <?php if(isset($_GET["category"]) && $_GET["category"] == "SoftwareDevelopment"){ echo "selected='selected'"; } ?>>Software Development</option>
+                            <option value="ComputerScience" <?php if(isset($_GET["category"]) && $_GET["category"] == "ComputerScience"){ echo "selected='selected'"; } ?>>Computer Science</option>
+                            <option value="ArtificialIntelligence" <?php if(isset($_GET["category"]) && $_GET["category"] == "ArtificialIntelligence"){ echo "selected='selected'"; } ?>>Artificial Intelligence</option>
+                            <option value="Cryptography" <?php if(isset($_GET["category"]) && $_GET["category"] == "Cryptography"){ echo "selected='selected'"; } ?>>Cryptography</option>
+                            <option value="Astronomy" <?php if(isset($_GET["category"]) && $_GET["category"] == "Astronomy"){ echo "selected='selected'"; } ?>>Astronomy</option>
+                            <option value="Others" <?php if(isset($_GET["category"]) && $_GET["category"] == "Others"){ echo "selected='selected'"; } ?>>Others</option>
                         </select>
                     </div>
                 </div>

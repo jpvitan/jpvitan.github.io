@@ -37,6 +37,14 @@ h6{
 .platform-list{
     color: #747d8c;
 }
+.platform-list-link{
+    text-decoration: none;
+    color: #747d8c;
+}
+.platform-list-link:hover{
+    color: #ff6b81;
+    font-weight: 400;
+}
 .software-traits-list{
     color: #747d8c;
 }

@@ -1,7 +1,40 @@
 <!doctype html>
+<?php
+ini_set('display_errors', '1');
+
+$host = "localhost";
+$dbname = "jpvitan1_site";
+
+// For production server:
+$username = "jpvitan1_master";
+$password = "!M,xxii*MKRR";
+
+// For local server:
+$username = "root";
+$password = "";
+
+$mysqli = new mysqli($host, $username, $password, $dbname);
+if($mysqli->connect_errno or !isset($_GET["id"])){
+    // Redirect the user to an error page.
+    die("<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>");    
+}else{
+    $statement = $mysqli->prepare("SELECT * FROM blog WHERE id=?");
+    $statement->bind_param("i", $_GET["id"]);
+    
+    $statement->execute();
+    $statement->bind_result($id, $image_banner, $title, $description, $author, $date, $category, $link);
+    
+    if(!$statement->fetch()){
+        // Redirect the user to an error page.    
+        die("<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>");    
+    }
+}
+?>
 <html lang="en">
     <head>
-        <title>JPVITAN - About</title>   
+        <title>
+            <?php echo "JPVITAN - " . $title; ?>
+        </title>   
         
         <!-- Favicon -->
         <link rel="shortcut icon" href="/favicon.ico">
@@ -16,8 +49,8 @@
         <!-- Meta Tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Justine Paul Vitan (jpvitan) is a software developer who builds mobile, web, and desktop applications.">
-        <meta name="author" content="Justine Paul Vitan">
+        <meta name="description" content="<?php echo $description; ?>">
+        <meta name="author" content="<?php echo $author; ?>">
         
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -48,11 +81,7 @@
         <div class="container mt-lg-5">
             <div class="row justify-content-center">
                 <?php
-                if (isset($_GET["id"])){
-                    
-                }else{
-                    
-                }
+                
                 ?>
             </div>
         </div>

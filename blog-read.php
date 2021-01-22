@@ -65,7 +65,7 @@ if($mysqli->connect_errno or !isset($_GET["id"])){
         <!-- CSS -->
         <link rel="preload" as="font" href="css/font/lemonmilk.otf" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet">
-        <link href="css/about.css" rel="stylesheet">
+        <link href="css/blog-read.css" rel="stylesheet">
     </head>
     <body>    
         <nav class="navbar navbar-expand-lg navbar-light fixed-top style-navbar" id="navbar"></nav>
@@ -80,9 +80,12 @@ if($mysqli->connect_errno or !isset($_GET["id"])){
         
         <div class="container mt-lg-5">
             <div class="row justify-content-center">
-                <?php
-                
-                ?>
+                <div class="col-md-6 mt-2 px-3">
+                    <h1><?php echo $title ?></h1>
+                    <div style='color: #0fbcf9; font-weight: 500;'><?php echo $category; ?></div>
+                    <div class="mb-4" style='color: #747d8c; font-size: 0.9rem;'><?php echo $author . ", " . $date; ?></div>
+                    <?php include $link; ?>
+                </div>
             </div>
         </div>
         
@@ -100,6 +103,6 @@ if($mysqli->connect_errno or !isset($_GET["id"])){
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
         
         <!-- JavaScript -->
-        <script src="js/about.js"></script>
+        <script src="js/blog-read.js"></script>
     </body>
 </html>

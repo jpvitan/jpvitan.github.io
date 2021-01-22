@@ -121,8 +121,9 @@
                                     <img class='card-img-top' alt='Banner' src='" . $image_banner . "'>
                                     <div class='card-body'>
                                         <div class='card-title' style='font-size: 1.25rem; font-weight: 500; margin-bottom: 0px;'>". $title ."</div>
+                                        <div style='color: #0fbcf9; font-weight: 500;'>" . $category . "</div>
                                         <div style='color: #747d8c; font-size: 0.9rem;'>" . $author . ", " . $date ."</div>
-                                        <p style='margin-top: 1rem;'>". $description ."</p>
+                                        <div style='color: #636e72; margin-top: 1rem;'>". $description ."</div>
                                     </div>
                                 </div>
                             </a>

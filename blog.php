@@ -73,23 +73,64 @@
                 </div>
             </form>
             <?php    
-                $host = "localhost";
-                $dbname = "jpvitan1_site";
-    
-                // For production server:
-                $username = "jpvitan1_master";
-                $password = "!M,xxii*MKRR";
-            
-                // For local server:
-//                $username = "root";
-//                $password = "";
-                        
-                $mysqli = new mysqli($host, $username, $password, $dbname);
-                if($mysqli->connect_errno){
-                    echo "<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>";
-                }else{
-                    
+            $host = "localhost";
+            $dbname = "jpvitan1_site";
+
+            // For production server:
+            $username = "jpvitan1_master";
+            $password = "!M,xxii*MKRR";
+
+            // For local server:
+            $username = "root";
+            $password = "";
+
+            $mysqli = new mysqli($host, $username, $password, $dbname);
+            if($mysqli->connect_errno){
+                echo "<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>";
+            }else{                
+                $statement = $mysqli->prepare("SELECT * FROM blog");
+                
+                if(isset($_GET["title"]) && isset($_GET["category"])){
+                    $title = $_GET["title"];
+                    $category = $_GET["category"];
+                    if($title != "" && $category != "All"){
+                        $statement = $mysqli->prepare("SELECT * FROM blog WHERE title LIKE ? AND category=?");
+                        $title .= "%";
+                        $statement->bind_param("ss", $title, $category);
+                    }
+                    else if($title != ""){
+                        $statement = $mysqli->prepare("SELECT * FROM blog WHERE title LIKE ?");
+                        $title .= "%";
+                        $statement->bind_param("s", $title);
+                    }
+                    else if($category != "All"){
+                        $statement = $mysqli->prepare("SELECT * FROM blog WHERE category=?");
+                        $statement->bind_param("s", $category);
+                    }
                 }
+
+                $statement->execute();
+                $statement->bind_result($id, $image_banner, $title, $description, $author, $date, $category, $link);
+
+                while($statement->fetch()){
+                    echo "
+                    <div class='row justify-content-center mt-4'>
+                        <div class='col-lg-4'>
+                            <a href='blog-read.php?id=". $id ."' style='text-decoration: none; color: black;'>
+                                <div class='card shadow border-0'>
+                                    <img class='card-img-top' alt='Banner' src='" . $image_banner . "'>
+                                    <div class='card-body'>
+                                        <div class='card-title' style='font-size: 1.25rem; font-weight: 500; margin-bottom: 0px;'>". $title ."</div>
+                                        <div style='color: #747d8c; font-size: 0.9rem;'>" . $author . ", " . $date ."</div>
+                                        <p style='margin-top: 1rem;'>". $description ."</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    ";
+                }
+            }
             ?>
         </div>
         

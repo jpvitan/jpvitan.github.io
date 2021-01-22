@@ -31,7 +31,7 @@
         <!-- CSS -->
         <link rel="preload" as="font" href="css/font/lemonmilk.otf" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet">
-        <link href="css/contact_form.css" rel="stylesheet">
+        <link href="css/contact-form.css" rel="stylesheet">
     </head>
     <body>   
         <div class="card border-0 shadow-lg text-center style-card">
@@ -111,6 +111,6 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         
         <!-- JavaScript -->
-        <script src="js/contact_form.js"></script>
+        <script src="js/contact-form.js"></script>
     </body>
 </html>

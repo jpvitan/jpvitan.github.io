@@ -72,9 +72,9 @@
             </form>
             <?php            
             include "controller/PortfolioController.php";
-            
+                        
             if(PortfolioController::connectionWorking()){
-                $data_array = [];
+                $data_array = PortfolioController::getAllData();
                 
                 if(isset($_GET["title"]) && isset($_GET["platform"])){
                     $title = $_GET["title"];
@@ -89,8 +89,6 @@
                     else if($platform != "All"){
                         $data_array = PortfolioController::getDataFromPlatform($platform);   
                     }
-                }else{
-                    $data_array = PortfolioController::getAllData();
                 }
                                 
                 for($i=0; $i<count($data_array); $i++){

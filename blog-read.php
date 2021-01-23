@@ -1,37 +1,27 @@
 <!doctype html>
 <?php
-$host = "localhost";
-$dbname = "jpvitan1_site";
+ini_set('display_errors', 1);
 
-// For production server:
-$username = "jpvitan1_master";
-$password = "!M,xxii*MKRR";
+include "controller/BlogController.php";
 
-// For local server:
-$username = "root";
-$password = "";
-
-$mysqli = new mysqli($host, $username, $password, $dbname);
-if($mysqli->connect_errno or !isset($_GET["id"])){
-    // Redirect the user to an error page.
-    die("<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>");    
-}else{
-    $statement = $mysqli->prepare("SELECT * FROM blog WHERE id=?");
-    $statement->bind_param("i", $_GET["id"]);
+if(isset($_GET["id"])){
+    $blog = BlogController::getDataFromId($_GET["id"]);
     
-    $statement->execute();
-    $statement->bind_result($id, $image_banner, $title, $description, $author, $date, $category, $link);
-    
-    if(!$statement->fetch()){
-        // Redirect the user to an error page.    
-        die("<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>");    
+    if($blog == null){
+        // Redirect to blog page.
+        header("Location: /blog");
+        die();
     }
+}else{
+    // Redirect to blog page.
+    header("Location: /blog");
+    die();
 }
 ?>
 <html lang="en">
     <head>
         <title>
-            <?php echo "JPVITAN - " . $title; ?>
+            <?php echo "JPVITAN - " . $blog->getTitle(); ?>
         </title>   
         
         <!-- Favicon -->
@@ -47,8 +37,8 @@ if($mysqli->connect_errno or !isset($_GET["id"])){
         <!-- Meta Tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="<?php echo $description; ?>">
-        <meta name="author" content="<?php echo $author; ?>">
+        <meta name="description" content="<?php echo $blog->getDescription(); ?>">
+        <meta name="author" content="<?php echo $blog->getAuthor(); ?>">
         
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -79,10 +69,10 @@ if($mysqli->connect_errno or !isset($_GET["id"])){
         <div class="container mt-lg-5">
             <div class="row justify-content-center">
                 <div class="col-md-6 mt-2 px-3">
-                    <h1><?php echo $title ?></h1>
-                    <div style='color: #0fbcf9; font-weight: 500;'><?php echo $category; ?></div>
-                    <div class="mb-4" style='color: #747d8c; font-size: 0.9rem;'><?php echo $author . ", " . $date; ?></div>
-                    <?php include $link; ?>
+                    <h1><?php echo $blog->getTitle(); ?></h1>
+                    <div style='color: #0fbcf9; font-weight: 500;'><?php echo $blog->getCategory(); ?></div>
+                    <div class="mb-4" style='color: #747d8c; font-size: 0.9rem;'><?php echo $blog->getAuthor() . ", " . $blog->getDate(); ?></div>
+                    <?php include $blog->getLink(); ?>
                 </div>
             </div>
         </div>

@@ -28,7 +28,7 @@ class BlogController{
         return $data_array;
     }
     
-    public static function getDataFromTitleCategory($title){
+    public static function getDataFromTitleCategory($title, $category){
         $mysqli = DatabaseHandler::getConnection();
         $statement = $mysqli->prepare("SELECT * FROM blog WHERE title LIKE ? AND category=?");
         $title.= "%";
@@ -37,9 +37,21 @@ class BlogController{
         return $data_array;
     }
     
+    public static function getDataFromId($id){
+        $mysqli = DatabaseHandler::getConnection();
+        $statement = $mysqli->prepare("SELECT * FROM blog WHERE id=?");
+        $statement->bind_param("i", $id);
+        $statement->execute();
+        $statement->bind_result($id, $image_banner, $title, $description, $author, $date, $category, $link);
+        if($statement->fetch()){
+            return new BlogModel($id, $image_banner, $title, $description, $author, $date, $category, $link);
+        }
+        return null;
+    }
+    
     private static function compileToArray($statement){
         $statement->execute();
-                $statement->bind_result($id, $image_banner, $title, $description, $author, $date, $category, $link);
+        $statement->bind_result($id, $image_banner, $title, $description, $author, $date, $category, $link);
         $data_array = [];
         while($statement->fetch()){
             array_push($data_array, new BlogModel($id, $image_banner, $title, $description, $author, $date, $category, $link));

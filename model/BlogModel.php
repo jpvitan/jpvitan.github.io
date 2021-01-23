@@ -21,6 +21,38 @@ class BlogModel{
         $this->link = $link;
     }
     
+    function getId(){
+        return $this->id;
+    }
+    
+    function getImageBanner(){
+        return $this->image_banner;
+    }
+    
+    function getTitle(){
+        return $this->title;
+    }
+    
+    function getDescription(){
+        return $this->description;
+    }
+    
+    function getAuthor(){
+        return $this->author;
+    }
+    
+    function getDate(){
+        return $this->date;
+    }
+    
+    function getCategory(){
+        return $this->category;
+    }
+    
+    function getLink(){
+        return $this->link;
+    }
+    
     function getCard(){
         $card = "
         <div class='row justify-content-center mt-4'>

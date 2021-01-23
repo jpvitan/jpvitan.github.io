@@ -1,7 +1,5 @@
 <!doctype html>
 <?php
-ini_set('display_errors', '1');
-
 $host = "localhost";
 $dbname = "jpvitan1_site";
 

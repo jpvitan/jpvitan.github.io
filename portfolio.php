@@ -70,65 +70,34 @@
                     </div>
                 </div>
             </form>
-            <?php    
-            $host = "localhost";
-            $dbname = "jpvitan1_site";
-
-            // For production server:
-            $username = "jpvitan1_master";
-            $password = "!M,xxii*MKRR";
-
-            // For local server:
-            $username = "root";
-            $password = "";
+            <?php            
+            include "controller/PortfolioController.php";
             
-            $mysqli = new mysqli($host, $username, $password, $dbname);
-            if($mysqli->connect_errno){
-                echo "<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>";
-            }else{
-                $statement = $mysqli->prepare("SELECT * FROM portfolio");
-
+            if(PortfolioController::connectionWorking()){
+                $data_array = [];
+                
                 if(isset($_GET["title"]) && isset($_GET["platform"])){
                     $title = $_GET["title"];
                     $platform = $_GET["platform"];
+                    
                     if($title != "" && $platform != "All"){
-                        $statement = $mysqli->prepare("SELECT * FROM portfolio WHERE title LIKE ? AND platform=?");
-                        $title .= "%";
-                        $statement->bind_param("ss", $title, $platform);
+                        $data_array = PortfolioController::getDataFromTitlePlatform($title, $platform);
                     }
                     else if($title != ""){
-                        $statement = $mysqli->prepare("SELECT * FROM portfolio WHERE title LIKE ?");
-                        $title .= "%";
-                        $statement->bind_param("s", $title);
+                        $data_array = PortfolioController::getDataFromTitle($title);
                     }
                     else if($platform != "All"){
-                        $statement = $mysqli->prepare("SELECT * FROM portfolio WHERE platform=?");
-                        $statement->bind_param("s", $platform);
+                        $data_array = PortfolioController::getDataFromPlatform($platform);   
                     }
+                }else{
+                    $data_array = PortfolioController::getAllData();
                 }
-
-                $statement->execute();
-                $statement->bind_result($id, $image_banner, $title, $description, $technologies_used, $platform, $link);
-
-                while($statement->fetch()){
-                    echo "
-                    <div class='row justify-content-center mt-4'>
-                        <div class='col-lg-4'>
-                            <a href='". $link ."' style='text-decoration: none; color: black;'>
-                                <div class='card shadow border-0'>
-                                    <img class='card-img-top' alt='Banner' src='" . $image_banner . "'>
-                                    <div class='card-body'>
-                                        <div class='card-title' style='font-size: 1.25rem; font-weight: 500;'>". $title ."</div>
-                                        <p class='card-text' style='color: #747d8c;'>". $description ."</p>
-                                        <div style='color: #0fbcf9; font-weight: 500;'>Technologies Used</div>
-                                        <div style='color: #747d8c;'>". $technologies_used ."</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    ";
+                                
+                for($i=0; $i<count($data_array); $i++){
+                    echo $data_array[$i]->getCard();
                 }
+            }else{                
+                echo "<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>";
             }
             ?>
         </div>

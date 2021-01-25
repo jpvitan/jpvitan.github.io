@@ -50,6 +50,16 @@ if(isset($_GET["id"])){
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>      
         
+        <!-- MathJax -->
+        <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          }
+        };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
         <!-- CSS -->
         <link rel="preload" as="font" href="css/font/lemonmilk.otf" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet">
@@ -70,13 +80,14 @@ if(isset($_GET["id"])){
             <div class="row justify-content-center">
                 <div class="col-md-6 mt-2 px-3">
                     <h1><?php echo $blog->getTitle(); ?></h1>
+                    <div class="mb-3" style='color: #747d8c; font-size: 1.2rem;'><?php echo $blog->getDescription(); ?></div>
                     <div style='color: #0fbcf9; font-weight: 500;'><?php echo $blog->getCategory(); ?></div>
                     <div class="mb-4" style='color: #747d8c; font-size: 0.9rem;'><?php echo $blog->getAuthor() . ", " . $blog->getDate(); ?></div>
                     <?php include $blog->getLink(); ?>
                 </div>
             </div>
         </div>
-        
+                      
         <footer class="my-2 text-center style-footer" id="footer">
             
         </footer>

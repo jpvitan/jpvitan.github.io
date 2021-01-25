@@ -2,3 +2,8 @@ p{
     font-size: 1.05rem;
     color: #636e72;
 }
+.header{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}

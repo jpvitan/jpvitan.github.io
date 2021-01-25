@@ -1,7 +1,18 @@
 <img class="img-fluid border mb-4" src="blogs/cryptography/how-i-implemented-my-rsa-library-in-python/banner.png">
 <p>The Rivest-Shamir-Adleman algorithm or simply the "RSA" is a asymmetric cryptographic algorithm that is widely used today to secure data. It is usually paired with another cryptographic algorithm since RSA is known to be slow and expensive.</p>
-<p>This post will cover everything from number theory to its implementation in Python. The math involved isn't too hard but will require you to at least understand a bit of algebra and prime numbers.</p>
+<p>This post will cover everything from number theory to its implementation in Python. The math involved isn't too hard but will require you to at least understand a bit of algebra and number theory.</p>
 <div class="header">Generating the Public Key and Private Key</div>
 <p>RSA is an "asymmetric" cryptographic algorithm, which means that the keys used for encryption is not the same that is used for decryption. In this context, we use the public key to encrypt the data and the private key to decrypt it.</p>
 <p>The values of the public key and private key rely on two large prime numbers which we would denote as:</p>
-$$p,q \in primes$$
+$$p,q \in \textrm{primes}$$
+<p>The security of RSA relies on the fact that it is hard to factor these two large primes, so we'll go ahead and define two variables that involve their product:</p>
+$$n = p \cdot q$$
+$$k = (p-1)(q-1)$$
+<p>Notice that I am not very clear about the definition of what "large" is, that is because "large" is a very unstable term in computing. What might be considered large today might not be considered large 20 years from now.</p>
+<p>We are almost finished with our public key, we just need to define one variable:</p>
+$$\exists e \in \mathbb{N} : \textrm{gcd}(e, k) = 1$$
+<p>If you are not used to mathematical symbols, the equation above might freak you out but it's very simple. It just means that there exists $e$ in the set of natural numbers such that it is relatively prime to $k$. In number theory, we call two numbers relatively prime if their greatest common denominator (gcd) is one.</p>
+<p>If you are just learning, $e$ could be any number as long as it satisfies the condition that it is relatively prime to $k$. In my library, I would choose the lowest $e$ as possible with the condition that it is greater than or equal to three.</p>
+<p>The public key is made out of two variables $e$ and $n$. The public key can't be used to decrypt messages and you may distribute it to anyone who wants to send you encrypted messages.</p>
+<p>For the private key, I'm just going to define another variable:</p>
+$$\exists d \in \mathbb{N} : e \cdot d \equiv 1\ (\textrm{mod}\ k)$$

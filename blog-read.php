@@ -21,7 +21,7 @@ if(isset($_GET["id"])){
 <html lang="en">
     <head>
         <title>
-            <?php echo "JPVITAN - " . $blog->getTitle(); ?>
+            <?php echo $blog->getTitle() . " - " . $blog->getAuthor(); ?>
         </title>   
         
         <!-- Favicon -->

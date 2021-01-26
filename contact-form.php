@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Justine Paul Vitan | Form Submission</title>   
+        <title>Form Submission - Justine Paul Vitan</title>   
         
         <!-- Favicon -->
         <link rel="shortcut icon" href="/favicon.ico">

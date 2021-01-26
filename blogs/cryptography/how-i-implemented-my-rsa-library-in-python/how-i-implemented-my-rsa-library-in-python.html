@@ -9,10 +9,10 @@ $$p,q \in \textrm{primes}$$
 $$n = p \cdot q$$
 $$k = (p-1)(q-1)$$
 <p>Notice that I am not very clear about the definition of what "large" is, that is because "large" is a very unstable term in computing. What might be considered large today might not be considered large 20 years from now.</p>
-<p>We are almost finished with our public key, we just need to define one variable:</p>
+<p>We are almost finished with our public key, we just need to define one more variable:</p>
 $$\exists e \in \mathbb{N} : \textrm{gcd}(e, k) = 1$$
-<p>If you are not used to mathematical symbols, the equation above might freak you out but it's very simple. It just means that there exists $e$ in the set of natural numbers such that it is relatively prime to $k$. In number theory, we call two numbers relatively prime if their greatest common denominator (gcd) is one.</p>
-<p>If you are just learning, $e$ could be any number as long as it satisfies the condition that it is relatively prime to $k$. In my library, I would choose the lowest $e$ as possible with the condition that it is greater than or equal to three.</p>
-<p>The public key is made out of two variables $e$ and $n$. The public key can't be used to decrypt messages and you may distribute it to anyone who wants to send you encrypted messages.</p>
-<p>For the private key, I'm just going to define another variable:</p>
+<p>If you are not used to mathematical symbols, the equation above might startle you but it's actually very simple. It just means that there exists $e$ in the set of natural numbers such that it is relatively prime to $k$. In number theory, we call two numbers relatively prime if their greatest common denominator (gcd) is one.</p>
+<p>If you are just learning, $e$ could be any number as long as it satisfies the condition that it is relatively prime to $k$. In my library, I would choose the lowest possible value for $e$ with the condition that it is greater than or equal to three.</p>
+<p>The public key is made out of two variables $e$ and $n$. The public key can't be used to decrypt messages and you may distribute it to anyone who wants to send you encrypted messages. Similarly, the private key is also made out of two variables $d$ and $n$ but unlike the public key, you should always keep your private key a secret.</p>
+<p>The auxiliary value for the private key which we would denote as $d$ is defined as:</p>
 $$\exists d \in \mathbb{N} : e \cdot d \equiv 1\ (\textrm{mod}\ k)$$

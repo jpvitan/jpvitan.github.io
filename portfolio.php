@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Justine Paul Vitan | Portfolio</title>   
+        <title>Portfolio - Justine Paul Vitan</title>   
         
         <!-- Favicon -->
         <link rel="shortcut icon" href="/favicon.ico">

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Justine Paul Vitan | Blog</title>   
+        <title>Blog - Justine Paul Vitan</title>   
         
         <!-- Favicon -->
         <link rel="shortcut icon" href="/favicon.ico">

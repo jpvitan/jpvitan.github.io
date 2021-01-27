@@ -76,7 +76,7 @@ if(isset($_GET["id"])){
         
         <div class="container mt-lg-5">
             <div class="row justify-content-center">
-                <div class="col-md-6 mt-2 px-3">
+                <div class="col-lg-6 mt-2 px-3">
                     <h1><?php echo $blog->getTitle(); ?></h1>
                     <div class="mb-3" style='color: #747d8c; font-size: 1.2rem;'><?php echo $blog->getDescription(); ?></div>
                     <div style='color: #0fbcf9; font-weight: 500;'><?php echo $blog->getCategory(); ?></div>

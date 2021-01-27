@@ -1,6 +1,6 @@
 <img class="img-fluid border mb-4" src="blogs/cryptography/how-i-implemented-my-rsa-library-in-python/banner.png">
 <p>The Rivest-Shamir-Adleman algorithm or simply the "RSA" is a asymmetric cryptographic algorithm that is widely used today to secure data. It is usually paired with another cryptographic algorithm since RSA is known to be slow and expensive.</p>
-<p>This post will cover everything from number theory to its implementation in Python. The math involved isn't too hard but will require you to at least understand a bit of algebra and number theory.</p>
+<p>This post will cover everything from number theory to its implementation in Python. The math involved isn't too hard but will require you to at least understand a bit of algebra and number theory. This post will assume that you know how to code in Python and that you know euclid's algorithm, including its extended version.</p>
 <div class="header">Generating the Public Key and Private Key</div>
 <p>RSA is an "asymmetric" cryptographic algorithm, which means that the keys used for encryption is not the same that is used for decryption. In this context, we use the public key to encrypt the data and the private key to decrypt it.</p>
 <p>The values of the public key and private key rely on two large prime numbers which we would denote as:</p>
@@ -14,5 +14,12 @@ $$\exists e \in \mathbb{N} : \textrm{gcd}(e, k) = 1$$
 <p>If you are not used to mathematical symbols, the equation above might startle you but it's actually very simple. It just means that there exists $e$ in the set of natural numbers such that it is relatively prime to $k$. In number theory, we call two numbers relatively prime if their greatest common denominator (gcd) is one.</p>
 <p>If you are just learning, $e$ could be any number as long as it satisfies the condition that it is relatively prime to $k$. In my library, I would choose the lowest possible value for $e$ with the condition that it is greater than or equal to three.</p>
 <p>The public key is made out of two variables $e$ and $n$. The public key can't be used to decrypt messages and you may distribute it to anyone who wants to send you encrypted messages. Similarly, the private key is also made out of two variables $d$ and $n$ but unlike the public key, you should always keep your private key a secret.</p>
-<p>The auxiliary value for the private key which we would denote as $d$ is defined as:</p>
-$$\exists d \in \mathbb{N} : e \cdot d \equiv 1\ (\textrm{mod}\ k)$$
+<p>The auxiliary value for the private key, which we would denote as $d$ is defined as:</p>
+$$\exists d \in \mathbb{N} : e \cdot d \equiv 1\hspace{5mm} (\textrm{mod}\ k)$$
+<p>To further explain the equation above, $d$ is the multiplicative inverse of $e$ in $\mathbb{Z}_k$. We know that $d$ exists because $\textrm{gcd}(e, k) = 1$ and by the extended euclidian algorithm:</p>
+$$ex + ky = 1\hspace{5mm} \textrm{where}\ x,y \in \mathbb{Z}$$
+<p>Since $a = b$ implies $a \equiv b\ (\textrm{mod}\ n)$:</p>
+$$ex + ky \equiv 1\hspace{5mm} (\textrm{mod}\ k)$$
+$$ex + 0 \equiv 1\hspace{5mm} (\textrm{mod}\ k)$$
+<p>This means that:</p>
+$$d = x\ \textrm{mod}\ k$$

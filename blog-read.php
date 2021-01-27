@@ -1,7 +1,5 @@
 <!doctype html>
 <?php
-ini_set('display_errors', 1);
-
 include "controller/BlogController.php";
 
 if(isset($_GET["id"])){

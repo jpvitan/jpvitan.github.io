@@ -64,7 +64,13 @@ body{
     font-size: 11pt;
     color: #808e9b;
 }
-
+.style-certificate-link{    
+    color: #747d8c;
+    text-decoration: none;
+}
+.style-certificate-link:hover{
+    color: #ff6b81;
+}
 .style-visit-blog-container{
     background-color: #0fbcf9;
     color: #ffffff;

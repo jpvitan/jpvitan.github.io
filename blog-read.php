@@ -58,6 +58,10 @@ if(isset($_GET["id"])){
         </script>
         <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+        <!-- PrismJS -->	
+        <link href="css/prism.css" rel="stylesheet">
+        <script src="js/prism.js"></script>
+        
         <!-- CSS -->
         <link rel="preload" as="font" href="css/font/lemonmilk.otf" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet">
@@ -85,7 +89,7 @@ if(isset($_GET["id"])){
                 </div>
             </div>
         </div>
-                      
+                     
         <footer class="my-2 text-center style-footer" id="footer">
             
         </footer>
@@ -97,7 +101,7 @@ if(isset($_GET["id"])){
         </script>
         
         <!-- Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>        
         
         <!-- JavaScript -->
         <script src="js/blog-read.js"></script>

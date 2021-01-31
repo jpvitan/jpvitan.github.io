@@ -1,5 +1,5 @@
 <img class="img-fluid border mb-4" src="blogs/cryptography/how-i-implemented-the-rsa-algorithm-in-python/banner.png">
-<p>The Rivest-Shamir-Adleman algorithm or simply the "RSA" is a asymmetric cryptographic algorithm that is widely used today to secure data. It is usually paired with another cryptographic algorithm since RSA is known to be slow and expensive.</p>
+<p>The Rivest-Shamir-Adleman algorithm or simply the "RSA" is an asymmetric cryptographic algorithm that is widely used today to secure data. It is usually paired with another cryptographic algorithm since RSA is known to be slow and expensive.</p>
 <p>This post will cover everything from number theory to its implementation in Python. The math involved isn't too hard but will require you to at least understand a bit of algebra and number theory.</p>
 <p>This post will assume that you know how to code in Python and you know how the euclidean algorithm works, including its extended version.</p>
 <div class="header">Generating the Public Key and Private Key</div>
@@ -23,4 +23,4 @@ $$ex + ky = 1\hspace{5mm} \textrm{where}\ x,y \in \mathbb{Z}$$
 $$ex + ky \equiv 1\hspace{5mm} (\textrm{mod}\ k)$$
 $$ex + 0 \equiv 1\hspace{5mm} (\textrm{mod}\ k)$$
 <p>This means that:</p>
-$$d = x\ \textrm{mod}\ k$$
+$$d = x\ \textrm{mod}\ k\hspace{5mm} \textrm{where}\ d > 0$$

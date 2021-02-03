@@ -3,7 +3,7 @@
 <p>This post will cover everything from number theory to its implementation in Python. The math involved isn't too hard but will require you to at least understand a bit of number theory.</p>
 <p>This post will assume that you know how to code in Python and you know how the euclidean algorithm works, including its extended version.</p>
 <p>You could view the library <a href="https://github.com/jpvitan/rsa-jpv" style="text-decoration: none;">here</a>.</p>
-<div class="header">Generating the Public Key and Private Key</div>
+<div class="header">The Math Behind the Public and Private Key</div>
 <p>RSA is an asymmetric cryptographic algorithm, which means that the keys used for encryption is not the same that is used for decryption. In this context, we use the public key to encrypt the data and the private key to decrypt it.</p>
 <p>The values of the public key and private key rely on two large prime numbers which we would denote as:</p>
 $$p,q \in \textrm{primes}\hspace{5mm} \textrm{where}\ p \neq q$$
@@ -38,10 +38,11 @@ $$ 3 \cdot (-13) + 40 \cdot 1 = 1$$
 <p>Using the laws of remainder arithmetic, we could see that the value of $d$ is:</p>
 $$d = -13\ \textrm{mod}\ 40 = 27$$
 <p>For this example, the public key has the values $e=3$ and $n=55$ and the private key has the values $d=27$ and $n=55$.</p>
-<p>Now that we are done with the math, let's try to dive into the code. For this part, I'm going to skip the code for generating random prime numbers since it's very easy to implement one on your own.</p>
+<div class="header">Programming the Key Generator</div>
 <p>Our first challenge here is finding $e$. We could do this by first constructing a function that finds the gcd of two numbers and then constructing another function that tests certain values if they are relatively prime to a given input.</p>
-<pre class="line-numbers">
+<pre class="line-numbers my-4">
 <code class="language-python">
+# This function finds the gcd of two integers using the euclidean algorithm.
 def gcd(x: int, y: int) -> int:
     if x > y:
         temp = y
@@ -57,7 +58,8 @@ def gcd(x: int, y: int) -> int:
         y = x
         x = r
     return x
-    
+   
+# This function finds the first number that is relatively prime with the parameter (x).
 def find_number_relatively_prime(x: int, starting_number=3) -> int:
     y = starting_number
     while True:
@@ -65,5 +67,115 @@ def find_number_relatively_prime(x: int, starting_number=3) -> int:
             break
         y = y + 1
     return y
+    
+# To find (e), we simply do this:
+k = 40
+e = find_number_relatively_prime(k)
+print(e)  # Output: 3
 </code>
 </pre>
+<p>Finding $d$ requires us to solve the linear combination of $e$ and $k$ since $ex + ky = \textrm{gcd}(e, k) = 1$ and $d = x\ \textrm{mod}\ k$. We could do this by slightly modifying the <code>gcd</code> function we have and solving a recurrence relation that gives the linear combination of $e$ and $k$.</p>
+<pre class="line-numbers my-4">
+<code class="language-python">
+# This function gives the linear combination of (x) and (y) in xa + yb = gcd(x,y).
+def gcd_linear_combination(x: int, y: int) -> tuple:
+    if x > y:
+        temp = y
+        y = x
+        x = temp
+    if x == 0:
+        return y
+
+    original_x = x
+    original_y = y
+
+    coefficient_list = []
+    coefficient_list.append((0, 1))
+    coefficient_list.append((1, -int(y / x)))
+
+    iteration = 1
+
+    while True:
+        r = y % x
+        if r == 0:
+            break
+
+        # Solve the recurrence relation.
+        if iteration != 1:
+            quotient = int(y / x)
+            a = int(coefficient_list[iteration - 2][0] - (coefficient_list[iteration - 1][0] * quotient))
+            b = int(coefficient_list[iteration - 2][1] - (coefficient_list[iteration - 1][1] * quotient))
+            coefficient_list.append((a, b))
+
+        y = x
+        x = r
+        iteration = iteration + 1
+
+    a = coefficient_list[-1][1]
+    b = coefficient_list[-1][0]
+
+    # If (a) is negative, make it positive to avoid negative exponents.
+    if a < 0:
+        i = 2
+        while True:
+            a_candidate = a + i * original_y
+            b_candidate = b - i * original_x
+
+            if a_candidate > 0:
+                a = a_candidate
+                b = b_candidate
+                break
+            i = i + 1
+    return a, b
+
+# To find (d) for ex + ky = gcd(e,k) = 1:
+e = 3
+k = 40
+x = gcd_linear_combination(e,k)[0]
+d = x % k
+print(d)  # Output: 27
+</code>
+</pre>
+<p>Now that we have the ability to find $e$ and $d$, we just need to combine those functions that we have defined earlier to generate a key pair (public key and private key).</p>
+<pre class="line-numbers my-4">
+<code class="language-python">
+def generate_key_pair(first_prime: int = None, second_prime: int = None) -> KeyPair:
+    """
+    A function that generates a public key and private key.
+    Parameters:
+    first_prime (int): The first prime number.
+    second_prime (int): The second prime number.
+    Returns:
+    KeyPair: A class that holds the public key and private key.
+    """
+
+    prime_pair = rmath.generate_prime_number_list(size=2, shuffle=True)  # Generate two distinct primes.
+    if first_prime is None:
+        first_prime = prime_pair[0]
+        if first_prime == second_prime:
+            first_prime = prime_pair[1]
+    if second_prime is None:
+        second_prime = prime_pair[1]
+        if first_prime == second_prime:
+            second_prime = prime_pair[0]
+    inputchecker.rsa_generate_key_pair(first_prime, second_prime)
+
+    prime_product = first_prime * second_prime
+    prime_product_minus_one = (first_prime - 1) * (second_prime - 1)
+    public_auxiliary = rmath.find_number_relatively_prime(prime_product_minus_one)
+    private_auxiliary = rmath.gcd_linear_combination(public_auxiliary, prime_product_minus_one)[0]
+
+    public_key = Key(prime_product, public_auxiliary)
+    private_key = Key(prime_product, private_auxiliary)
+    key_pair = KeyPair(public_key, private_key)
+
+    return key_pair
+</code>
+</pre>
+<p></p>
+<div class="header">Encrypting and Decrypting Messages</div>
+<p>Encrypting and decrypting messages in RSA is relatively easy and straightforward.</p>
+<p>To encrypt a message $m$, you simply do this:</p>
+$$m' = m^e\ \textrm{mod}\ n$$
+<p>Similarly for decryption:</p>
+$$m = (m')^d\ \textrm{mod}\ n$$

@@ -1,46 +1,75 @@
 <img class="img-fluid border mb-4" src="blogs/cryptography/how-i-implemented-the-rsa-algorithm-in-python/banner.png">
+
 <p>The Rivest-Shamir-Adleman algorithm or simply the "RSA" is an asymmetric cryptographic algorithm that is widely used today to secure data. It is usually paired with another cryptographic algorithm since RSA is known to be slow and expensive.</p>
+
 <p>This post will cover everything from number theory to its implementation in Python. The math involved isn't too hard but will require you to at least understand a bit of number theory.</p>
+
 <p>This post will assume that you know how to code in Python and you know how the euclidean algorithm works, including its extended version.</p>
+
 <p>You could view the library <a href="https://github.com/jpvitan/rsa-jpv" style="text-decoration: none;">here</a>.</p>
-<div class="header">The Math Behind the Public and Private Key</div>
+
+<div style="height: 1rem;"></div>
+
+<h2>The Math Behind the Public and Private Key</h2>
+
 <p>RSA is an asymmetric cryptographic algorithm, which means that the keys used for encryption is not the same that is used for decryption. In this context, we use the public key to encrypt the data and the private key to decrypt it.</p>
+
+<p>The public key is made out of two variables $e$ and $n$. The public key can't be used to decrypt messages and you may distribute it to anyone who wants to send you encrypted messages. Similarly, the private key is also made out of two variables $d$ and $n$ but unlike the public key, you should always keep your private key a secret.</p>
+
 <p>The values of the public key and private key rely on two large prime numbers which we would denote as:</p>
 $$p,q \in \textrm{primes}\hspace{5mm} \textrm{where}\ p \neq q$$
-<p>The security of RSA relies on the fact that it is hard to factor these two large primes, so we'll go ahead and define two variables that involve their product:</p>
+
+<p>The security of RSA relies on the fact that it is hard to factor the product of these two large primes, so we'll go ahead and define two variables that involve their product:</p>
 $$n = p \cdot q$$
-$$k = (p-1)(q-1)$$
-<p>Notice that I am not very clear about the definition of what "large" is, that is because "large" is a very unstable term in computing. What might be considered large today might not be considered large 20 years from now.</p>
-<p>We are almost finished with our public key, we just need to define one more variable:</p>
+$$k = \phi(n) = (p-1)(q-1)$$
+
+<p>The auxiliary value ($e$) for the public key is defined as:</p>
 $$\exists e \in \mathbb{N} : \textrm{gcd}(e, k) = 1,\ e > 1$$
-<p>If you are not used to mathematical symbols, the equation above might startle you but it's actually very simple. It just means that there exists $e$ in the set of natural numbers such that it is relatively prime to $k$ and greater than one. In number theory, we call two numbers relatively prime if their greatest common denominator (gcd) is one.</p>
+
 <p>If you are just learning, $e$ could be any number as long as it satisfies the condition that it is relatively prime to $k$ and greater than one. In my library, I would choose the lowest possible value for $e$ with the condition that it is greater than or equal to three.</p>
-<p>The public key is made out of two variables $e$ and $n$. The public key can't be used to decrypt messages and you may distribute it to anyone who wants to send you encrypted messages. Similarly, the private key is also made out of two variables $d$ and $n$ but unlike the public key, you should always keep your private key a secret.</p>
-<p>The auxiliary value for the private key, which we would denote as $d$ is defined as:</p>
-$$\exists d \in \mathbb{N} : e \cdot d \equiv 1\hspace{5mm} (\textrm{mod}\ k)$$
-<p>To further explain the equation above, $d$ is the multiplicative inverse of $e$ in $\mathbb{Z}_k$. We know that $d$ exists because $\textrm{gcd}(e, k) = 1$ and by the extended euclidean algorithm:</p>
+
+<p>The auxiliary value ($d$) for the private key is defined as:</p>
+$$\mathbb{Z}_k = [0,k)$$
+$$\exists d \in \mathbb{Z}_k : e \cdot d \equiv 1\hspace{5mm} (\textrm{mod}\ k)$$
+
+<p>$d$ is the multiplicative inverse of $e$ in $\mathbb{Z}_k$. We know that $d$ exists because $\textrm{gcd}(e, k) = 1$ and by the extended euclidean algorithm:</p>
 $$ex + ky = 1\hspace{5mm} \textrm{where}\ x,y \in \mathbb{Z}$$
+
 <p>Since $a = b$ implies $a \equiv b\ (\textrm{mod}\ n)$:</p>
 $$ex + ky \equiv 1\hspace{5mm} (\textrm{mod}\ k)$$
 $$ex + 0 \equiv 1\hspace{5mm} (\textrm{mod}\ k)$$
+
 <p>This means that:</p>
 $$d = x\ \textrm{mod}\ k$$
-<p>To clearly demonstrate this, let's try to generate a public key and private key for:</p>
+
+<div class="border px-2 py-2">
+<h3>Example</h3>
+
+<p>Let's try to generate a public key and private key for the following values:</p>
 $$p=5,\ q=11$$
 $$n = 55 = 5 \cdot 11$$
 $$k = 40 = 4 \cdot 10$$
-<p>For the value of $e$, we could choose $e=3$ since $\textrm{gcd}(3, 40)=1$. We could try to verify this using the euclidean algorithm:</p>
+
+<p>For the value of $e$, we could choose $e=3$ since $\textrm{gcd}(3, 40)=1$. We could verify this using the euclidean algorithm:</p>
 $$40 = 3 \cdot 13 + 1$$
 $$3 = 1 \cdot 3 + 0$$
+
 <p>To find $d$, we are going to use the extended euclidean algorithm and we'll end up with:</p>
 $$ex + ky = 1$$
 $$ 3 \cdot (-13) + 40 \cdot 1 = 1$$
+
 <p>Using the laws of remainder arithmetic, we could see that the value of $d$ is:</p>
 $$d = -13\ \textrm{mod}\ 40 = 27$$
+
 <p>For this example, the public key has the values $e=3$ and $n=55$ and the private key has the values $d=27$ and $n=55$.</p>
-<div class="header">Programming the Key Generator</div>
+</div>
+
+<div style="height: 2rem;"></div>
+
+<h2>Programming the Key Generator</h2>
+
 <p>Our first challenge here is finding $e$. We could do this by first constructing a function that finds the gcd of two numbers and then constructing another function that tests certain values if they are relatively prime to a given input.</p>
-<pre class="line-numbers my-4">
+<pre class="line-numbers">
 <code class="language-python">
 # This function finds the gcd of two integers using the euclidean algorithm.
 def gcd(x: int, y: int) -> int:
@@ -74,8 +103,11 @@ e = find_number_relatively_prime(k)
 print(e)  # Output: 3
 </code>
 </pre>
-<p>Finding $d$ requires us to solve the linear combination of $e$ and $k$ since $ex + ky = \textrm{gcd}(e, k) = 1$ and $d = x\ \textrm{mod}\ k$. We could do this by slightly modifying the <code>gcd</code> function we have and solving a recurrence relation that gives the linear combination of $e$ and $k$.</p>
-<pre class="line-numbers my-4">
+
+<div style="height: 1rem;"></div>
+
+<p>Finding $d$ requires us to solve the linear combination of $e$ and $k$ since $ex + ky = \textrm{gcd}(e, k) = 1$ and $d = x\ \textrm{mod}\ k$. We could do this by slightly modifying the <code>gcd()</code> function we have and solving a recurrence relation that gives the linear combination of $e$ and $k$.</p>
+<pre class="line-numbers">
 <code class="language-python">
 # This function gives the linear combination of (x) and (y) in xa + yb = gcd(x,y).
 def gcd_linear_combination(x: int, y: int) -> tuple:
@@ -136,8 +168,11 @@ d = x % k
 print(d)  # Output: 27
 </code>
 </pre>
+
+<div style="height: 1rem;"></div>
+
 <p>Now that we have the ability to find $e$ and $d$, we just need to combine those functions that we have defined earlier to generate a key pair (public key and private key).</p>
-<pre class="line-numbers my-4">
+<pre class="line-numbers">
 <code class="language-python">
 def generate_key_pair(first_prime: int = None, second_prime: int = None) -> KeyPair:
     """
@@ -172,10 +207,33 @@ def generate_key_pair(first_prime: int = None, second_prime: int = None) -> KeyP
     return key_pair
 </code>
 </pre>
-<p></p>
-<div class="header">Encrypting and Decrypting Messages</div>
-<p>Encrypting and decrypting messages in RSA is relatively easy and straightforward.</p>
-<p>To encrypt a message $m$, you simply do this:</p>
+
+<div style="height: 1rem;"></div>
+
+<h2>Encrypting and Decrypting Messages</h2>
+
+<p>Encrypting and decrypting a message in RSA is relatively easy and straightforward.</p>
+
+<p>To encrypt a message $m$:</p>
 $$m' = m^e\ \textrm{mod}\ n$$
-<p>Similarly for decryption:</p>
+
+<p>To decrypt:</p>
 $$m = (m')^d\ \textrm{mod}\ n$$
+
+<div class="border px-2 py-2">
+<h3>Example</h3>
+
+<p>Let's try to encrypt a message $m = 8$ with the following keys:</p>
+$$e = 3$$
+$$d = 27$$
+$$n = 55$$
+
+<p>This means that the value of $m'$ is:</p>
+$$m' = 17 = 8^3\ \textrm{mod}\ 55$$
+
+<p>To decrypt $m'$:</p>
+$$m = 8 = 17^{27}\ \textrm{mod}\ 55$$
+</div>
+
+<div style="height: 2rem;"></div>
+

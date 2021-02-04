@@ -210,6 +210,10 @@ def generate_key_pair(first_prime: int = None, second_prime: int = None) -> KeyP
 
 <div style="height: 1rem;"></div>
 
+<p>The <code>Key</code> class that is used in the <code>generate_key_pair()</code> function are just holders for the values of the public and private key.</p>
+
+<div style="height: 1rem;"></div>
+
 <h2>Encrypting and Decrypting Messages</h2>
 
 <p>Encrypting and decrypting a message in RSA is relatively easy and straightforward.</p>
@@ -235,5 +239,65 @@ $$m' = 17 = 8^3\ \textrm{mod}\ 55$$
 $$m = 8 = 17^{27}\ \textrm{mod}\ 55$$
 </div>
 
-<div style="height: 2rem;"></div>
+<div style="height: 1rem;"></div>
 
+<p>If you are just planning to encrypt and decrypt numbers, then you are all set and done. If you want to operate on strings, you could convert each character to their unicode value (or any other numerical representation of the character) and do the math from there.</p>
+
+<p>Here's how I programmed the encryption and decryption process in Python:</p>
+<pre>
+<code class="language-python line-numbers">
+class Encryptor:
+    """
+    A class that encrypts data based on the key parameter.
+    Parameters:
+    public_key (Key): The public key.
+    """
+
+    def __init__(self, public_key: Key):
+        self.public_key = public_key
+
+    def encrypt(self, message: str) -> str:
+        """
+        A method that takes a string and encrypts it.
+        Parameters:
+        message (str): The string to be encrypted.
+        Returns:
+        str: The encrypted string.
+        """
+
+        encrypted_message = ""
+        for character in message:
+            encrypted_character = chr((ord(character) ** self.public_key.auxiliary) % self.public_key.prime_product)
+            encrypted_message = encrypted_message + encrypted_character
+        return encrypted_message
+
+
+class Decryptor:
+    """
+    A class that decrypts data based on the key parameter.
+    Parameters:
+    private_key (Key): The private key.
+    """
+
+    def __init__(self, private_key: Key):
+        self.private_key = private_key
+
+    def decrypt(self, message: str) -> str:
+        """
+        A method that takes a string and decrypts it.
+        Parameters:
+        message (str): The string to be decrypted.
+        Returns:
+        str: The decrypted string.
+        """
+        decrypted_message = ""
+        for character in message:
+            decrypted_character = chr((ord(character) ** self.private_key.auxiliary) % self.private_key.prime_product)
+            decrypted_message = decrypted_message + decrypted_character
+        return decrypted_message
+</code>
+</pre>
+
+<div style="height: 1rem;"></div>
+
+<p>That's it! We are finally done! Thanks for reading and if you have any questions, you may send me a message from <a href="/contact" style="text-decoration: none;">here</a>.</p>

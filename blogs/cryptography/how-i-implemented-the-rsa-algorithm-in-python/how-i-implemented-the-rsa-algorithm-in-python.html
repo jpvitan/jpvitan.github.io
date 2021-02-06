@@ -1,6 +1,6 @@
 <img class="img-fluid border mb-4" src="blogs/cryptography/how-i-implemented-the-rsa-algorithm-in-python/banner.png">
 
-<p>The Rivest-Shamir-Adleman algorithm or simply the "RSA" is an asymmetric cryptographic algorithm that is widely used today to secure data. It is usually paired with another cryptographic algorithm since RSA is known to be slow and expensive.</p>
+<p>The Rivest-Shamir-Adleman algorithm or simply the "RSA" is an asymmetric cryptographic algorithm that is widely used today to secure data. It is usually paired with another cryptographic algorithm since RSA is slow and expensive.</p>
 
 <p>This post will cover everything from number theory to its implementation in Python. The math involved isn't too hard but will require you to at least understand a bit of number theory.</p>
 
@@ -10,11 +10,11 @@
 
 <h2>The Math Behind the Public and Private Key</h2>
 
-<p>RSA is an asymmetric cryptographic algorithm, which means that the keys used for encryption is not the same that is used for decryption. In this context, we use the public key to encrypt the data and the private key to decrypt it.</p>
+<p>RSA is an asymmetric cryptographic algorithm, which means that the keys used for encryption and decryption are different. In this context, we use the public key to encrypt the data and the private key to decrypt it.</p>
 
 <p>The public key is made out of two variables $e$ and $n$. The public key can't be used to decrypt messages and you may distribute it to anyone who wants to send you encrypted messages. Similarly, the private key is also made out of two variables $d$ and $n$ but unlike the public key, you should always keep your private key a secret.</p>
 
-<p>The values of the public key and private key rely on two large prime numbers which we would denote as:</p>
+<p>The values of the public and private key rely on two large prime numbers, which we would denote as:</p>
 $$p,q \in \textrm{primes}\hspace{5mm} \textrm{where}\ p \neq q$$
 
 <p>The security of RSA relies on the fact that it is hard to factor the product of these two large primes, so we'll go ahead and define two variables that involve their product:</p>
@@ -43,7 +43,7 @@ $$d = x\ \textrm{mod}\ k$$
 <div class="border px-2 py-2">
 <h3>Example</h3>
 
-<p>Let's try to generate a public key and private key for the following values:</p>
+<p>Let's try to generate a public and private key for the following values:</p>
 $$p=5,\ q=11$$
 $$n = 55 = 5 \cdot 11$$
 $$k = 40 = 4 \cdot 10$$
@@ -66,7 +66,7 @@ $$d = -13\ \textrm{mod}\ 40 = 27$$
 
 <h2>Programming the Key Generator</h2>
 
-<p>Our first challenge here is finding $e$. We could do this by first constructing a function that finds the gcd of two numbers and then constructing another function that tests certain values if they are relatively prime to a given input.</p>
+<p>Our first challenge here is finding $e$. We could do this by first constructing a function that finds the gcd of two numbers and constructing another function that tests certain values if they are relatively prime to a given input.</p>
 <pre class="line-numbers">
 <code class="language-python">
 # This function finds the gcd of two integers using the Euclidean algorithm.
@@ -86,7 +86,7 @@ def gcd(x: int, y: int) -> int:
         x = r
     return x
    
-# This function finds the first number that is relatively prime with the parameter (x).
+# This function finds the first number that is relatively prime to the parameter (x).
 def find_number_relatively_prime(x: int, starting_number=3) -> int:
     y = starting_number
     while True:

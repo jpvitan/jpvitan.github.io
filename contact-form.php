@@ -44,7 +44,7 @@
                         $subject = $_POST["subject"];
                         $message = $_POST["message"];
 
-                        $destination = "justinepaulvitan@jpvitan.com";
+                        $destination = "contact@jpvitan.com";
                         $headers = "From: ".$email;
 
                         $message = "[Sender Details]\nFull Name: ".$full_name."\n\n[Message]\n".$message;

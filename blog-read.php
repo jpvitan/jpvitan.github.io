@@ -37,6 +37,10 @@ if(isset($_GET["id"])){
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="<?php echo $blog->getDescription(); ?>">
         <meta name="author" content="<?php echo $blog->getAuthor(); ?>">
+        <meta property="og:title" content="<?php echo $blog->getTitle() . " - " . $blog->getAuthor(); ?>"/>
+        <meta property="og:image" content="<?php echo $blog->getImageBanner(); ?>"/>
+        <meta property="og:description" content="<?php echo $blog->getDescription(); ?>"/>
+        <meta property="og:url" content="jpvitan.com"/>
         
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">

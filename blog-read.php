@@ -1,4 +1,3 @@
-<!doctype html>
 <?php
 include "controller/BlogController.php";
 
@@ -7,15 +6,16 @@ if(isset($_GET["id"])){
     
     if($blog == null){
         // Redirect to blog page.
-        header("Location: /blog");
+        header("Location: https://jpvitan.com/blog");
         die();
     }
 }else{
     // Redirect to blog page.
-    header("Location: /blog");
+    header("Location: https://jpvitan.com/blog");
     die();
 }
 ?>
+<!doctype html>
 <html lang="en">
     <head>
         <title>

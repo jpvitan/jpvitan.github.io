@@ -56,7 +56,7 @@ class BlogModel{
     function getCard(){
         $card = "
         <div class='row justify-content-center mt-4'>
-            <div class='col-lg-4'>
+            <div class='col-xl-4'>
                 <a href='blog-read.php?id=". $this->id ."' style='text-decoration: none; color: black;'>
                     <div class='card shadow border-0'>
                         <img class='card-img-top' alt='Banner' src='" . $this->image_banner . "'>

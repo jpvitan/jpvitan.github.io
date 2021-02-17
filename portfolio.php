@@ -34,7 +34,7 @@
         <link href="css/portfolio.css" rel="stylesheet">
     </head>
     <body>    
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top style-navbar" id="navbar"></nav>
+        <nav class="navbar navbar-expand-xl navbar-light fixed-top style-navbar" id="navbar"></nav>
 
         <script>
         $(function(){
@@ -56,10 +56,10 @@
             </div>
             <form method="GET" id="query">
                 <div class="row justify-content-center text-center">
-                    <div class="col-lg-2">
+                    <div class="col-xl-2">
                         <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Project Title" <?php if(isset($_GET["title"]) && $_GET["title"] != ""){ echo "value=".$_GET["title"]; } ?>>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-xl-2">
                         <select class="form-select mt-2" id="platform" name="platform" onchange="this.form.submit()">
                             <option value="All">All Platforms</option>
                             <option value="Mobile" <?php if(isset($_GET["platform"]) && $_GET["platform"] == "Mobile"){ echo "selected='selected'"; } ?>>Mobile</option>

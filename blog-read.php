@@ -84,11 +84,11 @@ if(isset($_GET["id"])){
         
         <div class="container mt-lg-5">
             <div class="row justify-content-center">
-                <div class="col-lg-6 mt-2 px-3">
+                <div class="col-lg-7 mt-2 px-3">
                     <h1><?php echo $blog->getTitle(); ?></h1>
                     <div class="mb-3" style='color: #747d8c; font-size: 1.2rem;'><?php echo $blog->getDescription(); ?></div>
                     <div style='color: #0fbcf9; font-weight: 500;'><?php echo $blog->getCategory(); ?></div>
-                    <div class="mb-4" style='color: #747d8c; font-size: 0.9rem;'><?php echo $blog->getAuthor() . ", " . $blog->getDate(); ?></div>
+                    <div class="mb-4" style='color: #747d8c; font-size: 0.9rem;'><?php echo $blog->getAuthor() . " | " . $blog->getDate(); ?></div>
                     <?php include $blog->getLink(); ?>
                 </div>
             </div>

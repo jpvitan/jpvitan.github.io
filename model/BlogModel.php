@@ -42,7 +42,7 @@ class BlogModel{
     }
     
     function getDate(){
-        return $this->date;
+        return date_format(date_create($this->date), "F d, Y");
     }
     
     function getCategory(){
@@ -63,7 +63,7 @@ class BlogModel{
                         <div class='card-body'>
                             <div class='card-title' style='font-size: 1.25rem; font-weight: 500; margin-bottom: 0px;'>". $this->title ."</div>
                             <div style='color: #0fbcf9; font-weight: 500;'>" . $this->category . "</div>
-                            <div style='color: #747d8c; font-size: 0.9rem;'>" . $this->author . ", " . $this->date ."</div>
+                            <div style='color: #747d8c; font-size: 0.9rem;'>" . $this->author . " | " . $this->getDate() ."</div>
                             <div style='color: #636e72; margin-top: 1rem;'>". $this->description ."</div>
                         </div>
                     </div>

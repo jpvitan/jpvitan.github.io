@@ -10,9 +10,29 @@ body{
         border-radius: 15px;
     }    
 }
-.style-image-banner-text{
-    font-size: 9pt;
-    color: #808e9b;
+.lm-red{
+    font-family: lemonmilk; 
+    color: #ff6b81;
+}
+.lm-blue{
+    font-family: lemonmilk; 
+    color: #0fbcf9;
+}
+.custom-list{
+    list-style-type: none;
+    padding: 0px;
+}
+.custom-list-element{
+    color: #747d8c;
+    padding-left: 1.3em;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.custom-list-element::before{
+    content: "▸";
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
 }
 .style-text-greeting-container{
     background-color: #0fbcf9; 
@@ -26,16 +46,10 @@ body{
     line-height: 35px;
     font-weight: 500;
 }
-.style-skill-card{
-    height: 100%;
-}
-.style-skill-header{
-    color: #0fbcf9;
-    font-size: 1.75rem;
-}
-.style-skill-text{
+.style-introduction-text{
     color: #747d8c;
     font-size: 1.4rem;
+    font-weight: 300;
 }
 .style-contribute-open-source-container{
     background-color: #2ecc71;
@@ -49,27 +63,15 @@ body{
     line-height: 35px;
     font-weight: 500;
 }
-.style-certificate-card{
-    
-}
-.style-certificate-header{
+.style-skill-header{
     color: #0fbcf9;
-    font-size: 1.75rem;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
-.style-certificate-text{
+.style-skill-text{
     color: #747d8c;
     font-size: 1.4rem;
-}
-.style-certificate-note{
-    font-size: 11pt;
-    color: #808e9b;
-}
-.style-certificate-link{    
-    color: #747d8c;
-    text-decoration: none;
-}
-.style-certificate-link:hover{
-    color: #ff6b81;
+    font-weight: 300;
 }
 .style-visit-blog-container{
     background-color: #0fbcf9;
@@ -83,9 +85,20 @@ body{
     line-height: 35px;
     font-weight: 500;
 }
-.style-areas-of-interest-header{
-    color: #2ecc71;
+.style-certificate-header{
+    color: #ff6b81;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
-.style-areas-of-interest-text{
+.style-certificate-text{
     color: #747d8c;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.style-certificate-link{    
+    color: #747d8c;
+    text-decoration: none;
+}
+.style-certificate-link:hover{
+    color: #ff6b81;
 }

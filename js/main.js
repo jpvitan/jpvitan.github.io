@@ -1,8 +1,8 @@
 AOS.init();
 
 var bannerIndex = 0;
-var bannerImage = ["img/banner/1.jpg", "img/banner/2.png", "img/banner/3.jpg"];
-var bannerLink = ["https://play.google.com/store/apps/details?id=com.jpv.sattrack", "https://github.com/jpvitan/rsa-jpv", "#"];
+var bannerImage = ["img/banner/1.jpg", "img/banner/2.png"];
+var bannerLink = ["https://play.google.com/store/apps/details?id=com.jpv.sattrack", "https://github.com/jpvitan/rsa-jpv"];
 
 var certificateIndex = 0;
 var certificateImage = ["img/certificate/1.png", "img/certificate/2.png", "img/certificate/3.png"];

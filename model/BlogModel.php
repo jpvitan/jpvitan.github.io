@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 1);
+
 class BlogModel{
  
     private $id;
@@ -9,8 +11,9 @@ class BlogModel{
     private $date;
     private $category;
     private $link;
+    private $sub_category;
     
-    function __construct($id, $image_banner, $title, $description, $author, $date, $category, $link){
+    function __construct($id, $image_banner, $title, $description, $author, $date, $category, $link, $sub_category){
         $this->id = $id;
         $this->image_banner = $image_banner;
         $this->title = $title;
@@ -19,6 +22,7 @@ class BlogModel{
         $this->date = $date;
         $this->category = $category;
         $this->link = $link;
+        $this->sub_category = $sub_category;
     }
     
     function getId(){
@@ -52,7 +56,24 @@ class BlogModel{
     function getLink(){
         return $this->link;
     }
+
+    function getSubCategory(){
+        return $this->sub_category;
+    }
     
+    function getColor(){
+        $category = $this->getCategory();
+        $color = "#0fbcf9";
+
+        if($category === "SoftwareDevelopment"){
+            $color = "#2ecc71";
+        }else if($category === "Mathematics"){
+            $color = "#ff6b81";
+        }
+        
+        return $color;
+    }
+
     function getCard(){
         $card = "
         <div class='row justify-content-center mt-4'>
@@ -62,7 +83,7 @@ class BlogModel{
                         <img class='card-img-top' alt='Banner' src='" . $this->image_banner . "'>
                         <div class='card-body'>
                             <div class='card-title' style='font-size: 1.25rem; font-weight: 500; margin-bottom: 0px;'>". $this->title ."</div>
-                            <div style='color: #0fbcf9; font-weight: 500;'>" . $this->category . "</div>
+                            <div style='color: ". $this->getColor() ."; font-weight: 500;'>" . $this->sub_category . "</div>
                             <div style='color: #747d8c; font-size: 0.9rem;'>" . $this->author . " | " . $this->getDate() ."</div>
                             <div style='color: #636e72; margin-top: 1rem;'>". $this->description ."</div>
                         </div>

@@ -6,14 +6,14 @@ class BlogController{
     
     public static function getAllData(){
         $mysqli = DatabaseHandler::getConnection();
-        $statement = $mysqli->prepare("SELECT * FROM blog");
+        $statement = $mysqli->prepare("SELECT * FROM blog ORDER BY date DESC");
         $data_array = self::compileToArray($statement);
         return $data_array;
     }
     
     public static function getDataFromTitle($title){
         $mysqli = DatabaseHandler::getConnection();
-        $statement = $mysqli->prepare("SELECT * FROM blog WHERE title LIKE ?");
+        $statement = $mysqli->prepare("SELECT * FROM blog WHERE title LIKE ? ORDER BY date DESC");
         $title.= "%";
         $statement->bind_param("s", $title);
         $data_array = self::compileToArray($statement);
@@ -22,7 +22,7 @@ class BlogController{
     
     public static function getDataFromCategory($category){
         $mysqli = DatabaseHandler::getConnection();
-        $statement = $mysqli->prepare("SELECT * FROM blog WHERE category=?");
+        $statement = $mysqli->prepare("SELECT * FROM blog WHERE category=? ORDER BY date DESC");
         $statement->bind_param("s", $category);
         $data_array = self::compileToArray($statement);
         return $data_array;
@@ -30,7 +30,7 @@ class BlogController{
     
     public static function getDataFromTitleCategory($title, $category){
         $mysqli = DatabaseHandler::getConnection();
-        $statement = $mysqli->prepare("SELECT * FROM blog WHERE title LIKE ? AND category=?");
+        $statement = $mysqli->prepare("SELECT * FROM blog WHERE title LIKE ? AND category=? ORDER BY date DESC");
         $title.= "%";
         $statement->bind_param("ss", $title, $category);
         $data_array = self::compileToArray($statement);
@@ -42,19 +42,19 @@ class BlogController{
         $statement = $mysqli->prepare("SELECT * FROM blog WHERE id=?");
         $statement->bind_param("i", $id);
         $statement->execute();
-        $statement->bind_result($id, $image_banner, $title, $description, $author, $date, $category, $link);
+        $statement->bind_result($id, $image_banner, $title, $description, $author, $date, $category, $link, $sub_category);
         if($statement->fetch()){
-            return new BlogModel($id, $image_banner, $title, $description, $author, $date, $category, $link);
+            return new BlogModel($id, $image_banner, $title, $description, $author, $date, $category, $link, $sub_category);
         }
         return null;
     }
     
     private static function compileToArray($statement){
         $statement->execute();
-        $statement->bind_result($id, $image_banner, $title, $description, $author, $date, $category, $link);
+        $statement->bind_result($id, $image_banner, $title, $description, $author, $date, $category, $link, $sub_category);
         $data_array = [];
         while($statement->fetch()){
-            array_push($data_array, new BlogModel($id, $image_banner, $title, $description, $author, $date, $category, $link));
+            array_push($data_array, new BlogModel($id, $image_banner, $title, $description, $author, $date, $category, $link, $sub_category));
         }
         return $data_array;
     }

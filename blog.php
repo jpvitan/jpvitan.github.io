@@ -16,7 +16,7 @@
         <!-- Meta Tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="View my latest blogs on software development, computer science, artificial intelligence, cryptography, and astronomy.">
+        <meta name="description" content="View my latest blogs on software development, computer science, and mathematics.">
         <meta name="author" content="Justine Paul Vitan">
         
         <!-- Bootstrap -->
@@ -64,9 +64,7 @@
                             <option value="All">All Categories</option>
                             <option value="SoftwareDevelopment" <?php if(isset($_GET["category"]) && $_GET["category"] == "SoftwareDevelopment"){ echo "selected='selected'"; } ?>>Software Development</option>
                             <option value="ComputerScience" <?php if(isset($_GET["category"]) && $_GET["category"] == "ComputerScience"){ echo "selected='selected'"; } ?>>Computer Science</option>
-                            <option value="ArtificialIntelligence" <?php if(isset($_GET["category"]) && $_GET["category"] == "ArtificialIntelligence"){ echo "selected='selected'"; } ?>>Artificial Intelligence</option>
-                            <option value="Cryptography" <?php if(isset($_GET["category"]) && $_GET["category"] == "Cryptography"){ echo "selected='selected'"; } ?>>Cryptography</option>
-                            <option value="Astronomy" <?php if(isset($_GET["category"]) && $_GET["category"] == "Astronomy"){ echo "selected='selected'"; } ?>>Astronomy</option>
+                            <option value="Mathematics" <?php if(isset($_GET["category"]) && $_GET["category"] == "Mathematics"){ echo "selected='selected'"; } ?>>Mathematics</option>
                             <option value="Others" <?php if(isset($_GET["category"]) && $_GET["category"] == "Others"){ echo "selected='selected'"; } ?>>Others</option>
                         </select>
                     </div>

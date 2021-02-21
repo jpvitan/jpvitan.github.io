@@ -1,4 +1,4 @@
-<img class="img-fluid border mb-4" src="blogs/cryptography/how-i-implemented-the-rsa-algorithm-in-python/banner.png">
+<img class="img-fluid border mb-4" src="blogs/computer-science/how-i-implemented-the-rsa-algorithm-in-python/banner.png">
 
 <p>The Rivest-Shamir-Adleman algorithm or simply the "RSA" is an asymmetric cryptographic algorithm that is widely used today to secure data. It is usually paired with another cryptographic algorithm since RSA is slow and expensive.</p>
 
@@ -67,7 +67,7 @@ $$d = -13\ \textrm{mod}\ 40 = 27$$
 <h2>Programming the Key Generator</h2>
 
 <p>Our first challenge here is finding $e$. We could do this by first constructing a function that finds the gcd of two numbers and constructing another function that tests certain values if they are relatively prime to a given input.</p>
-<pre class="line-numbers">
+<pre>
 <code class="language-python">
 # This function finds the gcd of two integers using the Euclidean algorithm.
 def gcd(x: int, y: int) -> int:
@@ -105,7 +105,7 @@ print(e)  # Output: 3
 <div style="height: 1rem;"></div>
 
 <p>Finding $d$ requires us to solve the linear combination of $e$ and $k$ since $ex + ky = \textrm{gcd}(e, k) = 1$ and $d = x\ \textrm{mod}\ k$. We could do this by slightly modifying the <code>gcd()</code> function we have and solving a recurrence relation that gives the linear combination of $e$ and $k$.</p>
-<pre class="line-numbers">
+<pre>
 <code class="language-python">
 # This function gives the linear combination of (x) and (y) in xa + yb = gcd(x,y).
 def gcd_linear_combination(x: int, y: int) -> tuple:
@@ -170,7 +170,7 @@ print(d)  # Output: 27
 <div style="height: 1rem;"></div>
 
 <p>Combining those functions we have earlier, we could now generate a public and private key:</p>
-<pre class="line-numbers">
+<pre>
 <code class="language-python">
 def generate_key_pair(first_prime: int = None, second_prime: int = None) -> KeyPair:
     """
@@ -240,7 +240,7 @@ $$m = 8 = 17^{27}\ \textrm{mod}\ 55$$
 
 <p>Here's how I programmed the encryption and decryption process in Python:</p>
 <pre>
-<code class="language-python line-numbers">
+<code class="language-python">
 class Encryptor:
     """
     A class that encrypts data based on the key parameter.

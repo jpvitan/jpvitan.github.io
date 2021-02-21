@@ -1,0 +1,63 @@
+<img class="img-fluid border mb-4" style="width: 100%;" src="blogs/computer-science/analyzing-the-time-complexity-of-bubble-sort/animation.gif">
+<p class="text-center" style="color: #747d8c; font-size: 1em; font-weight: 300;">“<a href="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" style="text-decoration: none; color: #0fbcf9">Animated example on bubble sort</a>” by Swfung8 is licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en" style="text-decoration: none; color: #0fbcf9">CC BY-SA 3.0</a>. </p>
+
+<p>Bubble sort is one of the easiest but also one of the slowest sorting algorithms that you could implement. In this post, we are going to prove the time complexity of bubble sort and see why this algorithm is really slow.</p>
+
+<pre>
+<code class="language-python">
+# Bubble sort implementation in Python
+def bubble_sort(arr):
+    for i in range(0, len(arr)):  # Outer loop
+        for j in range(0, len(arr) - (i + 1)):  # Inner loop
+            if arr[j] > arr[j+1]:
+                # Switch
+                temp = arr[j]
+                arr[j] = arr[j+1]
+                arr[j+1] = temp
+</code>
+</pre>
+
+<p>The code above is the usual implementation of bubble sort and as you could see, it has two loops which are nested. This two nested loops should already give you a hint on why this algorithm is bad for sorting lists with large sizes.</p>
+
+<p>If we have a list with $n$ elements, then bubble sort will perform this number of comparisons:</p>
+
+$$f(n)=\sum_{i=1}^{n-1} i$$
+
+<p>This is very evident since bubble sort performs $(n-1)$ comparisons in the first iteration of the outer loop, $(n-2)$ in the second iteration, $(n-3)$ in the third iteration, and so on. To make our analysis easier, we could try to simplify the sum described above by using a well-known formula:</p>
+
+$$\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$$
+
+<p>This means that:</p>
+
+$$f(n)=\sum_{i=1}^{n-1} i = \frac{n(n-1)}{2}$$
+
+<p>The closed form of the sum tells us that bubble sort runs in quadratic time or $O(n^2)$ since the fastest growing term is $\frac{1}{2}n^2$:</p>
+
+$$\frac{n(n-1)}{2} = \frac{1}{2}n^2 - \frac{1}{2}n$$
+
+<p>To make it more formal, let us try to prove that bubble sort is $O(n^2)$ using the definition that $f(n) \in O(g(n))$ if:</p>
+
+$$\limsup_{n \to \infty} \frac{f(n)}{g(n)} < \infty$$
+
+<p>Before we evaluate the limit, let us first simplify $f(n)/g(n)$:</p>
+
+$$
+\begin{align}
+\frac{f(n)}{g(n)} &= \frac{n(n-1)}{2n^2} \\[1.2ex]
+& = \frac{n-1}{2n} \\[1.2ex]
+& = \frac{1}{2} - \frac{1}{2n}
+\end{align}
+$$
+
+<p>Evaluating the limit of $f(n)/g(n)$ as $n$ approaches infinity shows that $f(n) \in O(n^2)$:</p>
+
+$$
+\begin{align}
+\limsup_{n \to \infty} \frac{f(n)}{g(n)} &= \limsup_{n \to \infty} \left(\frac{1}{2} - \frac{1}{2n}\right) \\[1.2ex]
+& = \frac{1}{2} - \limsup_{n \to \infty} \frac{1}{2n} \\[1.2ex]
+& = \frac{1}{2} - 0 \\[1.2ex]
+& = \frac{1}{2}
+\end{align}
+$$
+
+<p>Now that we have proven that bubble sort runs in quadratic time, we now know that this algorithm is one of the slowest sorting algorithms out there.</p>

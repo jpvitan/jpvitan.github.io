@@ -16,7 +16,7 @@
         <!-- Meta Tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="View my latest blogs on software development, computer science, and mathematics.">
+        <meta name="description" content="View Justine Paul Vitan's latest blogs on software development, computer science, and mathematics.">
         <meta name="author" content="Justine Paul Vitan">
         
         <!-- Bootstrap -->

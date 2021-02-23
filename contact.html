@@ -16,7 +16,7 @@
         <!-- Meta Tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Justine Paul Vitan is a software developer who builds mobile, web, and desktop applications.">
+        <meta name="description" content="Contact Justine Paul Vitan for business-related inquiries.">
         <meta name="author" content="Justine Paul Vitan">
         
         <!-- Bootstrap -->

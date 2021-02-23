@@ -78,7 +78,7 @@ class BlogModel{
             <div class='col-xl-4'>
                 <a href='blog-read.php?id=". $this->id ."' style='text-decoration: none; color: black;'>
                     <div class='card shadow border-0'>
-                        <img class='card-img-top' alt='Banner' src='" . $this->image_banner . "'>
+                        <img class='card-img-top img-fluid' alt='Banner' src='" . $this->image_banner . "' width='1366' height='768'>
                         <div class='card-body'>
                             <div class='card-title' style='font-size: 1.25rem; font-weight: 500; margin-bottom: 0px;'>". $this->title ."</div>
                             <div style='color: ". $this->getColor() ."; font-weight: 500;'>" . $this->sub_category . "</div>

@@ -72,7 +72,7 @@ if(isset($_GET["id"])){
         <link href="css/blog-read.css" rel="stylesheet">
     </head>
     <body>    
-        <nav class="navbar navbar-expand-xl navbar-light fixed-top shadow style-navbar" id="navbar"></nav>
+        <nav class="navbar navbar-expand-xl navbar-light fixed-top shadow-sm style-navbar" id="navbar"></nav>
 
         <script>
         $(function(){
@@ -82,7 +82,7 @@ if(isset($_GET["id"])){
 
         <div style="height: 74px;"></div>
         
-        <div class="container mt-lg-5">
+        <div class="container mt-4 mt-xl-5">
             <div class="row justify-content-center">
                 <div class="col-lg-7 mt-2 px-3">
                     <h1><?php echo $blog->getTitle(); ?></h1>

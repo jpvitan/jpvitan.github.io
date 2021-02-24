@@ -2,6 +2,14 @@
     font-family: 'lemonmilk';
     src: url('font/lemonmilk.otf');
 }
+.lm-red{
+    font-family: lemonmilk; 
+    color: #ff6b81;
+}
+.lm-blue{
+    font-family: lemonmilk; 
+    color: #0fbcf9;
+}
 .style-navbar{
     background-color: rgba(255, 255, 255, 0.95);
 }

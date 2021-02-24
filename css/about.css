@@ -6,14 +6,6 @@ p{
     font-size: 1.4rem;
     font-weight: 300;
 }
-.lm-red{
-    font-family: lemonmilk; 
-    color: #ff6b81;
-}
-.lm-blue{
-    font-family: lemonmilk; 
-    color: #0fbcf9;
-}
 .custom-list{
     list-style-type: none;
     padding: 0px;

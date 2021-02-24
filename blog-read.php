@@ -72,7 +72,7 @@ if(isset($_GET["id"])){
         <link href="css/blog-read.css" rel="stylesheet">
     </head>
     <body>    
-        <nav class="navbar navbar-expand-xl navbar-light fixed-top style-navbar" id="navbar"></nav>
+        <nav class="navbar navbar-expand-xl navbar-light fixed-top shadow style-navbar" id="navbar"></nav>
 
         <script>
         $(function(){

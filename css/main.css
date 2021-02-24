@@ -10,14 +10,6 @@ body{
         border-radius: 15px;
     }    
 }
-.lm-red{
-    font-family: lemonmilk; 
-    color: #ff6b81;
-}
-.lm-blue{
-    font-family: lemonmilk; 
-    color: #0fbcf9;
-}
 .custom-list{
     list-style-type: none;
     padding: 0px;
@@ -86,7 +78,7 @@ body{
     font-weight: 500;
 }
 .style-certificate-header{
-    color: #ff6b81;
+    color: #0fbcf9;
     font-size: 1.4rem;
     font-weight: 500;
 }

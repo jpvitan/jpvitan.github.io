@@ -22,7 +22,7 @@ class PortfolioModel{
     public function getCard(){
         $card = "
         <div class='row justify-content-center mt-4'>
-            <div class='col-xl-4'>
+            <div class='col-xl-6 col-xxl-4'>
                 <a href='". $this->link ."' style='text-decoration: none; color: black;'>
                     <div class='card shadow border-0'>
                         <img class='card-img-top img-fluid' alt='Banner' src='" . $this->image_banner . "' width='1024' height='500'>

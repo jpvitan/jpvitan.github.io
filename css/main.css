@@ -4,6 +4,11 @@ html{
 body{
     background-color: #ffffff;
 }
+p{
+    color: #747d8c;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
 @media only screen and (min-width: 1200px){
     .style-image-banner{
         width: 900px; 
@@ -20,28 +25,32 @@ body{
     font-size: 1.1rem;
     font-weight: 300;
 }
+.custom-list-element-p{
+    color: #747d8c;
+    padding-left: 1.4em;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
 .custom-list-element::before{
     content: "▸";
     display: inline-block;
     margin-left: -1.3em;
     width: 1.3em;
 }
-.style-text-greeting-container{
-    background-color: #0fbcf9; 
+.custom-list-element-p::before{
+    content: "▸";
+    display: inline-block;
+    margin-left: -1.4em;
+    width: 1.4em;
+}
+.style-icon-link{
+    color: #95a5a6;
+    text-decoration: none;
+}
+.style-card-link{
+    background-color: #0fbcf9;
     color: #ffffff;
-}
-.style-text-greeting-container-btn{
-    width: 170px;
-    height: 50px;
-    border-width: 2px;
-    text-align: center;
-    line-height: 35px;
-    font-weight: 500;
-}
-.style-introduction-text{
-    color: #747d8c;
-    font-size: 1.4rem;
-    font-weight: 300;
+    border-radius: 10px;
 }
 .style-contribute-open-source-container{
     background-color: #2ecc71;
@@ -60,11 +69,6 @@ body{
     font-size: 1.4rem;
     font-weight: 500;
 }
-.style-skill-text{
-    color: #747d8c;
-    font-size: 1.4rem;
-    font-weight: 300;
-}
 .style-visit-blog-container{
     background-color: #0fbcf9;
     color: #ffffff;
@@ -76,16 +80,6 @@ body{
     text-align: center;
     line-height: 35px;
     font-weight: 500;
-}
-.style-certificate-header{
-    color: #0fbcf9;
-    font-size: 1.4rem;
-    font-weight: 500;
-}
-.style-certificate-text{
-    color: #747d8c;
-    font-size: 1.4rem;
-    font-weight: 300;
 }
 .style-certificate-link{    
     color: #747d8c;

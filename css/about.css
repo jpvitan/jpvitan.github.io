@@ -22,3 +22,10 @@ p{
     margin-left: -1.3em;
     width: 1.3em;
 }
+.style-icon-link{
+    color: #95a5a6;
+    text-decoration: none;
+}
+.style-icon-link:hover{
+    color: #0fbcf9;
+}

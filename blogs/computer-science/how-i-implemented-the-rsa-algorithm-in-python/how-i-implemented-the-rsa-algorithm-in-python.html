@@ -1,6 +1,8 @@
-<img class="img-fluid border mb-4" src="blogs/computer-science/how-i-implemented-the-rsa-algorithm-in-python/banner.png" width="1366" height="768" alt="rsa-jpv on GitHub">
+<a href="blogs/computer-science/how-i-implemented-the-rsa-algorithm-in-python/banner.png">
+    <img class="img-fluid border mb-4" src="blogs/computer-science/how-i-implemented-the-rsa-algorithm-in-python/banner.png" width="1366" height="768" alt="rsa-jpv on GitHub">
+</a>
 
-<p>The Rivest-Shamir-Adleman algorithm or simply the "RSA" is an asymmetric cryptographic algorithm that is widely used today to secure data. It is usually paired with another cryptographic algorithm since RSA is slow and expensive.</p>
+<p>The Rivest-Shamir-Adleman algorithm or simply the "RSA" is an asymmetric cryptographic algorithm that is widely used today to secure data. It is usually paired with another cryptographic algorithm since RSA is quite slow.</p>
 
 <p>This post will cover everything from number theory to its implementation in Python. The math involved isn't too hard but will require you to at least understand a bit of number theory.</p>
 
@@ -206,7 +208,9 @@ def generate_key_pair(first_prime: int = None, second_prime: int = None) -> KeyP
     KeyPair: A class that holds the public key and private key.
     """
 
-    prime_pair = rmath.generate_prime_number_list(size=2, shuffle=True)  # Generate two distinct primes.
+    # Generate two distinct primes.
+    prime_pair = rmath.generate_prime_number_list(size=2, shuffle=True)
+    # Make sure primes are distinct.
     if first_prime is None:
         first_prime = prime_pair[0]
         if first_prime == second_prime:
@@ -215,6 +219,7 @@ def generate_key_pair(first_prime: int = None, second_prime: int = None) -> KeyP
         second_prime = prime_pair[1]
         if first_prime == second_prime:
             second_prime = prime_pair[0]
+    # Primality test.
     inputchecker.rsa_generate_key_pair(first_prime, second_prime)
 
     prime_product = first_prime * second_prime

@@ -24,7 +24,7 @@ class PortfolioModel{
         <div class='row justify-content-center mt-4'>
             <div class='col-xl-6 col-xxl-4'>
                 <a href='". $this->link ."' style='text-decoration: none; color: black;'>
-                    <div class='card border-0 shadow' style='border-radius: 10px;'>
+                    <div class='card border-0 shadow' style='border-radius: 10px;' data-aos='zoom-in'>
                         <img class='card-img-top img-fluid' style='border-radius: 10px 10px 0px 0px;' alt='Banner' src='" . $this->image_banner . "' width='1024' height='500'>
                         <div class='card-body'>
                             <div class='card-title' style='font-size: 1.25rem; font-weight: 500;'>". $this->title ."</div>

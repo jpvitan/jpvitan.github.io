@@ -10,16 +10,20 @@
 
 <div style="height: 1rem;"></div>
 
-<h2>The Math Behind the Public and Private Key</h2>
+<h2>Generating the Keys</h2>
 
 <p>RSA is an asymmetric cryptographic algorithm, which means that the keys used for encryption and decryption are different. In this context, we use the public key to encrypt the data and the private key to decrypt it.</p>
+
+<a href="blogs/computer-science/how-i-implemented-the-rsa-algorithm-in-python/key.png">
+    <img class="img-fluid border mb-4" src="blogs/computer-science/how-i-implemented-the-rsa-algorithm-in-python/key.png" width="1050" height="1026" alt="Key">
+</a>
 
 <p>The public key is made out of two integers $e$ and $n$. The public key can't be used to decrypt messages and you may distribute it to anyone who wants to send you encrypted messages. Similarly, the private key is also made out of two integers $d$ and $n$ but unlike the public key, you should always keep your private key a secret.</p>
 
 <p>The values of the public and private key rely on two large prime numbers, which we would denote as:</p>
 $$p,q \in \textrm{primes}\hspace{5mm} \textrm{where}\ p \neq q$$
 
-<p>The security of RSA relies on the fact that it is hard to factor the product of these two large primes, so we'll go ahead and define two variables that involve their product:</p>
+<p>The security of RSA relies on the difficulty of factoring the product of these two large primes, so we'll go ahead and define two variables that involve their product:</p>
 $$
 \begin{align}
 n &= p \cdot q \\[1.2ex]
@@ -27,12 +31,10 @@ k &= \phi(n) = (p-1)(q-1)
 \end{align}
 $$
 
-<p>The auxiliary value ($e$) for the public key is defined as:</p>
+<p>Auxiliary value ($e$) for the public key is defined as:</p>
 $$\exists e \in \mathbb{N} : \textrm{gcd}(e, k) = 1,\ e > 1$$
 
-<p>If you are just learning, $e$ could be any number as long as it satisfies the condition that it is relatively prime to $k$ and greater than one. In my library, I would choose the lowest possible value for $e$ with the condition that it is greater than or equal to three.</p>
-
-<p>The auxiliary value ($d$) for the private key is defined as:</p>
+<p>Auxiliary value ($d$) for the private key is defined as:</p>
 $$
 \displaylines{
 \mathbb{Z}_k = [0,k) \\[1.2ex]
@@ -40,8 +42,10 @@ $$
 }
 $$
 
-<p>$d$ is the multiplicative inverse of $e$ in $\mathbb{Z}_k$. We know that $d$ exists because $\textrm{gcd}(e, k) = 1$ and by the extended Euclidean algorithm:</p>
-$$ex + ky = 1\hspace{5mm} \textrm{where}\ x,y \in \mathbb{Z}$$
+<p>The value of $e$ could be any number as long as it satisfies the condition that it is relatively prime to $k$ and greater than one while the value of $d$ is the multiplicative inverse of $e$ in $\mathbb{Z}_k$.</p>
+
+<p>The existence of $d$ could be proven using the extended Euclidean algorithm:</p>
+$$ex + ky = \textrm{gcd}(e, k) = 1\hspace{5mm} \textrm{where}\ x,y \in \mathbb{Z}$$
 
 <p>Since $a = b \implies a \equiv b\ (\textrm{mod}\ n)$:</p>
 $$
@@ -50,7 +54,8 @@ ex + ky &\equiv 1\hspace{5mm} (\textrm{mod}\ k) \\[1.2ex]
 ex + 0 &\equiv 1\hspace{5mm} (\textrm{mod}\ k)
 \end{align}
 $$
-<p>This means that:</p>
+
+<p>This means that the value of $d$ is:</p>
 $$d = x\ \textrm{mod}\ k$$
 
 <div class="border px-2 py-2">
@@ -85,14 +90,14 @@ $$
 <p>Using the laws of remainder arithmetic, we could see that the value of $d$ is:</p>
 $$d = -13\ \textrm{mod}\ 40 = 27$$
 
-<p>For this example, the public key has the values $e=3$ and $n=55$ and the private key has the values $d=27$ and $n=55$.</p>
+<p>For this example, the public key has the values $e=3$ and $n=55$, and the private key has the values $d=27$ and $n=55$.</p>
 </div>
 
 <div style="height: 2rem;"></div>
 
 <h2>Programming the Key Generator</h2>
 
-<p>Our first challenge here is finding $e$. We could do this by first constructing a function that finds the gcd of two numbers and constructing another function that tests certain values if they are relatively prime to a given input.</p>
+<p>Our first challenge here is finding $e$. We could do this by first creating a function that finds the gcd of two numbers and creating another function that tests certain values if they are relatively prime to a given input.</p>
 <pre>
 <code class="language-python">
 # This function finds the gcd of two integers using the Euclidean algorithm.
@@ -195,7 +200,7 @@ print(d)  # Output: 27
 
 <div style="height: 1rem;"></div>
 
-<p>Combining those functions we have earlier, we could now generate a public and private key:</p>
+<p>Combining those functions we have, we could now generate a public and private key:</p>
 <pre>
 <code class="language-python">
 def generate_key_pair(first_prime: int = None, second_prime: int = None) -> KeyPair:

@@ -10,6 +10,18 @@ h3{
     font-size: 1.25rem;
     font-weight: 500;
 }
+.style-description{
+    color: #747d8c; 
+    font-size: 1.2rem;
+}
+.style-sub-category{
+    color: #0fbcf9; 
+    font-weight: 500;
+}
+.style-author-date{
+    color: #747d8c; 
+    font-size: 0.9rem;
+}
 .iframe-container {
     position: relative;
     padding-bottom: 56.25%;

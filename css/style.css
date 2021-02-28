@@ -21,6 +21,10 @@ a{
     font-size: 2.00rem !important;
     color: #0fbcf9 !important;
 }
+.style-navbar-btn{
+    border: 0px !important; 
+    color: #bdc3c7 !important;
+}
 .style-nav-link{
     font-family: lemonmilk; 
     color: #747d8c !important;

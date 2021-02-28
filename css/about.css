@@ -22,6 +22,12 @@ p{
     margin-left: -1.3em;
     width: 1.3em;
 }
+.style-link{
+    color: #0fbcf9;
+}
+.style-link:hover{
+    color: #ff6b81;
+}
 .style-icon-link{
     color: #95a5a6;
     text-decoration: none;

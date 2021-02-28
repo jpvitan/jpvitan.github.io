@@ -43,9 +43,21 @@ p{
     margin-left: -1.4em;
     width: 1.4em;
 }
-.style-icon-link{
-    color: #95a5a6;
-    text-decoration: none;
+.style-brand{
+    color: #747d8c; 
+    font-size: 1em; 
+    font-weight: 300;
+}
+.style-list-check{
+    font-size: 1.1rem; 
+    font-weight: 300; 
+    color: #747d8c;
+}
+.style-link{
+    color: #0fbcf9;
+}
+.style-link:hover{
+    color: #ff6b81;
 }
 .style-card-link{
     background-color: #0fbcf9;

@@ -52,3 +52,6 @@ textarea{
     text-decoration: none; 
     color: #808e9b;
 }
+.style-contact-form-back-link:hover{
+    color: #ff6b81;
+}

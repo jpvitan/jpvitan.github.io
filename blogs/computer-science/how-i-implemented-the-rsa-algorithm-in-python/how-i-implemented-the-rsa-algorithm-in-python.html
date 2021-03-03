@@ -6,7 +6,7 @@
 
 <p>This post will cover everything from number theory to its implementation in Python. The math involved isn't too hard but will require you to at least understand a bit of number theory.</p>
 
-<p>You could view the library <a href="https://github.com/jpvitan/rsa-jpv" style="text-decoration: none;">here</a>.</p>
+<p>You could view the library <a href="https://github.com/jpvitan/rsa-jpv" style="text-decoration: none; color: #0fbcf9;">here</a>.</p>
 
 <div style="height: 1rem;"></div>
 
@@ -18,12 +18,12 @@
     <img class="img-fluid border mb-4" src="blogs/computer-science/how-i-implemented-the-rsa-algorithm-in-python/key.png" width="1050" height="1026" alt="Key">
 </a>
 
-<p>The public key is made out of two integers $e$ and $n$. The public key can't be used to decrypt messages and you may distribute it to anyone who wants to send you encrypted messages. Similarly, the private key is also made out of two integers $d$ and $n$ but unlike the public key, you should always keep your private key a secret.</p>
+<p>The public key consists of two integers $e$ and $n$. The public key can't be used to decrypt messages and you may distribute it to anyone who wants to send you encrypted messages. Similarly, the private key also consists of two integers $d$ and $n$ but unlike the public key, you should always keep your private key a secret.</p>
 
-<p>The values of the public and private key rely on two large prime numbers, which we would denote as:</p>
+<p>The values of the public and private key rely on two large and distinct prime numbers:</p>
 $$p,q \in \textrm{primes}\hspace{5mm} \textrm{where}\ p \neq q$$
 
-<p>The security of RSA relies on the difficulty of factoring the product of these two large primes, so we'll go ahead and define two variables that involve their product:</p>
+<p>After choosing our $p$ and $q$, we now define $n$ and $k$:</p>
 $$
 \begin{align}
 n &= p \cdot q \\[1.2ex]
@@ -31,23 +31,23 @@ k &= \phi(n) = (p-1)(q-1)
 \end{align}
 $$
 
-<p>Auxiliary value ($e$) for the public key is defined as:</p>
-$$\exists e \in \mathbb{N} : \textrm{gcd}(e, k) = 1,\ e > 1$$
+<p>$n$ is simply the product of $p$ and $q$ and $k$ is $\phi(n)$ or the Euler totient function taken on $n$.</p>
 
-<p>Auxiliary value ($d$) for the private key is defined as:</p>
+<p>The next thing that we need to do is calculate $e$ and $d$ or the auxiliary value for the public and private key:</p>
 $$
-\displaylines{
-\mathbb{Z}_k = [0,k) \\[1.2ex]
-\exists d \in \mathbb{Z}_k : e \cdot d \equiv 1\hspace{5mm} (\textrm{mod}\ k)
-}
+\begin{align}
+&\mathbb{Z}_k = [0,k) \\[1.2ex]
+&\exists e \in \mathbb{N} : \textrm{gcd}(e, k) = 1,\ e > 1 \\[1.2ex]
+&\exists d \in \mathbb{Z}_k : e \cdot d \equiv 1\hspace{5mm} (\textrm{mod}\ k)
+\end{align}
 $$
 
 <p>The value of $e$ could be any number as long as it satisfies the condition that it is relatively prime to $k$ and greater than one while the value of $d$ is the multiplicative inverse of $e$ in $\mathbb{Z}_k$.</p>
 
-<p>The existence of $d$ could be proven using the extended Euclidean algorithm:</p>
+<p>To get $d$, we are going to use the extended Euclidean algorithm:</p>
 $$ex + ky = \textrm{gcd}(e, k) = 1\hspace{5mm} \textrm{where}\ x,y \in \mathbb{Z}$$
 
-<p>Since $a = b \implies a \equiv b\ (\textrm{mod}\ n)$:</p>
+<p>Since $ex + ky = 1 \implies ex + ky \equiv 1\ (\textrm{mod}\ k)$:</p>
 $$
 \begin{align}
 ex + ky &\equiv 1\hspace{5mm} (\textrm{mod}\ k) \\[1.2ex]
@@ -56,7 +56,7 @@ ex + 0 &\equiv 1\hspace{5mm} (\textrm{mod}\ k)
 $$
 
 <p>This means that the value of $d$ is:</p>
-$$d = x\ \textrm{mod}\ k$$
+$$d = x\ \textrm{mod}\ k$$ 
 
 <div class="border px-2 py-2">
 <h3>Example</h3>
@@ -97,7 +97,14 @@ $$d = -13\ \textrm{mod}\ 40 = 27$$
 
 <h2>Programming the Key Generator</h2>
 
-<p>Our first challenge here is finding $e$. We could do this by first creating a function that finds the gcd of two numbers and creating another function that tests certain values if they are relatively prime to a given input.</p>
+<p>For this part, I'm going to skip the code for generating random prime numbers and focus solely on getting $e$ and $d$.</p>
+
+<p>To find $e$, we need to create two functions:</p>
+<ol>
+    <li>A function that finds the gcd of two numbers</li>
+    <li>A function that tests certain values if they are relatively prime to a given input</li>
+</ol>
+
 <pre>
 <code class="language-python">
 # This function finds the gcd of two integers using the Euclidean algorithm.

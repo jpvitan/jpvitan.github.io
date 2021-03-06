@@ -5,6 +5,10 @@ a{
     font-family: 'lemonmilk';
     src: url('font/lemonmilk.otf');
 }
+.lm-black{
+    font-family: lemonmilk; 
+    color: #000000;
+}
 .lm-red{
     font-family: lemonmilk; 
     color: #ff6b81;
@@ -27,7 +31,7 @@ a{
 }
 .style-nav-link{
     font-family: lemonmilk; 
-    color: #747d8c !important;
+    color: #808e9b !important;
 }
 .style-nav-link:hover{
     color: #0fbcf9 !important;

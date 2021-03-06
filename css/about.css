@@ -28,10 +28,23 @@ p{
 .style-link:hover{
     color: #ff6b81;
 }
-.style-icon-link{
-    color: #95a5a6;
-    text-decoration: none;
+.style-card-link-outer{
+    width: 8rem; 
+    height: 8rem;
 }
-.style-icon-link:hover{
-    color: #0fbcf9;
+.style-card-link{
+    position: relative;
+    color: #ffffff;
+    border-radius: 20px;
+    width: 5rem;
+    height: 5rem;
+}
+.style-card-link-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.style-card-link-text{
+    color: #808e9b;
 }

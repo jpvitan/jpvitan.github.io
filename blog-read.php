@@ -94,7 +94,7 @@ if(isset($_GET["id"])){
             </div>
         </div>
                      
-        <footer class="my-2 text-center style-footer" id="footer">
+        <footer class="mt-2" id="footer">
             
         </footer>
         

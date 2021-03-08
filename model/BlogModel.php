@@ -58,19 +58,6 @@ class BlogModel{
     function getSubCategory(){
         return $this->sub_category;
     }
-    
-    function getColor(){
-        $category = $this->getCategory();
-        $color = "#f7f1e3";
-
-        if($category === "SoftwareDevelopment"){
-            $color = "#2ecc71";
-        }else if($category === "Mathematics"){
-            $color = "#ff6b81";
-        }
-        
-        return $color;
-    }
 
     function getCard(){
         $card = "
@@ -81,7 +68,7 @@ class BlogModel{
                         <img class='card-img-top img-fluid' alt='Banner' src='" . $this->image_banner . "' width='1366' height='768'>
                         <div class='card-body'>
                             <div class='card-title mb-3' style='font-size: 1.25rem; font-weight: 500; margin-bottom: 0px;'>". $this->title ."</div>
-                            <div style='color: ". $this->getColor() ."; font-weight: 500;'>" . $this->sub_category . "</div>
+                            <div style='color: #f7f1e3; font-weight: 500;'>" . $this->sub_category . "</div>
                             <div style='color: #f7f1e3; font-size: 0.9rem;'>" . $this->author . " | " . $this->getDate() ."</div>
                         </div>
                     </div>

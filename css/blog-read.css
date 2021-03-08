@@ -1,26 +1,24 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #222f3e;
+}
 p{
     font-size: 1.1rem;
-    color: #636e72;
+    color: #222f3e;
 }
 li{
     font-size: 1.1rem;
-    color: #636e72;
-}
-h2{
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-h3{
-    font-size: 1.25rem;
-    font-weight: 500;
+    color: #222f3e;
 }
 .style-description{
+    font-family: Arial, Helvetica, sans-serif;
     color: #747d8c; 
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 .style-sub-category{
-    color: #0fbcf9; 
-    font-weight: 500;
+    color: #34ace0; 
+    font-weight: 600;
 }
 .style-author-date{
     color: #747d8c; 

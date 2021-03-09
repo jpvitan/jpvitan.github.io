@@ -34,7 +34,7 @@
         <link href="css/contact-form.css" rel="stylesheet">
     </head>
     <body>   
-        <div class="card border-0 shadow-lg text-center style-card">
+        <div class="card border-0 text-center style-card">
             <div class="card-body">
                 <div class="text-center"> 
                     <?php

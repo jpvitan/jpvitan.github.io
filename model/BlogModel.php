@@ -64,12 +64,12 @@ class BlogModel{
         <div class='row justify-content-center mt-4'>
             <div class='col-xl-6 col-xxl-4'>
                 <a href='blog-read.php?id=". $this->id ."' style='text-decoration: none; color: black;'>
-                    <div class='card border-0 shadow-sm' style='background-color: #ccae62; color: #f7f1e3' data-aos='zoom-in'>
+                    <div class='card border-0 shadow-sm' style='background-color: #1abc9c; color: #ffffff' data-aos='zoom-in'>
                         <img class='card-img-top img-fluid' alt='Banner' src='" . $this->image_banner . "' width='1366' height='768'>
                         <div class='card-body'>
                             <div class='card-title mb-3' style='font-size: 1.25rem; font-weight: 500; margin-bottom: 0px;'>". $this->title ."</div>
-                            <div style='color: #f7f1e3; font-weight: 500;'>" . $this->sub_category . "</div>
-                            <div style='color: #f7f1e3; font-size: 0.9rem;'>" . $this->author . " | " . $this->getDate() ."</div>
+                            <div style='color: #ffffff; font-weight: 500;'>" . $this->sub_category . "</div>
+                            <div style='color: #ffffff; font-size: 0.9rem;'>" . $this->author . " | " . $this->getDate() ."</div>
                         </div>
                     </div>
                 </a>

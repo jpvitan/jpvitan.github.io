@@ -22,6 +22,11 @@ p{
     margin-left: -1.3em;
     width: 1.3em;
 }
+.style-brand{
+    color: #747d8c; 
+    font-size: 1em; 
+    font-weight: 300;
+}
 .style-link{
     color: #0fbcf9;
 }
@@ -47,4 +52,7 @@ p{
 }
 .style-card-link-text{
     color: #808e9b;
+}
+.style-about-container{
+    background-color: #ffffff;
 }

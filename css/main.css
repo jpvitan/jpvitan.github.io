@@ -87,10 +87,3 @@ p{
     font-size: 1.4rem;
     font-weight: 500;
 }
-.style-certificate-link{    
-    color: #747d8c;
-    text-decoration: none;
-}
-.style-certificate-link:hover{
-    color: #ff6b81;
-}

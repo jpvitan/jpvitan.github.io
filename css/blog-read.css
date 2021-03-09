@@ -7,7 +7,7 @@ p{
     font-size: 1.1rem;
     color: #222f3e;
 }
-li{
+li:not([class="nav-item"]){
     font-size: 1.1rem;
     color: #222f3e;
 }
@@ -17,7 +17,7 @@ li{
     font-size: 1.3rem;
 }
 .style-sub-category{
-    color: #34ace0; 
+    color: #ff6b81; 
     font-weight: 600;
 }
 .style-author-date{

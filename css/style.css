@@ -9,6 +9,10 @@ a{
     font-family: lemonmilk; 
     color: #000000;
 }
+.lm-white{
+    font-family: lemonmilk; 
+    color: #ffffff;
+}
 .lm-red{
     font-family: lemonmilk; 
     color: #ff6b81;
@@ -16,6 +20,10 @@ a{
 .lm-blue{
     font-family: lemonmilk; 
     color: #0fbcf9;
+}
+.lm-orange{
+    font-family: lemonmilk; 
+    color: #f39c12;
 }
 .style-navbar{
     background-color: rgba(255, 255, 255, 0.95);

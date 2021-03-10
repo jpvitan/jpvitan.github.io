@@ -2,24 +2,18 @@
     <img class="img-fluid border mb-4" src="blogs/computer-science/how-i-implemented-the-rsa-algorithm-in-python/banner.png" width="1366" height="768" alt="rsa-jpv on GitHub">
 </a>
 
-<p>The Rivest-Shamir-Adleman algorithm or simply the "RSA" is an asymmetric cryptographic algorithm that is widely used today to secure data. It is usually paired with another cryptographic algorithm since RSA is quite slow.</p>
+<p>The RSA is an asymmetric encryption algorithm that is widely adopted by today’s modern systems to secure data. It is usually paired with another encryption algorithm due to its slow performance. In this post, we are going to implement the “pure” and “textbook” version of RSA using Python 3.</p>
 
-<p>This post will cover everything from number theory to its implementation in Python. The math involved isn't too hard but will require you to at least understand a bit of number theory.</p>
+<h2 class="mt-5 mb-3">Key Generation</h2>
 
-<p>You could view the library <a href="https://github.com/jpvitan/rsa-jpv" style="text-decoration: none; color: #0fbcf9;">here</a>.</p>
-
-<div style="height: 1rem;"></div>
-
-<h2>Generating the Keys</h2>
-
-<p>RSA is an asymmetric cryptographic algorithm, which means that the keys used for encryption and decryption are different. In this context, we use the public key to encrypt the data and the private key to decrypt it.</p>
+<p>RSA uses two different keys to encrypt and decrypt data. In this context, we use the public key to encrypt the data and the private key to decrypt it.</p>
 
 <p>The public key consists of two integers $e$ and $n$. The public key can't be used to decrypt messages and you may distribute it to anyone who wants to send you encrypted messages. Similarly, the private key also consists of two integers $d$ and $n$ but unlike the public key, you should always keep your private key a secret.</p>
 
-<p>The values of the public and private key rely on two large and distinct prime numbers:</p>
-$$p,q \in \textrm{primes}\hspace{5mm} \textrm{where}\ p \neq q$$
+<p>The values of the public and private key rely on two large and distinct prime numbers $p$ and $q$. There are generally factors to consider when choosing $p$ and $q$ but for the sake of simplicity, we are just going to assume that $p$ and $q$ are distinct prime numbers.</p>
 
-<p>After choosing our $p$ and $q$, we now define $n$ and $k$:</p>
+<p>After we have defined the values for $p$ and $q$, we can now compute $n$ and $k$. $n$ is simply the product of $p$ and $q$ and $k$ is $\phi(n)$ or the number of relatively prime integers to $n$ from $[1,n]$.</p>
+
 $$
 \begin{align}
 n &= p \cdot q \\[1.2ex]
@@ -27,81 +21,21 @@ k &= \phi(n) = (p-1)(q-1)
 \end{align}
 $$
 
-<p>$n$ is simply the product of $p$ and $q$ and $k$ is $\phi(n)$ or the Euler totient function taken on $n$.</p>
+<p>The only thing that is left to compute are the auxiliary values $e$ and $d$. The value of $e$ could be any integer as long as it satisfies the condition that it is relatively prime to $k$ and greater than one. The value of $d$ is the multiplicative inverse of $e \ \textrm{mod} \ k$.</p>
 
-<p>The next thing that we need to do is calculate $e$ and $d$ or the auxiliary value for the public and private key:</p>
-$$
-\begin{align}
-&\mathbb{Z}_k = [0,k) \\[1.2ex]
-&\exists e \in \mathbb{N} : \textrm{gcd}(e, k) = 1,\ e > 1 \\[1.2ex]
-&\exists d \in \mathbb{Z}_k : e \cdot d \equiv 1\hspace{5mm} (\textrm{mod}\ k)
-\end{align}
-$$
+<h2 class="mt-5 mb-3">Programming the Key Generator</h2>
 
-<p>The value of $e$ could be any number as long as it satisfies the condition that it is relatively prime to $k$ and greater than one while the value of $d$ is the multiplicative inverse of $e$ in $\mathbb{Z}_k$.</p>
+<p>For this part, I'm going to focus solely on getting $e$ and $d$ and skip the code for generating random prime numbers as it is quite trivial.</p>
 
-<p>To get $d$, we are going to use the extended Euclidean algorithm:</p>
-$$ex + ky = \textrm{gcd}(e, k) = 1\hspace{5mm} \textrm{where}\ x,y \in \mathbb{Z}$$
-
-<p>Since $ex + ky = 1 \implies ex + ky \equiv 1\ (\textrm{mod}\ k)$:</p>
-$$
-\begin{align}
-ex + ky &\equiv 1\hspace{5mm} (\textrm{mod}\ k) \\[1.2ex]
-ex + 0 &\equiv 1\hspace{5mm} (\textrm{mod}\ k)
-\end{align}
-$$
-
-<p>This means that the value of $d$ is:</p>
-$$d = x\ \textrm{mod}\ k$$ 
-
-<div class="border px-2 py-2">
-<h3>Example</h3>
-
-<p>Let's try to generate a public and private key for the following values:</p>
-$$
-\begin{align}
-p &= 5 \\[1.2ex]
-q &= 11 \\[1.2ex]
-n &= 55 = 5 \cdot 11 \\[1.2ex]
-k &= 40 = 4 \cdot 10
-\end{align}
-$$
-
-<p>For the value of $e$, we could choose $e=3$ since $\textrm{gcd}(3, 40)=1$. We could verify this using the Euclidean algorithm:</p>
-$$
-\begin{align}
-40 &= 3 \cdot 13 + 1 \\[1.2ex]
-3 &= 1 \cdot 3 + 0
-\end{align}
-$$
-
-<p>To find $d$, we are going to use the extended Euclidean algorithm and we'll end up with:</p>
-$$
-\begin{align}
-ex + ky &= 1 \\[1.2ex]
-3 \cdot (-13) + 40 \cdot 1 &= 1
-\end{align}
-$$
-
-<p>Using the laws of remainder arithmetic, we could see that the value of $d$ is:</p>
-$$d = -13\ \textrm{mod}\ 40 = 27$$
-
-<p>For this example, the public key has the values $e=3$ and $n=55$, and the private key has the values $d=27$ and $n=55$.</p>
-</div>
-
-<div style="height: 2rem;"></div>
-
-<h2>Programming the Key Generator</h2>
-
-<p>For this part, I'm going to skip the code for generating random prime numbers and focus solely on getting $e$ and $d$.</p>
-
-<p>To find $e$, we need to create two functions:</p>
+<p>We could find $e$ by creating two functions:</p>
 <ol>
     <li>A function that finds the gcd of two numbers</li>
     <li>A function that tests certain values if they are relatively prime to a given input</li>
 </ol>
 
-<pre>
+<p>The code below shows exactly how we could get $e$ by using those two functions.</p>
+
+<pre class="my-4">
 <code class="language-python">
 # This function finds the gcd of two integers using the Euclidean algorithm.
 def gcd(x: int, y: int) -> int:
@@ -119,7 +53,7 @@ def gcd(x: int, y: int) -> int:
         y = x
         x = r
     return x
-   
+    
 # This function finds the first number that is relatively prime to the parameter (x).
 def find_number_relatively_prime(x: int, starting_number=3) -> int:
     y = starting_number
@@ -135,11 +69,10 @@ e = find_number_relatively_prime(k)
 print(e)  # Output: 3
 </code>
 </pre>
+    
+<p>Finding $d$ requires us to slightly modify our <code>gcd()</code> function and solve a recurrence relation that gives the linear combination of $e$ and $k$.</p>
 
-<div style="height: 1rem;"></div>
-
-<p>Finding $d$ requires us to solve the linear combination of $e$ and $k$ since $ex + ky = \textrm{gcd}(e, k) = 1$ and $d = x\ \textrm{mod}\ k$. We could do this by slightly modifying the <code>gcd()</code> function we have and solving a recurrence relation that gives the linear combination of $e$ and $k$.</p>
-<pre>
+<pre class="my-4">
 <code class="language-python">
 # This function gives the linear combination of (x) and (y) in xa + yb = gcd(x,y).
 def gcd_linear_combination(x: int, y: int) -> tuple:
@@ -201,52 +134,21 @@ print(d)  # Output: 27
 </code>
 </pre>
 
-<div style="height: 1rem;"></div>
+<p>Combining those functions we have, we could now generate a public and private key.</p>
 
-<p>Combining those functions we have, we could now generate a public and private key:</p>
-<pre>
+<pre class="my-4">
 <code class="language-python">
-def generate_key_pair(first_prime: int = None, second_prime: int = None) -> KeyPair:
-    """
-    A function that generates a public key and private key.
-    Parameters:
-    first_prime (int): The first prime number.
-    second_prime (int): The second prime number.
-    Returns:
-    KeyPair: A class that holds the public key and private key.
-    """
-
-    # Generate two distinct primes.
-    prime_pair = rmath.generate_prime_number_list(size=2, shuffle=True)
-    # Make sure primes are distinct.
-    if first_prime is None:
-        first_prime = prime_pair[0]
-        if first_prime == second_prime:
-            first_prime = prime_pair[1]
-    if second_prime is None:
-        second_prime = prime_pair[1]
-        if first_prime == second_prime:
-            second_prime = prime_pair[0]
-    # Primality test.
-    inputchecker.rsa_generate_key_pair(first_prime, second_prime)
-
-    prime_product = first_prime * second_prime
-    prime_product_minus_one = (first_prime - 1) * (second_prime - 1)
-    public_auxiliary = rmath.find_number_relatively_prime(prime_product_minus_one)
-    private_auxiliary = rmath.gcd_linear_combination(public_auxiliary, prime_product_minus_one)[0]
-
-    # The Key class is just a holder for the values of the public and private key.
-    public_key = Key(prime_product, public_auxiliary)
-    private_key = Key(prime_product, private_auxiliary)
-    key_pair = KeyPair(public_key, private_key)
-
-    return key_pair
+# Public and private key sample for p = 5 and q = 11.
+p = 5
+q = 11
+n = p * q  # n = 55
+k = (p-1) * (q-1)  # k = 40
+e = find_number_relatively_prime(k)  # e = 3
+d = gcd_linear_combination(e, k)[0] % k  # d = 27
 </code>
 </pre>
 
-<div style="height: 1rem;"></div>
-
-<h2>Encrypting and Decrypting Messages</h2>
+<h2 class="mt-5 mb-3">Encrypting and Decrypting Messages</h2>
 
 <p>Encrypting and decrypting a message in RSA is relatively easy and straightforward.</p>
 
@@ -256,80 +158,16 @@ $$m' = m^e\ \textrm{mod}\ n$$
 <p>To decrypt:</p>
 $$m = (m')^d\ \textrm{mod}\ n$$
 
-<div class="border px-2 py-2">
-<h3>Example</h3>
+<p>The code below shows a sample encryption-decryption process.</p>
 
-<p>Let's try to encrypt a message $m = 8$ with the following keys:</p>
-$$
-\begin{align}
-e &= 3 \\[1.2ex]
-d &= 27 \\[1.2ex]
-n &= 55
-\end{align}
-$$
-
-<p>This means that the value of $m'$ is:</p>
-$$m' = 17 = 8^3\ \textrm{mod}\ 55$$
-
-<p>To decrypt $m'$:</p>
-$$m = 8 = 17^{27}\ \textrm{mod}\ 55$$
-</div>
-
-<div style="height: 1rem;"></div>
-
-<p>If you want to encrypt strings, you could convert each character to their Unicode value (or any other numerical representation of the character) and do the math from there.</p>
-
-<p>Here's how I programmed the encryption and decryption process in Python:</p>
-<pre class="mb-4">
+<pre class="my-4">
 <code class="language-python">
-class Encryptor:
-    """
-    A class that encrypts data based on the key parameter.
-    Parameters:
-    public_key (Key): The public key.
-    """
-
-    def __init__(self, public_key: Key):
-        self.public_key = public_key
-
-    def encrypt(self, message: str) -> str:
-        """
-        A method that takes a string and encrypts it.
-        Parameters:
-        message (str): The string to be encrypted.
-        Returns:
-        str: The encrypted string.
-        """
-
-        encrypted_message = ""
-        for character in message:
-            encrypted_character = chr((ord(character) ** self.public_key.auxiliary) % self.public_key.prime_product)
-            encrypted_message = encrypted_message + encrypted_character
-        return encrypted_message
-
-
-class Decryptor:
-    """
-    A class that decrypts data based on the key parameter.
-    Parameters:
-    private_key (Key): The private key.
-    """
-
-    def __init__(self, private_key: Key):
-        self.private_key = private_key
-
-    def decrypt(self, message: str) -> str:
-        """
-        A method that takes a string and decrypts it.
-        Parameters:
-        message (str): The string to be decrypted.
-        Returns:
-        str: The decrypted string.
-        """
-        decrypted_message = ""
-        for character in message:
-            decrypted_character = chr((ord(character) ** self.private_key.auxiliary) % self.private_key.prime_product)
-            decrypted_message = decrypted_message + decrypted_character
-        return decrypted_message
+# Encryption and decryption sample for m = 8, n = 55, e = 3, and d = 27.
+m = 8
+n = 55
+e = 3
+d = 27
+encrypted_m = m**e % n  # encrypted_m = 17
+decrypted_m = encrypted_m**d % n  # decrypted_m = 8
 </code>
 </pre>

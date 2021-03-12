@@ -57,18 +57,35 @@
                     </div>
                 </div>
             </div>
+
+            <?php
+            // Perform sanitization.
+            $form_submitted_title = isset($_GET["title"]);
+            $form_submitted_platform = isset($_GET["platform"]);
+
+            $title = "";
+            $platform = "";
+
+            if($form_submitted_title){
+                $title = filter_var($_GET["title"], FILTER_SANITIZE_STRING);
+            }
+            if($form_submitted_platform){
+                $platform = filter_var($_GET["platform"], FILTER_SANITIZE_STRING);
+            }
+            ?>
+
             <form method="GET" id="query">
                 <div class="row justify-content-center text-center">
                     <div class="col-xl-3 col-xxl-2">
-                        <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Project Title" <?php if(isset($_GET["title"]) && $_GET["title"] != ""){ echo "value=".$_GET["title"]; } ?>>
+                        <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Project Title" <?php if($form_submitted_title && $title != ""){ echo "value='".$title."'"; } ?>>
                     </div>
                     <div class="col-xl-3 col-xxl-2">
                         <select class="form-select mt-2" id="platform" name="platform" onchange="this.form.submit()">
                             <option value="All">All Platforms</option>
-                            <option value="Mobile" <?php if(isset($_GET["platform"]) && $_GET["platform"] == "Mobile"){ echo "selected='selected'"; } ?>>Mobile</option>
-                            <option value="Web" <?php if(isset($_GET["platform"]) && $_GET["platform"] == "Web"){ echo "selected='selected'"; } ?>>Web</option>
-                            <option value="Desktop" <?php if(isset($_GET["platform"]) && $_GET["platform"] == "Desktop"){ echo "selected='selected'"; } ?>>Desktop</option>
-                            <option value="Others" <?php if(isset($_GET["platform"]) && $_GET["platform"] == "Others"){ echo "selected='selected'"; } ?>>Others</option>
+                            <option value="Mobile" <?php if($form_submitted_platform && $platform == "Mobile"){ echo "selected='selected'"; } ?>>Mobile</option>
+                            <option value="Web" <?php if($form_submitted_platform && $platform == "Web"){ echo "selected='selected'"; } ?>>Web</option>
+                            <option value="Desktop" <?php if($form_submitted_platform && $platform == "Desktop"){ echo "selected='selected'"; } ?>>Desktop</option>
+                            <option value="Others" <?php if($form_submitted_platform && $platform == "Others"){ echo "selected='selected'"; } ?>>Others</option>
                         </select>
                     </div>
                 </div>
@@ -79,10 +96,7 @@
             if(PortfolioController::connectionWorking()){
                 $data_array = PortfolioController::getAllData();
                 
-                if(isset($_GET["title"]) && isset($_GET["platform"])){
-                    $title = $_GET["title"];
-                    $platform = $_GET["platform"];
-                    
+                if($form_submitted_title && $form_submitted_platform){    
                     if($title != "" && $platform != "All"){
                         $data_array = PortfolioController::getDataFromTitlePlatform($title, $platform);
                     }

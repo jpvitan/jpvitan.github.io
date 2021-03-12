@@ -57,18 +57,35 @@
                     </div>
                 </div>
             </div>
+
+            <?php
+            // Perform sanitization.
+            $form_submitted_title = isset($_GET["title"]);
+            $form_submitted_category = isset($_GET["category"]);
+
+            $title = "";
+            $category = "";
+
+            if($form_submitted_title){
+                $title = filter_var($_GET["title"], FILTER_SANITIZE_STRING);
+            }
+            if($form_submitted_category){
+                $category = filter_var($_GET["category"], FILTER_SANITIZE_STRING);
+            }
+            ?>
+
             <form method="GET" id="query">
                 <div class="row justify-content-center text-center">
                     <div class="col-xl-3 col-xxl-2">
-                        <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Blog Title" <?php if(isset($_GET["title"]) && $_GET["title"] != ""){ echo "value=".$_GET["title"]; } ?>>
+                        <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Blog Title" <?php if($form_submitted_title && $title != ""){ echo "value='".$title."'"; } ?>>
                     </div>
                     <div class="col-xl-3 col-xxl-2">
                         <select class="form-select mt-2" id="category" name="category" onchange="this.form.submit()">
                             <option value="All">All Categories</option>
-                            <option value="SoftwareDevelopment" <?php if(isset($_GET["category"]) && $_GET["category"] == "SoftwareDevelopment"){ echo "selected='selected'"; } ?>>Software Development</option>
-                            <option value="ComputerScience" <?php if(isset($_GET["category"]) && $_GET["category"] == "ComputerScience"){ echo "selected='selected'"; } ?>>Computer Science</option>
-                            <option value="Mathematics" <?php if(isset($_GET["category"]) && $_GET["category"] == "Mathematics"){ echo "selected='selected'"; } ?>>Mathematics</option>
-                            <option value="Others" <?php if(isset($_GET["category"]) && $_GET["category"] == "Others"){ echo "selected='selected'"; } ?>>Others</option>
+                            <option value="SoftwareDevelopment" <?php if($form_submitted_category && $category == "SoftwareDevelopment"){ echo "selected='selected'"; } ?>>Software Development</option>
+                            <option value="ComputerScience" <?php if($form_submitted_category && $category == "ComputerScience"){ echo "selected='selected'"; } ?>>Computer Science</option>
+                            <option value="Mathematics" <?php if($form_submitted_category && $category == "Mathematics"){ echo "selected='selected'"; } ?>>Mathematics</option>
+                            <option value="Others" <?php if($form_submitted_category && $category == "Others"){ echo "selected='selected'"; } ?>>Others</option>
                         </select>
                     </div>
                 </div>
@@ -79,10 +96,7 @@
             if(BlogController::connectionWorking()){
                 $data_array = BlogController::getAllData();
                 
-                if(isset($_GET["title"]) && isset($_GET["category"])){
-                    $title = $_GET["title"];
-                    $category = $_GET["category"];
-                    
+                if(isset($_GET["title"]) && isset($_GET["category"])){   
                     if($title != "" && $category != "All"){
                         $data_array = BlogController::getDataFromTitleCategory($title, $category);    
                     }

@@ -39,16 +39,16 @@
                 <div class="text-center"> 
                     <?php
                     if(isset($_POST["submit"])){
-                        $first_name = $_POST["first_name"];
-                        $last_name = $_POST["last_name"];
-                        $email = $_POST["email"];
-                        $subject = $_POST["subject"];
-                        $message = $_POST["message"];
+                        $first_name = filter_var($_POST["first_name"], FILTER_SANITIZE_STRING);
+                        $last_name = filter_var($_POST["last_name"], FILTER_SANITIZE_STRING);
+                        $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+                        $subject = filter_var($_POST["subject"], FILTER_SANITIZE_STRING);
+                        $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
 
                         $destination = "contact@jpvitan.com";
                         $headers = "From: ".$email;
 
-                        $message = "[Sender Details]\nFirst Name: ".$first_name."\nLast Name: ".$last_name."\n\n[Message]\n".$message;
+                        $message = "First Name: ".$first_name."\nLast Name: ".$last_name."\n\nMessage:\n".$message;
 
                         $recaptcha_failed = false;
                         $recaptcha_failed_message = "

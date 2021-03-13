@@ -79,7 +79,7 @@
                     <div class="col-xl-3 col-xxl-2">
                         <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Blog Title" <?php if($form_submitted_title && $title != ""){ echo "value='".$title."'"; } ?>>
                     </div>
-                    <div class="col-xl-3 col-xxl-2">
+                    <div class="col-xl-3 col-xxl-2 mt-1 mt-xl-0">
                         <select class="form-select mt-2" id="category" name="category" onchange="this.form.submit()">
                             <option value="All">All Categories</option>
                             <option value="SoftwareDevelopment" <?php if($form_submitted_category && $category == "SoftwareDevelopment"){ echo "selected='selected'"; } ?>>Software Development</option>

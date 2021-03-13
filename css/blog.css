@@ -6,13 +6,13 @@ body{
 }
 input{
     border: 0px !important;
-    border-radius: none;
+    border-radius: 10px !important;
     background-color: #ecf0f1 !important;
     height: 3rem;
 }
 select{
     border: 0px !important;
-    border-radius: none;
+    border-radius: 10px !important;
     background-color: #ecf0f1 !important;
     height: 3rem;
 }

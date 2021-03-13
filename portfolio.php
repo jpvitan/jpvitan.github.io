@@ -79,7 +79,7 @@
                     <div class="col-xl-3 col-xxl-2">
                         <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Project Title" <?php if($form_submitted_title && $title != ""){ echo "value='".$title."'"; } ?>>
                     </div>
-                    <div class="col-xl-3 col-xxl-2">
+                    <div class="col-xl-3 col-xxl-2 mt-1 mt-xl-0">
                         <select class="form-select mt-2" id="platform" name="platform" onchange="this.form.submit()">
                             <option value="All">All Platforms</option>
                             <option value="Mobile" <?php if($form_submitted_platform && $platform == "Mobile"){ echo "selected='selected'"; } ?>>Mobile</option>

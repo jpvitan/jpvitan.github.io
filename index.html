@@ -51,19 +51,19 @@
         <div class="py-sm-4"></div>
 
         <div class="container">
-            <div class="row justify-content-center text-lg-start" data-aos="fade-up">
-                <div class="col-xl-6 text-center my-auto">
+            <div class="row justify-content-center" data-aos="fade-up">
+                <div class="col-xl-6 text-center my-auto d-none d-md-block">
                     <img src="img/floradex-framed.png" alt="Floradex" class="img-fluid" width="476" height="900">
                     <p class="text-center style-brand">Floradex for iOS</p>
                 </div>
                 <div class="col-xl-6 my-auto">
                     <div class="card border-0 mt-xl-0 mt-4">
-                        <div class="card-body">
+                        <div class="card-body text-center text-md-start">
                             <h1 class="lm-blue">Hi there!</h1>
                             <div>
                                 <p>My name is Justine Paul Vitan. I'm a software developer who builds mobile, web, and desktop applications.</p>
-                                <p>Creating and designing software with exceptional quality and reliability is my standard.</p>
-                                <ul class="list-unstyled mt-3 style-list-check">
+                                <p class="d-none d-md-block">Creating and designing software with exceptional quality and reliability is my standard.</p>
+                                <ul class="list-unstyled mt-3 d-none d-md-block style-list-check">
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2ecc71" class="bi bi-check-circle-fill me-1" viewBox="0 0 16 16">
                                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>  
@@ -224,17 +224,22 @@
                     <div class="col-xl-6 my-auto">
                         <div class="border-0 mt-xl-0 mt-4">
                             <div>
-                                <div class="border-0 shadow style-card-link" style="background-color: #2980b9;">
+                                <div class="border-0 shadow mx-auto mx-md-0 style-card-link" style="background-color: #2980b9;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-bezier style-card-link-icon" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
                                         <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"/>  
                                     </svg>
                                 </div>
-                                <h1 class="mt-4 lm-blue">Skills</h1>
-                                <div>
-                                    <p>I have a diverse skill set that makes me flexible to work across different platforms.</p>
+                                <h1 class="mt-4 text-center text-md-start lm-blue">Skills</h1>
+                                <p class="text-center text-md-start">I have a diverse skill set that makes me flexible to work across different platforms.</p>
+
+                                <div class="text-center d-block d-md-none">
+                                    <button class="style-show-skill-button">Show Skills</button>
+                                </div>
+
+                                <div class="d-none d-md-block">
                                     <div class="row">
-                                        <div class="col-xxl-6">
+                                        <div class="col-md-6 col-xl-12 col-xxl-6">
                                             <div class="style-skill-header">Programming Languages</div>
                                             <ul class="custom-list mt-1">
                                                 <li class="custom-list-element">Python</li>
@@ -245,7 +250,7 @@
                                                 <li class="custom-list-element">JavaScript</li>
                                             </ul>
                                         </div>
-                                        <div class="col-xxl-6">
+                                        <div class="col-md-6 col-xl-12 col-xxl-6">
                                             <div class="style-skill-header">Web Development</div>
                                             <ul class="custom-list mt-1">
                                                 <li class="custom-list-element">HTML</li>
@@ -255,7 +260,7 @@
                                         </div>
                                     </div>
                                     <div class="row mt-xxl-1">
-                                        <div class="col-xxl-6">
+                                        <div class="col-md-6 col-xl-12 col-xxl-6">
                                             <div class="style-skill-header">Database</div>
                                             <ul class="custom-list mt-1">
                                                 <li class="custom-list-element">MySQL</li>
@@ -263,7 +268,7 @@
                                                 <li class="custom-list-element">Firebase Realtime Database</li>
                                             </ul>
                                         </div>
-                                        <div class="col-xxl-6">
+                                        <div class="col-md-6 col-xl-12 col-xxl-6">
                                             <div class="style-skill-header">Mobile App Development</div>
                                             <ul class="custom-list mt-1">
                                                 <li class="custom-list-element">Android</li>
@@ -272,14 +277,14 @@
                                         </div>
                                     </div>
                                     <div class="row mt-xxl-1">
-                                        <div class="col-xxl-6">
+                                        <div class="col-md-6 col-xl-12 col-xxl-6">
                                             <div class="style-skill-header">Artificial Intelligence</div>
                                             <ul class="custom-list mt-1">
                                                 <li class="custom-list-element">TensorFlow</li>
                                                 <li class="custom-list-element">Keras</li>
                                             </ul>
                                         </div>
-                                        <div class="col-xxl-6">
+                                        <div class="col-md-6 col-xl-12 col-xxl-6">
                                             <div class="style-skill-header">Version Control</div>
                                             <ul class="custom-list mt-1">
                                                 <li class="custom-list-element">Git</li>
@@ -299,19 +304,19 @@
         <div class="py-sm-4"></div>
 
         <div class="container">
-            <div class="row justify-content-center text-xl-center" data-aos="fade-up">
+            <div class="row justify-content-center text-center" data-aos="fade-up">
                 <div class="col-xl-8">
                     <div class="card border-0 mt-xl-0">
                         <div class="card-body">
-                            <h1 class="text-xl-center mb-5 lm-red">Why choose me?</h1>
-                            <div class="border-0 shadow mx-xl-auto style-card-link" style="background-color: #ff6348;">
+                            <h1 class="mb-5 lm-red">Why choose me?</h1>
+                            <div class="border-0 shadow mx-auto style-card-link" style="background-color: #ff6348;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-layers-fill style-card-link-icon" viewBox="0 0 16 16">
                                     <path d="M7.765 1.559a.5.5 0 0 1 .47 0l7.5 4a.5.5 0 0 1 0 .882l-7.5 4a.5.5 0 0 1-.47 0l-7.5-4a.5.5 0 0 1 0-.882l7.5-4z"/>
                                     <path d="M2.125 8.567l-1.86.992a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882l-1.86-.992-5.17 2.756a1.5 1.5 0 0 1-1.41 0l-5.17-2.756z"/>
                                 </svg>
                             </div>
                             <h3 class="mt-4 lm-red">I have the skills of a full-stack developer</h3>
-                            <div>
+                            <div class="d-none d-md-block">
                                 <p>A full-stack developer is someone who develops both client-side and server-side software. This means I could work with databases, manage servers, write front-end and back-end code, and design user interfaces.</p>
                             </div>
                         </div>
@@ -321,17 +326,17 @@
         </div>
 
         <div class="container pt-4">
-            <div class="row justify-content-center text-xl-center" data-aos="fade-up">
+            <div class="row justify-content-center text-center" data-aos="fade-up">
                  <div class="col-xl-8">
                     <div class="card border-0 mt-xl-0">
                         <div class="card-body">
-                            <div class="border-0 shadow mx-xl-auto style-card-link" style="background-color: #ff6348;">
+                            <div class="border-0 shadow mx-auto style-card-link" style="background-color: #ff6348;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-braces style-card-link-icon" viewBox="0 0 16 16">
                                     <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"/>
                                 </svg>
                             </div>
                             <h3 class="mt-4 lm-red">I can develop native apps for iOS and Android</h3>
-                            <div>
+                            <div class="d-none d-md-block">
                                 <p>Native apps are much faster and secure than non-native apps since everything is designed and engineered for the platform itself.</p>
                             </div>
                         </div>
@@ -341,17 +346,17 @@
         </div>
 
         <div class="container pt-4">
-            <div class="row justify-content-center text-xl-center" data-aos="fade-up">
+            <div class="row justify-content-center text-center" data-aos="fade-up">
                  <div class="col-xl-8">
                     <div class="card border-0 mt-xl-0">
                         <div class="card-body">
-                            <div class="border-0 shadow mx-xl-auto style-card-link" style="background-color: #ff6348;">
+                            <div class="border-0 shadow mx-auto style-card-link" style="background-color: #ff6348;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-lightning-fill style-card-link-icon" viewBox="0 0 16 16">
                                     <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z"/>
                                 </svg>
                             </div>
                             <h3 class="mt-4 lm-red">I can easily adapt to new technologies</h3>
-                            <div>
+                            <div class="d-none d-md-block">
                                 <p>Software development is a fast-evolving field; new libraries and frameworks are being updated and released every day. This highlights the need for someone who can easily adapt to these changes.</p>
                             </div>
                         </div>
@@ -361,17 +366,17 @@
         </div>
 
         <div class="container pt-4">
-            <div class="row justify-content-center text-xl-center" data-aos="fade-up">
+            <div class="row justify-content-center text-center" data-aos="fade-up">
                  <div class="col-xl-8">
                     <div class="card border-0 mt-xl-0">
                         <div class="card-body">
-                            <div class="border-0 shadow mx-xl-auto style-card-link" style="background-color: #ff6348;">
+                            <div class="border-0 shadow mx-auto style-card-link" style="background-color: #ff6348;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-bezier2 style-card-link-icon" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M1 2.5A1.5 1.5 0 0 1 2.5 1h1A1.5 1.5 0 0 1 5 2.5h4.134a1 1 0 1 1 0 1h-2.01c.18.18.34.381.484.605.638.992.892 2.354.892 3.895 0 1.993.257 3.092.713 3.7.356.476.895.721 1.787.784A1.5 1.5 0 0 1 12.5 11h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5H6.866a1 1 0 1 1 0-1h1.711a2.839 2.839 0 0 1-.165-.2C7.743 11.407 7.5 10.007 7.5 8c0-1.46-.246-2.597-.733-3.355-.39-.605-.952-1-1.767-1.112A1.5 1.5 0 0 1 3.5 5h-1A1.5 1.5 0 0 1 1 3.5v-1zM2.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10 10a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
                                 </svg>
                             </div>
                             <h3 class="mt-4 lm-red">I can solve complex problems</h3>
-                            <div>
+                            <div class="d-none d-md-block">
                                 <p>The ability to solve problems is an essential skill in the field of software development. If your app requires complex business logic or heavy math, then I'm here to solve it!</p>
                             </div>
                         </div>
@@ -397,7 +402,7 @@
         
         <!-- AOS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        
+
         <!-- JavaScript -->
         <script src="js/main.js"></script>
     </body>

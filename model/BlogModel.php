@@ -14,13 +14,13 @@ class BlogModel{
     function __construct($id, $image_banner, $title, $description, $author, $date, $category, $link, $sub_category){
         $this->id = $id;
         $this->image_banner = $image_banner;
-        $this->title = $title;
-        $this->description = $description;
-        $this->author = $author;
+        $this->title = htmlspecialchars($title);
+        $this->description = htmlspecialchars($description);
+        $this->author = htmlspecialchars($author);
         $this->date = $date;
-        $this->category = $category;
+        $this->category = htmlspecialchars($category);
         $this->link = $link;
-        $this->sub_category = $sub_category;
+        $this->sub_category = htmlspecialchars($sub_category);
     }
     
     function getId(){

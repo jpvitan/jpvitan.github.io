@@ -5,6 +5,6 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 
 AOS.init();
 
-window.onload = function(){
-   
+window.onload = function () {
+
 };

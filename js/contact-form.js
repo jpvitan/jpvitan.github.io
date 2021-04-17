@@ -1,12 +1,12 @@
 AOS.init();
 
-window.onload = function(){
+window.onload = function () {
     var button = document.getElementById("button");
-    button.onclick = function(){
-        if (button.value == 0){
+    button.onclick = function () {
+        if (button.value == 0) {
             location.href = "/";
-        }else if(button.value == 1){
+        } else if (button.value == 1) {
             history.go(-1);
-        }    
-    };   
+        }
+    };
 };

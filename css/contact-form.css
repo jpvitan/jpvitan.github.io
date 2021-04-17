@@ -1,10 +1,12 @@
-html, body{
+html, body {
     background-color: #f9fcfb;
     height: 100%;
 }
-body{
+
+body {
     display: flex;
 }
+
 .style-card {
     display: block;
     width: 100%;
@@ -13,15 +15,17 @@ body{
     margin: auto;
     background-color: #f9fcfb;
 }
-.style-contact-form-heading{
+
+.style-contact-form-heading {
     color: #0fbcf9;
     font-family: lemonmilk;
     font-size: 2.2rem;
 }
-.style-button{
+
+.style-button {
     border: 0px;
     border-radius: 20px;
-    background-color: #0fbcf9; 
+    background-color: #0fbcf9;
     color: #ffffff;
     width: 100%;
     height: 3rem;

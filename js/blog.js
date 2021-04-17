@@ -1,5 +1,5 @@
 AOS.init();
 
-window.onload = function(){
-   
+window.onload = function () {
+
 };

@@ -1,18 +1,28 @@
 <a href="blogs/computer-science/how-i-implemented-the-rsa-algorithm-in-python/banner.png">
-    <img class="img-fluid border mb-4" src="blogs/computer-science/how-i-implemented-the-rsa-algorithm-in-python/banner.png" width="1366" height="768" alt="rsa-jpv on GitHub">
+    <img class="img-fluid border mb-4"
+        src="blogs/computer-science/how-i-implemented-the-rsa-algorithm-in-python/banner.png" width="1366" height="768"
+        alt="rsa-jpv on GitHub">
 </a>
 
-<p>The RSA is an asymmetric encryption algorithm that is widely adopted by today’s modern systems to secure data. It is usually paired with another encryption algorithm due to its slow performance. In this post, we are going to implement the “pure” and “textbook” version of RSA using Python 3.</p>
+<p>The RSA is an asymmetric encryption algorithm that is widely adopted by today’s modern systems to secure data. It is
+    usually paired with another encryption algorithm due to its slow performance. In this post, we are going to
+    implement the “pure” and “textbook” version of RSA using Python 3.</p>
 
 <h2 class="mt-5 mb-3">Key Generation</h2>
 
-<p>RSA uses two different keys to encrypt and decrypt data. In this context, we use the public key to encrypt the data and the private key to decrypt it.</p>
+<p>RSA uses two different keys to encrypt and decrypt data. In this context, we use the public key to encrypt the data
+    and the private key to decrypt it.</p>
 
-<p>The public key consists of two integers $e$ and $n$. The public key can't be used to decrypt messages and you may distribute it to anyone who wants to send you encrypted messages. Similarly, the private key also consists of two integers $d$ and $n$ but unlike the public key, you should always keep your private key a secret.</p>
+<p>The public key consists of two integers $e$ and $n$. The public key can't be used to decrypt messages and you may
+    distribute it to anyone who wants to send you encrypted messages. Similarly, the private key also consists of two
+    integers $d$ and $n$ but unlike the public key, you should always keep your private key a secret.</p>
 
-<p>The values of the public and private key rely on two large and distinct prime numbers $p$ and $q$. There are generally factors to consider when choosing $p$ and $q$ but for the sake of simplicity, we are just going to assume that $p$ and $q$ are distinct prime numbers.</p>
+<p>The values of the public and private key rely on two large and distinct prime numbers $p$ and $q$. There are
+    generally factors to consider when choosing $p$ and $q$ but for the sake of simplicity, we are just going to assume
+    that $p$ and $q$ are distinct prime numbers.</p>
 
-<p>After we have defined the values for $p$ and $q$, we can now compute $n$ and $k$. $n$ is simply the product of $p$ and $q$ and $k$ is $\phi(n)$ or the number of relatively prime integers to $n$ from $[1,n]$.</p>
+<p>After we have defined the values for $p$ and $q$, we can now compute $n$ and $k$. $n$ is simply the product of $p$
+    and $q$ and $k$ is $\phi(n)$ or the number of relatively prime integers to $n$ from $[1,n]$.</p>
 
 $$
 \begin{align}
@@ -21,11 +31,14 @@ k &= \phi(n) = (p-1)(q-1)
 \end{align}
 $$
 
-<p>The only thing that is left to compute are the auxiliary values $e$ and $d$. The value of $e$ could be any integer as long as it satisfies the condition that it is relatively prime to $k$ and greater than one. The value of $d$ is the multiplicative inverse of $e \ \textrm{mod} \ k$.</p>
+<p>The only thing that is left to compute are the auxiliary values $e$ and $d$. The value of $e$ could be any integer as
+    long as it satisfies the condition that it is relatively prime to $k$ and greater than one. The value of $d$ is the
+    multiplicative inverse of $e \ \textrm{mod} \ k$.</p>
 
 <h2 class="mt-5 mb-3">Programming the Key Generator</h2>
 
-<p>For this part, I'm going to focus solely on getting $e$ and $d$ and skip the code for generating random prime numbers as it is quite trivial.</p>
+<p>For this part, I'm going to focus solely on getting $e$ and $d$ and skip the code for generating random prime numbers
+    as it is quite trivial.</p>
 
 <p>We could find $e$ by creating two functions:</p>
 <ol>
@@ -69,8 +82,9 @@ e = find_number_relatively_prime(k)
 print(e)  # Output: 3
 </code>
 </pre>
-    
-<p>Finding $d$ requires us to slightly modify our <code>gcd()</code> function and solve a recurrence relation that gives the linear combination of $e$ and $k$.</p>
+
+<p>Finding $d$ requires us to slightly modify our <code>gcd()</code> function and solve a recurrence relation that gives
+    the linear combination of $e$ and $k$.</p>
 
 <pre class="my-4">
 <code class="language-python">

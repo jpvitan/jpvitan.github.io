@@ -1,63 +1,76 @@
-html, body{
+html, body {
     color: #747d8c;
 }
-p{
+
+p {
     color: #747d8c;
     font-size: 1.2rem;
     font-weight: 300;
 }
-@media only screen and (min-width: 767px){
-    p{
+
+@media only screen and (min-width: 767px) {
+    p {
         font-size: 1.4rem;
     }
 }
-.custom-list{
+
+.custom-list {
     list-style-type: none;
     padding: 0px;
 }
-.custom-list-element{
+
+.custom-list-element {
     color: #747d8c;
     padding-left: 1.3em;
     font-size: 1.1rem;
     font-weight: 300;
 }
-.custom-list-element::before{
+
+.custom-list-element::before {
     content: "▸";
     display: inline-block;
     margin-left: -1.3em;
     width: 1.3em;
 }
-.style-brand{
-    color: #747d8c; 
-    font-size: 1em; 
+
+.style-brand {
+    color: #747d8c;
+    font-size: 1em;
     font-weight: 300;
 }
-.style-link{
+
+.style-link {
     color: #0fbcf9;
 }
-.style-link:hover{
+
+.style-link:hover {
     color: #ff6b81;
 }
-.style-card-link-outer{
-    width: 8rem; 
+
+.style-card-link-outer {
+    width: 8rem;
     height: 8rem;
 }
-.style-card-link{
+
+.style-card-link {
     position: relative;
     color: #ffffff;
     border-radius: 20px;
     width: 5rem;
     height: 5rem;
 }
-.style-card-link-icon{
+
+.style-card-link-icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.style-card-link-text{
+
+.style-card-link-text {
     color: #808e9b;
 }
-.style-about-container{
+
+.style-about-container {
     background-color: #ffffff;
 }

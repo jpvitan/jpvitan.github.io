@@ -1,95 +1,114 @@
-html{
+html {
     background-color: #ffffff;
 }
-body{
+
+body {
     background-color: #ffffff;
 }
-p{
+
+p {
     color: #747d8c;
     font-size: 1.2rem;
     font-weight: 300;
 }
-@media only screen and (min-width: 767px){
-    p{
+
+@media only screen and (min-width: 767px) {
+    p {
         font-size: 1.4rem;
     }
 }
-.custom-list{
+
+.custom-list {
     list-style-type: none;
     padding: 0px;
 }
-.custom-list-element{
+
+.custom-list-element {
     color: #747d8c;
     padding-left: 1.3em;
     font-size: 1.1rem;
     font-weight: 300;
 }
-.custom-list-element-p{
+
+.custom-list-element-p {
     color: #747d8c;
     padding-left: 1.4em;
     font-size: 1.4rem;
     font-weight: 300;
 }
-.custom-list-element::before{
+
+.custom-list-element::before {
     content: "▸";
     display: inline-block;
     margin-left: -1.3em;
     width: 1.3em;
 }
-.custom-list-element-p::before{
+
+.custom-list-element-p::before {
     content: "▸";
     display: inline-block;
     margin-left: -1.4em;
     width: 1.4em;
 }
-.style-brand{
-    color: #747d8c; 
-    font-size: 1em; 
+
+.style-brand {
+    color: #747d8c;
+    font-size: 1em;
     font-weight: 300;
 }
-.style-list-check{
-    font-size: 1.1rem; 
-    font-weight: 300; 
+
+.style-list-check {
+    font-size: 1.1rem;
+    font-weight: 300;
     color: #747d8c;
 }
-.style-link{
+
+.style-link {
     color: #0fbcf9;
 }
-.style-link:hover{
+
+.style-link:hover {
     color: #ff6b81;
 }
-.style-card-link-outer{
-    width: 8rem; 
+
+.style-card-link-outer {
+    width: 8rem;
     height: 8rem;
 }
-.style-card-link{
+
+.style-card-link {
     position: relative;
     color: #ffffff;
     border-radius: 20px;
     width: 5rem;
     height: 5rem;
 }
-.style-card-link-icon{
+
+.style-card-link-icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.style-card-link-text{
+
+.style-card-link-text {
     color: #808e9b;
 }
-.style-skill-container{
+
+.style-skill-container {
     background-color: #f9fcfb;
 }
-.style-skill-header{
+
+.style-skill-header {
     color: #0fbcf9;
     font-size: 1.4rem;
     font-weight: 500;
 }
-.style-show-skills-button{
+
+.style-show-skills-button {
     border: 0px !important;
     border-radius: 10px !important;
-    background-color: #0fbcf9; 
+    background-color: #0fbcf9;
     color: #ffffff;
     width: 180px;
     height: 48px;

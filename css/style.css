@@ -1,50 +1,62 @@
-a{
+a {
     text-decoration: none;
 }
+
 @font-face {
     font-family: 'lemonmilk';
     src: url('font/lemonmilk.otf');
 }
-.lm-black{
-    font-family: lemonmilk; 
+
+.lm-black {
+    font-family: lemonmilk;
     color: #000000;
 }
-.lm-white{
-    font-family: lemonmilk; 
+
+.lm-white {
+    font-family: lemonmilk;
     color: #ffffff;
 }
-.lm-red{
-    font-family: lemonmilk; 
+
+.lm-red {
+    font-family: lemonmilk;
     color: #ff6b81;
 }
-.lm-blue{
-    font-family: lemonmilk; 
+
+.lm-blue {
+    font-family: lemonmilk;
     color: #0fbcf9;
 }
-.lm-orange{
-    font-family: lemonmilk; 
+
+.lm-orange {
+    font-family: lemonmilk;
     color: #f39c12;
 }
-.style-navbar{
+
+.style-navbar {
     background-color: rgba(255, 255, 255, 0.95);
 }
-.style-navbar-brand{
-    font-family: lemonmilk; 
+
+.style-navbar-brand {
+    font-family: lemonmilk;
     font-size: 2.00rem !important;
     color: #0fbcf9 !important;
 }
-.style-navbar-btn{
-    border: 0px !important; 
+
+.style-navbar-btn {
+    border: 0px !important;
     color: #bdc3c7 !important;
 }
-.style-nav-link{
-    font-family: lemonmilk; 
+
+.style-nav-link {
+    font-family: lemonmilk;
     color: #808e9b !important;
 }
-.style-nav-link:hover{
+
+.style-nav-link:hover {
     color: #0fbcf9 !important;
 }
-.style-footer{
+
+.style-footer {
     background-color: #f9fcfb;
     font-size: 0.70rem;
     font-weight: 400;

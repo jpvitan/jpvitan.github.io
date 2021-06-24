@@ -100,7 +100,12 @@
                         $data_array = PortfolioController::getAllData();
 
                         if ($form_submitted_title && $form_submitted_platform) {
-                            if ($title != "" && $platform != "All") {
+                            if ($platform == "Others") {
+                                $data_array = PortfolioController::getDataOthers();
+                                if ($title != "") {
+                                    $data_array = PortfolioController::getDataOthersWithTitle($title);
+                                }
+                            } else if ($title != "" && $platform != "All") {
                                 $data_array = PortfolioController::getDataFromTitlePlatform($title, $platform);
                             } else if ($title != "") {
                                 $data_array = PortfolioController::getDataFromTitle($title);

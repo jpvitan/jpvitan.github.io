@@ -90,7 +90,7 @@ if (isset($_GET["id"])) {
     <div class="container mt-2 mt-xl-5">
         <div class="row justify-content-center">
             <div class="col-lg-7 mt-2 px-3">
-                <div class="style-sub-category mb-2"><?php echo strtoupper($blog->getSubCategory()); ?></div>
+                <div class='style-sub-category badge mb-2'><?php echo strtoupper($blog->getSubCategory()); ?></div>
                 <h1><?php echo $blog->getTitle(); ?></h1>
                 <div class="style-author-date mt-2 mb-4">
                     <img src="img/profile.jpg" alt="Profile Picture" class="rounded-circle me-1" width="25" height="25">

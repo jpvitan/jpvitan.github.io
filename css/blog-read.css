@@ -33,8 +33,7 @@ li:not([class="nav-item"]) {
 }
 
 .style-sub-category {
-    color: #ff6b81;
-    font-weight: 600;
+    background-color: #ff6b81 !important;
 }
 
 .style-author-date {

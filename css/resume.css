@@ -1,0 +1,46 @@
+html {
+    background-color: #ffffff;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+input {
+    border: 0px !important;
+    border-radius: 10px !important;
+    background-color: #ecf0f1 !important;
+    height: 3rem;
+}
+
+select {
+    border: 0px !important;
+    border-radius: 10px !important;
+    background-color: #ecf0f1 !important;
+    height: 3rem;
+}
+
+.style-card-link-outer {
+    width: 10rem;
+    height: 10rem;
+}
+
+.style-card-link {
+    position: relative;
+    color: #ffffff;
+    border-radius: 20px;
+    width: 6rem;
+    height: 6rem;
+}
+
+.style-card-link-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.style-card-link-text {
+    font-size: 1.5em;
+    color: #808e9b;
+}

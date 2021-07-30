@@ -78,6 +78,11 @@
                                                                                                                     echo "value='" . $search . "'";
                                                                                                                 } ?>>
                 </div>
+                <div class="col-xl-3 col-xxl-2 mt-1 mt-xl-0">
+                    <select class="form-select mt-2" id="platform" name="platform" onchange="this.form.submit()">
+                        <option value="All">All</option>
+                    </select>
+                </div>
             </div>
         </form>
 

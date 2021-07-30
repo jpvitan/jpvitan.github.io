@@ -43,9 +43,6 @@ class ResumeModel
         $card = "
         <li class='list-group-item border-0 mt-4 mt-sm-5'>
             <div class='row'>
-                <div class='col my-auto'>
-
-                </div>
                 <div class='col-sm-auto my-auto'>
                     <img class='mb-3 mb-sm-0' style='width: 80px; height: 80px;' alt='Icon' src='" . $this->image_banner . "' width='80' height='80'/>
                 </div>
@@ -65,9 +62,6 @@ class ResumeModel
                             <path d='M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z'/>
                         </svg>
                     </a>
-                </div>
-                <div class='col my-auto'>
-
                 </div>
             </div>
         </li>

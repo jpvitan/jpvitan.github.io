@@ -44,9 +44,11 @@ class ResumeModel
         <li class='list-group-item border-0 mt-4 mt-sm-5'>
             <div class='row'>
                 <div class='col-sm-auto my-auto'>
-                    <img class='mb-3 mb-sm-0' style='width: 80px; height: 80px;' alt='Icon' src='" . $this->image_banner . "' width='80' height='80'/>
+                    <a href='" . $this->link . "' style='text-decoration: none;' target='_blank'>
+                        <img class='mb-3 mb-sm-0' style='width: 80px; height: 80px;' alt='Icon' src='" . $this->image_banner . "' width='80' height='80'/>                    
+                    </a>
                 </div>
-                <div class='col-sm-auto my-auto'>
+                <div class='col my-auto'>
                     <h1 class='mb-1' style='font-size: 1.25rem; font-weight: 600;'>" . $this->title . "</h1>
                     <p class='mb-1' style='color: #747d8c;'>" . $this->description . "</p>
                     <span class='badge me-2' style='background-color: " . $this->getColorFromFileType($this->file_type) . ";'>" . $this->file_type . "</span>

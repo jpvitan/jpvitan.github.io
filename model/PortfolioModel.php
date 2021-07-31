@@ -52,7 +52,9 @@ class PortfolioModel
         <li class='list-group-item border-0 mt-4 mt-sm-5'>
             <div class='row'>
                 <div class='col-sm-auto my-auto'>
-                    <img class='mb-3 mb-sm-0' style='width: 80px; height: 80px;' alt='Icon' src='" . $this->image_banner . "' width='80' height='80'/>
+                    <a href='" . $this->link . "' style='text-decoration: none;'>
+                        <img class='mb-3 mb-sm-0' style='width: 80px; height: 80px;' alt='Icon' src='" . $this->image_banner . "' width='80' height='80'/>
+                    </a>
                 </div>
                 <div class='col my-auto'>
                     <h1 class='mb-1' style='font-size: 1.25rem; font-weight: 600;'>" . $this->title . "</h1>

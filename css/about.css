@@ -17,6 +17,14 @@ p {
     }
 }
 
+.style-about-container {
+    max-width: 40rem;
+}
+
+.p-small {
+    font-size: 1.05rem;
+}
+
 .btn-introduction {
     text-decoration: none;
     color: #747d8c !important;
@@ -31,11 +39,8 @@ p {
     height: 1.1rem;
 }
 
-.style-about-container {
-    max-width: 40rem;
-}
-
-.p-small {
-    font-size: 1.05rem;
-    /* font-weight: 400; */
+.style-ending-text {
+    font-size: 0.70rem;
+    font-weight: 400;
+    color: #808e9b;
 }

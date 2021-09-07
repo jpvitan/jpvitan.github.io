@@ -47,12 +47,37 @@ a {
     color: #000000;
 }
 
+.roboto-white {
+    font-family: Roboto;
+    color: #ffffff;
+}
+
 .roboto-gray {
     font-family: Roboto;
     color: #747d8c;
 }
 
+.roboto-blue {
+    font-family: Roboto;
+    color: #0fbcf9;
+}
+
+.roboto-red {
+    font-family: Roboto;
+    color: #ff6b81;
+}
+
 .roboto-regular-black {
     font-family: Roboto-Regular;
     color: #000000;
+}
+
+.roboto-regular-white {
+    font-family: Roboto-Regular;
+    color: #ffffff;
+}
+
+.roboto-regular-gray {
+    font-family: Roboto-Regular;
+    color: #747d8c;
 }

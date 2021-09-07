@@ -19,6 +19,9 @@ p {
     .style-reason-card p {
         font-size: 1.2rem !important;
     }
+    .style-about-text {
+        font-size: 1.2rem !important;
+    }
 }
 
 .menu-button {
@@ -74,5 +77,9 @@ p {
 }
 
 .style-reason-card p {
+    font-size: 1rem;
+}
+
+.style-about-text {
     font-size: 1rem;
 }

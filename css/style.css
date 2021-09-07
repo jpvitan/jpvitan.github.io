@@ -27,6 +27,11 @@ a {
     color: #ffffff;
 }
 
+.lm-gray{
+    font-family: lemonmilk;
+    color: #747d8c;
+}
+
 .lm-red {
     font-family: lemonmilk;
     color: #ff6b81;

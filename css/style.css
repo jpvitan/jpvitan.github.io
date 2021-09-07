@@ -27,7 +27,7 @@ a {
     color: #ffffff;
 }
 
-.lm-gray{
+.lm-gray {
     font-family: lemonmilk;
     color: #747d8c;
 }
@@ -85,4 +85,37 @@ a {
 .roboto-regular-gray {
     font-family: Roboto-Regular;
     color: #747d8c;
+}
+
+/* TO BE REMOVED SOON */
+
+.style-navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.style-navbar-brand {
+    font-family: lemonmilk;
+    font-size: 2.00rem !important;
+    color: #0fbcf9 !important;
+}
+
+.style-navbar-btn {
+    border: 0px !important;
+    color: #bdc3c7 !important;
+}
+
+.style-nav-link {
+    font-family: lemonmilk;
+    color: #808e9b !important;
+}
+
+.style-nav-link:hover {
+    color: #0fbcf9 !important;
+}
+
+.style-footer {
+    background-color: #f9fcfb;
+    font-size: 0.70rem;
+    font-weight: 400;
+    color: #808e9b;
 }

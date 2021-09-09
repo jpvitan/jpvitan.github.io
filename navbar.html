@@ -1,9 +1,21 @@
+<script>
+    function menuButtonClicked() {
+        var menuElement = document.getElementById("menu");
+
+        if (menuElement.style.display === "none" || menuElement.style.display === "") {
+            menuElement.style.display = "block";
+        } else {
+            menuElement.style.display = "none";
+        }
+    }
+</script>
+
 <div class="row">
     <div class="col">
 
     </div>
     <div class="col-auto">
-        <button class="menu-button">
+        <button class="menu-button" onclick="menuButtonClicked()">
 
         </button>
     </div>

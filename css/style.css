@@ -87,6 +87,13 @@ a {
     color: #747d8c;
 }
 
+.style-footer {
+    background-color: #f9fcfb;
+    font-size: 0.70rem;
+    font-weight: 400;
+    color: #808e9b;
+}
+
 /* TO BE REMOVED SOON */
 
 .style-navbar {
@@ -111,11 +118,4 @@ a {
 
 .style-nav-link:hover {
     color: #0fbcf9 !important;
-}
-
-.style-footer {
-    background-color: #f9fcfb;
-    font-size: 0.70rem;
-    font-weight: 400;
-    color: #808e9b;
 }

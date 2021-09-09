@@ -94,28 +94,18 @@ a {
     color: #808e9b;
 }
 
-/* TO BE REMOVED SOON */
-
 .style-navbar {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
 }
 
-.style-navbar-brand {
-    font-family: lemonmilk;
-    font-size: 2.00rem !important;
-    color: #0fbcf9 !important;
-}
-
-.style-navbar-btn {
-    border: 0px !important;
-    color: #bdc3c7 !important;
-}
-
-.style-nav-link {
-    font-family: lemonmilk;
-    color: #808e9b !important;
-}
-
-.style-nav-link:hover {
-    color: #0fbcf9 !important;
+.menu-button {
+    background-image: url('../img/menu.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
 }

@@ -77,7 +77,9 @@ if (isset($_GET["id"])) {
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-xl navbar-light fixed-top style-navbar" id="navbar"></nav>
+    <div class="container-fluid fixed-top px-3 py-3 style-navbar" id="navbar">
+
+    </div>
 
     <script>
         $(function() {
@@ -85,9 +87,9 @@ if (isset($_GET["id"])) {
         });
     </script>
 
-    <div style="height: 74px;"></div>
+    <div class="py-5"></div>
 
-    <div class="container mt-2 mt-xl-5">
+    <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-7 mt-2 px-3">
                 <div class='style-sub-category badge mb-2'><?php echo strtoupper($blog->getSubCategory()); ?></div>

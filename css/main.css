@@ -24,21 +24,6 @@ p {
     }
 }
 
-.menu-button {
-    position: fixed;
-    top: 1.5rem;
-    right: 1.5rem;
-    z-index: 3;
-    background-image: url('../img/menu.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    width: 45px;
-    height: 45px;
-}
-
 .btn-introduction {
     text-decoration: none;
     font-family: Roboto;

@@ -36,7 +36,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-xl navbar-light fixed-top style-navbar" id="navbar"></nav>
+    <div class="container-fluid fixed-top px-3 py-3 style-navbar" id="navbar">
+
+    </div>
 
     <script>
         $(function() {
@@ -44,9 +46,9 @@
         });
     </script>
 
-    <div style="height: 74px;"></div>
+    <div class="py-5"></div>
 
-    <div class="container-fluid mt-4 py-4">
+    <div class="container-fluid pb-4">
         <div class="row justify-content-center text-center">
             <div class="col-sm-auto">
                 <div class="text-center mx-auto style-card-link-outer">

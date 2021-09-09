@@ -77,12 +77,15 @@ if (isset($_GET["id"])) {
 </head>
 
 <body>
+    <div class="style-menu" id="menu"></div>
+
     <div class="container-fluid fixed-top px-3 py-3 style-navbar" id="navbar">
 
     </div>
 
     <script>
         $(function() {
+            $("#menu").load("menu.html");
             $("#navbar").load("navbar.html");
         });
     </script>

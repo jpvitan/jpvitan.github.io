@@ -72,6 +72,11 @@ if (isset($_GET["id"])) {
 
     <!-- CSS -->
     <link rel="preload" as="font" href="css/font/lemonmilk.otf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="css/font/Roboto-Light.ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="css/font/Roboto-Regular.ttf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/blog-read.css" rel="stylesheet">
 </head>
@@ -92,16 +97,29 @@ if (isset($_GET["id"])) {
 
     <div class="py-5"></div>
 
-    <div class="container">
+    <div class="py-md-4"></div>
+
+    <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-lg-7 mt-2 px-3">
-                <div class='style-sub-category badge mb-2'><?php echo strtoupper($blog->getSubCategory()); ?></div>
-                <h1><?php echo $blog->getTitle(); ?></h1>
-                <div class="style-author-date mt-2 mb-4">
-                    <img src="img/profile.jpg" alt="Profile Picture" class="rounded-circle me-1" width="25" height="25">
-                    <?php echo $blog->getAuthor() . " | " . $blog->getDate(); ?>
+            <div class="col-auto">
+                <div style="max-width: 55rem;">
+                    <div class="text-center">
+                        <h1><?php echo $blog->getTitle(); ?></h1>
+                        <p class="mt-2 roboto-gray"><?php echo $blog->getDescription(); ?></p>
+                        <img src=<?php echo $blog->getImageBanner(); ?> alt="Banner" class="img-fluid border shadow-sm" width="1366" height="768" />
+                    </div>
+                    <div class="row justify-content-center text-start mt-4">
+                        <div class="col-auto">
+                            <div style="max-width: 50rem">
+                                <div class="style-author-date mb-4">
+                                    <div>Written by <?php echo $blog->getAuthor(); ?></div>
+                                    <div><?php echo $blog->getDate(); ?></div>
+                                </div>
+                                <?php include $blog->getLink(); ?>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <?php include $blog->getLink(); ?>
             </div>
         </div>
     </div>

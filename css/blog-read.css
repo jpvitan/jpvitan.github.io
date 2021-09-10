@@ -1,42 +1,32 @@
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     color: #222f3e;
 }
 
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     color: #222f3e;
 }
 
 h3 {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     color: #222f3e;
 }
 
 p {
+    font-family: 'Nanum Myeongjo', serif;
     font-size: 1.1rem;
     color: #222f3e;
 }
 
 li:not([class="nav-item"]) {
+    font-family: 'Nanum Myeongjo', serif;
     font-size: 1.1rem;
     color: #222f3e;
 }
 
-.style-description {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #747d8c;
-    font-size: 1.3rem;
-}
-
-.style-sub-category {
-    background-color: #ff6b81 !important;
-}
-
 .style-author-date {
+    font-family: Roboto-Regular;
     color: #747d8c;
     font-size: 0.9rem;
 }

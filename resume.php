@@ -79,43 +79,51 @@
         ?>
 
         <form method="GET" id="query">
-            <div class="row justify-content-center text-center">
-                <div class="col-xl-3 col-xxl-2">
-                    <input class="form-control mt-2" type="text" id="search" name="search" placeholder="Search" <?php if ($form_submitted_search && $search != "") {
-                                                                                                                    echo "value='" . $search . "'";
-                                                                                                                } ?>>
-                </div>
-                <div class="col-xl-3 col-xxl-2 mt-1 mt-xl-0">
-                    <select class="form-select mt-2" id="platform" name="platform" onchange="this.form.submit()">
-                        <option value="All">All</option>
-                    </select>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div style="max-width: 50rem;">
+                        <div class="row">
+                            <div class="col-sm px-0 pe-sm-2">
+                                <input class="form-control mt-2" type="text" id="search" name="search" placeholder="Search" <?php if ($form_submitted_search && $search != "") {
+                                                                                                                                echo "value='" . $search . "'";
+                                                                                                                            } ?>>
+                            </div>
+                            <div class="col-sm px-0 ps-sm-2">
+                                <select class="form-select mt-2" id="platform" name="platform" onchange="this.form.submit()">
+                                    <option value="All">All</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </form>
 
         <div class="row justify-content-center">
-            <div class='col-xl-6 col-xxl-4'>
-                <ul class="list-group list-group-flush">
-                    <?php
-                    include "controller/ResumeController.php";
+            <div class='col-auto'>
+                <div style="max-width: 50rem;">
+                    <ul class="list-group list-group-flush">
+                        <?php
+                        include "controller/ResumeController.php";
 
-                    if (ResumeController::connectionWorking()) {
-                        $data_array = ResumeController::getAllData();
+                        if (ResumeController::connectionWorking()) {
+                            $data_array = ResumeController::getAllData();
 
-                        if (isset($_GET["search"])) {
-                            if ($search != "") {
-                                $data_array = ResumeController::getDataFromTitle($search);
+                            if (isset($_GET["search"])) {
+                                if ($search != "") {
+                                    $data_array = ResumeController::getDataFromTitle($search);
+                                }
                             }
-                        }
 
-                        for ($i = 0; $i < count($data_array); $i++) {
-                            echo $data_array[$i]->getCard();
+                            for ($i = 0; $i < count($data_array); $i++) {
+                                echo $data_array[$i]->getCard();
+                            }
+                        } else {
+                            echo "<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>";
                         }
-                    } else {
-                        echo "<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>";
-                    }
-                    ?>
-                </ul>
+                        ?>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

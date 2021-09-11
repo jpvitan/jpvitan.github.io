@@ -31,6 +31,8 @@
 
     <!-- CSS -->
     <link rel="preload" as="font" href="css/font/lemonmilk.otf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="css/font/Roboto-Light.ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="css/font/Roboto-Regular.ttf" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/blog.css" rel="stylesheet">
 </head>

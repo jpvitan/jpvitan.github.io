@@ -71,64 +71,72 @@
         ?>
 
         <form method="GET" id="query">
-            <div class="row justify-content-center text-center">
-                <div class="col-xl-3 col-xxl-2">
-                    <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Search Portfolio" <?php if ($form_submitted_title && $title != "") {
-                                                                                                                            echo "value='" . $title . "'";
-                                                                                                                        } ?>>
-                </div>
-                <div class="col-xl-3 col-xxl-2 mt-1 mt-xl-0">
-                    <select class="form-select mt-2" id="platform" name="platform" onchange="this.form.submit()">
-                        <option value="All">All Platforms</option>
-                        <option value="Mobile" <?php if ($form_submitted_platform && $platform == "Mobile") {
-                                                    echo "selected='selected'";
-                                                } ?>>Mobile</option>
-                        <option value="Web" <?php if ($form_submitted_platform && $platform == "Web") {
-                                                echo "selected='selected'";
-                                            } ?>>Web</option>
-                        <option value="Desktop" <?php if ($form_submitted_platform && $platform == "Desktop") {
-                                                    echo "selected='selected'";
-                                                } ?>>Desktop</option>
-                        <option value="Others" <?php if ($form_submitted_platform && $platform == "Others") {
-                                                    echo "selected='selected'";
-                                                } ?>>Others</option>
-                    </select>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div style="max-width: 50rem;">
+                        <div class="row">
+                            <div class="col-sm px-0 pe-sm-2">
+                                <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Search Portfolio" <?php if ($form_submitted_title && $title != "") {
+                                                                                                                                        echo "value='" . $title . "'";
+                                                                                                                                    } ?>>
+                            </div>
+                            <div class="col-sm px-0 ps-sm-2">
+                                <select class="form-select mt-2" id="platform" name="platform" onchange="this.form.submit()">
+                                    <option value="All">All Platforms</option>
+                                    <option value="Mobile" <?php if ($form_submitted_platform && $platform == "Mobile") {
+                                                                echo "selected='selected'";
+                                                            } ?>>Mobile</option>
+                                    <option value="Web" <?php if ($form_submitted_platform && $platform == "Web") {
+                                                            echo "selected='selected'";
+                                                        } ?>>Web</option>
+                                    <option value="Desktop" <?php if ($form_submitted_platform && $platform == "Desktop") {
+                                                                echo "selected='selected'";
+                                                            } ?>>Desktop</option>
+                                    <option value="Others" <?php if ($form_submitted_platform && $platform == "Others") {
+                                                                echo "selected='selected'";
+                                                            } ?>>Others</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </form>
 
         <div class="row justify-content-center">
-            <div class='col-xl-6 col-xxl-4'>
-                <ul class="list-group list-group-flush">
-                    <?php
-                    include "controller/PortfolioController.php";
+            <div class='col-auto'>
+                <div style="max-width: 50rem;">
+                    <ul class="list-group list-group-flush">
+                        <?php
+                        include "controller/PortfolioController.php";
 
-                    if (PortfolioController::connectionWorking()) {
-                        $data_array = PortfolioController::getAllData();
+                        if (PortfolioController::connectionWorking()) {
+                            $data_array = PortfolioController::getAllData();
 
-                        if ($form_submitted_title && $form_submitted_platform) {
-                            if ($platform == "Others") {
-                                $data_array = PortfolioController::getDataOthers();
-                                if ($title != "") {
-                                    $data_array = PortfolioController::getDataOthersWithTitle($title);
+                            if ($form_submitted_title && $form_submitted_platform) {
+                                if ($platform == "Others") {
+                                    $data_array = PortfolioController::getDataOthers();
+                                    if ($title != "") {
+                                        $data_array = PortfolioController::getDataOthersWithTitle($title);
+                                    }
+                                } else if ($title != "" && $platform != "All") {
+                                    $data_array = PortfolioController::getDataFromTitlePlatform($title, $platform);
+                                } else if ($title != "") {
+                                    $data_array = PortfolioController::getDataFromTitle($title);
+                                } else if ($platform != "All") {
+                                    $data_array = PortfolioController::getDataFromPlatform($platform);
                                 }
-                            } else if ($title != "" && $platform != "All") {
-                                $data_array = PortfolioController::getDataFromTitlePlatform($title, $platform);
-                            } else if ($title != "") {
-                                $data_array = PortfolioController::getDataFromTitle($title);
-                            } else if ($platform != "All") {
-                                $data_array = PortfolioController::getDataFromPlatform($platform);
                             }
-                        }
 
-                        for ($i = 0; $i < count($data_array); $i++) {
-                            echo $data_array[$i]->getCard();
+                            for ($i = 0; $i < count($data_array); $i++) {
+                                echo $data_array[$i]->getCard();
+                            }
+                        } else {
+                            echo "<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>";
                         }
-                    } else {
-                        echo "<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>";
-                    }
-                    ?>
-                </ul>
+                        ?>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

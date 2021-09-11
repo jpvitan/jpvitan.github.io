@@ -25,6 +25,14 @@ li:not([class="nav-item"]) {
     color: #222f3e;
 }
 
+.style-outer-blog-container {
+    max-width: 55rem;
+}
+
+.style-inner-blog-container {
+    max-width: 50rem;
+}
+
 .style-author-date {
     font-family: Roboto-Regular;
     color: #747d8c;

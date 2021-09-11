@@ -102,7 +102,7 @@ if (isset($_GET["id"])) {
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-auto">
-                <div style="max-width: 55rem;">
+                <div class="style-outer-blog-container">
                     <div class="text-center">
                         <h1><?php echo $blog->getTitle(); ?></h1>
                         <p class="mt-2 roboto-gray"><?php echo $blog->getDescription(); ?></p>
@@ -110,7 +110,7 @@ if (isset($_GET["id"])) {
                     </div>
                     <div class="row justify-content-center text-start mt-4">
                         <div class="col-auto">
-                            <div style="max-width: 50rem">
+                            <div class="style-inner-blog-container">
                                 <div class="style-author-date mb-4">
                                     <div>Written by <?php echo $blog->getAuthor(); ?></div>
                                     <div><?php echo $blog->getDate(); ?></div>

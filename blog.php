@@ -84,28 +84,34 @@
         ?>
 
         <form method="GET" id="query">
-            <div class="row justify-content-center text-center">
-                <div class="col-xl-3 col-xxl-2">
-                    <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Blog Title" <?php if ($form_submitted_title && $title != "") {
-                                                                                                                        echo "value='" . $title . "'";
-                                                                                                                    } ?>>
-                </div>
-                <div class="col-xl-3 col-xxl-2 mt-1 mt-xl-0">
-                    <select class="form-select mt-2" id="category" name="category" onchange="this.form.submit()">
-                        <option value="All">All Categories</option>
-                        <option value="SoftwareDevelopment" <?php if ($form_submitted_category && $category == "SoftwareDevelopment") {
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div style="max-width: 50rem;">
+                        <div class="row">
+                            <div class="col-sm px-0 pe-sm-2">
+                                <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Blog Title" <?php if ($form_submitted_title && $title != "") {
+                                                                                                                                    echo "value='" . $title . "'";
+                                                                                                                                } ?>>
+                            </div>
+                            <div class="col-sm px-0 ps-sm-2">
+                                <select class="form-select mt-2" id="category" name="category" onchange="this.form.submit()">
+                                    <option value="All">All Categories</option>
+                                    <option value="SoftwareDevelopment" <?php if ($form_submitted_category && $category == "SoftwareDevelopment") {
+                                                                            echo "selected='selected'";
+                                                                        } ?>>Software Development</option>
+                                    <option value="ComputerScience" <?php if ($form_submitted_category && $category == "ComputerScience") {
+                                                                        echo "selected='selected'";
+                                                                    } ?>>Computer Science</option>
+                                    <option value="Mathematics" <?php if ($form_submitted_category && $category == "Mathematics") {
+                                                                    echo "selected='selected'";
+                                                                } ?>>Mathematics</option>
+                                    <option value="Others" <?php if ($form_submitted_category && $category == "Others") {
                                                                 echo "selected='selected'";
-                                                            } ?>>Software Development</option>
-                        <option value="ComputerScience" <?php if ($form_submitted_category && $category == "ComputerScience") {
-                                                            echo "selected='selected'";
-                                                        } ?>>Computer Science</option>
-                        <option value="Mathematics" <?php if ($form_submitted_category && $category == "Mathematics") {
-                                                        echo "selected='selected'";
-                                                    } ?>>Mathematics</option>
-                        <option value="Others" <?php if ($form_submitted_category && $category == "Others") {
-                                                    echo "selected='selected'";
-                                                } ?>>Others</option>
-                    </select>
+                                                            } ?>>Others</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </form>

@@ -5,16 +5,19 @@ a {
 @font-face {
     font-family: 'lemonmilk';
     src: url('font/lemonmilk.otf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Roboto';
     src: url('font/Roboto-Light.ttf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Roboto-Regular';
     src: url('font/Roboto-Regular.ttf');
+    font-display: swap;
 }
 
 .lm-black {

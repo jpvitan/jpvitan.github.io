@@ -1,5 +1,5 @@
 <p>Bubble sort is one of the easiest but also one of the slowest sorting algorithms that you could implement. In this
-    post, we are going to prove the time complexity of bubble sort and see why this algorithm is really slow.</p>
+    post, we are going to prove the time complexity of bubble sort and see why this algorithm is slow.</p>
 
 <pre>
 <code class="language-python">
@@ -15,9 +15,10 @@ def bubble_sort(arr):
 </code>
 </pre>
 
-<p>The code above is the usual implementation of bubble sort and as you could see, it has two loops which are nested.
-    This two nested loops should already give you a hint on why this algorithm is bad for sorting lists with large
-    sizes.</p>
+<p>The code above is the usual implementation of bubble sort and as you could see, it has two loops that are nested.
+    Those two nested loops should already give you a hint on why this algorithm is not suitable for sorting lists with
+    large sizes.
+</p>
 
 <p>If we have a list with $n$ elements, then bubble sort will perform this number of comparisons:</p>
 
@@ -63,9 +64,10 @@ $$\limsup_{n \to \infty} \frac{f(n)}{g(n)} < \infty$$ <p>Before we evaluate the 
     \end{align}
     $$
 
-    <p>Now that we have proven that bubble sort runs in quadratic time, we definitely know that this sorting algorithm
-        is one of the slowest out there. Here's a YouTube video by Viktor Bohush that compares different sorting
-        algorithms together with bubble sort:</p>
+    <p>Now that we have proven that bubble sort runs in quadratic time, we know that this sorting algorithm is one of
+        the slowest out there. Here's a YouTube video by Viktor Bohush that compares different sorting algorithms
+        together with bubble sort:
+    </p>
 
     <div class="iframe-container mb-4">
         <iframe width="1280" height="720" src="https://www.youtube.com/embed/ZZuD6iUe3Pc" frameborder="0"

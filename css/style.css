@@ -51,42 +51,42 @@ a {
 }
 
 .roboto-black {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     color: #000000;
 }
 
 .roboto-white {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     color: #ffffff;
 }
 
 .roboto-gray {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     color: #747d8c;
 }
 
 .roboto-blue {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     color: #0fbcf9;
 }
 
 .roboto-red {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     color: #ff6b81;
 }
 
 .roboto-regular-black {
-    font-family: Roboto-Regular;
+    font-family: Roboto-Regular, sans-serif;
     color: #000000;
 }
 
 .roboto-regular-white {
-    font-family: Roboto-Regular;
+    font-family: Roboto-Regular, sans-serif;
     color: #ffffff;
 }
 
 .roboto-regular-gray {
-    font-family: Roboto-Regular;
+    font-family: Roboto-Regular, sans-serif;
     color: #747d8c;
 }
 

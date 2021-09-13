@@ -8,6 +8,7 @@ body {
 
 p {
     font-family: Roboto, sans-serif;
+    font-weight: 300;
     color: #747d8c;
     font-size: 1.2rem;
 }
@@ -27,6 +28,7 @@ p {
 .btn-introduction {
     text-decoration: none;
     font-family: Roboto, sans-serif;
+    font-weight: 300;
     color: #747d8c !important;
 }
 

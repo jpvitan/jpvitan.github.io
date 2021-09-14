@@ -52,10 +52,6 @@ p {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-.style-skill-card::before {
-    filter: blur(40px);
-}
-
 .style-skill-card-header {
     background-color: #1e90ff;
 }

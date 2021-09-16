@@ -103,7 +103,7 @@ a {
 }
 
 .menu-button {
-    background-image: url('../img/menu.png');
+    background-image: url('https://res.cloudinary.com/dhv9gcew6/image/upload/v1631808754/menu_d8tib0.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-color: transparent;

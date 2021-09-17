@@ -17,6 +17,9 @@ p {
     p {
         font-size: 1.4rem;
     }
+    .style-name {
+        font-size: 3rem;
+    }
     .style-reason-card p {
         font-size: 1.2rem !important;
     }
@@ -61,10 +64,6 @@ p {
     height: 100%;
 }
 
-.style-reason-card-header {
-    background-color: #ff4757;
-}
-
 .style-reason-card p {
     font-size: 1rem;
 }
@@ -95,11 +94,5 @@ p {
 
 .style-card-link-text {
     font-size: 1.1rem;
-    color: #808e9b;
-}
-
-.style-footer-text {
-    font-family: Roboto, sans-serif;
-    font-size: 0.7rem;
     color: #808e9b;
 }

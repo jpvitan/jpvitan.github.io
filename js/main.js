@@ -25,7 +25,6 @@ var figure2MaxValue = 7;
 
 var counterFigure1 = () => {
     if (figure1Value >= figure1MaxValue) {
-        console.log("Perform");
         return;
     }
     if (figure1Value < figure1MaxValue) {
@@ -37,7 +36,6 @@ var counterFigure1 = () => {
 
 var counterFigure2 = () => {
     if (figure2Value >= figure2MaxValue) {
-        console.log("Perform");
         return;
     }
     if (figure2Value < figure2MaxValue) {

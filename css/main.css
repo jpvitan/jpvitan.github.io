@@ -39,7 +39,7 @@ p {
 }
 
 .btn-introduction:hover {
-    font-size: 1.1rem;
+    color: #0fbcf9 !important;
 }
 
 .btn-icon {

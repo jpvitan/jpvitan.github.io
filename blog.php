@@ -140,13 +140,35 @@
         ?>
     </div>
 
-    <footer class="mt-2" id="footer">
+    <div id="filler"></div>
+
+    <footer class="pt-2" id="footer">
 
     </footer>
 
     <script>
+        let setFillerHeight = () => {
+            let filler = document.getElementById("filler");
+            let fillerY = $("#filler").offset().top;
+
+            let footer = document.getElementById("footer");
+            let footerHeight = footer.getBoundingClientRect().height;
+
+            let clientHeight = document.documentElement.clientHeight;
+
+            let fillerHeight = clientHeight - fillerY - footerHeight;
+
+            if (fillerHeight > 0) {
+                filler.style.height = fillerHeight + "px";
+            }
+        }
+
+        window.addEventListener('resize', setFillerHeight);
+
         $(function() {
-            $("#footer").load("footer.html");
+            $("#footer").load("footer.html", () => {
+                setFillerHeight();
+            });
         });
     </script>
 

@@ -159,7 +159,9 @@
 
             let fillerHeight = clientHeight - fillerY - footerHeight;
 
-            if (fillerHeight > 0) {
+            if (fillerHeight < 0) {
+                filler.style.height = 0 + "px";
+            } else {
                 filler.style.height = fillerHeight + "px";
             }
         }

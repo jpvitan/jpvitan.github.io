@@ -46,18 +46,27 @@
                     $position = filter_var($_POST["position"], FILTER_SANITIZE_STRING);
                     $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
                     $subject = filter_var($_POST["subject"], FILTER_SANITIZE_STRING);
-                    $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
+                    $client_message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
 
-                    $destination = "contact@jpvitan.com";
-                    $headers = "From: " . $email;
-
-                    $message = "[Full Name]\n" . $full_name . "\n\n[Company]\n" . $company . "\n\n[Position]\n" . $position . "\n\n[Message]\n" . $message;
+                    $message = "<html><body>";
+                    $message .= "<h4>Full Name: </h4><p>" . $full_name . "</p> ";
+                    $message .= "<h4>Company: </h4><p>" . $company . "</p> ";
+                    $message .= "<h4>Position: </h4><p>" . $position . "</p> ";
+                    $message .= "<h4>Message: </h4><p>" . $client_message . "</p> ";
 
                     if (isset($_POST["meeting"])) {
                         $dateTime = filter_var($_POST["date_time"], FILTER_SANITIZE_STRING);
                         $where = filter_var($_POST["where"], FILTER_SANITIZE_STRING);
-                        $message = $message . "\n\n[Date and Time]\n" . $dateTime . "\n\n[Where]\n" . $where;
+                        $message .= "<h4>Date and Time: </h4><p>" . $dateTime . "</p> ";
+                        $message .= "<h4>Where: </h4><p>" . $where . "</p> ";
                     }
+
+                    $message .= "</body></html>";
+
+                    $destination = "contact@jpvitan.com";
+                    $headers = "MIME-Version: 1.0" . "\r\n";
+                    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+                    $headers .= 'From: <' . $email . '>' . "\r\n";
 
                     $recaptcha_failed = false;
                     $recaptcha_failed_message = "

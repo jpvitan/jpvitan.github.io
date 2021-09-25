@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en">
 
 <head>
     <title>Contact - Justine Paul Vitan</title>
@@ -42,69 +42,174 @@
     <link href="css/contact.css" rel="stylesheet">
 </head>
 
-<body class="h-100">
+<body>
+    <div class="style-menu" id="menu"></div>
 
-    <div class="container-fluid">
-        <div class="row h-100">
-            <div class="col-lg-6 order-lg-2 my-auto px-4 px-sm-0">
-                <div class="mx-auto my-5 style-contact-form">
-                    <div class="style-card-link-outer">
-                        <div class="border-0 shadow style-card-link" style="background-color: #0fbcf9;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                                class="bi bi-envelope-fill style-card-link-icon" viewBox="0 0 16 16"
-                                aria-label="Contact">
-                                <path
-                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
-                            </svg>
-                        </div>
-                        <div class="mt-2 style-card-link-text">Message</div>
-                    </div>
-                    <p class="text-start">Send a message to Justine Paul Vitan.</p>
+    <div class="container-fluid fixed-top px-3 py-3 style-navbar" id="navbar">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#menu").load("menu.html");
+            $("#navbar").load("navbar.html");
+        });
+
+        let toggleMeetingForm = (checked) => {
+            let meetingForm = document.getElementById("meetingForm");
+
+            document.getElementById("dateTime").required = checked;
+
+            if (checked) {
+                meetingForm.style.display = "block";
+            } else {
+                meetingForm.style.display = "none";
+            }
+        }
+    </script>
+
+    <div class="py-5"></div>
+
+    <div class="container-fluid pb-5">
+        <div class="row justify-content-center">
+            <div class="col-auto my-auto px-4">
+                <div style="max-width: 40rem;">
+                    <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg" width="100" height="100" class="mb-4">
+                        <g>
+                            <path
+                                d="m362.535 9.298c-4.702-5.877-11.82-9.298-19.346-9.298h-161.512l-14.177 41.29v16.516h220.629l-13.213-33.032z"
+                                fill="#c38c66"></path>
+                            <path
+                                d="m181.677 0h-12.867c-7.526 0-14.644 3.421-19.345 9.298l-25.595 31.992v16.516h264.258v-16.516l-13.213-16.516h-168.464c-13.682 0-24.774-11.092-24.774-24.774z"
+                                fill="#b57f5f"></path>
+                            <path
+                                d="m396.386 57.806h-247.788l-8.258 16.516 31.88 422.404c.65 8.615 7.83 15.273 16.469 15.273h167.607c8.639 0 15.819-6.658 16.47-15.273l6.95-92.082-8.049-13.978 10.01-11.999 21.723-287.829z"
+                                fill="#ffe09f"></path>
+                            <path
+                                d="m403.399 90.839 1.246-16.516-8.258-16.516h-280.775l-8.258 16.516 31.88 422.404c.65 8.615 7.83 15.273 16.469 15.273h32.985l-6.092-80.716c-1.085-14.376 10.287-26.639 24.704-26.639h172.415l2.493-33.032h-204.115l-19.18-254.136c-1.085-14.376 10.287-26.639 24.704-26.639h219.782z"
+                                fill="#f6d190"></path>
+                            <path
+                                d="m419.75 57.804c-3.402-9.621-12.578-16.513-23.364-16.513h-214.71c-13.682 0-24.774 24.774-24.774 24.774 0 4.561 257.097-1.981 257.097-1.981z"
+                                fill="#c38c66"></path>
+                            <path
+                                d="m179.34 388.129h210.525c4.32 0 7.91-3.329 8.235-7.637l16.204-214.71c.362-4.792-3.429-8.88-8.235-8.88h-244.18l-14.89 145.098z"
+                                fill="#d19a6e"></path>
+                            <path
+                                d="m279.126 211.951-15.86-4.982c-2.38-.341-4.806-.517-7.267-.517-31.926 0-57.806 29.578-57.806 66.065 0 32.61 20.674 59.702 47.86 65.09l19.748.028c27.257-5.321 48.005-32.451 48.005-65.119 0-27.089-14.266-50.369-34.68-60.565z"
+                                fill="#966a5b"></path>
+                            <path
+                                d="m181.677 41.29h-66.065c-13.616 0-24.667 10.985-24.773 24.576-.036 4.625 3.632 8.456 8.257 8.456h313.806c4.396 0 8.172-3.463 8.254-7.857.058-3.06-.448-5.945-1.412-8.659h-221.551c-9.122 0-16.516-7.394-16.516-16.516z"
+                                fill="#b57f5f"></path>
+                            <path
+                                d="m161.888 156.903h-55.958c-4.805 0-8.596 4.087-8.234 8.88l16.204 214.71c.325 4.307 3.915 7.637 8.234 7.637h57.206z"
+                                fill="#c38c66"></path>
+                            <path
+                                d="m279.126 211.951c-4.963-2.48-10.287-4.182-15.86-4.982-2.191 13.206-7.69 21.295-14.049 30.467-8.435 12.161-17.992 25.944-17.992 52.347 0 23.148 7.333 36.661 14.828 47.824 3.233.641 6.552.974 9.946.974 3.333 0 6.623-.327 9.802-.946-.201-.453-.327-1.002-.616-1.425l-2.395-3.476c-8.073-11.645-15.048-21.71-15.048-42.952 0-21.234 6.976-31.29 15.048-42.935 6.267-9.043 13.265-19.296 16.336-34.896z"
+                                fill="#785353"></path>
+                        </g>
+                    </svg>
+                    <h1 class="roboto-regular-black">Let's Talk?</h1>
+                    <p>Got a business opportunity or a project that you would like to discuss?</p>
                     <form class="needs-validation" id="contactForm" action="contact-form.php" method="post">
+                        <h5 class="mt-5">Personal Information</h5>
                         <div class="row">
-                            <div class="col-6">
-                                <input class="form-control mt-2" type="text" id="firstName" name="first_name"
-                                    placeholder="First Name" required>
-                            </div>
-                            <div class="col-6">
-                                <input class="form-control mt-2" type="text" id="lastName" name="last_name"
-                                    placeholder="Last Name" required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <input class="form-control mt-4" type="email" id="email" name="email"
-                                    placeholder="Email" required>
+                            <div class="col mt-4">
+                                <label for="fullName">
+                                    <h6>Full Name</h6>
+                                </label>
+                                <input class="form-control mt-3" type="text" id="fullName" name="full_name"
+                                    placeholder="" required>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
-                                <input class="form-control mt-4" type="text" id="subject" name="subject"
-                                    placeholder="Subject" required>
+                            <div class="col-sm-6 mt-4">
+                                <label for="company">
+                                    <h6>Company or Organization</h6>
+                                </label>
+                                <input class="form-control mt-3" type="text" id="company" name="company" placeholder=""
+                                    required>
+                            </div>
+                            <div class="col-sm-6 mt-4">
+                                <label for="position">
+                                    <h6>Position</h6>
+                                </label>
+                                <input class="form-control mt-3" type="text" id="position" name="position"
+                                    placeholder="" required>
+                            </div>
+                        </div>
+                        <h5 class="mt-5">Contact Information</h5>
+                        <div class="row">
+                            <div class="col mt-4">
+                                <label for="email">
+                                    <h6>Email Address</h6>
+                                </label>
+                                <input class="form-control mt-3" type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <h5 class="mt-5">Message</h5>
+                        <div class="row">
+                            <div class="col mt-4">
+                                <label for="subject">
+                                    <h6>Subject</h6>
+                                </label>
+                                <input class="form-control mt-3" type="text" id="subject" name="subject" required>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
-                                <textarea class="form-control mt-4" id="message" name="message" placeholder="Message"
-                                    required></textarea>
+                            <div class="col mt-4">
+                                <label for="message">
+                                    <h6>Message</h6>
+                                </label>
+                                <textarea class="form-control mt-3" id="message" name="message" required></textarea>
                             </div>
                         </div>
+                        <h5 class="mt-5">Meeting</h5>
                         <div class="row">
-                            <div class="col-12">
-                                <div class="g-recaptcha mt-5" data-sitekey="6Ld_iSQaAAAAAKnOsFvTpqkN07iEwfHhdsJcSqxL">
+                            <div class="col mt-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="meeting" name="meeting"
+                                        onchange="toggleMeetingForm(this.checked)">
+                                    <label class="form-check-label" for="meeting">
+                                        I'd like to schedule a meeting with Justine Paul Vitan.
+                                    </label>
+                                </div>
+                            </div>
+                            <div id="meetingForm" style="display: none;">
+                                <div class="row">
+                                    <div class="col-sm-6 mt-4">
+                                        <label for="dateTime">
+                                            <h6>Date and Time</h6>
+                                        </label>
+                                        <input class="form-control mt-3" type="datetime-local" id="dateTime"
+                                            name="date_time" placeholder="">
+                                    </div>
+                                    <div class="col-sm-6 mt-4">
+                                        <label for="where">
+                                            <h6>Where?</h6>
+                                        </label>
+                                        <select class="form-select mt-3" id="where" name="where">
+                                            <option value="Video Call" selected="selected">Video Call</option>
+                                            <option value="In-Person" disabled="disabled">In-Person</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <h5 class="mt-5">reCAPTCHA</h5>
                         <div class="row">
-                            <div class="col-12">
-                                <button class="btn mt-4 style-contact-form-submit-btn" name="submit">Submit</button>
+                            <div class="col mt-4">
+                                <div class="g-recaptcha" data-sitekey="6Ld_iSQaAAAAAKnOsFvTpqkN07iEwfHhdsJcSqxL">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col mt-5">
+                                <button class="btn submit-btn" name="submit">Submit</button>
                             </div>
                         </div>
                     </form>
                 </div>
-            </div>
-            <div class="col-lg-6 order-lg-1 d-none d-lg-block" style="background-color: #f9fcfb;">
-
             </div>
         </div>
     </div>

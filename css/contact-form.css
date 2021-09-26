@@ -1,5 +1,4 @@
 html, body {
-    background-color: #f9fcfb;
     height: 100%;
 }
 
@@ -7,19 +6,14 @@ body {
     display: flex;
 }
 
+p {
+    color: #747d8c;
+}
+
 .style-card {
     display: block;
     width: 100%;
     max-width: 550px;
-    padding: 15px;
-    margin: auto;
-    background-color: #f9fcfb;
-}
-
-.style-contact-form-heading {
-    color: #0fbcf9;
-    font-family: lemonmilk;
-    font-size: 2.2rem;
 }
 
 .style-button {

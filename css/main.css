@@ -6,9 +6,12 @@ body {
     background-color: #ffffff;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 p {
-    font-family: Roboto, sans-serif;
-    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
     color: #747d8c;
     font-size: 1.2rem;
 }
@@ -16,9 +19,6 @@ p {
 @media only screen and (min-width: 767px) {
     p {
         font-size: 1.4rem;
-    }
-    .style-name {
-        font-size: 3rem;
     }
     .style-introduction-card-outer p {
         font-size: 1.2rem !important;

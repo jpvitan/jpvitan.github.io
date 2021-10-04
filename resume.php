@@ -30,11 +30,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
     <!-- CSS -->
-    <link rel="preload" as="font" href="css/font/lemonmilk.otf" crossorigin="anonymous">
-    <link rel="preload" as="font" href="css/font/Roboto-Light.ttf" crossorigin="anonymous">
-    <link rel="preload" as="font" href="css/font/Roboto-Regular.ttf" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/resume.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>

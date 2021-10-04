@@ -34,17 +34,12 @@ a:hover {
     }
 }
 
-.style-card-link-outer {
-    width: 8rem;
-    height: 8rem;
-}
-
 .style-card-link {
     position: relative;
     color: #ffffff;
-    border-radius: 20px;
-    width: 4rem;
-    height: 4rem;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
 }
 
 .style-card-link-icon {
@@ -52,28 +47,4 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.style-card-link-text {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1rem;
-    color: #808e9b;
-}
-
-.style-twitter-card {
-    background-color: #f9fcfb;
-    height: 50rem;
-    border-radius: 20px;
-    overflow-y: scroll;
-}
-
-.style-talk-card-outer {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.95);
-}
-
-.style-talk-card-outer p {
-    font-size: 1rem;
 }

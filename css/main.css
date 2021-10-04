@@ -60,6 +60,13 @@ a:hover {
     color: #808e9b;
 }
 
+.style-twitter-card {
+    background-color: #f9fcfb;
+    height: 50rem;
+    border-radius: 20px;
+    overflow-y: scroll;
+}
+
 .style-talk-card-outer {
     width: 100%;
     height: 100%;

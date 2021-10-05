@@ -53,7 +53,7 @@ class PortfolioModel
             <div class='row'>
                 <div class='col-sm-auto my-auto'>
                     <a href='" . $this->link . "' style='text-decoration: none;'>
-                        <img class='mb-3 mb-sm-0' style='width: 55px; height: 55px;' alt='Icon' src='" . $this->image_banner . "' width='80' height='80'/>
+                        <img class='mb-3 mb-sm-0' style='width: 55px; height: 55px;' alt='Icon' src='" . $this->image_banner . "' width='55' height='55'/>
                     </a>
                 </div>
                 <div class='col my-auto'>

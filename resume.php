@@ -84,12 +84,12 @@
                     <div style="max-width: 50rem;">
                         <div class="row">
                             <div class="col-sm px-0 pe-sm-2">
-                                <input class="form-control mt-2" type="text" id="search" name="search" placeholder="Search" <?php if ($form_submitted_search && $search != "") {
+                                <input class="form-control shadow-sm mt-3" type="text" id="search" name="search" placeholder="Search" <?php if ($form_submitted_search && $search != "") {
                                                                                                                                 echo "value='" . $search . "'";
                                                                                                                             } ?>>
                             </div>
                             <div class="col-sm px-0 ps-sm-2">
-                                <select class="form-select mt-2" id="platform" name="platform" onchange="this.form.submit()">
+                                <select class="form-select shadow-sm mt-3" id="platform" name="platform" onchange="this.form.submit()">
                                     <option value="All">All</option>
                                 </select>
                             </div>
@@ -101,7 +101,7 @@
 
         <div class="row justify-content-center">
             <div class='col-auto'>
-                <div style="max-width: 50rem;">
+                <div style="max-width: 45rem;">
                     <ul class="list-group list-group-flush">
                         <?php
                         include "controller/ResumeController.php";

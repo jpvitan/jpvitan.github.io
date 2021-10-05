@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Portfolio - Justine Paul Vitan</title>
+    <title>Portfolio | Justine Paul Vitan</title>
 
     <!-- Favicon -->
     <link rel="icon" href="https://jpvitan.com/favicon.ico">
@@ -17,7 +17,7 @@
     <!-- Meta Tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Take a glimpse at Justine Paul Vitan's latest projects.">
+    <meta name="description" content="Take a look at the latest projects of Justine Paul Vitan. Always built with quality and performance.">
     <meta name="author" content="Justine Paul Vitan">
 
     <!-- Bootstrap -->

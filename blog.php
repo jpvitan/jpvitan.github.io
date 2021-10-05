@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Blog - Justine Paul Vitan</title>
+    <title>Blog | Justine Paul Vitan</title>
 
     <!-- Favicon -->
     <link rel="icon" href="https://jpvitan.com/favicon.ico">
@@ -17,7 +17,7 @@
     <!-- Meta Tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="View Justine Paul Vitan's latest blogs on software development, computer science, and mathematics.">
+    <meta name="description" content="Want to learn something about computer science or amateur astronomy? Read my blogs and learn something new.">
     <meta name="author" content="Justine Paul Vitan">
 
     <!-- Bootstrap -->

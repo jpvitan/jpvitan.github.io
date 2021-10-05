@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Resume - Justine Paul Vitan</title>
+    <title>Resume | Justine Paul Vitan</title>
 
     <!-- Favicon -->
     <link rel="icon" href="https://jpvitan.com/favicon.ico">
@@ -17,7 +17,7 @@
     <!-- Meta Tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="">
+    <meta name="description" content="Want to hire me for a project? View my resume now and see if my skills fit your job description.">
     <meta name="author" content="Justine Paul Vitan">
 
     <!-- Bootstrap -->
@@ -85,8 +85,8 @@
                         <div class="row">
                             <div class="col-sm px-0 pe-sm-2">
                                 <input class="form-control shadow-sm mt-3" type="text" id="search" name="search" placeholder="Search" <?php if ($form_submitted_search && $search != "") {
-                                                                                                                                echo "value='" . $search . "'";
-                                                                                                                            } ?>>
+                                                                                                                                            echo "value='" . $search . "'";
+                                                                                                                                        } ?>>
                             </div>
                             <div class="col-sm px-0 ps-sm-2">
                                 <select class="form-select shadow-sm mt-3" id="platform" name="platform" onchange="this.form.submit()">

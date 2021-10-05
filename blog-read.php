@@ -103,7 +103,7 @@ if (isset($_GET["id"])) {
                 <div class="style-outer-blog-container">
                     <div class="text-center">
                         <h1><?php echo $blog->getTitle(); ?></h1>
-                        <p class="mt-2 roboto-gray"><?php echo $blog->getDescription(); ?></p>
+                        <p class="mt-2" style="font-family: sans-serif; font-weight: 300; color: #747d8c;"><?php echo $blog->getDescription(); ?></p>
                         <img src=<?php echo $blog->getImageBanner(); ?> alt="Banner" class="img-fluid border shadow-sm" width="1366" height="768" />
                     </div>
                     <div class="row justify-content-center text-start mt-4">

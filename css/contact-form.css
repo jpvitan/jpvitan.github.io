@@ -6,8 +6,19 @@ body {
     display: flex;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 p {
+    font-family: 'Ubuntu', sans-serif;
     color: #747d8c;
+    font-size: 1.2rem;
+}
+
+a {
+    font-family: 'Ubuntu', sans-serif;
+    color: #0fbcf9;
 }
 
 .style-card {
@@ -18,9 +29,9 @@ p {
 
 .style-button {
     border: 0px;
-    border-radius: 10px;
     background-color: #0fbcf9;
     color: #ffffff;
     width: 100%;
     height: 3rem;
+    font-family: 'Ubuntu', sans-serif;
 }

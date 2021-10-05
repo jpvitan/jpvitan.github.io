@@ -53,12 +53,12 @@ class PortfolioModel
             <div class='row'>
                 <div class='col-sm-auto my-auto'>
                     <a href='" . $this->link . "' style='text-decoration: none;'>
-                        <img class='mb-3 mb-sm-0' style='width: 80px; height: 80px;' alt='Icon' src='" . $this->image_banner . "' width='80' height='80'/>
+                        <img class='mb-3 mb-sm-0' style='width: 55px; height: 55px;' alt='Icon' src='" . $this->image_banner . "' width='80' height='80'/>
                     </a>
                 </div>
                 <div class='col my-auto'>
-                    <h1 class='mb-1' style='font-size: 1.25rem; font-weight: 600;'>" . $this->title . "</h1>
-                    <p class='mb-1' style='color: #747d8c;'>" . $this->description . "</p>
+                    <h1 class='mb-1' style='font-size: 1rem; font-weight: 600;'>" . $this->title . "</h1>
+                    <p class='mb-1' style='font-size: 1rem; color: #747d8c;'>" . $this->description . "</p>
                     <span class='badge me-2' style='background-color: " . $this->getColorFromPlatform($this->platform) . ";'>" . $this->platform . "</span>
                     <button class='me-2' style='border: 0; padding: 0; outline: 0; background: transparent;' type='button' data-bs-container='body' data-bs-toggle='popover' data-bs-placement='bottom' data-bs-html='true' data-bs-content=" . $this->generateBadge($this->technologies_used) . ">
                         <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#747d8c' class='bi bi-info-circle' viewBox='0 0 16 16' aria-label='Technologies Used'>

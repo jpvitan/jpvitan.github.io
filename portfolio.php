@@ -53,6 +53,43 @@
 
     <div class="py-5"></div>
 
+    <div style="overflow: hidden;">
+        <div class="container-fluid" style="background-color: #ffffff;">
+            <div class="row justify-content-center">
+                <div class="col-auto text-center">
+                    <div class="card border-0">
+                        <div class="card-body px-3 py-3 px-sm-5 py-sm-5">
+                            <p>Projects</p>
+                            <h1>Built with quality and performance</h1>
+                            <div class="row justify-content-center text-center">
+                                <div class="col" style="max-width: 65rem;">
+                                    <div class="row">
+                                        <div class="col-md mx-md-2 mt-4 mt-md-5">
+                                            <img src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1633372542/shield_f7u5dt.png" alt="Icon" width="50" height="50" class="mb-4">
+                                            <h5>Built with quality</h5>
+                                            <p style="font-size: 1rem;">
+                                                Applications built with proper software engineering practices are
+                                                guaranteed to have the best quality.
+                                            </p>
+                                        </div>
+                                        <div class="col-md mx-md-2 mt-4 mt-md-5">
+                                            <img src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1633372438/rocket_iroig2.png" alt="Icon" width="50" height="50" class="mb-4">
+                                            <h5>Built with performance</h5>
+                                            <p style="font-size: 1rem;">
+                                                Applications built with performance ensures a smooth and stable
+                                                experience even if it's pushed to its limits.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid pb-4">
         <?php
         // Perform sanitization.
@@ -76,12 +113,12 @@
                     <div style="max-width: 50rem;">
                         <div class="row">
                             <div class="col-sm px-0 pe-sm-2">
-                                <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Search Portfolio" <?php if ($form_submitted_title && $title != "") {
-                                                                                                                                        echo "value='" . $title . "'";
-                                                                                                                                    } ?>>
+                                <input class="form-control shadow-sm mt-3" type="text" id="title" name="title" placeholder="Search Portfolio" <?php if ($form_submitted_title && $title != "") {
+                                                                                                                                                    echo "value='" . $title . "'";
+                                                                                                                                                } ?>>
                             </div>
                             <div class="col-sm px-0 ps-sm-2">
-                                <select class="form-select mt-2" id="platform" name="platform" onchange="this.form.submit()">
+                                <select class="form-select shadow-sm mt-3" id="platform" name="platform" onchange="this.form.submit()">
                                     <option value="All">All Platforms</option>
                                     <option value="Mobile" <?php if ($form_submitted_platform && $platform == "Mobile") {
                                                                 echo "selected='selected'";
@@ -105,7 +142,7 @@
 
         <div class="row justify-content-center">
             <div class='col-auto'>
-                <div style="max-width: 50rem;">
+                <div style="max-width: 45rem;">
                     <ul class="list-group list-group-flush">
                         <?php
                         include "controller/PortfolioController.php";

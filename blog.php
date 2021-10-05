@@ -53,20 +53,34 @@
 
     <div class="py-5"></div>
 
-    <div class="container-fluid pb-4">
-        <div class="row justify-content-center text-center">
-            <div class="col-sm-auto">
-                <div class="text-center mx-auto style-card-link-outer">
-                    <div class="border-0 shadow mx-auto style-card-link" style="background-color: #1abc9c;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-book-half style-card-link-icon" viewBox="0 0 16 16" aria-label="Blog">
-                            <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
-                        </svg>
+    <div style="overflow: hidden;">
+        <div class="container-fluid" style="background-color: #ffffff;">
+            <div class="row justify-content-center">
+                <div class="col-auto text-center">
+                    <div class="card border-0">
+                        <div class="card-body px-3 py-3 px-sm-5 py-sm-5">
+                            <p>Blog</p>
+                            <h1>Learn something from me</h1>
+                            <div class="row justify-content-center text-center">
+                                <div class="col" style="max-width: 40rem;">
+                                    <div class="row">
+                                        <div class="col-md mx-md-2 mt-4 mt-md-5">
+                                            <p style="font-size: 1rem;">
+                                                I sometimes write blogs in my spare time to share my knowledge about a
+                                                specific subject or topic that interests me.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mt-2 style-card-link-text">Blog</div>
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="container-fluid pb-4">
         <?php
         // Perform sanitization.
         $form_submitted_title = isset($_GET["title"]);
@@ -89,12 +103,12 @@
                     <div style="max-width: 50rem;">
                         <div class="row">
                             <div class="col-sm px-0 pe-sm-2">
-                                <input class="form-control mt-2" type="text" id="title" name="title" placeholder="Blog Title" <?php if ($form_submitted_title && $title != "") {
-                                                                                                                                    echo "value='" . $title . "'";
-                                                                                                                                } ?>>
+                                <input class="form-control shadow-sm mt-3" type="text" id="title" name="title" placeholder="Blog Title" <?php if ($form_submitted_title && $title != "") {
+                                                                                                                                            echo "value='" . $title . "'";
+                                                                                                                                        } ?>>
                             </div>
                             <div class="col-sm px-0 ps-sm-2">
-                                <select class="form-select mt-2" id="category" name="category" onchange="this.form.submit()">
+                                <select class="form-select shadow-sm mt-3" id="category" name="category" onchange="this.form.submit()">
                                     <option value="All">All Categories</option>
                                     <option value="SoftwareDevelopment" <?php if ($form_submitted_category && $category == "SoftwareDevelopment") {
                                                                             echo "selected='selected'";

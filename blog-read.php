@@ -75,8 +75,8 @@ if (isset($_GET["id"])) {
     <link href="css/blog-read.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -97,25 +97,18 @@ if (isset($_GET["id"])) {
 
     <div class="py-md-4"></div>
 
-    <div class="container-fluid">
+    <div class="container-fluid px-4">
         <div class="row justify-content-center">
-            <div class="col-auto">
-                <div class="style-outer-blog-container">
-                    <div class="text-center">
-                        <h1><?php echo $blog->getTitle(); ?></h1>
-                        <p class="mt-2" style="font-family: sans-serif; font-weight: 300; color: #747d8c;"><?php echo $blog->getDescription(); ?></p>
-                        <img src=<?php echo $blog->getImageBanner(); ?> alt="Banner" class="img-fluid border shadow-sm" width="1366" height="768" />
-                    </div>
-                    <div class="row justify-content-center text-start mt-4">
-                        <div class="col-auto">
-                            <div class="style-inner-blog-container">
-                                <div class="style-author-date mb-4">
-                                    <div>Written by <?php echo $blog->getAuthor(); ?></div>
-                                    <div><?php echo $blog->getDate(); ?></div>
-                                </div>
-                                <?php include $blog->getLink(); ?>
-                            </div>
-                        </div>
+            <div class="col" style="max-width: 60rem;">
+                <h2><?php echo $blog->getTitle(); ?></h2>
+                <div class="style-author-date mt-4">
+                    <div>Written by <?php echo $blog->getAuthor(); ?></div>
+                    <div><?php echo $blog->getDate(); ?></div>
+                </div>
+                <img src=<?php echo $blog->getImageBanner(); ?> alt="Banner" class="img-fluid shadow-sm my-5" />
+                <div class="row justify-content-center">
+                    <div class="col" style="max-width: 45rem;">
+                        <?php include $blog->getLink(); ?>
                     </div>
                 </div>
             </div>

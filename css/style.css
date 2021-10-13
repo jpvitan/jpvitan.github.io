@@ -175,3 +175,17 @@ a {
     font-size: 1.1rem;
     color: #808e9b;
 }
+
+.style-card-link-footer {
+    position: relative;
+    background-color: #f9fcfb;
+    width: 2rem;
+    height: 2rem;
+}
+
+.style-card-link-footer-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

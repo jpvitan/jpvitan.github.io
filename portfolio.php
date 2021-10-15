@@ -59,25 +59,15 @@
                 <div class="col-auto text-center">
                     <div class="card border-0">
                         <div class="card-body px-3 py-3 px-sm-5 py-sm-5">
+                            <img src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1634211397/hammer_zdnnfo.png" alt="Icon" width="40" height="40" class="mb-4">
                             <p>Projects</p>
                             <h1>Built with quality and performance</h1>
                             <div class="row justify-content-center text-center">
-                                <div class="col" style="max-width: 65rem;">
+                                <div class="col" style="max-width: 40rem;">
                                     <div class="row">
-                                        <div class="col-md mx-md-2 mt-4 mt-md-5">
-                                            <img src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1633372542/shield_f7u5dt.png" alt="Icon" width="50" height="50" class="mb-4">
-                                            <h5>Built with quality</h5>
+                                        <div class="col-md mx-md-2">
                                             <p style="font-size: 1rem;">
-                                                Applications built with proper software engineering practices are
-                                                guaranteed to have the best quality.
-                                            </p>
-                                        </div>
-                                        <div class="col-md mx-md-2 mt-4 mt-md-5">
-                                            <img src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1633372438/rocket_iroig2.png" alt="Icon" width="50" height="50" class="mb-4">
-                                            <h5>Built with performance</h5>
-                                            <p style="font-size: 1rem;">
-                                                Applications built with performance ensures a smooth and stable
-                                                experience even if it's pushed to its limits.
+                                                My projects are built on the best software engineering practices. I always make sure that it's fast, secure, and reliable.
                                             </p>
                                         </div>
                                     </div>

@@ -59,12 +59,13 @@
                 <div class="col-auto text-center">
                     <div class="card border-0">
                         <div class="card-body px-3 py-3 px-sm-5 py-sm-5">
+                            <img src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1634216658/feather-pen_uby9up.png" alt="Icon" width="40" height="40" class="mb-4">
                             <p>Blog</p>
                             <h1>Learn something from me</h1>
                             <div class="row justify-content-center text-center">
                                 <div class="col" style="max-width: 40rem;">
                                     <div class="row">
-                                        <div class="col-md mx-md-2 mt-4 mt-md-5">
+                                        <div class="col-md mx-md-2">
                                             <p style="font-size: 1rem;">
                                                 I sometimes write blogs in my spare time to share my knowledge about a
                                                 specific subject or topic that interests me.

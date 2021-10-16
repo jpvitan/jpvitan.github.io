@@ -75,7 +75,7 @@ class BlogModel
         $card = "
         <div class='row justify-content-center mt-4'>
             <div class='col-auto'>
-                <div style='max-width: 50rem'>
+                <div style='max-width: 40rem'>
                     <a href='blog-read.php?id=" . $this->id . "' style='text-decoration: none; color: black;'>
                         <div class='card border-0 shadow-sm' style='background-color: #1abc9c; color: #ffffff' data-aos='zoom-in'>
                             <img class='card-img-top img-fluid' alt='Banner' src='" . $this->image_banner . "' width='1366' height='768'>

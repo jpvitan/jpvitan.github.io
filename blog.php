@@ -34,7 +34,7 @@
     <link href="css/blog.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -59,13 +59,12 @@
                 <div class="col-auto text-center">
                     <div class="card border-0">
                         <div class="card-body px-3 py-3 px-sm-5 py-sm-5">
-                            <img src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1634216658/feather-pen_uby9up.png" alt="Icon" width="40" height="40" class="mb-4">
-                            <p>Blog</p>
-                            <h1>Learn something from me</h1>
-                            <div class="row justify-content-center text-center">
+                            <div class="row justify-content-center text-start">
                                 <div class="col" style="max-width: 40rem;">
                                     <div class="row">
                                         <div class="col-md mx-md-2">
+                                            <img src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1634216658/feather-pen_uby9up.png" alt="Icon" width="40" height="40" class="mb-4">
+                                            <h5>Blog</h5>
                                             <p style="font-size: 1rem;">
                                                 I sometimes write blogs in my spare time to share my knowledge about a
                                                 specific subject or topic that interests me.
@@ -101,7 +100,7 @@
         <form method="GET" id="query">
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div style="max-width: 50rem;">
+                    <div style="max-width: 40rem;">
                         <div class="row">
                             <div class="col-sm px-0 pe-sm-2">
                                 <input class="form-control shadow-sm mt-3" type="text" id="title" name="title" placeholder="Blog Title" <?php if ($form_submitted_title && $title != "") {

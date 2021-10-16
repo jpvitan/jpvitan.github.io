@@ -45,13 +45,13 @@ class ResumeModel
             <div class='row'>
                 <div class='col-sm-auto my-auto'>
                     <a href='" . $this->link . "' style='text-decoration: none;' rel='noopener' target='_blank'>
-                        <img class='mb-3 mb-sm-0' style='width: 55px; height: 55px;' alt='Icon' src='" . $this->image_banner . "' width='80' height='80'/>                    
+                        <img class='mb-3 mb-sm-0' style='width: 60px; height: 60px;' alt='Icon' src='" . $this->image_banner . "' width='60' height='60'/>                    
                     </a>
                 </div>
                 <div class='col my-auto'>
                     <h1 class='mb-1' style='font-size: 1rem; font-weight: 600;'>" . $this->title . "</h1>
                     <p class='mb-1' style='font-size: 1rem; color: #747d8c;'>" . $this->description . "</p>
-                    <span class='badge me-2' style='background-color: " . $this->getColorFromFileType($this->file_type) . ";'>" . $this->file_type . "</span>
+                    <div class='style-file-type-color me-2' style='display: inline-block; background-color: " . $this->getColorFromFileType($this->file_type) . ";'></div>
                     <button class='me-2' style='border: 0; padding: 0; outline: 0; background: transparent;' type='button' data-bs-container='body' data-bs-toggle='popover' data-bs-placement='bottom' data-bs-html='true' data-bs-content=" . $this->generateInformationContent($this->file_size) . ">
                         <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#747d8c' class='bi bi-info-circle' viewBox='0 0 16 16' aria-label='Technologies Used'>
                             <path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/>

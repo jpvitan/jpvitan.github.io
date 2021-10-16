@@ -34,7 +34,7 @@
     <link href="css/resume.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -81,7 +81,7 @@
         <form method="GET" id="query">
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div style="max-width: 50rem;">
+                    <div style="max-width: 40rem;">
                         <div class="row">
                             <div class="col-sm px-0 pe-sm-2">
                                 <input class="form-control shadow-sm mt-3" type="text" id="search" name="search" placeholder="Search" <?php if ($form_submitted_search && $search != "") {
@@ -100,30 +100,28 @@
         </form>
 
         <div class="row justify-content-center">
-            <div class='col-auto'>
-                <div style="max-width: 45rem;">
-                    <ul class="list-group list-group-flush">
-                        <?php
-                        include "controller/ResumeController.php";
+            <div class='col' style="max-width: 40rem;">
+                <ul class="list-group list-group-flush">
+                    <?php
+                    include "controller/ResumeController.php";
 
-                        if (ResumeController::connectionWorking()) {
-                            $data_array = ResumeController::getAllData();
+                    if (ResumeController::connectionWorking()) {
+                        $data_array = ResumeController::getAllData();
 
-                            if (isset($_GET["search"])) {
-                                if ($search != "") {
-                                    $data_array = ResumeController::getDataFromTitle($search);
-                                }
+                        if (isset($_GET["search"])) {
+                            if ($search != "") {
+                                $data_array = ResumeController::getDataFromTitle($search);
                             }
-
-                            for ($i = 0; $i < count($data_array); $i++) {
-                                echo $data_array[$i]->getCard();
-                            }
-                        } else {
-                            echo "<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>";
                         }
-                        ?>
-                    </ul>
-                </div>
+
+                        for ($i = 0; $i < count($data_array); $i++) {
+                            echo $data_array[$i]->getCard();
+                        }
+                    } else {
+                        echo "<div class='row justify-content-center text-center mt-4'><h1 style='color: #ff3f34;'>Connection Failed!</h1></div>";
+                    }
+                    ?>
+                </ul>
             </div>
         </div>
     </div>

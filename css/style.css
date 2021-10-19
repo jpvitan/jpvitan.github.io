@@ -2,12 +2,40 @@ a {
     text-decoration: none;
 }
 
+.custom-h5 {
+    display: block;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.custom-h6 {
+    display: block;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
 .style-footer {
     background-color: #f9fcfb;
     font-family: 'Roboto', sans-serif;
     font-size: 0.70rem;
     font-weight: 400;
-    color: #808e9b;
+    color: #636e72;
 }
 
 .style-navbar {
@@ -85,7 +113,7 @@ a {
 .style-menu-card-link-text {
     font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
-    color: #808e9b;
+    color: #636e72;
 }
 
 .style-card-link-footer {

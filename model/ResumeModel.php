@@ -50,15 +50,15 @@ class ResumeModel
                 </div>
                 <div class='col my-auto'>
                     <h1 class='mb-1' style='font-size: 1rem; font-weight: 600;'>" . $this->title . "</h1>
-                    <p class='mb-1' style='font-size: 1rem; color: #747d8c;'>" . $this->description . "</p>
+                    <p class='mb-1' style='font-size: 1rem; color: #636e72;'>" . $this->description . "</p>
                     <div class='style-file-type-color me-2' style='display: inline-block; background-color: " . $this->getColorFromFileType($this->file_type) . ";'></div>
                     <button class='me-2' style='border: 0; padding: 0; outline: 0; background: transparent;' type='button' data-bs-container='body' data-bs-toggle='popover' data-bs-placement='bottom' data-bs-html='true' data-bs-content=" . $this->generateInformationContent($this->file_size) . ">
-                        <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#747d8c' class='bi bi-info-circle' viewBox='0 0 16 16' aria-label='Technologies Used'>
+                        <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#636e72' class='bi bi-info-circle' viewBox='0 0 16 16' aria-label='Technologies Used'>
                             <path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/>
                             <path d='M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z'/>
                         </svg>
                     </button>
-                    <a href='" . $this->link . "' style='text-decoration: none; color: #747d8c;' rel='noopener' target='_blank'>
+                    <a href='" . $this->link . "' style='text-decoration: none; color: #636e72;' rel='noopener' target='_blank'>
                         <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-download' viewBox='0 0 16 16' aria-label='Icon'>
                             <path d='M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z'/>
                             <path d='M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z'/>

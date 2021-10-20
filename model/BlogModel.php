@@ -76,13 +76,12 @@ class BlogModel
         <div class='row justify-content-center mt-4'>
             <div class='col-auto'>
                 <div style='max-width: 40rem'>
-                    <a href='blog-read.php?id=" . $this->id . "' style='text-decoration: none; color: black;'>
-                        <div class='card border-0 shadow-sm' style='background-color: #1abc9c; color: #ffffff' data-aos='zoom-in'>
+                    <a href='blog-read.php?id=" . $this->id . "' style='text-decoration: none;'>
+                        <div class='card border-0' style='color: #000000' data-aos='zoom-in'>
                             <img class='card-img-top img-fluid' alt='Banner' src='" . $this->image_banner . "' width='1366' height='768'>
                             <div class='card-body'>
-                                <div class='card-title mb-3' style='font-size: 1.25rem; font-weight: 500; margin-bottom: 0px;'>" . $this->title . "</div>
-                                <div style='color: #ffffff; font-weight: 500;'>" . $this->sub_category . "</div>
-                                <div style='color: #ffffff; font-size: 0.9rem;'>" . $this->author . " | " . $this->getDate() . "</div>
+                                <div class='card-title' style='font-size: 1.25rem; margin-bottom: 0px;'>" . $this->title . "</div>
+                                <div class='mt-2' style='color: #636e72; font-size: 0.9rem;'>" . $this->description . "</div>
                             </div>
                         </div>
                     </a>

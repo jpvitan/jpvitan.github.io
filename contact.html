@@ -113,11 +113,11 @@
                     <h1>Let's Talk?</h1>
                     <p>Got a business opportunity or a project that you would like to discuss?</p>
                     <form class="needs-validation" id="contactForm" action="contact-form.php" method="post">
-                        <h5 class="mt-5">Personal Information</h5>
+                        <div class="mt-5 custom-h5">Personal Information</div>
                         <div class="row">
                             <div class="col mt-4">
                                 <label for="fullName">
-                                    <h6>Full Name</h6>
+                                    <div class="custom-h6">Full Name</div>
                                 </label>
                                 <input class="form-control shadow-sm mt-3" type="text" id="fullName" name="full_name"
                                     placeholder="" required>
@@ -126,34 +126,34 @@
                         <div class="row">
                             <div class="col-sm-6 mt-4">
                                 <label for="company">
-                                    <h6>Company or Organization</h6>
+                                    <div class="custom-h6">Company or Organization</div>
                                 </label>
                                 <input class="form-control shadow-sm mt-3" type="text" id="company" name="company"
                                     placeholder="" required>
                             </div>
                             <div class="col-sm-6 mt-4">
                                 <label for="position">
-                                    <h6>Position</h6>
+                                    <div class="custom-h6">Position</div>
                                 </label>
                                 <input class="form-control shadow-sm mt-3" type="text" id="position" name="position"
                                     placeholder="" required>
                             </div>
                         </div>
-                        <h5 class="mt-5">Contact Information</h5>
+                        <div class="mt-5 custom-h5">Contact Information</div>
                         <div class="row">
                             <div class="col mt-4">
                                 <label for="email">
-                                    <h6>Email Address</h6>
+                                    <div class="custom-h6">Email Address</div>
                                 </label>
                                 <input class="form-control shadow-sm mt-3" type="email" id="email" name="email"
                                     required>
                             </div>
                         </div>
-                        <h5 class="mt-5">Message</h5>
+                        <div class="mt-5 custom-h5">Message</div>
                         <div class="row">
                             <div class="col mt-4">
                                 <label for="subject">
-                                    <h6>Subject</h6>
+                                    <div class="custom-h6">Subject</div>
                                 </label>
                                 <input class="form-control shadow-sm mt-3" type="text" id="subject" name="subject"
                                     required>
@@ -162,13 +162,13 @@
                         <div class="row">
                             <div class="col mt-4">
                                 <label for="message">
-                                    <h6>Message</h6>
+                                    <div class="custom-h6">Message</div>
                                 </label>
                                 <textarea class="form-control shadow-sm mt-3" id="message" name="message"
                                     required></textarea>
                             </div>
                         </div>
-                        <h5 class="mt-5">Meeting</h5>
+                        <div class="mt-5 custom-h5">Meeting</div>
                         <div class="row">
                             <div class="col mt-4">
                                 <div class="form-check">
@@ -183,14 +183,14 @@
                                 <div class="row">
                                     <div class="col-sm-6 mt-4">
                                         <label for="dateTime">
-                                            <h6>Date and Time</h6>
+                                            <div class="custom-h6">Date and Time</div>
                                         </label>
                                         <input class="form-control shadow-sm mt-3" type="datetime-local" id="dateTime"
                                             name="date_time" placeholder="">
                                     </div>
                                     <div class="col-sm-6 mt-4">
                                         <label for="where">
-                                            <h6>Where?</h6>
+                                            <div class="custom-h6">Where?</div>
                                         </label>
                                         <select class="form-select shadow-sm mt-3" id="where" name="where">
                                             <option value="Video Call" selected="selected">Video Call</option>
@@ -200,16 +200,17 @@
                                 </div>
                             </div>
                         </div>
-                        <h5 class="mt-5">reCAPTCHA</h5>
+                        <div class="mt-5 custom-h5">reCAPTCHA</div>
                         <div class="row">
                             <div class="col mt-4">
                                 <div class="g-recaptcha" data-sitekey="6Ld_iSQaAAAAAKnOsFvTpqkN07iEwfHhdsJcSqxL">
                                 </div>
                             </div>
                         </div>
+                        <div class="py-2"></div>
                         <div class="row justify-content-center">
                             <div class="col mt-5">
-                                <button class="btn shadow-sm submit-btn" name="submit">Submit</button>
+                                <button class="btn btn-primary shadow submit-btn" name="submit">Submit Message</button>
                             </div>
                         </div>
                     </form>

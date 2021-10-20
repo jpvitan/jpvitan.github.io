@@ -16,6 +16,10 @@ p {
     font-size: 1.2rem;
 }
 
+a {
+    font-family: 'Roboto', sans-serif;
+}
+
 @media only screen and (min-width: 767px) {
     p {
         font-size: 1.4rem;

@@ -5,13 +5,13 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
-    color: #747d8c;
+    color: #636e72;
 }
 
 li:not([class="nav-item"]) {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
-    color: #747d8c;
+    color: #636e72;
 }
 
 code[class*="language-"], pre[class*="language-"] {
@@ -21,7 +21,7 @@ code[class*="language-"], pre[class*="language-"] {
 .style-author-date {
     font-family: 'Ubuntu', sans-serif;
     font-size: 0.9rem;
-    color: #747d8c;
+    color: #636e72;
 }
 
 .iframe-container {

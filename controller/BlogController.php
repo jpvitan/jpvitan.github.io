@@ -10,6 +10,7 @@ class BlogController
         $mysqli = DatabaseHandler::getConnection();
         $statement = $mysqli->prepare("SELECT * FROM blog ORDER BY date DESC");
         $data_array = self::compileToArray($statement);
+        $mysqli->close();
         return $data_array;
     }
 
@@ -20,6 +21,7 @@ class BlogController
         $title .= "%";
         $statement->bind_param("s", $title);
         $data_array = self::compileToArray($statement);
+        $mysqli->close();
         return $data_array;
     }
 
@@ -29,6 +31,7 @@ class BlogController
         $statement = $mysqli->prepare("SELECT * FROM blog WHERE category=? ORDER BY date DESC");
         $statement->bind_param("s", $category);
         $data_array = self::compileToArray($statement);
+        $mysqli->close();
         return $data_array;
     }
 
@@ -39,6 +42,7 @@ class BlogController
         $title .= "%";
         $statement->bind_param("ss", $title, $category);
         $data_array = self::compileToArray($statement);
+        $mysqli->close();
         return $data_array;
     }
 
@@ -50,8 +54,10 @@ class BlogController
         $statement->execute();
         $statement->bind_result($id, $image_banner, $title, $description, $author, $date, $category, $link, $sub_category);
         if ($statement->fetch()) {
+            $mysqli->close();
             return new BlogModel($id, $image_banner, $title, $description, $author, $date, $category, $link, $sub_category);
         }
+        $mysqli->close();
         return null;
     }
 
@@ -69,6 +75,8 @@ class BlogController
     public static function connectionWorking()
     {
         $mysqli = DatabaseHandler::getConnection();
-        return !$mysqli->connect_errno;
+        $status = !$mysqli->connect_errno;
+        $mysqli->close();
+        return $status;
     }
 }

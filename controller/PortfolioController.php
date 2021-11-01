@@ -11,6 +11,7 @@ class PortfolioController
         $mysqli = DatabaseHandler::getConnection();
         $statement = $mysqli->prepare("SELECT * FROM portfolio");
         $data_array = self::compileToArray($statement);
+        $mysqli->close();
         return $data_array;
     }
 
@@ -19,6 +20,7 @@ class PortfolioController
         $mysqli = DatabaseHandler::getConnection();
         $statement = $mysqli->prepare("SELECT * FROM portfolio WHERE platform NOT IN (" . self::$platforms . ")");
         $data_array = self::compileToArray($statement);
+        $mysqli->close();
         return $data_array;
     }
 
@@ -29,6 +31,7 @@ class PortfolioController
         $title .= "%";
         $statement->bind_param("s", $title);
         $data_array = self::compileToArray($statement);
+        $mysqli->close();
         return $data_array;
     }
 
@@ -39,6 +42,7 @@ class PortfolioController
         $title .= "%";
         $statement->bind_param("s", $title);
         $data_array = self::compileToArray($statement);
+        $mysqli->close();
         return $data_array;
     }
 
@@ -48,6 +52,7 @@ class PortfolioController
         $statement = $mysqli->prepare("SELECT * FROM portfolio WHERE platform=?");
         $statement->bind_param("s", $platform);
         $data_array = self::compileToArray($statement);
+        $mysqli->close();
         return $data_array;
     }
 
@@ -58,6 +63,7 @@ class PortfolioController
         $title .= "%";
         $statement->bind_param("ss", $title, $platform);
         $data_array = self::compileToArray($statement);
+        $mysqli->close();
         return $data_array;
     }
 
@@ -75,6 +81,8 @@ class PortfolioController
     public static function connectionWorking()
     {
         $mysqli = DatabaseHandler::getConnection();
-        return !$mysqli->connect_errno;
+        $status = !$mysqli->connect_errno;
+        $mysqli->close();
+        return $status;
     }
 }

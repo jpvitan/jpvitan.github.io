@@ -10,6 +10,7 @@ class ResumeController
         $mysqli = DatabaseHandler::getConnection();
         $statement = $mysqli->prepare("SELECT * FROM document");
         $data_array = self::compileToArray($statement);
+        $mysqli->close();
         return $data_array;
     }
 
@@ -20,6 +21,7 @@ class ResumeController
         $title .= "%";
         $statement->bind_param("s", $title);
         $data_array = self::compileToArray($statement);
+        $mysqli->close();
         return $data_array;
     }
 
@@ -37,6 +39,8 @@ class ResumeController
     public static function connectionWorking()
     {
         $mysqli = DatabaseHandler::getConnection();
-        return !$mysqli->connect_errno;
+        $status = !$mysqli->connect_errno;
+        $mysqli->close();
+        return $status;
     }
 }

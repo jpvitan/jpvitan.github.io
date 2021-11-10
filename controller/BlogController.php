@@ -76,7 +76,9 @@ class BlogController
     {
         $mysqli = DatabaseHandler::getConnection();
         $status = !$mysqli->connect_errno;
-        $mysqli->close();
+        if ($status) {
+            $mysqli->close();
+        }
         return $status;
     }
 }

@@ -54,42 +54,44 @@ $$\frac{n(n-1)}{2} = \frac{1}{2}n^2 - \frac{1}{2}n$$
     if:
 </p>
 
-$$\limsup_{n \to \infty} \frac{f(n)}{g(n)} < \infty$$ <p>Before we evaluate the limit, let us first simplify
-    $f(n)/g(n)$:
-    </p>
+$$\limsup_{n \to \infty} \frac{f(n)}{g(n)} \lt \infty$$
 
-    $$
-    \begin{align}
-    \frac{f(n)}{g(n)} &= \frac{n(n-1)}{2n^2} \\[1.2ex]
-    & = \frac{n-1}{2n} \\[1.2ex]
-    & = \frac{1}{2} - \frac{1}{2n}
-    \end{align}
-    $$
+<p>
+    Before we evaluate the limit, let us first simplify $f(n)/g(n)$:
+</p>
 
-    <p>Evaluating the limit of $f(n)/g(n)$ as $n$ approaches infinity shows that $f(n) \in O(n^2)$:</p>
+$$
+\begin{align}
+\frac{f(n)}{g(n)} &= \frac{n(n-1)}{2n^2} \\[1.2ex]
+& = \frac{n-1}{2n} \\[1.2ex]
+& = \frac{1}{2} - \frac{1}{2n}
+\end{align}
+$$
 
-    $$
-    \begin{align}
-    \limsup_{n \to \infty} \frac{f(n)}{g(n)} &= \limsup_{n \to \infty} \left(\frac{1}{2} - \frac{1}{2n}\right) \\[1.2ex]
-    & = \frac{1}{2} - \limsup_{n \to \infty} \frac{1}{2n} \\[1.2ex]
-    & = \frac{1}{2} - 0 \\[1.2ex]
-    & = \frac{1}{2}
-    \end{align}
-    $$
+<p>Evaluating the limit of $f(n)/g(n)$ as $n$ approaches infinity shows that $f(n) \in O(n^2)$:</p>
 
-    <p>
-        Sorting algorithms that run on quadratic time are usually not very efficient. If you are sorting large arrays
-        with bubble sort, you should consider changing your algorithm to more efficient ones like quicksort or
-        mergesort.
-    </p>
+$$
+\begin{align}
+\limsup_{n \to \infty} \frac{f(n)}{g(n)} &= \limsup_{n \to \infty} \left(\frac{1}{2} - \frac{1}{2n}\right) \\[1.2ex]
+& = \frac{1}{2} - \limsup_{n \to \infty} \frac{1}{2n} \\[1.2ex]
+& = \frac{1}{2} - 0 \\[1.2ex]
+& = \frac{1}{2}
+\end{align}
+$$
 
-    <p>
-        I've included a video below by Viktor Bohush that compares bubble sort with other sorting algorithms. I highly
-        recommend that you watch it to visualize how poorly bubble sort performs on all sorting tasks.
-    </p>
+<p>
+    Sorting algorithms that run on quadratic time are usually not very efficient. If you are sorting large arrays
+    with bubble sort, you should consider changing your algorithm to more efficient ones like quicksort or
+    mergesort.
+</p>
 
-    <div class="iframe-container mb-4">
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/ZZuD6iUe3Pc" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            title="Visualization and Comparison of Sorting Algorithms" allowfullscreen></iframe>
-    </div>
+<p>
+    I've included a video below by Viktor Bohush that compares bubble sort with other sorting algorithms. I highly
+    recommend that you watch it to visualize how poorly bubble sort performs on all sorting tasks.
+</p>
+
+<div class="iframe-container mb-4">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/ZZuD6iUe3Pc" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        title="Visualization and Comparison of Sorting Algorithms" allowfullscreen></iframe>
+</div>

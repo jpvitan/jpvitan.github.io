@@ -31,8 +31,8 @@ a {
 }
 
 .style-footer {
-    background-color: #f9fcfb;
-    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.70rem;
     font-weight: 400;
     color: #636e72;
@@ -112,14 +112,13 @@ a {
 }
 
 .style-menu-card-link-text {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
     color: #636e72;
 }
 
 .style-card-link-footer {
     position: relative;
-    background-color: #f9fcfb;
     width: 2rem;
     height: 2rem;
 }

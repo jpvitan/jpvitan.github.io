@@ -10,10 +10,10 @@ a {
     margin-inline-end: 0px;
     margin-top: 0;
     margin-bottom: .5rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.2;
     font-size: 1.25rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .custom-h6 {
@@ -24,10 +24,10 @@ a {
     margin-inline-end: 0px;
     margin-top: 0;
     margin-bottom: .5rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.2;
     font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .style-footer {
@@ -72,6 +72,7 @@ a {
     from {
         height: 0%;
     }
+
     to {
         height: 100%;
     }

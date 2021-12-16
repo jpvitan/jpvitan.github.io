@@ -101,12 +101,12 @@
                 <div class="row justify-content-center">
                     <div style="max-width: 50rem;">
                         <div class="row">
-                            <div class="col-sm px-0 pe-sm-2">
+                            <div class="col-sm">
                                 <input class="form-control mt-3" type="text" id="title" name="title" placeholder="Search Portfolio" <?php if ($form_submitted_title && $title != "") {
                                                                                                                                         echo "value='" . $title . "'";
                                                                                                                                     } ?>>
                             </div>
-                            <div class="col-sm px-0 ps-sm-2">
+                            <div class="col-sm">
                                 <select class="form-select mt-3" id="platform" name="platform" onchange="this.form.submit()">
                                     <option value="All">All Platforms</option>
                                     <option value="Mobile" <?php if ($form_submitted_platform && $platform == "Mobile") {

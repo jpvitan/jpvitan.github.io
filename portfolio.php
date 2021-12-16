@@ -34,7 +34,7 @@
     <link href="css/portfolio.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -60,11 +60,11 @@
                     <div class="card border-0">
                         <div class="card-body px-3 py-3 px-sm-5 py-sm-5">
                             <div class="row justify-content-center text-start">
-                                <div class="col" style="max-width: 40rem;">
+                                <div class="col" style="max-width: 50rem;">
                                     <div class="row">
                                         <div class="col-md mx-md-2">
-                                            <img src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1634211397/hammer_zdnnfo.png" alt="Icon" width="40" height="40" class="mb-4">
-                                            <h5>Projects</h5>
+                                            <h1>PROJECTS</h1>
+                                            <p style="font-weight: 700;">by Justine Paul Vitan</p>
                                             <p style="font-size: 1rem;">
                                                 My projects are built on the best software engineering practices. I always make sure that it's fast, secure, and reliable.
                                             </p>
@@ -99,15 +99,15 @@
         <form method="GET" id="query">
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div style="max-width: 40rem;">
+                    <div style="max-width: 50rem;">
                         <div class="row">
                             <div class="col-sm px-0 pe-sm-2">
-                                <input class="form-control shadow-sm mt-3" type="text" id="title" name="title" placeholder="Search Portfolio" <?php if ($form_submitted_title && $title != "") {
-                                                                                                                                                    echo "value='" . $title . "'";
-                                                                                                                                                } ?>>
+                                <input class="form-control mt-3" type="text" id="title" name="title" placeholder="Search Portfolio" <?php if ($form_submitted_title && $title != "") {
+                                                                                                                                        echo "value='" . $title . "'";
+                                                                                                                                    } ?>>
                             </div>
                             <div class="col-sm px-0 ps-sm-2">
-                                <select class="form-select shadow-sm mt-3" id="platform" name="platform" onchange="this.form.submit()">
+                                <select class="form-select mt-3" id="platform" name="platform" onchange="this.form.submit()">
                                     <option value="All">All Platforms</option>
                                     <option value="Mobile" <?php if ($form_submitted_platform && $platform == "Mobile") {
                                                                 echo "selected='selected'";
@@ -130,7 +130,7 @@
         </form>
 
         <div class="row justify-content-center">
-            <div class="col" style="max-width: 40rem;">
+            <div class="col" style="max-width: 50rem;">
                 <ul class="list-group list-group-flush">
                     <?php
                     include "controller/PortfolioController.php";

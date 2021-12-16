@@ -49,6 +49,10 @@ select {
     border-color: #0d6efd !important;
 }
 
+.form-check-label {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .submit-btn {
     border-radius: 10px !important;
     width: 100%;

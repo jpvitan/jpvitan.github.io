@@ -34,7 +34,7 @@
     <link href="css/blog.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -60,11 +60,11 @@
                     <div class="card border-0">
                         <div class="card-body px-3 py-3 px-sm-5 py-sm-5">
                             <div class="row justify-content-center text-start">
-                                <div class="col" style="max-width: 40rem;">
+                                <div class="col" style="max-width: 50rem;">
                                     <div class="row">
                                         <div class="col-md mx-md-2">
-                                            <img src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1634216658/feather-pen_uby9up.png" alt="Icon" width="40" height="40" class="mb-4">
-                                            <h5>Blog</h5>
+                                            <h1>BLOG</h1>
+                                            <p style="font-weight: 700;">by Justine Paul Vitan</p>
                                             <p style="font-size: 1rem;">
                                                 I sometimes write blogs in my spare time to share my knowledge about a
                                                 specific subject or topic that interests me.
@@ -100,15 +100,15 @@
         <form method="GET" id="query">
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div style="max-width: 40rem;">
+                    <div style="max-width: 50rem;">
                         <div class="row">
-                            <div class="col-sm px-0 pe-sm-2">
-                                <input class="form-control shadow-sm mt-3" type="text" id="title" name="title" placeholder="Blog Title" <?php if ($form_submitted_title && $title != "") {
-                                                                                                                                            echo "value='" . $title . "'";
-                                                                                                                                        } ?>>
+                            <div class="col-sm">
+                                <input class="form-control mt-3" type="text" id="title" name="title" placeholder="Blog Title" <?php if ($form_submitted_title && $title != "") {
+                                                                                                                                    echo "value='" . $title . "'";
+                                                                                                                                } ?>>
                             </div>
-                            <div class="col-sm px-0 ps-sm-2">
-                                <select class="form-select shadow-sm mt-3" id="category" name="category" onchange="this.form.submit()">
+                            <div class="col-sm">
+                                <select class="form-select mt-3" id="category" name="category" onchange="this.form.submit()">
                                     <option value="All">All Categories</option>
                                     <option value="SoftwareDevelopment" <?php if ($form_submitted_category && $category == "SoftwareDevelopment") {
                                                                             echo "selected='selected'";
@@ -129,40 +129,48 @@
                 </div>
             </div>
         </form>
-        <?php
-        include "controller/BlogController.php";
 
-        if (BlogController::connectionWorking()) {
-            $data_array = BlogController::getAllData();
 
-            if (isset($_GET["title"]) && isset($_GET["category"])) {
-                if ($title != "" && $category != "All") {
-                    $data_array = BlogController::getDataFromTitleCategory($title, $category);
-                } else if ($title != "") {
-                    $data_array = BlogController::getDataFromTitle($title);
-                } else if ($category != "All") {
-                    $data_array = BlogController::getDataFromCategory($category);
-                }
-            }
+        <div class="row justify-content-center">
+            <div class="col" style="max-width: 50rem;">
+                <ul class="list-group list-group-flush">
+                    <?php
+                    include "controller/BlogController.php";
 
-            for ($i = 0; $i < count($data_array); $i++) {
-                echo $data_array[$i]->getCard();
-            }
-        } else {
-            echo "
-            <div class='row justify-content-center mt-5'>
-                <div class='col-auto my-auto px-0'>
-                    <svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='#ff3f34' class='bi bi-x-circle-fill' viewBox='0 0 16 16'>
-                        <path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z' />
-                    </svg>
-                </div>
-                <div class='col-auto my-auto px-2'>
-                    <span style='font-weight: 500; color: #ff3f34;'>Connection Failed!</span>
-                </div>
+                    if (BlogController::connectionWorking()) {
+                        $data_array = BlogController::getAllData();
+
+                        if (isset($_GET["title"]) && isset($_GET["category"])) {
+                            if ($title != "" && $category != "All") {
+                                $data_array = BlogController::getDataFromTitleCategory($title, $category);
+                            } else if ($title != "") {
+                                $data_array = BlogController::getDataFromTitle($title);
+                            } else if ($category != "All") {
+                                $data_array = BlogController::getDataFromCategory($category);
+                            }
+                        }
+
+                        for ($i = 0; $i < count($data_array); $i++) {
+                            echo $data_array[$i]->getCard();
+                        }
+                    } else {
+                        echo "
+                        <div class='row justify-content-center mt-5'>
+                            <div class='col-auto my-auto px-0'>
+                                <svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='#ff3f34' class='bi bi-x-circle-fill' viewBox='0 0 16 16'>
+                                    <path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z' />
+                                </svg>
+                            </div>
+                            <div class='col-auto my-auto px-2'>
+                                <span style='font-weight: 500; color: #ff3f34;'>Connection Failed!</span>
+                            </div>
+                        </div>
+                        ";
+                    }
+                    ?>
+                </ul>
             </div>
-            ";
-        }
-        ?>
+        </div>
     </div>
 
     <div id="filler"></div>

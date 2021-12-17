@@ -73,21 +73,22 @@ class BlogModel
     function getCard()
     {
         $card = "
-        <div class='row justify-content-center mt-4'>
-            <div class='col-auto'>
-                <div style='max-width: 40rem'>
-                    <a href='blog-read.php?id=" . $this->id . "' style='text-decoration: none;'>
-                        <div class='card border-0' style='color: #000000' data-aos='zoom-in'>
-                            <img class='card-img-top img-fluid' alt='Banner' src='" . $this->image_banner . "' width='1366' height='768'>
-                            <div class='card-body'>
-                                <div class='card-title' style='font-size: 1.25rem; margin-bottom: 0px;'>" . $this->title . "</div>
-                                <div class='mt-2' style='color: #636e72; font-size: 0.9rem;'>" . $this->description . "</div>
-                            </div>
-                        </div>
-                    </a>
+        <li class='list-group-item border-0 mt-4 mt-sm-5'>
+            <a href='blog-read.php?id=" . $this->id . "' style='text-decoration: none;'>
+
+                <div class='row'>
+                    <div class='col'>
+                        <img class='img-fluid mb-3' alt='Banner' src='" . $this->image_banner . "' width='1366' height='768'>
+                    </div>
                 </div>
-            </div>
-        </div>
+                <div class='row'>
+                    <div class='col'>
+                        <h1 class='mb-1' style='font-size: 1rem; color: #000000;'>" . $this->title . "</h1>
+                        <p class='mb-1' style='font-size: 1rem; color: #636e72;'>" . $this->description . "</p>
+                    </div>
+                </div>
+            </a>
+        </li>
         ";
         return $card;
     }

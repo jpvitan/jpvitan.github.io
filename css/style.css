@@ -10,10 +10,10 @@ a {
     margin-inline-end: 0px;
     margin-top: 0;
     margin-bottom: .5rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.2;
     font-size: 1.25rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .custom-h6 {
@@ -24,15 +24,15 @@ a {
     margin-inline-end: 0px;
     margin-top: 0;
     margin-bottom: .5rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.2;
     font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .style-footer {
-    background-color: #f9fcfb;
-    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.70rem;
     font-weight: 400;
     color: #636e72;
@@ -72,6 +72,7 @@ a {
     from {
         height: 0%;
     }
+
     to {
         height: 100%;
     }
@@ -111,14 +112,13 @@ a {
 }
 
 .style-menu-card-link-text {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
     color: #636e72;
 }
 
 .style-card-link-footer {
     position: relative;
-    background-color: #f9fcfb;
     width: 2rem;
     height: 2rem;
 }

@@ -50,15 +50,21 @@ class PortfolioModel
     {
         $card = "
         <li class='list-group-item border-0 mt-4 mt-sm-5'>
-            <div class='row'>
-                <div class='col-sm-auto my-auto'>
-                    <a href='" . $this->link . "' style='text-decoration: none;'>
-                        <img class='mb-3 mb-sm-0' style='width: 60px; height: 60px;' alt='Icon' src='" . $this->image_banner . "' width='60' height='60'/>
-                    </a>
+            <a href='" . $this->link . "' style='text-decoration: none;'>
+                <div class='row'>
+                    <div class='col'>
+                        <img class='img-fluid mb-3' alt='Icon' src='" . $this->image_banner . "' width='1280' height='800'/>                    
+                    </div>
                 </div>
-                <div class='col my-auto'>
-                    <h1 class='mb-1' style='font-size: 1rem; font-weight: 600;'>" . $this->title . "</h1>
-                    <p class='mb-1' style='font-size: 1rem; color: #636e72;'>" . $this->description . "</p>
+                <div class='row'>
+                    <div class='col'>
+                        <h1 class='mb-1' style='font-size: 1rem; color: #000000;'>" . $this->title . "</h1>
+                        <p class='mb-1' style='font-size: 1rem; color: #636e72;'>" . $this->description . "</p>
+                    </div>
+                </div>
+            </a>
+            <div class='row'>
+                <div class='col'>
                     <div class='style-category-color me-2' style='display: inline-block; background-color: " . $this->getColorFromPlatform($this->platform) . ";'></div>
                     <button class='me-2' style='border: 0; padding: 0; outline: 0; background: transparent;' type='button' data-bs-container='body' data-bs-toggle='popover' data-bs-placement='bottom' data-bs-html='true' data-bs-content=" . $this->generateBadge($this->technologies_used) . ">
                         <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#636e72' class='bi bi-info-circle' viewBox='0 0 16 16' aria-label='Technologies Used'>

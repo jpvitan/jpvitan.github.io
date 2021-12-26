@@ -1,0 +1,46 @@
+<p>
+    Primality testing of large numbers plays a significant role in public-key cryptosystems like RSA. In fact, the
+    security of RSA relies on two or more large and distinct prime numbers that are often hundreds of digits long. If we
+    cannot guarantee within an acceptable probability that the numbers used for RSA are prime numbers, then the whole
+    cryptosystem would fail. Thus, it is crucial to have an algorithm that efficiently tests out large numbers for
+    primality.
+</p>
+
+<h3 class="mt-5">Deterministic Primality Testing</h3>
+
+<p>
+    Deterministic primality tests tell us whether a given number is prime or not with 100% certainty. The Python code
+    below shows an example of a deterministic primality test.
+</p>
+
+<pre>
+<code class="language-python">
+# A straightforward but naive way of doing a deterministic primality test
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** (0.5)) + 1):
+        if n % i == 0:
+            return False
+    return True
+</code>
+</pre>
+
+<p>
+    The deterministic primality test above has an $O(\sqrt{n})$ runtime which may sound good, but that's not the case if
+    the number we are testing is more than a hundred digits long. To demonstrate an example, RSA-2048 would test numbers
+    that are this long:
+</p>
+
+<pre>
+<code class="language-python">
+n = 163145567104300729039970253384073317588029379139984064995408978833561087636999920476014308781051531193713832556070474041178382937174476474150199103538166759997692692472889219982769634729915480397457313883064907763838684973672155550942153644743143270024504551276575690516995596509703400794668643641437638889259
+</code>
+</pre>
+
+<p>
+    Deterministic primality tests are often slow and inefficient for large numbers. Probabilistic primality tests are
+    better suited for such cases.
+</p>
+
+<h3 class="mt-5">Probabilistic Primality Testing</h3>

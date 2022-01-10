@@ -39,8 +39,39 @@ n = 1631455671043007290399702533840733175880293791399840649954089788335610876369
 </pre>
 
 <p>
-    Deterministic primality tests are often slow and inefficient for large numbers. Probabilistic primality tests are
-    better suited for such cases.
+    Taking the square root of $n$ is still a large upper bound for practical cases. Even the best deterministic test may
+    not be sufficient for testing numbers as large as the example above. To solve this problem, we will consider using
+    probabilistic primality tests, which I will discuss in the following section.
 </p>
 
 <h3 class="mt-5">Probabilistic Primality Testing</h3>
+
+<p>
+    Probabilistic primality tests often yield a better computational runtime than deterministic primality tests. That's
+    why most applications prefer to use them over deterministic ones.
+</p>
+
+<p>
+    The Miller-Rabin primality test is one of the fastest algorithms we could use to find probable primes. Probable
+    primes are integers that are highly unlikely to be composite and behave similarly to prime numbers.
+</p>
+
+<pre>
+<code class="language-python">
+def rabin_miller(p: int) -> bool:
+    a = random.randint(1, p - 1)
+    s = 0
+    t = p - 1
+    while t % 2 == 0:
+        s = s + 1
+        t = t // 2
+    modulo_result = pow(a, t, p)
+    if modulo_result == 1 or modulo_result == p - 1:
+        return True
+    for i in range(1, s):
+        modulo_result = pow(a, 2 ** i * t, p)
+        if modulo_result == p - 1:
+            return True
+    return False
+</code>
+</pre>

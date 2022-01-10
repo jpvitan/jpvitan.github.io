@@ -57,7 +57,7 @@ n = 1631455671043007290399702533840733175880293791399840649954089788335610876369
 </p>
 
 <pre>
-<code class="language-python">
+<code class="language-python line-numbers">
 def rabin_miller(p: int) -> bool:
     a = random.randint(1, p - 1)
     s = 0
@@ -73,5 +73,61 @@ def rabin_miller(p: int) -> bool:
         if modulo_result == p - 1:
             return True
     return False
+</code>
+</pre>
+
+<p>
+    The code above is the most common way to implement the Miller-Rabin primality test. The function
+    <code>rabin_miller</code> returns a boolean
+    value that indicates whether the given input is composite (false) or probable prime (true).
+</p>
+
+<p>
+    To fully understand what the code does, I'll explain it in a series of steps. I'll use the line numbers indicated
+    within the code block to reference parts of the code.
+</p>
+
+<h4 class="mt-5">Line 2</h4>
+
+<pre>
+<code class="language-python">
+a = random.randint(1, p - 1)
+</code>
+</pre>
+
+<p>
+    The code block above assigns a value to our base $a$, a pseudorandom integer from $1$ to $p-1$. We'll use this value
+    in the subsequent sections.
+</p>
+
+<h4 class="mt-5">Lines 3-7</h4>
+
+<pre>
+<code class="language-python">
+s = 0
+t = p - 1
+while t % 2 == 0:
+    s = s + 1
+    t = t // 2
+</code>
+</pre>
+
+<p>
+    Lines 3-7 transforms our input $p$ into the following form:
+</p>
+
+$$p = 2^s t + 1$$
+
+<p>
+    It is important to note that the value of $t$ should be odd.
+</p>
+
+<h4 class="mt-5">Lines 8-10</h4>
+
+<pre>
+<code class="language-python">
+modulo_result = pow(a, t, p)
+if modulo_result == 1 or modulo_result == p - 1:
+    return True
 </code>
 </pre>

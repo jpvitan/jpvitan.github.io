@@ -116,7 +116,7 @@ while t % 2 == 0:
     Lines 3-7 transforms our input $p$ into the following form:
 </p>
 
-$$p = 2^s t + 1$$
+$$p = 2^{s} t + 1$$
 
 <p>
     It is important to note that the value of $t$ should be odd.
@@ -131,3 +131,23 @@ if modulo_result == 1 or modulo_result == p - 1:
     return True
 </code>
 </pre>
+
+<p>
+    Lines 8-10 will check if the following congruence relation is true:
+</p>
+
+$$a^{t} \equiv \pm 1\ (\textrm{mod}\ p)$$
+
+<p>
+    If the above equation is satisfied, it proves that:
+</p>
+
+<ol>
+    <li>
+        It passes the Fermat primality test since $a^{t} \equiv \pm 1\ (\textrm{mod}\ p) \implies a^{2^{s} t} \equiv 1\
+        (\textrm{mod}\ p)$
+    </li>
+    <li>
+        If $p$ is an odd prime, then the square roots of $1$ modulo $p$ are $\pm 1$
+    </li>
+</ol>

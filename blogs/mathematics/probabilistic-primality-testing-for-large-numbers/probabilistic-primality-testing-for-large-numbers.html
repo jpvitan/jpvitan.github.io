@@ -180,3 +180,21 @@ $$a^{2^{i} t} \equiv -1\ (\textrm{mod}\ p)$$
 </p>
 
 $$a^{2^{i} t} \equiv -1\ (\textrm{mod}\ p) \implies a^{2^{i+1} t} \equiv 1\ (\textrm{mod}\ p)$$
+
+<p>
+    This shows that the square root of $1$ modulo $p$ is $-1$ and passes the Fermat primality test by repeated squaring.
+    Hence, we declare $p$ a probable prime.
+</p>
+
+<h4 class="mt-5">Line 15</h4>
+
+<pre>
+<code class="language-python">
+return False
+</code>
+</pre>
+
+<p>
+    Line 15 guarantees that $p$ is composite because all prime numbers would satisfy the conditions in lines 8-10
+    or lines 11-14. In this case, we declare $p$ composite.
+</p>

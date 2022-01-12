@@ -139,15 +139,44 @@ if modulo_result == 1 or modulo_result == p - 1:
 $$a^{t} \equiv \pm 1\ (\textrm{mod}\ p)$$
 
 <p>
-    If the above equation is satisfied, it proves that:
+    If the equation above is satisfied, we declare $p$ a probable prime because it passes the following criteria:
 </p>
 
 <ol>
     <li>
         It passes the Fermat primality test since $a^{t} \equiv \pm 1\ (\textrm{mod}\ p) \implies a^{2^{s} t} \equiv 1\
-        (\textrm{mod}\ p)$
+        (\textrm{mod}\ p)$.
     </li>
     <li>
-        If $p$ is an odd prime, then the square roots of $1$ modulo $p$ are $\pm 1$
+        If $p$ is an odd prime, then the square roots of $1$ modulo $p$ are $\pm 1$.
     </li>
 </ol>
+
+<p>
+    If the equation is <strong>not</strong> satisfied, we'll move to lines 11-14 and perform another test that might
+    meet the criteria above.
+</p>
+
+<h4 class="mt-5">Lines 11-14</h4>
+
+<pre>
+<code class="language-python">
+for i in range(1, s):
+modulo_result = pow(a, 2 ** i * t, p)
+if modulo_result == p - 1:
+    return True
+</code>
+</pre>
+
+<p>
+    Lines 11-14 will check from $i \in [1,s)$ and see if the following congruence relation is true:
+</p>
+
+$$a^{2^{i} t} \equiv -1\ (\textrm{mod}\ p)$$
+
+<p>
+    If there's a value of $i$ that would satisfy the equation above, then it is guaranteed to pass the criteria we have
+    previously mentioned because of the following fact:
+</p>
+
+$$a^{2^{i} t} \equiv -1\ (\textrm{mod}\ p) \implies a^{2^{i+1} t} \equiv 1\ (\textrm{mod}\ p)$$

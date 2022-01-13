@@ -19,9 +19,7 @@ if (isset($_GET["id"])) {
 <html lang="en">
 
 <head>
-    <title>
-        <?php echo $blog->getTitle() . " - " . $blog->getAuthor(); ?>
-    </title>
+    <title><?php echo $blog->getTitle() . " - " . $blog->getAuthor(); ?></title>
 
     <!-- Favicon -->
     <link rel="icon" href="https://jpvitan.com/favicon.ico">

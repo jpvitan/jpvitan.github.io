@@ -19,9 +19,7 @@ if (isset($_GET["id"])) {
 <html lang="en">
 
 <head>
-    <title>
-        <?php echo $blog->getTitle() . " - " . $blog->getAuthor(); ?>
-    </title>
+    <title><?php echo $blog->getTitle() . " - " . $blog->getAuthor(); ?></title>
 
     <!-- Favicon -->
     <link rel="icon" href="https://jpvitan.com/favicon.ico">
@@ -42,6 +40,14 @@ if (isset($_GET["id"])) {
     <meta property="og:image" content="<?php echo $blog->getImageBanner(); ?>" />
     <meta property="og:description" content="<?php echo $blog->getDescription(); ?>" />
     <meta property="og:url" content="jpvitan.com" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@jpvitan_dev">
+    <meta name="twitter:creator" content="@jpvitan_dev">
+    <meta name="twitter:title" content="<?php echo $blog->getTitle() . " - " . $blog->getAuthor(); ?>">
+    <meta name="twitter:description" content="<?php echo $blog->getDescription(); ?>">
+    <meta name="twitter:image" content="<?php echo $blog->getImageBanner(); ?>">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">

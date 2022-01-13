@@ -17,8 +17,20 @@
     <!-- Meta Tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Want to learn something about computer science or amateur astronomy? Read my blogs and learn something new.">
+    <meta name="description" content="I sometimes write blogs in my spare time to share my knowledge about a specific subject or topic that interests me.">
     <meta name="author" content="Justine Paul Vitan">
+    <meta property="og:title" content="Blog | Justine Paul Vitan" />
+    <meta property="og:image" content="https://jpvitan.com/img/banner.png" />
+    <meta property="og:description" content="I sometimes write blogs in my spare time to share my knowledge about a specific subject or topic that interests me." />
+    <meta property="og:url" content="jpvitan.com" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@jpvitan_dev">
+    <meta name="twitter:creator" content="@jpvitan_dev">
+    <meta name="twitter:title" content="Blog | Justine Paul Vitan">
+    <meta name="twitter:description" content="I sometimes write blogs in my spare time to share my knowledge about a specific subject or topic that interests me.">
+    <meta name="twitter:image" content="https://jpvitan.com/img/banner.png">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">

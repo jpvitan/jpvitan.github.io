@@ -17,8 +17,20 @@
     <!-- Meta Tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Take a look at the latest projects of Justine Paul Vitan. Always built with quality and performance.">
+    <meta name="description" content="My projects are built on the best software engineering practices. I always make sure that it's fast, secure, and reliable.">
     <meta name="author" content="Justine Paul Vitan">
+    <meta property="og:title" content="Portfolio | Justine Paul Vitan" />
+    <meta property="og:image" content="https://jpvitan.com/img/banner.png" />
+    <meta property="og:description" content="My projects are built on the best software engineering practices. I always make sure that it's fast, secure, and reliable." />
+    <meta property="og:url" content="jpvitan.com" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@jpvitan_dev">
+    <meta name="twitter:creator" content="@jpvitan_dev">
+    <meta name="twitter:title" content="Portfolio | Justine Paul Vitan">
+    <meta name="twitter:description" content="My projects are built on the best software engineering practices. I always make sure that it's fast, secure, and reliable.">
+    <meta name="twitter:image" content="https://jpvitan.com/img/banner.png">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">

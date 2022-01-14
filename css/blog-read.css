@@ -1,16 +1,19 @@
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
 }
 
 p {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 1rem;
+    font-weight: 300;
     color: #636e72;
 }
 
 li:not([class="nav-item"]) {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 1rem;
+    font-weight: 300;
     color: #636e72;
 }
 
@@ -19,8 +22,9 @@ code[class*="language-"], pre[class*="language-"] {
 }
 
 .style-author-date {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 0.9rem;
+    font-weight: 300;
     color: #636e72;
 }
 

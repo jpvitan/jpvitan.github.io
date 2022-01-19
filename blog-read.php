@@ -22,6 +22,7 @@ if (isset($_GET["id"])) {
     <title><?php echo $blog->getTitle() . " - " . $blog->getAuthor(); ?></title>
 
     <!-- Favicon -->
+    <link rel="shortcut icon" href="https://jpvitan.com/favicon.ico">
     <link rel="icon" href="https://jpvitan.com/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

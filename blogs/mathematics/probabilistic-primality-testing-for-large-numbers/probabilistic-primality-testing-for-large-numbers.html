@@ -17,7 +17,7 @@
 <code class="language-python">
 # A straightforward but naive way of doing a deterministic primality test
 def is_prime(n):
-    if n < 2:
+    if n &lt; 2:
         return False
     for i in range(2, int(n ** (0.5)) + 1):
         if n % i == 0:
@@ -58,7 +58,7 @@ n = 1631455671043007290399702533840733175880293791399840649954089788335610876369
 
 <pre>
 <code class="language-python line-numbers">
-def rabin_miller(p: int) -> bool:
+def rabin_miller(p: int) -&gt; bool:
     a = random.randint(1, p - 1)
     s = 0
     t = p - 1

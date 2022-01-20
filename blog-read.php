@@ -22,6 +22,7 @@ if (isset($_GET["id"])) {
     <title><?php echo $blog->getTitle() . " - " . $blog->getAuthor(); ?></title>
 
     <!-- Favicon -->
+    <link rel="shortcut icon" href="https://jpvitan.com/favicon.ico">
     <link rel="icon" href="https://jpvitan.com/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -70,7 +71,7 @@ if (isset($_GET["id"])) {
             }
         };
     </script>
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <!-- PrismJS -->
     <link href="css/prism.css" rel="stylesheet">

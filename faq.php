@@ -18,11 +18,11 @@
     <!-- Meta Tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="">
+    <meta name="description" content="I'll answer the most frequently asked questions about my professional and technical expertise.">
     <meta name="author" content="Justine Paul Vitan">
     <meta property="og:title" content="FAQ | Justine Paul Vitan" />
     <meta property="og:image" content="https://jpvitan.com/img/banner.png" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="I'll answer the most frequently asked questions about my professional and technical expertise." />
     <meta property="og:url" content="jpvitan.com" />
 
     <!-- Twitter Cards -->
@@ -30,7 +30,7 @@
     <meta name="twitter:site" content="@jpvitan_dev">
     <meta name="twitter:creator" content="@jpvitan_dev">
     <meta name="twitter:title" content="FAQ | Justine Paul Vitan">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:description" content="I'll answer the most frequently asked questions about my professional and technical expertise.">
     <meta name="twitter:image" content="https://jpvitan.com/img/banner.png">
 
     <!-- Bootstrap -->
@@ -77,9 +77,9 @@
                                     <div class="row">
                                         <div class="col-md mx-md-2">
                                             <h1>FAQ</h1>
-                                            <p style="font-weight: 700;">Justine Paul Vitan</p>
+                                            <p style="font-weight: 700;">about Justine Paul Vitan</p>
                                             <p style="font-size: 1rem;">
-
+                                                I'll answer the most frequently asked questions about my professional and technical expertise.
                                             </p>
                                         </div>
                                     </div>

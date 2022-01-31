@@ -1,8 +1,4 @@
-html {
-    background-color: #ffffff;
-}
-
-body {
+html, body {
     background-color: #ffffff;
 }
 
@@ -35,12 +31,6 @@ select {
     background-color: #ecf0f1 !important;
     height: 3rem;
     font-family: 'Montserrat', sans-serif;
-}
-
-@media only screen and (min-width: 767px) {
-    p {
-        font-size: 1.4rem;
-    }
 }
 
 .accordion-body {

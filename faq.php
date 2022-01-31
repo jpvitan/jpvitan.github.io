@@ -66,45 +66,25 @@
 
     <div class="py-5"></div>
 
-    <div style="overflow: hidden;">
-        <div class="container-fluid" style="background-color: #ffffff;">
-            <div class="row justify-content-center">
-                <div class="col-auto text-center">
-                    <div class="card border-0">
-                        <div class="card-body px-3 py-3 px-sm-5 py-sm-5">
-                            <div class="row justify-content-center text-start">
-                                <div class="col" style="max-width: 50rem;">
-                                    <div class="row">
-                                        <div class="col-md mx-md-2">
-                                            <h1>FAQ</h1>
-                                            <p style="font-weight: 700;">about Justine Paul Vitan</p>
-                                            <p style="font-size: 1rem;">
-                                                I'll answer the most frequently asked questions about my professional and technical expertise.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid pb-4">
+    <div class="container-fluid pb-5">
         <div class="row justify-content-center">
-            <div class="col" style="max-width: 50rem;">
+            <div class="col my-auto px-4" style="max-width: 50rem;">
+                <h1>FAQ</h1>
+                <p style="font-weight: 700;">about Justine Paul Vitan</p>
+                <p style="font-size: 1rem;">
+                    I'll answer the most frequently asked questions about my professional and technical expertise.
+                </p>
+                <div class="mt-5 custom-h5">Section 1</div>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed text-start" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-
+                                Question 1
                             </button>
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-
+                                Answer 1
                             </div>
                         </div>
                     </div>

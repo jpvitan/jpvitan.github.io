@@ -143,7 +143,6 @@
             </div>
         </form>
 
-
         <div class="row justify-content-center">
             <div class="col" style="max-width: 50rem;">
                 <ul class="list-group list-group-flush">

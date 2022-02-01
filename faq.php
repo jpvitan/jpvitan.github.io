@@ -74,12 +74,12 @@
                 <p style="font-size: 1rem;">
                     I'll answer the most frequently asked questions about my professional and technical expertise.
                 </p>
-                <div class="mt-5 custom-h5">Section 1</div>
+                <div class="mt-5 custom-h5">Common Interview Questions</div>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed text-start" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                Question 1
+                                Tell me a little about yourself.
                             </button>
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">

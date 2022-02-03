@@ -18,11 +18,11 @@
     <!-- Meta Tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="I'll answer the most frequently asked questions about my professional and technical expertise.">
+    <meta name="description" content="I'll answer the most frequently asked questions about my professional and technical background, interests, hobbies, and personal life.">
     <meta name="author" content="Justine Paul Vitan">
     <meta property="og:title" content="FAQ | Justine Paul Vitan" />
     <meta property="og:image" content="https://jpvitan.com/img/banner.png" />
-    <meta property="og:description" content="I'll answer the most frequently asked questions about my professional and technical expertise." />
+    <meta property="og:description" content="I'll answer the most frequently asked questions about my professional and technical background, interests, hobbies, and personal life." />
     <meta property="og:url" content="jpvitan.com" />
 
     <!-- Twitter Cards -->
@@ -30,7 +30,7 @@
     <meta name="twitter:site" content="@jpvitan_dev">
     <meta name="twitter:creator" content="@jpvitan_dev">
     <meta name="twitter:title" content="FAQ | Justine Paul Vitan">
-    <meta name="twitter:description" content="I'll answer the most frequently asked questions about my professional and technical expertise.">
+    <meta name="twitter:description" content="I'll answer the most frequently asked questions about my professional and technical background, interests, hobbies, and personal life.">
     <meta name="twitter:image" content="https://jpvitan.com/img/banner.png">
 
     <!-- Bootstrap -->
@@ -75,7 +75,7 @@
                             <h1>JUSTINE PAUL VITAN</h1>
                             <p style="font-weight: 700;">Frequently Asked Questions</p>
                             <p style="font-size: 1rem;">
-                                I'll answer the most frequently asked questions about my professional and technical expertise.
+                                I'll answer the most frequently asked questions about my professional and technical background, interests, hobbies, and personal life.
                             </p>
                         </div>
                     </div>

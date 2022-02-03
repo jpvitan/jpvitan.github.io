@@ -66,28 +66,29 @@
 
     <div class="py-5"></div>
 
-    <div class="container-fluid pb-5">
-        <div class="row justify-content-center">
-            <div class="col my-auto px-4" style="max-width: 50rem;">
-                <h1>FAQ</h1>
-                <p style="font-weight: 700;">about Justine Paul Vitan</p>
-                <p style="font-size: 1rem;">
-                    I'll answer the most frequently asked questions about my professional and technical expertise.
-                </p>
-                <div class="mt-5 custom-h5">Common Interview Questions</div>
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed text-start" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                Tell me a little about yourself.
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                Answer 1
-                            </div>
+    <div style="overflow: hidden;">
+        <div class="container-fluid pb-5" style="background-color: #ffffff;">
+            <div class="row justify-content-center">
+                <div class="col px-0" style="max-width: 50rem;">
+                    <div class="card border-0">
+                        <div class="card-body px-4 py-3 px-sm-5 py-sm-5">
+                            <h1>JUSTINE PAUL VITAN</h1>
+                            <p style="font-weight: 700;">Frequently Asked Questions</p>
+                            <p style="font-size: 1rem;">
+                                I'll answer the most frequently asked questions about my professional and technical expertise.
+                            </p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="overflow: hidden;">
+        <div class="container-fluid" style="background-color: #ffffff;">
+            <div class="row justify-content-center">
+                <div class="col text-center px-0">
+                    <img class="img-fluid shadow" alt="SatTrack-X" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1639646805/portfolio/SatTrack-X_jin9vr.jpg" width="1920" height="1080">
                 </div>
             </div>
         </div>

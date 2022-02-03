@@ -1,4 +1,8 @@
-html, body {
+html {
+    background-color: #ffffff;
+}
+
+body {
     background-color: #ffffff;
 }
 
@@ -17,22 +21,8 @@ a {
     font-family: 'Montserrat', sans-serif;
 }
 
-input {
-    border: 0px !important;
-    border-radius: 10px !important;
-    background-color: #ecf0f1 !important;
-    height: 3rem;
-    font-family: 'Montserrat', sans-serif;
-}
-
-select {
-    border: 0px !important;
-    border-radius: 10px !important;
-    background-color: #ecf0f1 !important;
-    height: 3rem;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.accordion-body {
-    font-family: 'Montserrat', sans-serif;
+@media only screen and (min-width: 767px) {
+    p {
+        font-size: 1.4rem;
+    }
 }

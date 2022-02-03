@@ -121,7 +121,9 @@
 
             window.addEventListener('resize', setFillerHeight);
 
-            $("#footer").load("footer.html");
+            $("#footer").load("footer.html", () => {
+                setFillerHeight();
+            });
 
             jQuery(window).on("load", () => {
                 setFillerHeight();

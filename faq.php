@@ -88,7 +88,7 @@
         <div class="container-fluid" style="background-color: #ffffff;">
             <div class="row justify-content-center">
                 <div class="col text-center px-0">
-                    <img class="img-fluid shadow" alt="SatTrack-X" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1639646805/portfolio/SatTrack-X_jin9vr.jpg" width="1920" height="1080">
+                    <img class="img-fluid shadow" alt="Cat" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644081767/faq_c0nmhx.jpg" width="1920" height="1080">
                 </div>
             </div>
         </div>

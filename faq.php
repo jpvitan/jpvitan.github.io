@@ -103,7 +103,24 @@
                             <h1>Personal Life</h1>
                             <p style="font-weight: 700;">Tell Me About Yourself</p>
                             <p style="font-size: 1rem;">
-
+                                I'm Justine Paul Vitan, a mobile and web developer based in the Philippines. I've been building and designing mobile and web applications as a hobby and profession. For the past few years, I've published many different applications to prove my competency in developing and designing software. Aside from that, I've also earned certifications from relevant institutions like Microsoft and received academic awards during my stay as a computer science student at my university.
+                            </p>
+                            <p style="font-size: 1rem;">
+                                What sets me apart from most software developers is my solid base of algorithmic knowledge and technique.
+                            </p>
+                            <figure class="px-4 py-4" style="background-color: #ecf0f1;">
+                                <blockquote class="blockquote">
+                                    <p style="font-size: 1.2rem; color: #000000;">Having a solid base of algorithmic knowledge and technique is one characteristic that separates the truly skilled programmers from the novices.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer" style="color: #000000;">
+                                    Introduction to Algorithms, Third Edition (3rd. ed.).
+                                </figcaption>
+                            </figure>
+                            <p style="font-size: 1rem;">
+                                This skill or characteristic is important because not every language, framework, or library would have a solution to the problem that you are trying to solve. There may be cases where you have to design an algorithm by yourself, and that algorithm should be fast, correct, and efficient.
+                            </p>
+                            <p style="font-size: 1rem;">
+                                Moving forward, it is in my best interest to diversify, expand, and modernize my skill set to meet the demands of the industry. I'm always willing to learn and explore new things.
                             </p>
                         </div>
                     </div>

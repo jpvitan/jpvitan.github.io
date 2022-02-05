@@ -94,6 +94,24 @@
         </div>
     </div>
 
+    <div style="overflow: hidden;">
+        <div class="container-fluid pb-5" style="background-color: #ffffff;">
+            <div class="row justify-content-center">
+                <div class="col px-0" style="max-width: 50rem;">
+                    <div class="card border-0">
+                        <div class="card-body px-4 py-5 px-sm-5 py-sm-5">
+                            <h1>Personal Life</h1>
+                            <p style="font-weight: 700;">Tell Me About Yourself</p>
+                            <p style="font-size: 1rem;">
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="filler"></div>
 
     <footer class="pt-2" id="footer">

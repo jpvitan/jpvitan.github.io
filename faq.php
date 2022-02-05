@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>FAQ | Justine Paul Vitan</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://jpvitan.com/favicon.ico">
+    <link rel="icon" href="https://jpvitan.com/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="I'll answer the most frequently asked questions about my professional and technical background, interests, hobbies, and personal life.">
+    <meta name="author" content="Justine Paul Vitan">
+    <meta property="og:title" content="FAQ | Justine Paul Vitan" />
+    <meta property="og:image" content="https://jpvitan.com/img/banner.png" />
+    <meta property="og:description" content="I'll answer the most frequently asked questions about my professional and technical background, interests, hobbies, and personal life." />
+    <meta property="og:url" content="jpvitan.com" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@jpvitan_dev">
+    <meta name="twitter:creator" content="@jpvitan_dev">
+    <meta name="twitter:title" content="FAQ | Justine Paul Vitan">
+    <meta name="twitter:description" content="I'll answer the most frequently asked questions about my professional and technical background, interests, hobbies, and personal life.">
+    <meta name="twitter:image" content="https://jpvitan.com/img/banner.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/faq.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="style-menu" id="menu"></div>
+
+    <div class="container-fluid fixed-top px-3 py-3 style-navbar" id="navbar">
+
+    </div>
+
+    <script>
+        $(function() {
+            $("#menu").load("menu.html");
+            $("#navbar").load("navbar.html");
+        });
+    </script>
+
+    <div class="py-5"></div>
+
+    <div style="overflow: hidden;">
+        <div class="container-fluid pb-5" style="background-color: #ffffff;">
+            <div class="row justify-content-center">
+                <div class="col px-0" style="max-width: 50rem;">
+                    <div class="card border-0">
+                        <div class="card-body px-4 py-3 px-sm-5 py-sm-5">
+                            <h1>JUSTINE PAUL VITAN</h1>
+                            <p style="font-weight: 700;">Frequently Asked Questions</p>
+                            <p style="font-size: 1rem;">
+                                I'll answer the most frequently asked questions about my professional and technical background, interests, hobbies, and personal life.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="overflow: hidden;">
+        <div class="container-fluid" style="background-color: #ffffff;">
+            <div class="row justify-content-center">
+                <div class="col text-center px-0">
+                    <img class="img-fluid shadow" alt="Cat" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644081767/faq_c0nmhx.jpg" width="1920" height="1080">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="overflow: hidden;">
+        <div class="container-fluid pb-5" style="background-color: #ffffff;">
+            <div class="row justify-content-center">
+                <div class="col px-0" style="max-width: 50rem;">
+                    <div class="card border-0">
+                        <div class="card-body px-4 py-5 px-sm-5 py-sm-5">
+                            <h1>Personal Life</h1>
+                            <p style="font-weight: 700;">Tell Me About Yourself</p>
+                            <p style="font-size: 1rem;">
+                                I'm Justine Paul Vitan, a mobile and web developer based in the Philippines. I've been building and designing mobile and web applications as a hobby and profession. For the past few years, I've published many different applications to prove my competency in developing and designing software. Aside from that, I've also earned certifications from relevant institutions like Microsoft and received academic awards during my stay as a computer science student at my university.
+                            </p>
+                            <p style="font-size: 1rem;">
+                                What sets me apart from most software developers is my solid base of algorithmic knowledge and technique.
+                            </p>
+                            <figure class="px-4 py-4" style="background-color: #ecf0f1;">
+                                <blockquote class="blockquote">
+                                    <p style="font-size: 1.2rem; color: #000000;">Having a solid base of algorithmic knowledge and technique is one characteristic that separates the truly skilled programmers from the novices.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer" style="color: #000000;">
+                                    Introduction to Algorithms, Third Edition (3rd. ed.).
+                                </figcaption>
+                            </figure>
+                            <p style="font-size: 1rem;">
+                                This skill or characteristic is important because not every language, framework, or library would have a solution to the problem that you are trying to solve. There may be cases where you have to design an algorithm by yourself, and that algorithm should be fast, correct, and efficient.
+                            </p>
+                            <p style="font-size: 1rem;">
+                                Moving forward, it is in my best interest to diversify, expand, and modernize my skill set to meet the demands of the industry. I'm always willing to learn and explore new things.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="filler"></div>
+
+    <footer class="pt-2" id="footer">
+
+    </footer>
+
+    <script>
+        $(function() {
+            let setFillerHeight = () => {
+                let filler = document.getElementById("filler");
+                let fillerY = $("#filler").offset().top;
+
+                let footer = document.getElementById("footer");
+                let footerHeight = footer.getBoundingClientRect().height;
+
+                let clientHeight = document.documentElement.clientHeight;
+
+                let fillerHeight = clientHeight - fillerY - footerHeight;
+
+                if (fillerHeight < 0) {
+                    filler.style.height = 0 + "px";
+                } else {
+                    filler.style.height = fillerHeight + "px";
+                }
+            }
+
+            window.addEventListener('resize', setFillerHeight);
+
+            $("#footer").load("footer.html", () => {
+                setFillerHeight();
+            });
+
+            jQuery(window).on("load", () => {
+                setFillerHeight();
+            });
+        });
+    </script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/faq.js"></script>
+</body>
+
+</html>

@@ -21,7 +21,7 @@
     <meta name="description" content="I'll answer the most frequently asked questions about my professional and technical background, interests, hobbies, and personal life.">
     <meta name="author" content="Justine Paul Vitan">
     <meta property="og:title" content="FAQ | Justine Paul Vitan" />
-    <meta property="og:image" content="https://jpvitan.com/img/banner-faq.png" />
+    <meta property="og:image" content="https://jpvitan.com/img/faq/banner.jpg" />
     <meta property="og:description" content="I'll answer the most frequently asked questions about my professional and technical background, interests, hobbies, and personal life." />
     <meta property="og:url" content="jpvitan.com" />
 
@@ -31,7 +31,7 @@
     <meta name="twitter:creator" content="@jpvitan_dev">
     <meta name="twitter:title" content="FAQ | Justine Paul Vitan">
     <meta name="twitter:description" content="I'll answer the most frequently asked questions about my professional and technical background, interests, hobbies, and personal life.">
-    <meta name="twitter:image" content="https://jpvitan.com/img/banner-faq.png">
+    <meta name="twitter:image" content="https://jpvitan.com/img/faq/banner.jpg">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -88,7 +88,7 @@
         <div class="container-fluid" style="background-color: #ffffff;">
             <div class="row justify-content-center">
                 <div class="col text-center px-0">
-                    <img class="img-fluid shadow" alt="Cat" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644081767/faq_c0nmhx.jpg" width="1920" height="1080">
+                    <img class="img-fluid shadow" alt="Cat" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644324623/faq/cat_v1erjx.jpg" width="1920" height="1080">
                 </div>
             </div>
         </div>
@@ -133,7 +133,7 @@
         <div class="container-fluid" style="background-color: #ffffff;">
             <div class="row justify-content-center">
                 <div class="col text-center px-0">
-                    <img class="img-fluid shadow" alt="Earth" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644156167/earth_fv5nu5.jpg" width="1920" height="1080">
+                    <img class="img-fluid shadow" alt="Earth" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644324624/faq/earth_fiwped.jpg" width="1920" height="1080">
                 </div>
             </div>
         </div>
@@ -166,11 +166,11 @@
         </div>
     </div>
 
-    <div style="overflow: hidden;">
+    <!-- <div style="overflow: hidden;">
         <div class="container-fluid" style="background-color: #ffffff;">
             <div class="row justify-content-center">
                 <div class="col text-center px-0">
-                    <img class="img-fluid shadow" alt="Code" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644253167/code_nztu6h.jpg" width="1920" height="1080">
+                    <img class="img-fluid shadow" alt="Code" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644324623/faq/code_uvsruk.jpg" width="1920" height="1080">
                 </div>
             </div>
         </div>
@@ -192,7 +192,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div id="filler"></div>
 

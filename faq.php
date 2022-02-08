@@ -21,7 +21,7 @@
     <meta name="description" content="I'll answer the most frequently asked questions about my professional and technical background, interests, hobbies, and personal life.">
     <meta name="author" content="Justine Paul Vitan">
     <meta property="og:title" content="FAQ | Justine Paul Vitan" />
-    <meta property="og:image" content="https://jpvitan.com/img/banner.png" />
+    <meta property="og:image" content="https://jpvitan.com/img/banner-faq.png" />
     <meta property="og:description" content="I'll answer the most frequently asked questions about my professional and technical background, interests, hobbies, and personal life." />
     <meta property="og:url" content="jpvitan.com" />
 
@@ -31,7 +31,7 @@
     <meta name="twitter:creator" content="@jpvitan_dev">
     <meta name="twitter:title" content="FAQ | Justine Paul Vitan">
     <meta name="twitter:description" content="I'll answer the most frequently asked questions about my professional and technical background, interests, hobbies, and personal life.">
-    <meta name="twitter:image" content="https://jpvitan.com/img/banner.png">
+    <meta name="twitter:image" content="https://jpvitan.com/img/banner-faq.png">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">

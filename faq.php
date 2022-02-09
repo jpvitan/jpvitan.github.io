@@ -166,7 +166,7 @@
         </div>
     </div>
 
-    <!-- <div style="overflow: hidden;">
+    <div style="overflow: hidden;">
         <div class="container-fluid" style="background-color: #ffffff;">
             <div class="row justify-content-center">
                 <div class="col text-center px-0">
@@ -183,16 +183,21 @@
                     <div class="card border-0">
                         <div class="card-body px-4 py-5 px-sm-5 py-sm-5">
                             <h1>Professional and Technical Background</h1>
-                            <p style="font-weight: 700;">What Are Your Interests and Hobbies?</p>
+                            <p style="font-weight: 700;">What Are Your Front-End Skills?</p>
                             <p style="font-size: 1rem;">
-                                Outside computer science, I love to do amateur astronomy. I use a 900mm Newtonian reflector to observe the night sky and have seen several deep-sky objects and all the planets in the solar system except for Mercury and Neptune.
+
+                            </p>
+                            <div class="py-4"></div>
+                            <p style="font-weight: 700;">What Are Your Back-End Skills?</p>
+                            <p style="font-size: 1rem;">
+
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <div id="filler"></div>
 

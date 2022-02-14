@@ -26,3 +26,7 @@ a {
         font-size: 1.4rem;
     }
 }
+
+.card-body:hover .style-card-body-link-h1 {
+    color: #03A9F4 !important;
+}

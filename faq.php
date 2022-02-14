@@ -21,7 +21,7 @@
     <meta name="description" content="I'll answer the most frequently asked questions about my professional and technical background, interests, hobbies, and personal life.">
     <meta name="author" content="Justine Paul Vitan">
     <meta property="og:title" content="FAQ | Justine Paul Vitan" />
-    <meta property="og:image" content="https://jpvitan.com/img/banner.png" />
+    <meta property="og:image" content="https://jpvitan.com/img/faq/banner.jpg" />
     <meta property="og:description" content="I'll answer the most frequently asked questions about my professional and technical background, interests, hobbies, and personal life." />
     <meta property="og:url" content="jpvitan.com" />
 
@@ -31,7 +31,7 @@
     <meta name="twitter:creator" content="@jpvitan_dev">
     <meta name="twitter:title" content="FAQ | Justine Paul Vitan">
     <meta name="twitter:description" content="I'll answer the most frequently asked questions about my professional and technical background, interests, hobbies, and personal life.">
-    <meta name="twitter:image" content="https://jpvitan.com/img/banner.png">
+    <meta name="twitter:image" content="https://jpvitan.com/img/faq/banner.jpg">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -88,7 +88,7 @@
         <div class="container-fluid" style="background-color: #ffffff;">
             <div class="row justify-content-center">
                 <div class="col text-center px-0">
-                    <img class="img-fluid shadow" alt="Cat" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644081767/faq_c0nmhx.jpg" width="1920" height="1080">
+                    <img class="img-fluid shadow" alt="Cat" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644324623/faq/cat_v1erjx.jpg" width="1920" height="1080">
                 </div>
             </div>
         </div>
@@ -103,25 +103,51 @@
                             <h1>Personal Life</h1>
                             <p style="font-weight: 700;">Tell Me About Yourself</p>
                             <p style="font-size: 1rem;">
-                                I'm Justine Paul Vitan, a mobile and web developer based in the Philippines. I've been building and designing mobile and web applications as a hobby and profession. For the past few years, I've published many different applications to prove my competency in developing and designing software. Aside from that, I've also earned certifications from relevant institutions like Microsoft and received academic awards during my stay as a computer science student at my university.
+                                I'm Justine Paul Vitan, a mobile and web developer based in the Philippines. I've been building and designing mobile and web applications as a hobby and profession. For the past few years, I've published many applications to prove my competency in developing and designing software.
                             </p>
                             <p style="font-size: 1rem;">
-                                What sets me apart from most software developers is my solid base of algorithmic knowledge and technique.
-                            </p>
-                            <figure class="px-4 py-4" style="background-color: #ecf0f1;">
-                                <blockquote class="blockquote">
-                                    <p style="font-size: 1.2rem; color: #000000;">Having a solid base of algorithmic knowledge and technique is one characteristic that separates the truly skilled programmers from the novices.</p>
-                                </blockquote>
-                                <figcaption class="blockquote-footer" style="color: #000000;">
-                                    Introduction to Algorithms, Third Edition (3rd. ed.).
-                                </figcaption>
-                            </figure>
-                            <p style="font-size: 1rem;">
-                                This skill or characteristic is important because not every language, framework, or library would have a solution to the problem that you are trying to solve. There may be cases where you have to design an algorithm by yourself, and that algorithm should be fast, correct, and efficient.
+                                Personality-wise, I love to describe myself as a tenacious person. I'm always insistent on finishing my goal, even if it gets to the point where I have to exhaust all my resources. This mindset allowed me to develop complex applications such as a satellite tracking app and a machine learning model that utilizes convolutional neural networks.
                             </p>
                             <p style="font-size: 1rem;">
                                 Moving forward, it is in my best interest to diversify, expand, and modernize my skill set to meet the demands of the industry. I'm always willing to learn and explore new things.
                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="overflow: hidden;">
+        <div class="container-fluid" style="background-color: #ffffff;">
+            <div class="row justify-content-center">
+                <div class="col text-center px-0">
+                    <img class="img-fluid shadow" alt="Earth" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644324624/faq/earth_fiwped.jpg" width="1920" height="1080">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="overflow: hidden;">
+        <div class="container-fluid pb-5" style="background-color: #ffffff;">
+            <div class="row justify-content-center">
+                <div class="col px-0" style="max-width: 50rem;">
+                    <div class="card border-0">
+                        <div class="card-body px-4 py-5 px-sm-5 py-sm-5">
+                            <h1>Interests and Hobbies</h1>
+                            <p style="font-weight: 700;">What Are Your Interests and Hobbies?</p>
+                            <p style="font-size: 1rem;">
+                                Inside the realm of computer science, I'm interested in artificial intelligence, cryptography, and theoretical computer science. I've published several applications and blogs that revolve around these subdisciplines.
+                            </p>
+                            <blockquote class="twitter-tweet" data-theme="light">
+                                <p lang="en" dir="ltr">Currently experimenting with real-time object detection using SSD MobileNet v2. <a href="https://t.co/cJD3HlRXLD">pic.twitter.com/cJD3HlRXLD</a></p>&mdash; Justine Paul Vitan (@jpvitan_dev) <a href="https://twitter.com/jpvitan_dev/status/1417212472944054299?ref_src=twsrc%5Etfw">July 19, 2021</a>
+                            </blockquote>
+                            <p style="font-size: 1rem;">
+                                Outside computer science, I love to do amateur astronomy. I use a 900mm Newtonian reflector to observe the night sky and have seen several deep-sky objects and all the planets in the solar system except for Mercury and Neptune.
+                            </p>
+                            <blockquote class="twitter-tweet">
+                                <p lang="en" dir="ltr">Here&#39;s a photo of Mars that I took a year ago using my 900mm Newtonian reflector and 20mm eyepiece. 🔭 <a href="https://t.co/p6BRgpG31j">pic.twitter.com/p6BRgpG31j</a></p>&mdash; Justine Paul Vitan (@jpvitan_dev) <a href="https://twitter.com/jpvitan_dev/status/1442615763550965766?ref_src=twsrc%5Etfw">September 27, 2021</a>
+                            </blockquote>
                         </div>
                     </div>
                 </div>
@@ -172,6 +198,9 @@
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Twitter -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
     <!-- JavaScript -->
     <script src="js/faq.js"></script>

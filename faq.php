@@ -155,39 +155,6 @@
         </div>
     </div>
 
-    <div style="overflow: hidden;">
-        <div class="container-fluid" style="background-color: #ffffff;">
-            <div class="row justify-content-center">
-                <div class="col text-center px-0">
-                    <img class="img-fluid shadow" alt="Code" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644324623/faq/code_uvsruk.jpg" width="1920" height="1080">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style="overflow: hidden;">
-        <div class="container-fluid pb-5" style="background-color: #ffffff;">
-            <div class="row justify-content-center">
-                <div class="col px-0" style="max-width: 50rem;">
-                    <div class="card border-0">
-                        <div class="card-body px-4 py-5 px-sm-5 py-sm-5">
-                            <h1>Professional and Technical Background</h1>
-                            <p style="font-weight: 700;">What Are Your Front-End Skills?</p>
-                            <p style="font-size: 1rem;">
-
-                            </p>
-                            <div class="py-4"></div>
-                            <p style="font-weight: 700;">What Are Your Back-End Skills?</p>
-                            <p style="font-size: 1rem;">
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div id="filler"></div>
 
     <footer class="pt-2" id="footer">

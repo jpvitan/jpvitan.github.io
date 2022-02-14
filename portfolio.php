@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Portfolio | Justine Paul Vitan</title>
+    <title>Projects | Justine Paul Vitan</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://jpvitan.com/favicon.ico">
@@ -20,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="My projects are built on the best software engineering practices. I always make sure that it's fast, secure, and reliable.">
     <meta name="author" content="Justine Paul Vitan">
-    <meta property="og:title" content="Portfolio | Justine Paul Vitan" />
+    <meta property="og:title" content="Projects | Justine Paul Vitan" />
     <meta property="og:image" content="https://jpvitan.com/img/banner.png" />
     <meta property="og:description" content="My projects are built on the best software engineering practices. I always make sure that it's fast, secure, and reliable." />
     <meta property="og:url" content="jpvitan.com" />
@@ -29,7 +29,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@jpvitan_dev">
     <meta name="twitter:creator" content="@jpvitan_dev">
-    <meta name="twitter:title" content="Portfolio | Justine Paul Vitan">
+    <meta name="twitter:title" content="Projects | Justine Paul Vitan">
     <meta name="twitter:description" content="My projects are built on the best software engineering practices. I always make sure that it's fast, secure, and reliable.">
     <meta name="twitter:image" content="https://jpvitan.com/img/banner.png">
 
@@ -115,9 +115,9 @@
                     <div style="max-width: 50rem;">
                         <div class="row">
                             <div class="col-sm">
-                                <input class="form-control mt-3" type="text" id="title" name="title" placeholder="Search Portfolio" <?php if ($form_submitted_title && $title != "") {
-                                                                                                                                        echo "value='" . $title . "'";
-                                                                                                                                    } ?>>
+                                <input class="form-control mt-3" type="text" id="title" name="title" placeholder="Search" <?php if ($form_submitted_title && $title != "") {
+                                                                                                                                echo "value='" . $title . "'";
+                                                                                                                            } ?>>
                             </div>
                             <div class="col-sm">
                                 <select class="form-select mt-3" id="platform" name="platform" onchange="this.form.submit()">

@@ -116,16 +116,3 @@ a {
     font-size: 1.1rem;
     color: #636e72;
 }
-
-.style-card-link-footer {
-    position: relative;
-    width: 2rem;
-    height: 2rem;
-}
-
-.style-card-link-footer-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}

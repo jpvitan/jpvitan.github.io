@@ -116,9 +116,9 @@
                     <div style="max-width: 50rem;">
                         <div class="row">
                             <div class="col-sm">
-                                <input class="form-control mt-3" type="text" id="title" name="title" placeholder="Blog Title" <?php if ($form_submitted_title && $title != "") {
-                                                                                                                                    echo "value='" . $title . "'";
-                                                                                                                                } ?>>
+                                <input class="form-control mt-3" type="text" id="title" name="title" placeholder="Search" <?php if ($form_submitted_title && $title != "") {
+                                                                                                                                echo "value='" . $title . "'";
+                                                                                                                            } ?>>
                             </div>
                             <div class="col-sm">
                                 <select class="form-select mt-3" id="category" name="category" onchange="this.form.submit()">

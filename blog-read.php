@@ -114,6 +114,7 @@ if (isset($_GET["id"])) {
                 <div class="row justify-content-center">
                     <div class="col" style="max-width: 45rem;">
                         <?php include $blog->getLink(); ?>
+
                     </div>
                 </div>
             </div>

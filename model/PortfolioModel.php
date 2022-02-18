@@ -48,40 +48,7 @@ class PortfolioModel
 
     public function getCard()
     {
-        $card = "
-        <li class='list-group-item border-0 mt-4 mt-sm-5'>
-            <a href='" . $this->link . "' style='text-decoration: none;'>
-                <div class='row'>
-                    <div class='col'>
-                        <img class='img-fluid mb-3' alt='Icon' src='" . $this->image_banner . "' width='1280' height='800'/>                    
-                    </div>
-                </div>
-                <div class='row'>
-                    <div class='col'>
-                        <h1 class='mb-1' style='font-size: 1rem; color: #000000;'>" . $this->title . "</h1>
-                        <p class='mb-1' style='font-size: 1rem; color: #636e72;'>" . $this->description . "</p>
-                    </div>
-                </div>
-            </a>
-            <div class='row'>
-                <div class='col'>
-                    <div class='style-category-color me-2' style='display: inline-block; background-color: " . $this->getColorFromPlatform($this->platform) . ";'></div>
-                    <button class='me-2' style='border: 0; padding: 0; outline: 0; background: transparent;' type='button' data-bs-container='body' data-bs-toggle='popover' data-bs-placement='bottom' data-bs-html='true' data-bs-content=" . $this->generateBadge($this->technologies_used) . ">
-                        <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#636e72' class='bi bi-info-circle' viewBox='0 0 16 16' aria-label='Technologies Used'>
-                            <path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/>
-                            <path d='M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z'/>
-                        </svg>
-                    </button>
-                    <a href='" . $this->link . "' style='text-decoration: none; color: #636e72;'>
-                        <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-box-arrow-in-up-right' viewBox='0 0 16 16' aria-label='Link'>
-                            <path fill-rule='evenodd' d='M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z'/>
-                            <path fill-rule='evenodd' d='M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z'/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </li>
-        ";
+        $card = "<li class='list-group-item border-0 mt-4 mt-sm-5'><a href='" . $this->link . "' style='text-decoration: none;'><div class='row'><div class='col'><img class='img-fluid mb-3' alt='Icon' src='" . $this->image_banner . "' width='1280' height='800'/></div></div><div class='row'><div class='col'><h1 class='mb-1' style='font-size: 1rem; color: #000000;'>" . $this->title . "</h1><p class='mb-1' style='font-size: 1rem; color: #636e72;'>" . $this->description . "</p></div></div></a><div class='row'><div class='col'><div class='style-category-color me-2' style='display: inline-block; background-color: " . $this->getColorFromPlatform($this->platform) . ";'></div><button class='me-2' style='border: 0; padding: 0; outline: 0; background: transparent;' type='button' data-bs-container='body' data-bs-toggle='popover' data-bs-placement='bottom' data-bs-html='true' data-bs-content=" . $this->generateBadge($this->technologies_used) . "><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#636e72' class='bi bi-info-circle' viewBox='0 0 16 16' aria-label='Technologies Used'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z'/></svg></button><a href='" . $this->link . "' style='text-decoration: none; color: #636e72;'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-box-arrow-in-up-right' viewBox='0 0 16 16' aria-label='Link'><path fill-rule='evenodd' d='M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z'/><path fill-rule='evenodd' d='M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z'/></svg></a></div></div></li>";
         return $card;
     }
 }

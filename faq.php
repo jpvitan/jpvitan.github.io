@@ -64,7 +64,7 @@
     <div class="py-5"></div>
 
     <div style="overflow: hidden;">
-        <div class="container-fluid pb-5" style="background-color: #ffffff;">
+        <div class="container-fluid pb-5">
             <div class="row justify-content-center">
                 <div class="col px-0" style="max-width: 50rem;">
                     <div class="card border-0">
@@ -82,7 +82,7 @@
     </div>
 
     <div style="overflow: hidden;">
-        <div class="container-fluid" style="background-color: #ffffff;">
+        <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col text-center px-0">
                     <img class="img-fluid shadow" alt="Cat" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644324623/faq/cat_v1erjx.jpg" width="1920" height="1080">
@@ -92,7 +92,7 @@
     </div>
 
     <div style="overflow: hidden;">
-        <div class="container-fluid pb-5" style="background-color: #ffffff;">
+        <div class="container-fluid pb-5">
             <div class="row justify-content-center">
                 <div class="col px-0" style="max-width: 50rem;">
                     <div class="card border-0">
@@ -116,7 +116,7 @@
     </div>
 
     <div style="overflow: hidden;">
-        <div class="container-fluid" style="background-color: #ffffff;">
+        <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col text-center px-0">
                     <img class="img-fluid shadow" alt="Earth" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644324624/faq/earth_fiwped.jpg" width="1920" height="1080">
@@ -126,7 +126,7 @@
     </div>
 
     <div style="overflow: hidden;">
-        <div class="container-fluid pb-5" style="background-color: #ffffff;">
+        <div class="container-fluid pb-5">
             <div class="row justify-content-center">
                 <div class="col px-0" style="max-width: 50rem;">
                     <div class="card border-0">

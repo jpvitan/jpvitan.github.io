@@ -31,6 +31,6 @@ a {
     max-width: 50rem;
 }
 
-.card-body:hover .style-card-body-link-h1 {
+.card-body:hover .style-featured-section-h1 {
     color: #03A9F4 !important;
 }

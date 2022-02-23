@@ -98,32 +98,30 @@
 
     <div class="container-fluid pb-4">
         <form method="GET" id="query">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div style="max-width: 50rem;">
-                        <div class="row">
-                            <div class="col-sm">
-                                <input class="form-control mt-3" type="text" id="title" name="title" placeholder="Search" <?php if ($form_submitted_title && $title != "") {
-                                                                                                                                echo "value='" . $title . "'";
-                                                                                                                            } ?>>
-                            </div>
-                            <div class="col-sm">
-                                <select class="form-select mt-3" id="platform" name="platform" onchange="this.form.submit()">
-                                    <option value="All">All Platforms</option>
-                                    <option value="Mobile" <?php if ($form_submitted_platform && $platform == "Mobile") {
-                                                                echo "selected='selected'";
-                                                            } ?>>Mobile</option>
-                                    <option value="Web" <?php if ($form_submitted_platform && $platform == "Web") {
+            <div class="row justify-content-center px-2">
+                <div style="max-width: 50rem;">
+                    <div class="row">
+                        <div class="col-sm">
+                            <input class="form-control mt-3" type="text" id="title" name="title" placeholder="Search" <?php if ($form_submitted_title && $title != "") {
+                                                                                                                            echo "value='" . $title . "'";
+                                                                                                                        } ?>>
+                        </div>
+                        <div class="col-sm">
+                            <select class="form-select mt-3" id="platform" name="platform" onchange="this.form.submit()">
+                                <option value="All">All Platforms</option>
+                                <option value="Mobile" <?php if ($form_submitted_platform && $platform == "Mobile") {
                                                             echo "selected='selected'";
-                                                        } ?>>Web</option>
-                                    <option value="Desktop" <?php if ($form_submitted_platform && $platform == "Desktop") {
-                                                                echo "selected='selected'";
-                                                            } ?>>Desktop</option>
-                                    <option value="Others" <?php if ($form_submitted_platform && $platform == "Others") {
-                                                                echo "selected='selected'";
-                                                            } ?>>Others</option>
-                                </select>
-                            </div>
+                                                        } ?>>Mobile</option>
+                                <option value="Web" <?php if ($form_submitted_platform && $platform == "Web") {
+                                                        echo "selected='selected'";
+                                                    } ?>>Web</option>
+                                <option value="Desktop" <?php if ($form_submitted_platform && $platform == "Desktop") {
+                                                            echo "selected='selected'";
+                                                        } ?>>Desktop</option>
+                                <option value="Others" <?php if ($form_submitted_platform && $platform == "Others") {
+                                                            echo "selected='selected'";
+                                                        } ?>>Others</option>
+                            </select>
                         </div>
                     </div>
                 </div>

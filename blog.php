@@ -99,32 +99,30 @@
 
     <div class="container-fluid pb-4">
         <form method="GET" id="query">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div style="max-width: 50rem;">
-                        <div class="row">
-                            <div class="col-sm">
-                                <input class="form-control mt-3" type="text" id="title" name="title" placeholder="Search" <?php if ($form_submitted_title && $title != "") {
-                                                                                                                                echo "value='" . $title . "'";
-                                                                                                                            } ?>>
-                            </div>
-                            <div class="col-sm">
-                                <select class="form-select mt-3" id="category" name="category" onchange="this.form.submit()">
-                                    <option value="All">All Categories</option>
-                                    <option value="SoftwareDevelopment" <?php if ($form_submitted_category && $category == "SoftwareDevelopment") {
-                                                                            echo "selected='selected'";
-                                                                        } ?>>Software Development</option>
-                                    <option value="ComputerScience" <?php if ($form_submitted_category && $category == "ComputerScience") {
+            <div class="row justify-content-center px-2">
+                <div style="max-width: 50rem;">
+                    <div class="row">
+                        <div class="col-sm">
+                            <input class="form-control mt-3" type="text" id="title" name="title" placeholder="Search" <?php if ($form_submitted_title && $title != "") {
+                                                                                                                            echo "value='" . $title . "'";
+                                                                                                                        } ?>>
+                        </div>
+                        <div class="col-sm">
+                            <select class="form-select mt-3" id="category" name="category" onchange="this.form.submit()">
+                                <option value="All">All Categories</option>
+                                <option value="SoftwareDevelopment" <?php if ($form_submitted_category && $category == "SoftwareDevelopment") {
                                                                         echo "selected='selected'";
-                                                                    } ?>>Computer Science</option>
-                                    <option value="Mathematics" <?php if ($form_submitted_category && $category == "Mathematics") {
+                                                                    } ?>>Software Development</option>
+                                <option value="ComputerScience" <?php if ($form_submitted_category && $category == "ComputerScience") {
                                                                     echo "selected='selected'";
-                                                                } ?>>Mathematics</option>
-                                    <option value="Others" <?php if ($form_submitted_category && $category == "Others") {
+                                                                } ?>>Computer Science</option>
+                                <option value="Mathematics" <?php if ($form_submitted_category && $category == "Mathematics") {
                                                                 echo "selected='selected'";
-                                                            } ?>>Others</option>
-                                </select>
-                            </div>
+                                                            } ?>>Mathematics</option>
+                                <option value="Others" <?php if ($form_submitted_category && $category == "Others") {
+                                                            echo "selected='selected'";
+                                                        } ?>>Others</option>
+                            </select>
                         </div>
                     </div>
                 </div>

@@ -27,6 +27,10 @@ a {
     }
 }
 
+.style-col-limiter {
+    max-width: 50rem;
+}
+
 .card-body:hover .style-card-body-link-h1 {
     color: #03A9F4 !important;
 }

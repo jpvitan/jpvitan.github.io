@@ -66,7 +66,7 @@
     <div style="overflow: hidden;">
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col px-0" style="max-width: 50rem;">
+                <div class="col px-0 style-col-limiter">
                     <div class="card border-0">
                         <div class="card-body px-4 py-3 py-sm-5">
                             <h1>BLOG</h1>
@@ -100,7 +100,7 @@
     <div class="container-fluid pb-4">
         <form method="GET" id="query">
             <div class="row justify-content-center px-2">
-                <div style="max-width: 50rem;">
+                <div class="style-col-limiter">
                     <div class="row">
                         <div class="col-sm">
                             <input class="form-control mt-3" type="text" id="title" name="title" placeholder="Search" <?php if ($form_submitted_title && $title != "") {
@@ -130,7 +130,7 @@
         </form>
 
         <div class="row justify-content-center">
-            <div class="col" style="max-width: 50rem;">
+            <div class="col style-col-limiter">
                 <ul class="list-group list-group-flush">
                     <?php
                     include "controller/BlogController.php";

@@ -91,13 +91,6 @@ if (isset($_GET["id"])) {
 
     </div>
 
-    <script>
-        $(function() {
-            $("#menu").load("menu.html");
-            $("#navbar").load("navbar.html");
-        });
-    </script>
-
     <div class="py-5"></div>
 
     <div class="py-md-4"></div>
@@ -124,12 +117,6 @@ if (isset($_GET["id"])) {
     <footer class="mt-2" id="footer">
 
     </footer>
-
-    <script>
-        $(function() {
-            $("#footer").load("footer.html");
-        });
-    </script>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

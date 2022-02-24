@@ -54,150 +54,117 @@
 
     </div>
 
-    <script>
-        $(function() {
-            $("#menu").load("menu.html");
-            $("#navbar").load("navbar.html");
-        });
-    </script>
+    <main>
+        <div class="py-5"></div>
 
-    <div class="py-5"></div>
+        <div style="overflow: hidden;">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col px-0" style="max-width: 50rem;">
+                        <div class="card border-0">
+                            <div class="card-body px-4 py-3 py-sm-5">
+                                <h1>PROJECTS</h1>
+                                <p style="font-weight: 700;">by Justine Paul Vitan</p>
+                                <p style="font-size: 1rem;">
+                                    My projects are built on the best software engineering practices. I always make sure that it's fast, secure, and reliable.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php
+        // Perform sanitization.
+        $form_submitted_title = isset($_GET["title"]);
+        $form_submitted_platform = isset($_GET["platform"]);
 
-    <div style="overflow: hidden;">
-        <div class="container-fluid">
+        $title = "";
+        $platform = "";
+
+        if ($form_submitted_title) {
+            $title = filter_var($_GET["title"], FILTER_SANITIZE_STRING);
+        }
+        if ($form_submitted_platform) {
+            $platform = filter_var($_GET["platform"], FILTER_SANITIZE_STRING);
+        }
+        ?>
+
+        <div class="container-fluid pb-4">
+            <form method="GET" id="query">
+                <div class="row justify-content-center px-2">
+                    <div style="max-width: 50rem;">
+                        <div class="row">
+                            <div class="col-sm">
+                                <input class="form-control mt-3" type="text" id="title" name="title" placeholder="Search" <?php if ($form_submitted_title && $title != "") {
+                                                                                                                                echo "value='" . $title . "'";
+                                                                                                                            } ?>>
+                            </div>
+                            <div class="col-sm">
+                                <select class="form-select mt-3" id="platform" name="platform" onchange="this.form.submit()">
+                                    <option value="All">All Platforms</option>
+                                    <option value="Mobile" <?php if ($form_submitted_platform && $platform == "Mobile") {
+                                                                echo "selected='selected'";
+                                                            } ?>>Mobile</option>
+                                    <option value="Web" <?php if ($form_submitted_platform && $platform == "Web") {
+                                                            echo "selected='selected'";
+                                                        } ?>>Web</option>
+                                    <option value="Desktop" <?php if ($form_submitted_platform && $platform == "Desktop") {
+                                                                echo "selected='selected'";
+                                                            } ?>>Desktop</option>
+                                    <option value="Others" <?php if ($form_submitted_platform && $platform == "Others") {
+                                                                echo "selected='selected'";
+                                                            } ?>>Others</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
             <div class="row justify-content-center">
-                <div class="col px-0" style="max-width: 50rem;">
-                    <div class="card border-0">
-                        <div class="card-body px-4 py-3 py-sm-5">
-                            <h1>PROJECTS</h1>
-                            <p style="font-weight: 700;">by Justine Paul Vitan</p>
-                            <p style="font-size: 1rem;">
-                                My projects are built on the best software engineering practices. I always make sure that it's fast, secure, and reliable.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <?php
-    // Perform sanitization.
-    $form_submitted_title = isset($_GET["title"]);
-    $form_submitted_platform = isset($_GET["platform"]);
+                <div class="col" style="max-width: 50rem;">
+                    <ul class="list-group list-group-flush">
+                        <?php
+                        include "controller/PortfolioController.php";
 
-    $title = "";
-    $platform = "";
+                        if (PortfolioController::connectionWorking()) {
+                            $data_array = PortfolioController::getAllData();
 
-    if ($form_submitted_title) {
-        $title = filter_var($_GET["title"], FILTER_SANITIZE_STRING);
-    }
-    if ($form_submitted_platform) {
-        $platform = filter_var($_GET["platform"], FILTER_SANITIZE_STRING);
-    }
-    ?>
-
-    <div class="container-fluid pb-4">
-        <form method="GET" id="query">
-            <div class="row justify-content-center px-2">
-                <div style="max-width: 50rem;">
-                    <div class="row">
-                        <div class="col-sm">
-                            <input class="form-control mt-3" type="text" id="title" name="title" placeholder="Search" <?php if ($form_submitted_title && $title != "") {
-                                                                                                                            echo "value='" . $title . "'";
-                                                                                                                        } ?>>
-                        </div>
-                        <div class="col-sm">
-                            <select class="form-select mt-3" id="platform" name="platform" onchange="this.form.submit()">
-                                <option value="All">All Platforms</option>
-                                <option value="Mobile" <?php if ($form_submitted_platform && $platform == "Mobile") {
-                                                            echo "selected='selected'";
-                                                        } ?>>Mobile</option>
-                                <option value="Web" <?php if ($form_submitted_platform && $platform == "Web") {
-                                                        echo "selected='selected'";
-                                                    } ?>>Web</option>
-                                <option value="Desktop" <?php if ($form_submitted_platform && $platform == "Desktop") {
-                                                            echo "selected='selected'";
-                                                        } ?>>Desktop</option>
-                                <option value="Others" <?php if ($form_submitted_platform && $platform == "Others") {
-                                                            echo "selected='selected'";
-                                                        } ?>>Others</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
-
-        <div class="row justify-content-center">
-            <div class="col" style="max-width: 50rem;">
-                <ul class="list-group list-group-flush">
-                    <?php
-                    include "controller/PortfolioController.php";
-
-                    if (PortfolioController::connectionWorking()) {
-                        $data_array = PortfolioController::getAllData();
-
-                        if ($form_submitted_title && $form_submitted_platform) {
-                            if ($platform == "Others") {
-                                $data_array = PortfolioController::getDataOthers();
-                                if ($title != "") {
-                                    $data_array = PortfolioController::getDataOthersWithTitle($title);
+                            if ($form_submitted_title && $form_submitted_platform) {
+                                if ($platform == "Others") {
+                                    $data_array = PortfolioController::getDataOthers();
+                                    if ($title != "") {
+                                        $data_array = PortfolioController::getDataOthersWithTitle($title);
+                                    }
+                                } else if ($title != "" && $platform != "All") {
+                                    $data_array = PortfolioController::getDataFromTitlePlatform($title, $platform);
+                                } else if ($title != "") {
+                                    $data_array = PortfolioController::getDataFromTitle($title);
+                                } else if ($platform != "All") {
+                                    $data_array = PortfolioController::getDataFromPlatform($platform);
                                 }
-                            } else if ($title != "" && $platform != "All") {
-                                $data_array = PortfolioController::getDataFromTitlePlatform($title, $platform);
-                            } else if ($title != "") {
-                                $data_array = PortfolioController::getDataFromTitle($title);
-                            } else if ($platform != "All") {
-                                $data_array = PortfolioController::getDataFromPlatform($platform);
                             }
-                        }
 
-                        for ($i = 0; $i < count($data_array); $i++) {
-                            echo $data_array[$i]->getCard();
+                            for ($i = 0; $i < count($data_array); $i++) {
+                                echo $data_array[$i]->getCard();
+                            }
+                        } else {
+                            echo "<div class='row justify-content-center mt-5'><div class='col-auto my-auto px-0'><svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='#ff3f34' class='bi bi-x-circle-fill' viewBox='0 0 16 16'><path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z' /></svg></div><div class='col-auto my-auto px-2'><span style='font-weight: 500; color: #ff3f34;'>Connection Failed!</span></div></div>";
                         }
-                    } else {
-                        echo "<div class='row justify-content-center mt-5'><div class='col-auto my-auto px-0'><svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='#ff3f34' class='bi bi-x-circle-fill' viewBox='0 0 16 16'><path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z' /></svg></div><div class='col-auto my-auto px-2'><span style='font-weight: 500; color: #ff3f34;'>Connection Failed!</span></div></div>";
-                    }
-                    ?>
+                        ?>
 
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="filler"></div>
+        <div id="filler"></div>
+    </main>
 
     <footer class="pt-2" id="footer">
 
     </footer>
-
-    <script>
-        $(function() {
-            let setFillerHeight = () => {
-                let filler = document.getElementById("filler");
-                let fillerY = $("#filler").offset().top;
-
-                let footer = document.getElementById("footer");
-                let footerHeight = footer.getBoundingClientRect().height;
-
-                let clientHeight = document.documentElement.clientHeight;
-
-                let fillerHeight = clientHeight - fillerY - footerHeight;
-
-                if (fillerHeight < 0) {
-                    filler.style.height = 0 + "px";
-                } else {
-                    filler.style.height = fillerHeight + "px";
-                }
-            }
-
-            window.addEventListener('resize', setFillerHeight);
-
-            $("#footer").load("footer.html", () => {
-                setFillerHeight();
-            });
-        });
-    </script>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

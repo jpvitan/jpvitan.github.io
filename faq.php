@@ -54,13 +54,6 @@
 
     </div>
 
-    <script>
-        $(function() {
-            $("#menu").load("menu.html");
-            $("#navbar").load("navbar.html");
-        });
-    </script>
-
     <main>
         <div class="py-5"></div>
 
@@ -165,38 +158,6 @@
     <footer class="pt-2" id="footer">
 
     </footer>
-
-    <script>
-        $(function() {
-            let setFillerHeight = () => {
-                let filler = document.getElementById("filler");
-                let fillerY = $("#filler").offset().top;
-
-                let footer = document.getElementById("footer");
-                let footerHeight = footer.getBoundingClientRect().height;
-
-                let clientHeight = document.documentElement.clientHeight;
-
-                let fillerHeight = clientHeight - fillerY - footerHeight;
-
-                if (fillerHeight < 0) {
-                    filler.style.height = 0 + "px";
-                } else {
-                    filler.style.height = fillerHeight + "px";
-                }
-            }
-
-            window.addEventListener('resize', setFillerHeight);
-
-            $("#footer").load("footer.html", () => {
-                setFillerHeight();
-            });
-
-            jQuery(window).on("load", () => {
-                setFillerHeight();
-            });
-        });
-    </script>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

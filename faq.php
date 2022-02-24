@@ -151,8 +151,6 @@
                 </div>
             </div>
         </section>
-
-        <div id="filler"></div>
     </main>
 
     <footer class="pt-2" id="footer">

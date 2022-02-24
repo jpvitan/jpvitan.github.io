@@ -66,7 +66,7 @@
     <div style="overflow: hidden;">
         <div class="container-fluid pb-5">
             <div class="row justify-content-center">
-                <div class="col px-0" style="max-width: 50rem;">
+                <div class="col px-0 style-col-limiter">
                     <div class="card border-0">
                         <div class="card-body px-4 py-3 px-sm-5 py-sm-5">
                             <h1>JUSTINE PAUL VITAN</h1>
@@ -94,7 +94,7 @@
     <div style="overflow: hidden;">
         <div class="container-fluid pb-5">
             <div class="row justify-content-center">
-                <div class="col px-0" style="max-width: 50rem;">
+                <div class="col px-0 style-col-limiter">
                     <div class="card border-0">
                         <div class="card-body px-4 py-5 px-sm-5 py-sm-5">
                             <h1>Personal Life</h1>
@@ -128,7 +128,7 @@
     <div style="overflow: hidden;">
         <div class="container-fluid pb-5">
             <div class="row justify-content-center">
-                <div class="col px-0" style="max-width: 50rem;">
+                <div class="col px-0 style-col-limiter">
                     <div class="card border-0">
                         <div class="card-body px-4 py-5 px-sm-5 py-sm-5">
                             <h1>Interests and Hobbies</h1>

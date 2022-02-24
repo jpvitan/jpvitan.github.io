@@ -91,28 +91,30 @@ if (isset($_GET["id"])) {
 
     </div>
 
-    <div class="py-5"></div>
+    <main>
+        <div class="py-5"></div>
 
-    <div class="py-md-4"></div>
+        <div class="py-md-4"></div>
 
-    <div class="container-fluid px-4">
-        <div class="row justify-content-center">
-            <div class="col" style="max-width: 60rem;">
-                <h2><?php echo $blog->getTitle(); ?></h2>
-                <div class="style-author-date mt-4">
-                    <div>Written by <?php echo $blog->getAuthor(); ?></div>
-                    <div><?php echo $blog->getDate(); ?></div>
-                </div>
-                <img src=<?php echo $blog->getImageBanner(); ?> alt="Banner" class="img-fluid shadow-sm my-5" />
-                <div class="row justify-content-center">
-                    <div class="col" style="max-width: 45rem;">
-                        <?php include $blog->getLink(); ?>
+        <div class="container-fluid px-4">
+            <div class="row justify-content-center">
+                <div class="col" style="max-width: 60rem;">
+                    <h2><?php echo $blog->getTitle(); ?></h2>
+                    <div class="style-author-date mt-4">
+                        <div>Written by <?php echo $blog->getAuthor(); ?></div>
+                        <div><?php echo $blog->getDate(); ?></div>
+                    </div>
+                    <img src=<?php echo $blog->getImageBanner(); ?> alt="Banner" class="img-fluid shadow-sm my-5" />
+                    <div class="row justify-content-center">
+                        <div class="col" style="max-width: 45rem;">
+                            <?php include $blog->getLink(); ?>
 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <footer class="mt-2" id="footer">
 

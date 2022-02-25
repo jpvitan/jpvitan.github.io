@@ -66,8 +66,7 @@
                                 <h1>BLOG</h1>
                                 <p style="font-weight: 700;">by Justine Paul Vitan</p>
                                 <p style="font-size: 1rem;">
-                                    I sometimes write blogs in my spare time to share my knowledge about a
-                                    specific subject or topic that interests me.
+                                    I sometimes write blogs in my spare time to share my knowledge about a specific subject or topic that interests me.
                                 </p>
                             </div>
                         </div>

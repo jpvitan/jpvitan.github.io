@@ -47,6 +47,12 @@ select {
     font-family: 'Montserrat', sans-serif;
 }
 
+@media only screen and (min-width: 767px) {
+    p {
+        font-size: 1.4rem;
+    }
+}
+
 .style-col-limiter {
     max-width: 50rem;
 }

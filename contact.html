@@ -62,118 +62,160 @@
 
     </div>
 
-    <div class="py-5"></div>
+    <main>
+        <div class="py-5"></div>
 
-    <div class="container-fluid pb-5">
-        <div class="row justify-content-center">
-            <div class="col my-auto px-4" style="max-width: 50rem;">
-                <h1>SEND MESSAGE</h1>
-                <p style="font-weight: 700;">to Justine Paul Vitan</p>
-                <p style="font-size: 1rem;">
-                    Got a business opportunity or a project that you would like to discuss?
-                </p>
-                <form class="needs-validation" id="contactForm" action="contact-form.php" method="post">
-                    <div class="mt-5 custom-h5">Personal Information</div>
-                    <div class="row">
-                        <div class="col mt-4">
-                            <label for="fullName" class="custom-h6">
-                                Full Name
-                            </label>
-                            <input class="form-control mt-3" type="text" id="fullName" name="full_name" placeholder=""
-                                required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 mt-4">
-                            <label for="company" class="custom-h6">
-                                Company or Organization
-                            </label>
-                            <input class="form-control mt-3" type="text" id="company" name="company" placeholder=""
-                                required>
-                        </div>
-                        <div class="col-sm-6 mt-4">
-                            <label for="position" class="custom-h6">
-                                Position
-                            </label>
-                            <input class="form-control mt-3" type="text" id="position" name="position" placeholder=""
-                                required>
-                        </div>
-                    </div>
-                    <div class="mt-5 custom-h5">Contact Information</div>
-                    <div class="row">
-                        <div class="col mt-4">
-                            <label for="email" class="custom-h6">
-                                Email Address
-                            </label>
-                            <input class="form-control mt-3" type="email" id="email" name="email" required>
-                        </div>
-                    </div>
-                    <div class="mt-5 custom-h5">Message</div>
-                    <div class="row">
-                        <div class="col mt-4">
-                            <label for="subject" class="custom-h6">
-                                Subject
-                            </label>
-                            <input class="form-control mt-3" type="text" id="subject" name="subject" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col mt-4">
-                            <label for="message" class="custom-h6">
-                                Message
-                            </label>
-                            <textarea class="form-control mt-3" id="message" name="message" required></textarea>
-                        </div>
-                    </div>
-                    <div class="mt-5 custom-h5">Meeting</div>
-                    <div class="row">
-                        <div class="col mt-4">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="meeting" name="meeting"
-                                    onchange="toggleMeetingForm(this.checked)">
-                                <label class="form-check-label" for="meeting">
-                                    I'd like to schedule a meeting with Justine Paul Vitan.
-                                </label>
-                            </div>
-                        </div>
-                        <div id="meetingForm" style="display: none;">
-                            <div class="row">
-                                <div class="col-sm-6 mt-4">
-                                    <label for="dateTime" class="custom-h6">
-                                        Date and Time
-                                    </label>
-                                    <input class="form-control mt-3" type="datetime-local" id="dateTime"
-                                        name="date_time">
-                                </div>
-                                <div class="col-sm-6 mt-4">
-                                    <label for="where" class="custom-h6">
-                                        Where?
-                                    </label>
-                                    <select class="form-select mt-3" id="where" name="where">
-                                        <option value="Video Call" selected="selected">Video Call</option>
-                                        <option value="In-Person" disabled="disabled">In-Person</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-5 custom-h5">reCAPTCHA</div>
-                    <div class="row">
-                        <div class="col mt-4">
-                            <div class="g-recaptcha" data-sitekey="6Ld_iSQaAAAAAKnOsFvTpqkN07iEwfHhdsJcSqxL">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="py-2"></div>
+        <section>
+            <div style="overflow: hidden;">
+                <div class="container-fluid pb-5">
                     <div class="row justify-content-center">
-                        <div class="col mt-5">
-                            <button class="btn btn-primary shadow submit-btn" name="submit">Submit Message</button>
+                        <div class="col px-0" style="max-width: 50rem;">
+                            <div class="card border-0">
+                                <div class="card-body px-4 py-3 px-sm-5 py-sm-5">
+                                    <h1>JUSTINE PAUL VITAN</h1>
+                                    <p style="font-weight: 700;">Send Message</p>
+                                    <p style="font-size: 1rem;">
+                                        Let's Talk? Got a business opportunity or a project that you would like to
+                                        discuss?
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <section>
+            <div style="overflow: hidden;">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col text-center px-0">
+                            <img class="img-fluid shadow" alt="SatTrack-X"
+                                src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1645804308/contact/contact_vqdn8t.jpg"
+                                width="1920" height="1080">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="overflow: hidden;">
+                <div class="container-fluid pb-5">
+                    <div class="row justify-content-center">
+                        <div class="col px-4" style="max-width: 50rem;">
+                            <form class="needs-validation" id="contactForm" action="contact-form.php" method="post">
+                                <div class="mt-5 custom-h5">Personal Information</div>
+                                <div class="row">
+                                    <div class="col mt-4">
+                                        <label for="fullName" class="custom-h6">
+                                            Full Name
+                                        </label>
+                                        <input class="form-control mt-3" type="text" id="fullName" name="full_name"
+                                            placeholder="" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 mt-4">
+                                        <label for="company" class="custom-h6">
+                                            Company or Organization
+                                        </label>
+                                        <input class="form-control mt-3" type="text" id="company" name="company"
+                                            placeholder="" required>
+                                    </div>
+                                    <div class="col-sm-6 mt-4">
+                                        <label for="position" class="custom-h6">
+                                            Position
+                                        </label>
+                                        <input class="form-control mt-3" type="text" id="position" name="position"
+                                            placeholder="" required>
+                                    </div>
+                                </div>
+                                <div class="mt-5 custom-h5">Contact Information</div>
+                                <div class="row">
+                                    <div class="col mt-4">
+                                        <label for="email" class="custom-h6">
+                                            Email Address
+                                        </label>
+                                        <input class="form-control mt-3" type="email" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="mt-5 custom-h5">Message</div>
+                                <div class="row">
+                                    <div class="col mt-4">
+                                        <label for="subject" class="custom-h6">
+                                            Subject
+                                        </label>
+                                        <input class="form-control mt-3" type="text" id="subject" name="subject"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col mt-4">
+                                        <label for="message" class="custom-h6">
+                                            Message
+                                        </label>
+                                        <textarea class="form-control mt-3" id="message" name="message"
+                                            required></textarea>
+                                    </div>
+                                </div>
+                                <div class="mt-5 custom-h5">Meeting</div>
+                                <div class="row">
+                                    <div class="col mt-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="meeting" name="meeting"
+                                                onchange="toggleMeetingForm(this.checked)">
+                                            <label class="form-check-label" for="meeting">
+                                                I'd like to schedule a meeting with Justine Paul Vitan.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div id="meetingForm" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-sm-6 mt-4">
+                                                <label for="dateTime" class="custom-h6">
+                                                    Date and Time
+                                                </label>
+                                                <input class="form-control mt-3" type="datetime-local" id="dateTime"
+                                                    name="date_time">
+                                            </div>
+                                            <div class="col-sm-6 mt-4">
+                                                <label for="where" class="custom-h6">
+                                                    Where?
+                                                </label>
+                                                <select class="form-select mt-3" id="where" name="where">
+                                                    <option value="Video Call" selected="selected">Video Call</option>
+                                                    <option value="In-Person">In-Person</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-5 custom-h5">reCAPTCHA</div>
+                                <div class="row">
+                                    <div class="col mt-4">
+                                        <div class="g-recaptcha"
+                                            data-sitekey="6Ld_iSQaAAAAAKnOsFvTpqkN07iEwfHhdsJcSqxL">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="py-2"></div>
+                                <div class="row justify-content-center">
+                                    <div class="col mt-5">
+                                        <button class="btn btn-primary shadow submit-btn" name="submit">
+                                            Submit Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-2" id="footer">
+
+    </footer>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

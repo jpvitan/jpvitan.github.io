@@ -1,4 +1,8 @@
-html, body {
+html {
+    background-color: #ffffff;
+}
+
+body {
     background-color: #ffffff;
 }
 
@@ -41,6 +45,16 @@ select {
     background-color: #ecf0f1 !important;
     height: 3rem;
     font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (min-width: 767px) {
+    p {
+        font-size: 1.4rem;
+    }
+}
+
+.style-col-limiter {
+    max-width: 50rem;
 }
 
 .form-check-input:checked {

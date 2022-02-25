@@ -27,6 +27,10 @@ a {
     }
 }
 
-.card-body:hover .style-card-body-link-h1 {
+.style-col-limiter {
+    max-width: 50rem;
+}
+
+.style-featured-section .card-body:hover h1 {
     color: #03A9F4 !important;
 }

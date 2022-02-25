@@ -91,45 +91,34 @@ if (isset($_GET["id"])) {
 
     </div>
 
-    <script>
-        $(function() {
-            $("#menu").load("menu.html");
-            $("#navbar").load("navbar.html");
-        });
-    </script>
+    <main>
+        <div class="py-5"></div>
 
-    <div class="py-5"></div>
+        <div class="py-md-4"></div>
 
-    <div class="py-md-4"></div>
+        <div class="container-fluid px-4">
+            <div class="row justify-content-center">
+                <div class="col" style="max-width: 60rem;">
+                    <h2><?php echo $blog->getTitle(); ?></h2>
+                    <div class="style-author-date mt-4">
+                        <div>Written by <?php echo $blog->getAuthor(); ?></div>
+                        <div><?php echo $blog->getDate(); ?></div>
+                    </div>
+                    <img src=<?php echo $blog->getImageBanner(); ?> alt="Banner" class="img-fluid shadow-sm my-5" />
+                    <div class="row justify-content-center">
+                        <div class="col" style="max-width: 45rem;">
+                            <?php include $blog->getLink(); ?>
 
-    <div class="container-fluid px-4">
-        <div class="row justify-content-center">
-            <div class="col" style="max-width: 60rem;">
-                <h2><?php echo $blog->getTitle(); ?></h2>
-                <div class="style-author-date mt-4">
-                    <div>Written by <?php echo $blog->getAuthor(); ?></div>
-                    <div><?php echo $blog->getDate(); ?></div>
-                </div>
-                <img src=<?php echo $blog->getImageBanner(); ?> alt="Banner" class="img-fluid shadow-sm my-5" />
-                <div class="row justify-content-center">
-                    <div class="col" style="max-width: 45rem;">
-                        <?php include $blog->getLink(); ?>
-
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <footer class="mt-2" id="footer">
 
     </footer>
-
-    <script>
-        $(function() {
-            $("#footer").load("footer.html");
-        });
-    </script>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

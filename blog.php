@@ -54,62 +54,46 @@
 
     </div>
 
-    <script>
-        $(function() {
-            $("#menu").load("menu.html");
-            $("#navbar").load("navbar.html");
-        });
-    </script>
+    <main>
+        <div class="py-5"></div>
 
-    <div class="py-5"></div>
-
-    <div style="overflow: hidden;">
-        <div class="container-fluid" style="background-color: #ffffff;">
-            <div class="row justify-content-center">
-                <div class="col-auto text-center">
-                    <div class="card border-0">
-                        <div class="card-body px-3 py-3 px-sm-5 py-sm-5">
-                            <div class="row justify-content-center text-start">
-                                <div class="col" style="max-width: 50rem;">
-                                    <div class="row">
-                                        <div class="col-md mx-md-2">
-                                            <h1>BLOG</h1>
-                                            <p style="font-weight: 700;">by Justine Paul Vitan</p>
-                                            <p style="font-size: 1rem;">
-                                                I sometimes write blogs in my spare time to share my knowledge about a
-                                                specific subject or topic that interests me.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+        <div style="overflow: hidden;">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col px-0 style-col-limiter">
+                        <div class="card border-0">
+                            <div class="card-body px-4 py-3 py-sm-5">
+                                <h1>BLOG</h1>
+                                <p style="font-weight: 700;">by Justine Paul Vitan</p>
+                                <p style="font-size: 1rem;">
+                                    I sometimes write blogs in my spare time to share my knowledge about a specific subject or topic that interests me.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <?php
-    // Perform sanitization.
-    $form_submitted_title = isset($_GET["title"]);
-    $form_submitted_category = isset($_GET["category"]);
+        <?php
+        // Perform sanitization.
+        $form_submitted_title = isset($_GET["title"]);
+        $form_submitted_category = isset($_GET["category"]);
 
-    $title = "";
-    $category = "";
+        $title = "";
+        $category = "";
 
-    if ($form_submitted_title) {
-        $title = filter_var($_GET["title"], FILTER_SANITIZE_STRING);
-    }
-    if ($form_submitted_category) {
-        $category = filter_var($_GET["category"], FILTER_SANITIZE_STRING);
-    }
-    ?>
+        if ($form_submitted_title) {
+            $title = filter_var($_GET["title"], FILTER_SANITIZE_STRING);
+        }
+        if ($form_submitted_category) {
+            $category = filter_var($_GET["category"], FILTER_SANITIZE_STRING);
+        }
+        ?>
 
-    <div class="container-fluid pb-4">
-        <form method="GET" id="query">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div style="max-width: 50rem;">
+        <div class="container-fluid pb-4">
+            <form method="GET" id="query">
+                <div class="row justify-content-center px-2">
+                    <div class="style-col-limiter">
                         <div class="row">
                             <div class="col-sm">
                                 <input class="form-control mt-3" type="text" id="title" name="title" placeholder="Search" <?php if ($form_submitted_title && $title != "") {
@@ -136,74 +120,46 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </form>
+            </form>
 
-        <div class="row justify-content-center">
-            <div class="col" style="max-width: 50rem;">
-                <ul class="list-group list-group-flush">
-                    <?php
-                    include "controller/BlogController.php";
+            <div class="row justify-content-center">
+                <div class="col style-col-limiter">
+                    <ul class="list-group list-group-flush">
+                        <?php
+                        include "controller/BlogController.php";
 
-                    if (BlogController::connectionWorking()) {
-                        $data_array = BlogController::getAllData();
+                        if (BlogController::connectionWorking()) {
+                            $data_array = BlogController::getAllData();
 
-                        if (isset($_GET["title"]) && isset($_GET["category"])) {
-                            if ($title != "" && $category != "All") {
-                                $data_array = BlogController::getDataFromTitleCategory($title, $category);
-                            } else if ($title != "") {
-                                $data_array = BlogController::getDataFromTitle($title);
-                            } else if ($category != "All") {
-                                $data_array = BlogController::getDataFromCategory($category);
+                            if (isset($_GET["title"]) && isset($_GET["category"])) {
+                                if ($title != "" && $category != "All") {
+                                    $data_array = BlogController::getDataFromTitleCategory($title, $category);
+                                } else if ($title != "") {
+                                    $data_array = BlogController::getDataFromTitle($title);
+                                } else if ($category != "All") {
+                                    $data_array = BlogController::getDataFromCategory($category);
+                                }
                             }
-                        }
 
-                        for ($i = 0; $i < count($data_array); $i++) {
-                            echo $data_array[$i]->getCard();
+                            for ($i = 0; $i < count($data_array); $i++) {
+                                echo $data_array[$i]->getCard();
+                            }
+                        } else {
+                            echo "<div class='row justify-content-center mt-5'><div class='col-auto my-auto px-0'><svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='#ff3f34' class='bi bi-x-circle-fill' viewBox='0 0 16 16'><path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z' /></svg></div><div class='col-auto my-auto px-2'><span style='font-weight: 500; color: #ff3f34;'>Connection Failed!</span></div></div>";
                         }
-                    } else {
-                        echo "<div class='row justify-content-center mt-5'><div class='col-auto my-auto px-0'><svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='#ff3f34' class='bi bi-x-circle-fill' viewBox='0 0 16 16'><path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z' /></svg></div><div class='col-auto my-auto px-2'><span style='font-weight: 500; color: #ff3f34;'>Connection Failed!</span></div></div>";
-                    }
-                    ?>
+                        ?>
 
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="filler"></div>
+        <div id="filler"></div>
+    </main>
 
     <footer class="pt-2" id="footer">
 
     </footer>
-
-    <script>
-        $(function() {
-            let setFillerHeight = () => {
-                let filler = document.getElementById("filler");
-                let fillerY = $("#filler").offset().top;
-
-                let footer = document.getElementById("footer");
-                let footerHeight = footer.getBoundingClientRect().height;
-
-                let clientHeight = document.documentElement.clientHeight;
-
-                let fillerHeight = clientHeight - fillerY - footerHeight;
-
-                if (fillerHeight < 0) {
-                    filler.style.height = 0 + "px";
-                } else {
-                    filler.style.height = fillerHeight + "px";
-                }
-            }
-
-            window.addEventListener('resize', setFillerHeight);
-
-            $("#footer").load("footer.html", () => {
-                setFillerHeight();
-            });
-        });
-    </script>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

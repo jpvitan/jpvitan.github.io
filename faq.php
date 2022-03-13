@@ -151,6 +151,35 @@
                 </div>
             </div>
         </section>
+
+        <section>
+            <div style="overflow: hidden;">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col text-center px-0">
+                            <img class="img-fluid shadow" alt="Code" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644324623/faq/code_uvsruk.jpg" width="1920" height="1080">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="overflow: hidden;">
+                <div class="container-fluid pb-5">
+                    <div class="row justify-content-center">
+                        <div class="col px-0 style-col-limiter">
+                            <div class="card border-0">
+                                <div class="card-body px-4 py-5 px-sm-5 py-sm-5">
+                                    <h1>Professional and Technical Background</h1>
+                                    <p style="font-weight: 700;"></p>
+                                    <p style="font-size: 1rem;">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="pt-2" id="footer">

@@ -170,8 +170,13 @@
                             <div class="card border-0">
                                 <div class="card-body px-4 py-5 px-sm-5 py-sm-5">
                                     <h1>Professional and Technical Background</h1>
-                                    <p style="font-weight: 700;"></p>
+                                    <p style="font-weight: 700;">What Are Your Mobile Development Skills?</p>
                                     <p style="font-size: 1rem;">
+
+                                    </p>
+                                    <p style="font-weight: 700;">What Are Your Web Development Skills?</p>
+                                    <p style="font-size: 1rem;">
+
                                     </p>
                                 </div>
                             </div>

@@ -172,8 +172,18 @@
                                     <h1>Professional and Technical Background</h1>
                                     <p style="font-weight: 700;">What Are Your Mobile Development Skills?</p>
                                     <p style="font-size: 1rem;">
-
+                                        I can develop and publish top-quality Android and iOS apps that are compliant with the policies imposed by Google and Apple. I have written and published applications for both of these platforms to demonstrate my competency in mobile app development.
                                     </p>
+                                    <blockquote class="twitter-tweet">
+                                        <p lang="en" dir="ltr">Version 1.0.6 for SatTrack-X should go live soon. This update raises the target API level and uses the Android App Bundle to comply with Google Play&#39;s policies. <a href="https://t.co/QmIdLog5pw">pic.twitter.com/QmIdLog5pw</a></p>&mdash; Justine Paul Vitan (@jpvitan_dev) <a href="https://twitter.com/jpvitan_dev/status/1451602158210600970?ref_src=twsrc%5Etfw">October 22, 2021</a>
+                                    </blockquote>
+                                    <p style="font-size: 1rem;">
+                                        Here's a short but incomplete list of what I can do in the field of mobile app development:
+                                    </p>
+                                    <ol>
+                                        <li>Develop Android applications using Java and Kotlin</li>
+                                    </ol>
+                                    <div class="py-3"></div>
                                     <p style="font-weight: 700;">What Are Your Web Development Skills?</p>
                                     <p style="font-size: 1rem;">
 

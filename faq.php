@@ -180,8 +180,13 @@
                                     <p style="font-size: 1rem;">
                                         Here's a short but incomplete list of what I can do in the field of mobile app development:
                                     </p>
+                                    <div class="custom-h6" style="font-weight: 700;">Android</div>
                                     <ol>
-                                        <li>Develop Android applications using Java and Kotlin</li>
+                                        <li></li>
+                                    </ol>
+                                    <div class="custom-h6" style="font-weight: 700;">iOS</div>
+                                    <ol>
+                                        <li></li>
                                     </ol>
                                     <div class="py-3"></div>
                                     <p style="font-weight: 700;">What Are Your Web Development Skills?</p>

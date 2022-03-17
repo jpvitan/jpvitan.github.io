@@ -198,6 +198,9 @@
                                         <li>Use RESTful APIs to connect with back-end services.</li>
                                         <li>Integrate third-party iOS SDKs.</li>
                                     </ul>
+                                    <p style="font-size: 1rem;">
+                                        If you want to view my Android and iOS projects, please click this <a href="https://jpvitan.com/portfolio?title=&platform=Mobile">link</a>.
+                                    </p>
                                     <div class="py-3"></div>
                                     <p style="font-weight: 700;">What Are Your Web Development Skills?</p>
                                     <p style="font-size: 1rem;">

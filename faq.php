@@ -181,23 +181,23 @@
                                         Here's a short but incomplete list of what I can do in the field of mobile app development:
                                     </p>
                                     <div class="custom-h6" style="font-weight: 700;">Android</div>
-                                    <ol>
+                                    <ul>
                                         <li>Develop Android applications using Java and Kotlin.</li>
                                         <li>Design responsive Android layouts using XML.</li>
                                         <li>Publish Android applications that are in line with the policies of Google Play.</li>
                                         <li>Use Android Studio as an integrated development environment for developing Android apps.</li>
                                         <li>Use RESTful APIs to connect with back-end services.</li>
                                         <li>Integrate third-party Android SDKs such as AdMob, Firebase, and Mapbox.</li>
-                                    </ol>
+                                    </ul>
                                     <div class="custom-h6" style="font-weight: 700;">iOS</div>
-                                    <ol>
+                                    <ul>
                                         <li>Develop iOS applications using Swift.</li>
                                         <li>Design responsive iOS layouts using Xcode's Interface Builder.</li>
                                         <li>Publish iOS applications that are in line with the policies of Apple's App Store.</li>
                                         <li>Use Xcode as an integrated development environment for developing iOS apps.</li>
                                         <li>Use RESTful APIs to connect with back-end services.</li>
                                         <li>Integrate third-party iOS SDKs.</li>
-                                    </ol>
+                                    </ul>
                                     <div class="py-3"></div>
                                     <p style="font-weight: 700;">What Are Your Web Development Skills?</p>
                                     <p style="font-size: 1rem;">

@@ -198,6 +198,11 @@
                                         <li>Use RESTful APIs to connect with back-end services.</li>
                                         <li>Integrate third-party iOS SDKs.</li>
                                     </ul>
+                                    <div class="card mb-3 shadow style-alert-card">
+                                        <div class="card-body">
+                                            The list above is non-exhaustive. If you want a more detailed and technical description of my skills, please consider <a href="https://jpvitan.com/contact">scheduling an interview</a> with me.
+                                        </div>
+                                    </div>
                                     <p style="font-size: 1rem;">
                                         If you want to view my Android and iOS projects, please click this <a href="https://jpvitan.com/portfolio?title=&platform=Mobile">link</a>.
                                     </p>

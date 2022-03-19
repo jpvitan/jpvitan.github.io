@@ -37,8 +37,13 @@ a {
     max-width: 50rem;
 }
 
-.style-alert-text {
+.style-alert-card {
+    border-radius: 0;
+}
+
+.style-alert-card .card-body {
     font-family: 'Montserrat', sans-serif;
     color: #636e72;
     font-size: 1rem;
+    border-left: 5px solid #e74c3c;
 }

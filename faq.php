@@ -118,45 +118,6 @@
                 <div class="container-fluid">
                     <div class="row justify-content-center">
                         <div class="col text-center px-0">
-                            <img class="img-fluid shadow" alt="Earth" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644324624/faq/earth_fiwped.jpg" width="1920" height="1080">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div style="overflow: hidden;">
-                <div class="container-fluid pb-5">
-                    <div class="row justify-content-center">
-                        <div class="col px-0 style-col-limiter">
-                            <div class="card border-0">
-                                <div class="card-body px-4 py-5 px-sm-5 py-sm-5">
-                                    <h1>Interests and Hobbies</h1>
-                                    <p style="font-weight: 700;">What Are Your Interests and Hobbies?</p>
-                                    <p style="font-size: 1rem;">
-                                        Inside the realm of computer science, I'm interested in artificial intelligence, cryptography, and theoretical computer science. I've published several applications and blogs that revolve around these subdisciplines.
-                                    </p>
-                                    <blockquote class="twitter-tweet" data-theme="light">
-                                        <p lang="en" dir="ltr">Currently experimenting with real-time object detection using SSD MobileNet v2. <a href="https://t.co/cJD3HlRXLD">pic.twitter.com/cJD3HlRXLD</a></p>&mdash; Justine Paul Vitan (@jpvitan_dev) <a href="https://twitter.com/jpvitan_dev/status/1417212472944054299?ref_src=twsrc%5Etfw">July 19, 2021</a>
-                                    </blockquote>
-                                    <p style="font-size: 1rem;">
-                                        Outside computer science, I love to do amateur astronomy. I use a 900mm Newtonian reflector to observe the night sky and have seen several deep-sky objects and all the planets in the solar system except for Mercury and Neptune.
-                                    </p>
-                                    <blockquote class="twitter-tweet">
-                                        <p lang="en" dir="ltr">Here&#39;s a photo of Mars that I took a year ago using my 900mm Newtonian reflector and 20mm eyepiece. 🔭 <a href="https://t.co/p6BRgpG31j">pic.twitter.com/p6BRgpG31j</a></p>&mdash; Justine Paul Vitan (@jpvitan_dev) <a href="https://twitter.com/jpvitan_dev/status/1442615763550965766?ref_src=twsrc%5Etfw">September 27, 2021</a>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div style="overflow: hidden;">
-                <div class="container-fluid">
-                    <div class="row justify-content-center">
-                        <div class="col text-center px-0">
                             <img class="img-fluid shadow" alt="Code" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644324623/faq/code_uvsruk.jpg" width="1920" height="1080">
                         </div>
                     </div>
@@ -215,6 +176,45 @@
                                         <img class="figure-img img-fluid shadow" alt="Lighthouse" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1647706873/faq/lighthouse_khbrkt.png" width="1366" height="768">
                                         <figcaption class="figure-caption text-center">Lighthouse audit of my website shows a 91% score on performance and a 100% score on accessibility, best practices, and SEO.</figcaption>
                                     </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div style="overflow: hidden;">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col text-center px-0">
+                            <img class="img-fluid shadow" alt="Earth" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644324624/faq/earth_fiwped.jpg" width="1920" height="1080">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="overflow: hidden;">
+                <div class="container-fluid pb-5">
+                    <div class="row justify-content-center">
+                        <div class="col px-0 style-col-limiter">
+                            <div class="card border-0">
+                                <div class="card-body px-4 py-5 px-sm-5 py-sm-5">
+                                    <h1>Interests and Hobbies</h1>
+                                    <p style="font-weight: 700;">What Are Your Interests and Hobbies?</p>
+                                    <p style="font-size: 1rem;">
+                                        Inside the realm of computer science, I'm interested in artificial intelligence, cryptography, and theoretical computer science. I've published several applications and blogs that revolve around these subdisciplines.
+                                    </p>
+                                    <blockquote class="twitter-tweet" data-theme="light">
+                                        <p lang="en" dir="ltr">Currently experimenting with real-time object detection using SSD MobileNet v2. <a href="https://t.co/cJD3HlRXLD">pic.twitter.com/cJD3HlRXLD</a></p>&mdash; Justine Paul Vitan (@jpvitan_dev) <a href="https://twitter.com/jpvitan_dev/status/1417212472944054299?ref_src=twsrc%5Etfw">July 19, 2021</a>
+                                    </blockquote>
+                                    <p style="font-size: 1rem;">
+                                        Outside computer science, I love to do amateur astronomy. I use a 900mm Newtonian reflector to observe the night sky and have seen several deep-sky objects and all the planets in the solar system except for Mercury and Neptune.
+                                    </p>
+                                    <blockquote class="twitter-tweet">
+                                        <p lang="en" dir="ltr">Here&#39;s a photo of Mars that I took a year ago using my 900mm Newtonian reflector and 20mm eyepiece. 🔭 <a href="https://t.co/p6BRgpG31j">pic.twitter.com/p6BRgpG31j</a></p>&mdash; Justine Paul Vitan (@jpvitan_dev) <a href="https://twitter.com/jpvitan_dev/status/1442615763550965766?ref_src=twsrc%5Etfw">September 27, 2021</a>
+                                    </blockquote>
                                 </div>
                             </div>
                         </div>

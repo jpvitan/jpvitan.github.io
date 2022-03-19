@@ -36,3 +36,9 @@ a {
 .style-col-limiter {
     max-width: 50rem;
 }
+
+.style-alert-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #636e72;
+    font-size: 1rem;
+}

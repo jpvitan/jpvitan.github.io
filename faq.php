@@ -211,6 +211,10 @@
                                     <p style="font-size: 1rem;">
                                         I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web standards to ensure a smooth and comfortable web experience for everyone.
                                     </p>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid shadow" alt="Lighthouse" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1647706873/faq/lighthouse_khbrkt.png" width="1366" height="768">
+                                        <figcaption class="figure-caption text-center">Lighthouse audit of my website shows a 91% score on performance and a 100% score on accessibility, best practices, and SEO.</figcaption>
+                                    </figure>
                                 </div>
                             </div>
                         </div>

@@ -27,6 +27,10 @@ a {
     font-family: 'Montserrat', sans-serif;
 }
 
+figcaption {
+    font-family: 'Montserrat', sans-serif;
+}
+
 @media only screen and (min-width: 767px) {
     p {
         font-size: 1.4rem;

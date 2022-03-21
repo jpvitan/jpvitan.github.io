@@ -188,6 +188,14 @@
                                         <li>Improve page performance using proven tools and techniques (e.g., utilizing image CDNs to load images faster).</li>
                                         <li>Comply with the standards imposed by the World Wide Web Consortium (W3C) and other similar organizations. </li>
                                     </ul>
+                                    <div class="card mb-3 shadow style-alert-card">
+                                        <div class="card-body">
+                                            The list above is non-exhaustive. If you want a more detailed and technical description of my skills, please consider <a href="https://jpvitan.com/contact">scheduling an interview</a> with me.
+                                        </div>
+                                    </div>
+                                    <p style="font-size: 1rem;">
+                                        If you want to view my web projects, please click this <a href="https://jpvitan.com/portfolio?title=&platform=Web">link</a>.
+                                    </p>
                                 </div>
                             </div>
                         </div>

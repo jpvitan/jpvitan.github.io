@@ -176,6 +176,18 @@
                                         <img class="figure-img img-fluid shadow" alt="Lighthouse" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1647706873/faq/lighthouse_khbrkt.png" width="1366" height="768">
                                         <figcaption class="figure-caption text-center">Lighthouse audit of my website shows a 91% score on performance and a 100% score on accessibility, best practices, and SEO.</figcaption>
                                     </figure>
+                                    <div class="py-2"></div>
+                                    <p style="font-size: 1rem;">
+                                        The list below highlights my capabilities in full-stack web development.
+                                    </p>
+                                    <div class="custom-h6" style="font-weight: 700;">Front-End (Client)</div>
+                                    <ul>
+                                        <li>Proficiently use core front-end technologies such as HTML, CSS, and JavaScript to create web pages.</li>
+                                        <li>Utilize popular front-end frameworks and libraries such as React, Angular, and Bootstrap.</li>
+                                        <li>Design websites to be accessible, responsive, and user-friendly.</li>
+                                        <li>Improve page performance using proven tools and techniques (e.g., utilizing image CDNs to load images faster).</li>
+                                        <li>Comply with the standards imposed by the World Wide Web Consortium (W3C) and other similar organizations. </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

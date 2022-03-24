@@ -189,6 +189,18 @@
                                         <li>Ensure cross-browser compatibility for a unified and seamless experience across browsers.</li>
                                         <li>Comply with the standards imposed by the World Wide Web Consortium (W3C) and other similar organizations. </li>
                                     </ul>
+                                    <div class="custom-h6" style="font-weight: 700;">Back-End (Server)</div>
+                                    <ul>
+                                        <li>Work with PHP, Python, and other back-end languages to engineer back-end systems.</li>
+                                        <li>Work with relational (SQL) and non-relational (NoSQL) databases like MySQL and Firebase Realtime Database.</li>
+                                        <li>Implement security measures to prevent or minimize cyberattacks (e.g., using prepared statements to guard against SQL injections).</li>
+                                    </ul>
+                                    <div class="custom-h6" style="font-weight: 700;">Source Control Management</div>
+                                    <ul>
+                                        <li>Use Git and its command-line interface for source code management.</li>
+                                        <li>Use GitHub as a Git repository hosting service.</li>
+                                        <li>Utilize common branch-based workflows such as GitHub flow.</li>
+                                    </ul>
                                     <div class="card mb-3 shadow style-alert-card">
                                         <div class="card-body">
                                             The list above is non-exhaustive. If you want a more detailed and technical description of my skills, please consider <a href="https://jpvitan.com/contact">scheduling an interview</a> with me.

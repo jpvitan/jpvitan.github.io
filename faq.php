@@ -201,6 +201,10 @@
                                         <li>Use GitHub as a Git repository hosting service.</li>
                                         <li>Utilize common branch-based workflows such as GitHub flow.</li>
                                     </ul>
+                                    <div class="custom-h6" style="font-weight: 700;">Package-Management Systems</div>
+                                    <ul>
+                                        <li>Use package-management systems like npm and pip to handle dependencies.</li>
+                                    </ul>
                                     <div class="card mb-3 shadow style-alert-card">
                                         <div class="card-body">
                                             The list above is non-exhaustive. If you want a more detailed and technical description of my skills, please consider <a href="https://jpvitan.com/contact">scheduling an interview</a> with me.

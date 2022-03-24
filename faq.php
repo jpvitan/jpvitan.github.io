@@ -186,6 +186,7 @@
                                         <li>Utilize popular front-end frameworks and libraries such as React, Angular, and Bootstrap.</li>
                                         <li>Design websites to be accessible, responsive, and user-friendly.</li>
                                         <li>Improve page performance using proven tools and techniques (e.g., utilizing image CDNs to load images faster).</li>
+                                        <li>Ensure cross-browser compatibility for a unified and seamless experience across browsers.</li>
                                         <li>Comply with the standards imposed by the World Wide Web Consortium (W3C) and other similar organizations. </li>
                                     </ul>
                                     <div class="card mb-3 shadow style-alert-card">

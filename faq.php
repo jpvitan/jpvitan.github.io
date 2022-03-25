@@ -145,7 +145,7 @@
                                     <ul>
                                         <li>Develop Android applications using Java and Kotlin.</li>
                                         <li>Design responsive Android layouts using XML.</li>
-                                        <li>Publish Android applications that are in line with the policies of Google Play.</li>
+                                        <li>Publish Android applications that comply with Google Play's policies.</li>
                                         <li>Use Android Studio as an integrated development environment for developing Android apps.</li>
                                         <li>Use RESTful APIs to connect with back-end services.</li>
                                         <li>Integrate third-party Android SDKs such as AdMob, Firebase, and Mapbox.</li>
@@ -154,7 +154,7 @@
                                     <ul>
                                         <li>Develop iOS applications using Swift.</li>
                                         <li>Design responsive iOS layouts using Xcode's Interface Builder.</li>
-                                        <li>Publish iOS applications that are in line with the policies of Apple's App Store.</li>
+                                        <li>Publish iOS applications that comply with App Store's policies.</li>
                                         <li>Use Xcode as an integrated development environment for developing iOS apps.</li>
                                         <li>Use RESTful APIs to connect with back-end services.</li>
                                         <li>Integrate third-party iOS SDKs.</li>

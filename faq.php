@@ -135,9 +135,11 @@
                                     <p style="font-size: 1rem;">
                                         I can develop and publish top-quality Android and iOS apps that are compliant with the policies imposed by Google and Apple. I have written and published applications for both of these platforms to demonstrate my competency in mobile app development.
                                     </p>
-                                    <blockquote class="twitter-tweet">
-                                        <p lang="en" dir="ltr">Version 1.0.6 for SatTrack-X should go live soon. This update raises the target API level and uses the Android App Bundle to comply with Google Play&#39;s policies. <a href="https://t.co/QmIdLog5pw">pic.twitter.com/QmIdLog5pw</a></p>&mdash; Justine Paul Vitan (@jpvitan_dev) <a href="https://twitter.com/jpvitan_dev/status/1451602158210600970?ref_src=twsrc%5Etfw">October 22, 2021</a>
-                                    </blockquote>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid shadow" alt="SatTrack-X (Google Play)" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648209611/faq/SatTrack-X-Google-Play_oz30ks.jpg" width="768" height="1366">
+                                        <figcaption class="figure-caption text-center">SatTrack-X on Google Play</figcaption>
+                                    </figure>
+                                    <div class="py-2"></div>
                                     <p style="font-size: 1rem;">
                                         Here's a short and non-exhaustive list of what I can do in the field of mobile app development:
                                     </p>

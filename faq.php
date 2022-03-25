@@ -118,6 +118,117 @@
                 <div class="container-fluid">
                     <div class="row justify-content-center">
                         <div class="col text-center px-0">
+                            <img class="img-fluid shadow" alt="Code" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644324623/faq/code_uvsruk.jpg" width="1920" height="1080">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="overflow: hidden;">
+                <div class="container-fluid pb-5">
+                    <div class="row justify-content-center">
+                        <div class="col px-0 style-col-limiter">
+                            <div class="card border-0">
+                                <div class="card-body px-4 py-5 px-sm-5 py-sm-5">
+                                    <h1>Professional and Technical Background</h1>
+                                    <p style="font-weight: 700;">What Are Your Mobile Development Skills?</p>
+                                    <p style="font-size: 1rem;">
+                                        I can develop and publish top-quality Android and iOS apps that are compliant with the policies imposed by Google and Apple. I have written and published applications for both of these platforms to demonstrate my competency in mobile app development.
+                                    </p>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid shadow" alt="SatTrack-X (Google Play)" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648209611/faq/SatTrack-X-Google-Play_oz30ks.jpg" width="768" height="1366">
+                                        <figcaption class="figure-caption text-center">SatTrack-X on Google Play</figcaption>
+                                    </figure>
+                                    <div class="py-2"></div>
+                                    <p style="font-size: 1rem;">
+                                        Here's a short and non-exhaustive list of what I can do in the field of mobile app development:
+                                    </p>
+                                    <div class="custom-h6" style="font-weight: 700;">Android</div>
+                                    <ul>
+                                        <li>Develop Android applications using Java and Kotlin.</li>
+                                        <li>Design responsive Android layouts using XML.</li>
+                                        <li>Publish Android applications that comply with Google Play's policies.</li>
+                                        <li>Use Android Studio as an integrated development environment for developing Android apps.</li>
+                                        <li>Use RESTful APIs to connect with back-end services.</li>
+                                        <li>Integrate third-party Android SDKs such as AdMob, Firebase, and Mapbox.</li>
+                                    </ul>
+                                    <div class="custom-h6" style="font-weight: 700;">iOS</div>
+                                    <ul>
+                                        <li>Develop iOS applications using Swift.</li>
+                                        <li>Design responsive iOS layouts using Xcode's Interface Builder.</li>
+                                        <li>Publish iOS applications that comply with App Store's policies.</li>
+                                        <li>Use Xcode as an integrated development environment for developing iOS apps.</li>
+                                        <li>Use RESTful APIs to connect with back-end services.</li>
+                                        <li>Integrate third-party iOS SDKs.</li>
+                                    </ul>
+                                    <div class="card mb-3 shadow style-alert-card">
+                                        <div class="card-body">
+                                            The list above is non-exhaustive. If you want a more detailed and technical description of my skills, please consider <a href="https://jpvitan.com/contact">scheduling an interview</a> with me.
+                                        </div>
+                                    </div>
+                                    <p style="font-size: 1rem;">
+                                        If you want to view my Android and iOS projects, please click this <a href="https://jpvitan.com/portfolio?title=&platform=Mobile">link</a>.
+                                    </p>
+                                    <div class="py-3"></div>
+                                    <p style="font-weight: 700;">What Are Your Web Development Skills?</p>
+                                    <p style="font-size: 1rem;">
+                                        I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web standards to ensure a smooth and comfortable web experience for everyone.
+                                    </p>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid shadow" alt="Lighthouse" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1647706873/faq/lighthouse_khbrkt.png" width="1366" height="768">
+                                        <figcaption class="figure-caption text-center">Lighthouse audit of my website shows a 91% score on performance and a 100% score on accessibility, best practices, and SEO.</figcaption>
+                                    </figure>
+                                    <div class="py-2"></div>
+                                    <p style="font-size: 1rem;">
+                                        The list below highlights my capabilities in full-stack web development.
+                                    </p>
+                                    <div class="custom-h6" style="font-weight: 700;">Front-End (Client)</div>
+                                    <ul>
+                                        <li>Proficiently use core front-end technologies such as HTML, CSS, and JavaScript to create web pages.</li>
+                                        <li>Utilize popular front-end frameworks and libraries such as React, Angular, and Bootstrap.</li>
+                                        <li>Design websites to be accessible, responsive, and user-friendly.</li>
+                                        <li>Improve page performance using proven tools and techniques (e.g., utilizing image CDNs to load images faster).</li>
+                                        <li>Ensure cross-browser compatibility for a unified and seamless experience across browsers.</li>
+                                        <li>Comply with the standards imposed by the World Wide Web Consortium (W3C) and other similar organizations.</li>
+                                    </ul>
+                                    <div class="custom-h6" style="font-weight: 700;">Back-End (Server)</div>
+                                    <ul>
+                                        <li>Work with PHP, Python, and other back-end languages to engineer back-end systems.</li>
+                                        <li>Work with relational (SQL) and non-relational (NoSQL) databases like MySQL and Firebase Realtime Database.</li>
+                                        <li>Develop RESTful APIs with popular back-end frameworks (e.g., Django REST framework).</li>
+                                        <li>Implement security measures to prevent or minimize cyberattacks (e.g., using prepared statements to guard against SQL injections).</li>
+                                    </ul>
+                                    <div class="custom-h6" style="font-weight: 700;">Source Control Management</div>
+                                    <ul>
+                                        <li>Use Git and its command-line interface for source code management.</li>
+                                        <li>Use GitHub as a Git repository hosting service.</li>
+                                        <li>Utilize common branch-based workflows such as GitHub flow.</li>
+                                    </ul>
+                                    <div class="custom-h6" style="font-weight: 700;">Package-Management Systems</div>
+                                    <ul>
+                                        <li>Use package-management systems like npm and pip to handle dependencies.</li>
+                                    </ul>
+                                    <div class="card mb-3 shadow style-alert-card">
+                                        <div class="card-body">
+                                            The list above is non-exhaustive. If you want a more detailed and technical description of my skills, please consider <a href="https://jpvitan.com/contact">scheduling an interview</a> with me.
+                                        </div>
+                                    </div>
+                                    <p style="font-size: 1rem;">
+                                        If you want to view my web projects, please click this <a href="https://jpvitan.com/portfolio?title=&platform=Web">link</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div style="overflow: hidden;">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col text-center px-0">
                             <img class="img-fluid shadow" alt="Earth" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1644324624/faq/earth_fiwped.jpg" width="1920" height="1080">
                         </div>
                     </div>

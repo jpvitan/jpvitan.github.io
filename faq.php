@@ -187,12 +187,13 @@
                                         <li>Design websites to be accessible, responsive, and user-friendly.</li>
                                         <li>Improve page performance using proven tools and techniques (e.g., utilizing image CDNs to load images faster).</li>
                                         <li>Ensure cross-browser compatibility for a unified and seamless experience across browsers.</li>
-                                        <li>Comply with the standards imposed by the World Wide Web Consortium (W3C) and other similar organizations. </li>
+                                        <li>Comply with the standards imposed by the World Wide Web Consortium (W3C) and other similar organizations.</li>
                                     </ul>
                                     <div class="custom-h6" style="font-weight: 700;">Back-End (Server)</div>
                                     <ul>
                                         <li>Work with PHP, Python, and other back-end languages to engineer back-end systems.</li>
                                         <li>Work with relational (SQL) and non-relational (NoSQL) databases like MySQL and Firebase Realtime Database.</li>
+                                        <li>Develop RESTful APIs with popular back-end frameworks (e.g., Django REST framework).</li>
                                         <li>Implement security measures to prevent or minimize cyberattacks (e.g., using prepared statements to guard against SQL injections).</li>
                                     </ul>
                                     <div class="custom-h6" style="font-weight: 700;">Source Control Management</div>

@@ -216,6 +216,12 @@
                                     <p style="font-size: 1rem;">
                                         If you want to view my web projects, please click this <a href="https://jpvitan.com/portfolio?title=&platform=Web">link</a>.
                                     </p>
+                                    <div class="py-3"></div>
+                                    <p style="font-weight: 700;">Are You Certified by Any Relevant Institution in Your Field?</p>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid shadow" alt="Exam 98-361: Software Development Fundamentals" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648319314/faq/MTA_98-361_Software_Development_Fundamentals_zxbcp1.png" width="1584" height="1224">
+                                        <figcaption class="figure-caption text-center">Exam 98-361: Software Development Fundamentals</figcaption>
+                                    </figure>
                                 </div>
                             </div>
                         </div>

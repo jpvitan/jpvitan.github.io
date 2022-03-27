@@ -225,6 +225,18 @@
                                         <img class="figure-img img-fluid" alt="Exam 98-361: Software Development Fundamentals" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648319314/faq/MTA_98-361_Software_Development_Fundamentals_zxbcp1.png" width="1584" height="1224">
                                         <figcaption class="figure-caption text-center">Exam 98-361: Software Development Fundamentals</figcaption>
                                     </figure>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid" alt="Exam 98-381: Introduction to Programming Using Python" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648389626/faq/MTA_98-381_Introduction_to_Programming_Using_Python_m25klr.png" width="1584" height="1224">
+                                        <figcaption class="figure-caption text-center">Exam 98-381: Introduction to Programming Using Python</figcaption>
+                                    </figure>
+                                    <div class="card mb-3 shadow style-alert-card">
+                                        <div class="card-body">
+                                            You may verify my MTA certificates by entering the <strong>Credential Identification Code</strong> (as shown in the certificate) in <a href="https://portal.certiport.com/Portal/Pages/CredentialVerification.aspx">verify.certiport.com</a>.
+                                        </div>
+                                    </div>
+                                    <p style="font-size: 1rem;">
+                                        If you want a complete list of my certificates, please click this <a href="https://drive.google.com/drive/folders/1XhgPGvFUXtb_99ATdpOCHK0p0pUJ3NZz">link</a>.
+                                    </p>
                                 </div>
                             </div>
                         </div>

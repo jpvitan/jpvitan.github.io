@@ -218,8 +218,11 @@
                                     </p>
                                     <div class="py-3"></div>
                                     <p style="font-weight: 700;">Are You Certified by Any Relevant Institution in Your Field?</p>
+                                    <p style="font-size: 1rem;">
+                                        Yes, I'm certified by Microsoft and other leading organizations in the software development industry. I've earned my title as a Microsoft Technology Associate (MTA) and a Certified Associate Programmer (CPA) from the C++ Institute, to name a few.
+                                    </p>
                                     <figure class="figure">
-                                        <img class="figure-img img-fluid shadow" alt="Exam 98-361: Software Development Fundamentals" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648319314/faq/MTA_98-361_Software_Development_Fundamentals_zxbcp1.png" width="1584" height="1224">
+                                        <img class="figure-img img-fluid" alt="Exam 98-361: Software Development Fundamentals" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648319314/faq/MTA_98-361_Software_Development_Fundamentals_zxbcp1.png" width="1584" height="1224">
                                         <figcaption class="figure-caption text-center">Exam 98-361: Software Development Fundamentals</figcaption>
                                     </figure>
                                 </div>

@@ -237,6 +237,19 @@
                                     <p style="font-size: 1rem;">
                                         If you want a complete list of my certificates, please click this <a href="https://drive.google.com/drive/folders/1XhgPGvFUXtb_99ATdpOCHK0p0pUJ3NZz">link</a>.
                                     </p>
+                                    <div class="py-3"></div>
+                                    <p style="font-weight: 700;">Did You Receive Any Academic Distinction When You Were a Computer Science Student?</p>
+                                    <p style="font-size: 1rem;">
+                                        I've been awarded a <strong>Dean's Honor List Certificate</strong> twice while taking my computer science degree program at De La Salle University–Dasmariñas.
+                                    </p>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid shadow" alt="Dean's Honor List Certificate" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648484989/faq/2nd_Semester_S.Y._2017-2018_Dean_s_Honor_List_Certificate_VITAN_Justine_Paul_S._ajx3xi.jpg" width="1056" height="1366">
+                                        <figcaption class="figure-caption text-center">Dean's Honor List Certificate</figcaption>
+                                    </figure>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid shadow" alt="Dean's Honor List (Ranked)" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648492169/faq/Dean_s_Honor_List_Ranked_lnt1dg.jpg" width="1056" height="1366">
+                                        <figcaption class="figure-caption text-center">Dean's Honor List (Ranked)</figcaption>
+                                    </figure>
                                 </div>
                             </div>
                         </div>

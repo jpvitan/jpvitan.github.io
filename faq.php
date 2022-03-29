@@ -250,6 +250,19 @@
                                         <img class="figure-img img-fluid shadow" alt="Dean's Honor List (Ranked)" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648492169/faq/Dean_s_Honor_List_Ranked_lnt1dg.jpg" width="1056" height="1366">
                                         <figcaption class="figure-caption text-center">Dean's Honor List (Ranked)</figcaption>
                                     </figure>
+                                    <div class="py-3"></div>
+                                    <p style="font-weight: 700;">Do You Participate in Programming Competitions?</p>
+                                    <p style="font-size: 1rem;">
+                                        Yes, I've participated in competitive programming competitions in the past. I won first place in a <strong>Java Programming Competition</strong> at De La Salle University–Dasmariñas and participated in <strong>Algolympics 2017</strong> at UP Diliman.
+                                    </p>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid" alt="Certificate of Recognition - Java Programming Competition" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648484989/faq/Java_Programming_Competition_VITAN_Justine_Paul_S._hbheml.jpg" width="1631" height="1224">
+                                        <figcaption class="figure-caption text-center">Certificate of Recognition - Java Programming Competition</figcaption>
+                                    </figure>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid" alt="Certificate of Participation - Algolympics 2017" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648484989/faq/Algolympics_2017_VITAN_Justine_Paul_S._ikvy9x.jpg" width="1631" height="1224">
+                                        <figcaption class="figure-caption text-center">Certificate of Participation - Algolympics 2017</figcaption>
+                                    </figure>
                                 </div>
                             </div>
                         </div>

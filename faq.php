@@ -216,6 +216,72 @@
                                     <p style="font-size: 1rem;">
                                         If you want to view my web projects, please click this <a href="https://jpvitan.com/portfolio?title=&platform=Web">link</a>.
                                     </p>
+                                    <div class="py-3"></div>
+                                    <p style="font-weight: 700;">Are You Certified by Any Relevant Institution in Your Field?</p>
+                                    <p style="font-size: 1rem;">
+                                        Yes, I'm certified by Microsoft and other leading organizations in the software development industry. I've earned my title as a Microsoft Technology Associate (MTA) and a Certified Associate Programmer (CPA) from the C++ Institute, to name a few.
+                                    </p>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid" alt="Exam 98-361: Software Development Fundamentals" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648319314/faq/MTA_98-361_Software_Development_Fundamentals_zxbcp1.png" width="1584" height="1224">
+                                        <figcaption class="figure-caption text-center">Exam 98-361: Software Development Fundamentals</figcaption>
+                                    </figure>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid" alt="Exam 98-381: Introduction to Programming Using Python" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648389626/faq/MTA_98-381_Introduction_to_Programming_Using_Python_m25klr.png" width="1584" height="1224">
+                                        <figcaption class="figure-caption text-center">Exam 98-381: Introduction to Programming Using Python</figcaption>
+                                    </figure>
+                                    <div class="card mb-3 shadow style-alert-card">
+                                        <div class="card-body">
+                                            You may verify my MTA certificates by entering the <strong>Credential Identification Code</strong> (as shown in the certificate) in <a href="https://portal.certiport.com/Portal/Pages/CredentialVerification.aspx">verify.certiport.com</a>.
+                                        </div>
+                                    </div>
+                                    <p style="font-size: 1rem;">
+                                        If you want a complete list of my certificates, please click this <a href="https://drive.google.com/drive/folders/1XhgPGvFUXtb_99ATdpOCHK0p0pUJ3NZz">link</a>.
+                                    </p>
+                                    <div class="py-3"></div>
+                                    <p style="font-weight: 700;">Did You Receive Any Academic Distinction When You Were a Computer Science Student?</p>
+                                    <p style="font-size: 1rem;">
+                                        I've been awarded a <strong>Dean's Honor List Certificate</strong> twice while taking my computer science degree program at De La Salle University–Dasmariñas.
+                                    </p>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid shadow" alt="Dean's Honor List Certificate" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648484989/faq/2nd_Semester_S.Y._2017-2018_Dean_s_Honor_List_Certificate_VITAN_Justine_Paul_S._ajx3xi.jpg" width="1056" height="1366">
+                                        <figcaption class="figure-caption text-center">Dean's Honor List Certificate</figcaption>
+                                    </figure>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid shadow" alt="Dean's Honor List (Ranked)" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648492169/faq/Dean_s_Honor_List_Ranked_lnt1dg.jpg" width="1056" height="1366">
+                                        <figcaption class="figure-caption text-center">Dean's Honor List (Ranked)</figcaption>
+                                    </figure>
+                                    <div class="py-3"></div>
+                                    <p style="font-weight: 700;">Do You Participate in Programming Competitions?</p>
+                                    <p style="font-size: 1rem;">
+                                        Yes, I've participated in competitive programming competitions in the past. I won first place in a <strong>Java Programming Competition</strong> at De La Salle University–Dasmariñas and participated in <strong>Algolympics 2017</strong> at UP Diliman.
+                                    </p>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid shadow" alt="Certificate of Recognition - Java Programming Competition" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648484989/faq/Java_Programming_Competition_VITAN_Justine_Paul_S._hbheml.jpg" width="1631" height="1224">
+                                        <figcaption class="figure-caption text-center">Certificate of Recognition - Java Programming Competition</figcaption>
+                                    </figure>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid shadow" alt="Certificate of Participation - Algolympics 2017" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648484989/faq/Algolympics_2017_VITAN_Justine_Paul_S._ikvy9x.jpg" width="1631" height="1224">
+                                        <figcaption class="figure-caption text-center">Certificate of Participation - Algolympics 2017</figcaption>
+                                    </figure>
+                                    <div class="py-3"></div>
+                                    <p style="font-weight: 700;">How Can I Reach You?</p>
+                                    <p style="font-size: 1rem;">
+                                        If you are a recruiter or a potential employer, the best way to reach me is through <a href="https://www.linkedin.com/in/jpvitan">LinkedIn</a>.
+                                    </p>
+                                    <div class="text-center">
+                                        <figure class="figure">
+                                            <img class="figure-img img-fluid" alt="LinkedIn QR Code" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648668285/faq/LinkedIn_QR_Code_vi9ujh.png" width="300" height="300">
+                                            <figcaption class="figure-caption text-center">LinkedIn QR Code</figcaption>
+                                        </figure>
+                                    </div>
+                                    <p style="font-size: 1rem;">
+                                        If you don't have a LinkedIn account or prefer not to use it, you may contact me through the following channels:
+                                    </p>
+                                    <ul>
+                                        <li><a href="https://jpvitan.com/contact">Contact Form</a></li>
+                                        <li><a href="mailto:contact@jpvitan.com">Email</a></li>
+                                        <li><a href="https://api.whatsapp.com/send/?phone=639661869258&text&app_absent=0">WhatsApp</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

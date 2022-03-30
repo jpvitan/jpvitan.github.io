@@ -256,11 +256,11 @@
                                         Yes, I've participated in competitive programming competitions in the past. I won first place in a <strong>Java Programming Competition</strong> at De La Salle University–Dasmariñas and participated in <strong>Algolympics 2017</strong> at UP Diliman.
                                     </p>
                                     <figure class="figure">
-                                        <img class="figure-img img-fluid" alt="Certificate of Recognition - Java Programming Competition" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648484989/faq/Java_Programming_Competition_VITAN_Justine_Paul_S._hbheml.jpg" width="1631" height="1224">
+                                        <img class="figure-img img-fluid shadow" alt="Certificate of Recognition - Java Programming Competition" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648484989/faq/Java_Programming_Competition_VITAN_Justine_Paul_S._hbheml.jpg" width="1631" height="1224">
                                         <figcaption class="figure-caption text-center">Certificate of Recognition - Java Programming Competition</figcaption>
                                     </figure>
                                     <figure class="figure">
-                                        <img class="figure-img img-fluid" alt="Certificate of Participation - Algolympics 2017" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648484989/faq/Algolympics_2017_VITAN_Justine_Paul_S._ikvy9x.jpg" width="1631" height="1224">
+                                        <img class="figure-img img-fluid shadow" alt="Certificate of Participation - Algolympics 2017" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648484989/faq/Algolympics_2017_VITAN_Justine_Paul_S._ikvy9x.jpg" width="1631" height="1224">
                                         <figcaption class="figure-caption text-center">Certificate of Participation - Algolympics 2017</figcaption>
                                     </figure>
                                     <div class="py-3"></div>

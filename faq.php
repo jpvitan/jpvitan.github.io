@@ -263,6 +263,25 @@
                                         <img class="figure-img img-fluid" alt="Certificate of Participation - Algolympics 2017" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648484989/faq/Algolympics_2017_VITAN_Justine_Paul_S._ikvy9x.jpg" width="1631" height="1224">
                                         <figcaption class="figure-caption text-center">Certificate of Participation - Algolympics 2017</figcaption>
                                     </figure>
+                                    <div class="py-3"></div>
+                                    <p style="font-weight: 700;">How Can I Reach You?</p>
+                                    <p style="font-size: 1rem;">
+                                        If you are a recruiter or a potential employer, the best way to reach me is through <a href="https://www.linkedin.com/in/jpvitan">LinkedIn</a>.
+                                    </p>
+                                    <div class="text-center">
+                                        <figure class="figure">
+                                            <img class="figure-img img-fluid" alt="LinkedIn QR Code" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648668285/faq/LinkedIn_QR_Code_vi9ujh.png" width="300" height="300">
+                                            <figcaption class="figure-caption text-center">LinkedIn QR Code</figcaption>
+                                        </figure>
+                                    </div>
+                                    <p style="font-size: 1rem;">
+                                        If you don't have a LinkedIn account or prefer not to use it, you may contact me through the following channels:
+                                    </p>
+                                    <ul>
+                                        <li><a href="https://jpvitan.com/contact">Contact Form</a></li>
+                                        <li><a href="mailto:contact@jpvitan.com">Email</a></li>
+                                        <li><a href="https://api.whatsapp.com/send/?phone=639661869258&text&app_absent=0">WhatsApp</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

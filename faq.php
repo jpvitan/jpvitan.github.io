@@ -281,6 +281,7 @@
                                         <li><a href="https://jpvitan.com/contact">Contact Form</a></li>
                                         <li><a href="mailto:contact@jpvitan.com">Email</a></li>
                                         <li><a href="https://api.whatsapp.com/send/?phone=639661869258&text&app_absent=0">WhatsApp</a></li>
+                                        <li><a href="https://t.me/jpvitan">Telegram</a></li>
                                     </ul>
                                 </div>
                             </div>

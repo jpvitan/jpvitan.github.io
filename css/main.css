@@ -46,6 +46,11 @@ a {
     transform: translate(-50%, -50%);
 }
 
+.style-quick-access-link-tooltip-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+}
+
 .style-featured-section .card-body:hover h1 {
     color: #03A9F4 !important;
 }

@@ -131,7 +131,7 @@
                             <div class="card border-0">
                                 <div class="card-body px-4 py-5 px-sm-5 py-sm-5">
                                     <h1>Professional and Technical Background</h1>
-                                    <p style="font-weight: 700;">What Are Your Mobile Development Skills?</p>
+                                    <p style="font-weight: 700;" id="mobile">What Are Your Mobile Development Skills?</p>
                                     <p style="font-size: 1rem;">
                                         I can develop and publish top-quality Android and iOS apps that are compliant with the policies imposed by Google and Apple. I have written and published applications for both of these platforms to demonstrate my competency in mobile app development.
                                     </p>
@@ -170,7 +170,7 @@
                                         If you want to view my Android and iOS projects, please click this <a href="https://jpvitan.com/portfolio?title=&platform=Mobile">link</a>.
                                     </p>
                                     <div class="py-3"></div>
-                                    <p style="font-weight: 700;">What Are Your Web Development Skills?</p>
+                                    <p style="font-weight: 700;" id="web">What Are Your Web Development Skills?</p>
                                     <p style="font-size: 1rem;">
                                         I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web standards to ensure a smooth and comfortable web experience for everyone.
                                     </p>

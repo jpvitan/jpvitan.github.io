@@ -143,7 +143,7 @@
                                     <p style="font-size: 1rem;">
                                         Here's a short and non-exhaustive list of what I can do in the field of mobile app development:
                                     </p>
-                                    <div class="custom-h6" style="font-weight: 700;">Android</div>
+                                    <div class="custom-h6" style="font-weight: 700;">Android (Native)</div>
                                     <ul>
                                         <li>Develop Android applications using Java and Kotlin.</li>
                                         <li>Design responsive Android layouts using XML.</li>
@@ -152,7 +152,7 @@
                                         <li>Use RESTful APIs to connect with back-end services.</li>
                                         <li>Integrate third-party Android SDKs such as AdMob, Firebase, and Mapbox.</li>
                                     </ul>
-                                    <div class="custom-h6" style="font-weight: 700;">iOS</div>
+                                    <div class="custom-h6" style="font-weight: 700;">iOS (Native)</div>
                                     <ul>
                                         <li>Develop iOS applications using Swift.</li>
                                         <li>Design responsive iOS layouts using Xcode's Interface Builder.</li>
@@ -160,6 +160,12 @@
                                         <li>Use Xcode as an integrated development environment for developing iOS apps.</li>
                                         <li>Use RESTful APIs to connect with back-end services.</li>
                                         <li>Integrate third-party iOS SDKs.</li>
+                                    </ul>
+                                    <div class="custom-h6" style="font-weight: 700;">Progressive Web Applications (PWA)</div>
+                                    <ul>
+                                        <li>Develop PWAs using modern web technologies.</li>
+                                        <li>Engineer PWAs to have near-native functionality and design.</li>
+                                        <li>Meet installability requirements of select browsers and operating systems.</li>
                                     </ul>
                                     <div class="card mb-3 shadow style-alert-card">
                                         <div class="card-body">
@@ -268,11 +274,23 @@
                                     <p style="font-size: 1rem;">
                                         If you are a recruiter or a potential employer, the best way to reach me is through <a href="https://www.linkedin.com/in/jpvitan">LinkedIn</a>.
                                     </p>
-                                    <div class="text-center">
-                                        <figure class="figure">
-                                            <img class="figure-img img-fluid" alt="LinkedIn QR Code" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648668285/faq/LinkedIn_QR_Code_vi9ujh.png" width="300" height="300">
-                                            <figcaption class="figure-caption text-center">LinkedIn QR Code</figcaption>
-                                        </figure>
+                                    <div class="row justify-content-center">
+                                        <div class="col-sm">
+                                            <div class="text-center">
+                                                <figure class="figure">
+                                                    <img class="figure-img img-fluid shadow-sm" style="border-radius: 1rem;" alt="LinkedIn QR Code" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648668285/faq/LinkedIn_QR_Code_vi9ujh.png" width="300" height="300">
+                                                    <figcaption class="figure-caption text-center">LinkedIn</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm">
+                                            <div class="text-center">
+                                                <figure class="figure">
+                                                    <img class="figure-img img-fluid shadow-sm" style="border-radius: 1rem;" alt="Resume QR Code" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1654286501/faq/Resume_QR_Code_tuf7ao.png" width="300" height="300">
+                                                    <figcaption class="figure-caption text-center">Resume</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
                                     </div>
                                     <p style="font-size: 1rem;">
                                         If you don't have a LinkedIn account or prefer not to use it, you may contact me through the following channels:

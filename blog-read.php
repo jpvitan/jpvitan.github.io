@@ -81,7 +81,7 @@ if (isset($_GET["id"])) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gantari:wght@300;500;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -96,19 +96,18 @@ if (isset($_GET["id"])) {
 
         <div class="py-md-4"></div>
 
-        <div class="container-fluid px-4">
+        <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col" style="max-width: 60rem;">
-                    <h2><?php echo $blog->getTitle(); ?></h2>
-                    <div class="style-author-date mt-4">
-                        <div>Written by <?php echo $blog->getAuthor(); ?></div>
-                        <div><?php echo $blog->getDate(); ?></div>
-                    </div>
-                    <img src=<?php echo $blog->getImageBanner(); ?> alt="Banner" class="img-fluid shadow-sm my-5" />
-                    <div class="row justify-content-center">
-                        <div class="col" style="max-width: 45rem;">
+                <div class="col mx-0 px-0" style="max-width: 45rem;">
+                    <img src=<?php echo $blog->getImageBanner(); ?> alt="Banner" class="img-fluid" />
+                    <div class="px-4">
+                        <h2 class="mt-4"><?php echo $blog->getTitle(); ?></h2>
+                        <div class="style-author-date mt-3">
+                            <div>Written by <?php echo $blog->getAuthor(); ?></div>
+                            <div><?php echo $blog->getDate(); ?></div>
+                        </div>
+                        <div class="mt-5">
                             <?php include $blog->getLink(); ?>
-
                         </div>
                     </div>
                 </div>

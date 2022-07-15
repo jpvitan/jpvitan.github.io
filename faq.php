@@ -272,7 +272,7 @@
                                     <div class="py-3"></div>
                                     <p style="font-weight: 700;">How Can I Reach You?</p>
                                     <p style="font-size: 1rem;">
-                                        If you are a recruiter or a potential employer, the best way to reach me is through <a href="mailto:contact@jpvitan.com">email</a> or <a href="https://www.linkedin.com/in/jpvitan">LinkedIn</a>. I'll respond to your message or inquiry within a day if I don't have a busy schedule.
+                                        If you are a recruiter or a potential employer, the best way to reach me is through <a href="mailto:business@jpvitan.com">email</a> or <a href="https://www.linkedin.com/in/jpvitan">LinkedIn</a>. I'll respond to your message or inquiry within a day if I don't have a busy schedule.
                                     </p>
                                 </div>
                             </div>

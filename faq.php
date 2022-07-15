@@ -272,35 +272,11 @@
                                     <div class="py-3"></div>
                                     <p style="font-weight: 700;">How Can I Reach You?</p>
                                     <p style="font-size: 1rem;">
-                                        If you are a recruiter or a potential employer, the best way to reach me is through <a href="https://www.linkedin.com/in/jpvitan">LinkedIn</a>.
+                                        If you are a recruiter or a potential employer, the best way to reach me is through <a href="mailto:business@jpvitan.com">email</a> or <a href="https://www.linkedin.com/in/jpvitan">LinkedIn</a>. I'll respond to your message or inquiry within a day if I don't have a busy schedule.
                                     </p>
-                                    <div class="row justify-content-center">
-                                        <div class="col-sm">
-                                            <div class="text-center">
-                                                <figure class="figure">
-                                                    <img class="figure-img img-fluid shadow-sm" style="border-radius: 1rem;" alt="LinkedIn QR Code" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648668285/faq/LinkedIn_QR_Code_vi9ujh.png" width="300" height="300">
-                                                    <figcaption class="figure-caption text-center">LinkedIn</figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm">
-                                            <div class="text-center">
-                                                <figure class="figure">
-                                                    <img class="figure-img img-fluid shadow-sm" style="border-radius: 1rem;" alt="Resume QR Code" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1654286501/faq/Resume_QR_Code_tuf7ao.png" width="300" height="300">
-                                                    <figcaption class="figure-caption text-center">Resume</figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
+                                    <div class="style-resume-container">
+                                        <iframe title="Resume" src="https://drive.google.com/file/d/1CSINyY0zE48QMUpAPvxsUSSJfnGJ0Nk9/preview" width="612" height="792" allow="autoplay"></iframe>
                                     </div>
-                                    <p style="font-size: 1rem;">
-                                        If you don't have a LinkedIn account or prefer not to use it, you may contact me through the following channels:
-                                    </p>
-                                    <ul>
-                                        <li><a href="https://jpvitan.com/contact">Contact Form</a></li>
-                                        <li><a href="mailto:contact@jpvitan.com">Email</a></li>
-                                        <li><a href="https://api.whatsapp.com/send/?phone=639661869258&text&app_absent=0">WhatsApp</a></li>
-                                        <li><a href="https://t.me/jpvitan">Telegram</a></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>

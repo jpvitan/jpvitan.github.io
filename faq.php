@@ -274,6 +274,9 @@
                                     <p style="font-size: 1rem;">
                                         If you are a recruiter or a potential employer, the best way to reach me is through <a href="mailto:business@jpvitan.com">email</a> or <a href="https://www.linkedin.com/in/jpvitan">LinkedIn</a>. I'll respond to your message or inquiry within a day if I don't have a busy schedule.
                                     </p>
+                                    <div class="style-resume-container">
+                                        <iframe title="Resume" src="https://drive.google.com/file/d/1CSINyY0zE48QMUpAPvxsUSSJfnGJ0Nk9/preview" width="612" height="792" allow="autoplay"></iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>

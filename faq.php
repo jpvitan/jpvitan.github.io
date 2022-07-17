@@ -274,8 +274,13 @@
                                     <p style="font-size: 1rem;">
                                         If you are a recruiter or a potential employer, the best way to reach me is through <a href="mailto:business@jpvitan.com">email</a> or <a href="https://www.linkedin.com/in/jpvitan">LinkedIn</a>. I'll respond to your message or inquiry within a day if I don't have a busy schedule.
                                     </p>
-                                    <div class="style-resume-container">
+                                    <div class="style-resume-container mb-3">
                                         <iframe title="Resume" src="https://drive.google.com/file/d/1CSINyY0zE48QMUpAPvxsUSSJfnGJ0Nk9/preview" width="612" height="792" allow="autoplay"></iframe>
+                                    </div>
+                                    <div class="card mb-3 shadow style-alert-card">
+                                        <div class="card-body">
+                                            If you are from a country or organization where resume pictures are prohibited or discouraged, please click this <a href="https://drive.google.com/file/d/1056QJ8uM9IskNiNcGgCSOOQHccTg_wP4/view">link</a> to view a compliant version of my resume.
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -1,15 +1,15 @@
 <?php
-class DatabaseHandler
+class Database
 {
 
     private static $host = "localhost";
     private static $dbname = "jpvitan1_site";
 
-    // For production server: 
+    /* Production */
     // private static $username = "jpvitan1_master";
     // private static $password = "!M,xxii*MKRR";
 
-    // For local server:
+    /* Development */
     private static $username = "root";
     private static $password = "";
 

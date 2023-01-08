@@ -27,5 +27,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <!-- CSS -->
 <link href="css/main.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+<!-- JavaScript -->
+<script src="js/main.js"></script>
 
 <title><?php echo $page->getTitle(); ?></title>

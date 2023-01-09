@@ -1,0 +1,5 @@
+@mixin blur($background-color, $blur) {
+    background-color: $background-color;
+    backdrop-filter: blur($blur);
+    -webkit-backdrop-filter: blur($blur);
+}

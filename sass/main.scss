@@ -1,0 +1,23 @@
+@use "./modules/background";
+@use "./modules/position";
+
+.navigation {
+    .bar {
+        @include position.fixed($left: 0, $right: 0, $top: 0);
+        @include background.blur($background-color: var(--navigation-background-color), $blur: var(--navigation-background-blur));
+    }
+
+    .menu {
+        @include position.fixed($left: 0, $right: 0, $top: 0, $bottom: 0);
+        @include background.blur($background-color: var(--navigation-background-color), $blur: var(--navigation-background-blur));
+    }
+
+    .button-svg {
+        display: block;
+        padding: 0;
+
+        svg {
+            display: block;
+        }
+    }
+}

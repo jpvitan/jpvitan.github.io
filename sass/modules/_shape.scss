@@ -1,0 +1,13 @@
+@mixin circle($size, $background-color: null) {
+    border-radius: 50%;
+    width: $size;
+    height: $size;
+    background-color: $background-color;
+}
+
+@mixin square($size, $border-radius: 0, $background-color: null) {
+    width: $size;
+    height: $size;
+    border-radius: $border-radius;
+    background-color: $background-color;
+}

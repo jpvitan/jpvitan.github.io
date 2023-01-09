@@ -1,0 +1,4 @@
+.theme-light {
+    --navigation-background-color: rgb(255 255 255 / 90%);
+    --navigation-background-blur: 15px;
+}

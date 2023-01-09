@@ -9,7 +9,7 @@ $page = Page::findById(1);
     <?php include "common/head.php"; ?>
 </head>
 
-<body>
+<body class="theme-light">
     <?php include "common/navigation.php"; ?>
 </body>
 

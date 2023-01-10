@@ -9,3 +9,15 @@
         transform: translate(-50%, -50%);
     }
 }
+
+@mixin relative($left: null, $right: null, $top: null, $bottom: null, $center: false) {
+    position: relative;
+    left: $left;
+    right: $right;
+    top: $top;
+    bottom: $bottom;
+
+    @if $center {
+        transform: translate(-50%, -50%);
+    }
+}

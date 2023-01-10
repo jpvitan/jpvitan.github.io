@@ -1,4 +1,6 @@
 @use "./modules/background";
+@use "./modules/font";
+@use "./modules/icon";
 @use "./modules/position";
 @use "./modules/shape";
 
@@ -13,12 +15,29 @@
         @include background.blur($background-color: var(--navigation-background-color), $blur: var(--navigation-background-blur));
     }
 
+    .control-panel {
+        .icon-container {
+            @include shape.square($size: 60px, $border-radius: 15px);
+
+            background-color: var(--navigation-icon-background-color);
+
+            svg {
+                @include position.relative($left: 50%, $top: 50%, $center: true);
+                @include icon.svg($size: 25px, $color: var(--navigation-icon-color));
+            }
+        }
+
+        p {
+            @include font.regular;
+        }
+    }
+
     .button-svg {
         display: block;
         padding: 0;
 
         svg {
-            display: block;
+            @include icon.svg($size: 20px, $color: var(--navigation-icon-color));
         }
     }
 }

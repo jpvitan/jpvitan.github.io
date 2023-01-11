@@ -6,6 +6,8 @@ $navigationArray = array(
   new Navigation(Icon::Home(), "Home", "/"),
   new Navigation(Icon::App(), "Apps", "/"),
   new Navigation(Icon::Blog(), "Blog", "/"),
+  new Navigation(Icon::Resume(), "Resume", "/"),
+  new Navigation(Icon::Certificate(), "Certificates", "/"),
   new Navigation(Icon::Message(), "Message", "/")
 )
 ?>
@@ -33,7 +35,7 @@ $navigationArray = array(
       <div class="row justify-content-center">
         <div class="col-auto my-auto">
           <div class="control-panel">
-            <div class="container-fluid px-0 py-5">
+            <div class="container-fluid px-0 pt-md-5 pb-5">
               <div class="row justify-content-center">
                 <?php
                 foreach ($navigationArray as $navigation) {

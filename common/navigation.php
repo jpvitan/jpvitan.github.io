@@ -35,7 +35,7 @@ $navigationArray = array(
       <div class="row justify-content-center">
         <div class="col-auto my-auto">
           <div class="control-panel">
-            <div class="container-fluid px-0 pt-md-5 pb-5">
+            <div class="container-fluid px-0 pt-lg-5 pb-5">
               <div class="row justify-content-center">
                 <?php
                 foreach ($navigationArray as $navigation) {

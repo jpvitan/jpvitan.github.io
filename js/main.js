@@ -16,4 +16,6 @@ const setupNavigation = () => {
         menu.classList.add("invisible")
         menu.classList.remove("visible")
     }
+
+    document.body.style.paddingTop = `${bar.offsetHeight}px`;
 }

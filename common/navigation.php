@@ -23,7 +23,7 @@ $navigationArray = array(
       </div>
     </div>
   </div>
-  <div class="menu" id="navigation-menu">
+  <div class="menu invisible" id="navigation-menu">
     <div class="container-fluid px-3 py-3">
       <div class="row">
         <div class="col-auto my-auto">

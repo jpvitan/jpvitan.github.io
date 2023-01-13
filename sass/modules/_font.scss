@@ -4,3 +4,14 @@
     font-weight: $font-weight;
     color: $color;
 }
+
+@mixin heading($font-family: var(--heading-font-family), $font-size, $breakpoint-font-size, $font-weight: var(--heading-font-weight), $color: var(--heading-font-color), $breakpoint) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+
+    @media screen and (min-width: $breakpoint) {
+        font-size: $breakpoint-font-size;
+    }
+}

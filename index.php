@@ -16,6 +16,17 @@ $page = Page::findById(1);
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
                     <div class="content col">
+                        <div class="main-card card shadow-lg border-0 text-center px-5 py-5">
+                            <h1 class="py-5">Justine Paul Vitan</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid px-4 py-4">
+                <div class="row justify-content-center">
+                    <div class="content col">
                         <h2>Introduction</h2>
                         <h3>Tell Me About Yourself</h3>
                         <p>I'm Justine Paul Vitan, a mobile and web developer based in the Philippines. I've been building and designing mobile and web applications as a hobby and profession. For the past few years, I've published many applications to prove my competency in developing and designing software.</p>

@@ -52,3 +52,23 @@
         }
     }
 }
+
+.home {
+    h2 {
+        @include font.heading($font-size: calc(1.375rem + 1.5vw), $breakpoint-font-size: 2.5rem, $breakpoint: 1200px);
+    }
+
+    h3 {
+        @include font.heading($font-size: 1.2rem, $breakpoint-font-size: 1.4rem, $color: #636e72, $breakpoint: 767px);
+
+        margin-bottom: 1rem
+    }
+
+    p {
+        @include font.regular;
+    }
+
+    .content-column {
+        max-width: 50rem;
+    }
+}

@@ -73,6 +73,10 @@
         margin-bottom: 1rem
     }
 
+    h4 {
+        @include font.heading($font-size: 1rem, $breakpoint-font-size: null, $breakpoint: null);
+    }
+
     p {
         @include font.regular;
     }

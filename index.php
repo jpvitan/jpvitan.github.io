@@ -36,6 +36,17 @@ $page = Page::findById(1);
                 </div>
             </div>
         </section>
+        <section>
+            <div class="container-fluid px-4 py-4">
+                <div class="row justify-content-center">
+                    <div class="content col">
+                        <h2>Professional Background</h2>
+                        <h3>What Are Your Mobile Development Skills?</h3>
+                        <p>I can develop and publish top-quality Android and iOS apps that are compliant with the policies imposed by Google and Apple. I have written and published applications for both of these platforms to demonstrate my competency in mobile app development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 

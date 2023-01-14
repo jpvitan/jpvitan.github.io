@@ -8,6 +8,8 @@
     .bar {
         @include position.fixed($left: 0, $right: 0, $top: 0);
         @include background.blur($background-color: var(--navigation-background-color), $blur: var(--navigation-background-blur));
+
+        z-index: 1;
     }
 
     .menu {

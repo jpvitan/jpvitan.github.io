@@ -9,12 +9,10 @@ const setupNavigation = () => {
     const closeButton = document.getElementById("navigation-close-button")
 
     menuButton.onclick = () => {
-        menu.classList.add("visible")
-        menu.classList.remove("invisible")
+        menu.classList.remove("d-none")
     }
     closeButton.onclick = () => {
-        menu.classList.add("invisible")
-        menu.classList.remove("visible")
+        menu.classList.add("d-none")
     }
 
     document.body.style.paddingTop = `${bar.offsetHeight}px`;

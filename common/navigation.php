@@ -1,6 +1,6 @@
 <?php
-include "utilities/Icon.php";
-include "utilities/Navigation.php";
+require_once "utilities/Icon.php";
+require_once "utilities/Navigation.php";
 
 $navigationArray = array(
   new Navigation(Icon::Home(), "Home", "https://jpvitan.com/"),

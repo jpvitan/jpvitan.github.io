@@ -1,6 +1,40 @@
 <?php
-include "model/Page.php";
+require_once "model/Page.php";
+require_once "utilities/Icon.php";
+require_once "utilities/ListCard.php";
+
 $page = Page::findById(1);
+
+$listCardArray = array(
+    new ListCard(
+        Icon::Android(),
+        "Android",
+        array(
+            "Develop Android applications using Java and Kotlin.",
+            "Design responsive Android layouts using XML.",
+            "Publish Android applications that comply with Google Play's policies.",
+            "Use Android Studio as an integrated development environment for developing Android apps.",
+            "Use RESTful APIs to connect with back-end services.",
+            "Integrate third-party Android SDKs such as AdMob, Firebase, and Mapbox."
+        ),
+        Icon::Check(),
+        "background-color: #0093e9; background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%); height: 100%;"
+    ),
+    new ListCard(
+        Icon::Apple(),
+        "iOS",
+        array(
+            "Develop iOS applications using Swift.",
+            "Design responsive iOS layouts using Xcode's Interface Builder.",
+            "Publish iOS applications that comply with App Store's policies.",
+            "Use Xcode as an integrated development environment for developing iOS apps.",
+            "Use RESTful APIs to connect with back-end services.",
+            "Integrate third-party iOS SDKs."
+        ),
+        Icon::Check(),
+        "background-color: #4158d0; background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%); height: 100%;"
+    )
+)
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,6 +77,20 @@ $page = Page::findById(1);
                         <h2>Professional and Technical Background</h2>
                         <h3>What Are Your Mobile Development Skills?</h3>
                         <p>I can develop and publish top-quality Android and iOS apps that are compliant with the policies imposed by Google and Apple. I have written and published applications for both of these platforms to demonstrate my competency in mobile app development.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid px-0 px-md-4 py-4">
+                <div class="row justify-content-center g-0">
+                    <div class="content col">
+                        <div class="row g-0 g-md-4">
+                            <div class="col-md">
+                                <?php echo $listCardArray[0]->generate(); ?>
+                            </div>
+                            <div class="col-md">
+                                <?php echo $listCardArray[1]->generate(); ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

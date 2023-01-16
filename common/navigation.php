@@ -32,20 +32,12 @@ $navigationArray = array(
           </button>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-auto my-auto">
-          <div class="control-panel">
-            <div class="container-fluid px-0 pt-lg-5 pb-5">
-              <div class="row justify-content-center">
-                <?php
-                foreach ($navigationArray as $navigation) {
-                  echo $navigation->generate();
-                }
-                ?>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="control-panel row justify-content-center pt-lg-5 pb-5">
+        <?php
+        foreach ($navigationArray as $navigation) {
+          echo $navigation->generate();
+        }
+        ?>
       </div>
     </div>
   </div>

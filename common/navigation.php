@@ -16,7 +16,7 @@ $navigationArray = array(
     <div class="container-fluid px-3 py-3">
       <div class="row">
         <div class="col-auto my-auto">
-          <button class="button-svg btn" id="navigation-menu-button" aria-label="Menu">
+          <button class="btn" id="navigation-menu-button" aria-label="Menu">
             <?php echo Icon::Menu(); ?>
           </button>
         </div>
@@ -27,7 +27,7 @@ $navigationArray = array(
     <div class="container-fluid px-3 py-3">
       <div class="row">
         <div class="col-auto my-auto">
-          <button class="button-svg btn" id="navigation-close-button" aria-label="Close">
+          <button class="btn" id="navigation-close-button" aria-label="Close">
             <?php echo Icon::Close(); ?>
           </button>
         </div>

@@ -50,7 +50,7 @@ $listCardArray = array(
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
                     <div class="content col">
-                        <div class="main-card card shadow-lg border-0 text-center px-5 py-5">
+                        <div class="title-card card shadow-lg border-0 text-center px-5 py-5">
                             <h1 class="py-5">Justine Paul Vitan</h1>
                         </div>
                     </div>

@@ -30,6 +30,10 @@
         @include font.regular;
     }
 
+    .content {
+        max-width: 50rem;
+    }
+
     .title-card {
         @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1673639335/jpvitan-website/bg-main-card_mn8m36.jpg", $background-size: cover);
 

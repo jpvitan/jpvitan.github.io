@@ -62,6 +62,14 @@ $page = Page::findById(1);
                     </div>
                 </div>
             </div>
+            <div class="container-fluid px-4 py-4 mt-md-5">
+                <div class="row justify-content-center">
+                    <div class="content col">
+                        <h3>What Are Your Web Development Skills?</h3>
+                        <p>I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web standards to ensure a smooth and comfortable web experience for everyone.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>

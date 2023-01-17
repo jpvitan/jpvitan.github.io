@@ -31,6 +31,32 @@ $LIST_CARD = [
         ],
         Icon::Check(),
         "background-color: #4158d0; background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%); height: 100%;"
+    ),
+    new ListCard(
+        Icon::Grid(),
+        "Front-End (Client)",
+        [
+            "Proficiently use core front-end technologies such as HTML, CSS, and JavaScript to create web pages.",
+            "Utilize popular front-end frameworks and libraries such as React, Angular, and Bootstrap.",
+            "Design websites to be accessible, responsive, and user-friendly.",
+            "Improve page performance using proven tools and techniques (e.g., utilizing image CDNs to load images faster).",
+            "Ensure cross-browser compatibility for a unified and seamless experience across browsers.",
+            "Comply with the standards imposed by the World Wide Web Consortium (W3C) and other similar organizations."
+        ],
+        Icon::Check(),
+        "background-color: #21D4FD; background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); height: 100%;"
+    ),
+    new ListCard(
+        Icon::Server(),
+        "Back-End (Server)",
+        [
+            "Work with PHP, Python, and other back-end languages to engineer back-end systems.",
+            "Work with relational (SQL) and non-relational (NoSQL) databases like MySQL and Firebase Realtime Database.",
+            "Develop RESTful APIs with popular back-end frameworks (e.g., Django REST framework).",
+            "Implement security measures to prevent or minimize cyberattacks (e.g., using prepared statements to guard against SQL injections)."
+        ],
+        Icon::Check(),
+        "background-color: #F4D03F; background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%); height: 100%;"
     )
 ];
 

@@ -1,6 +1,6 @@
 <?php
-require_once "utilities/Icon.php";
 require_once "utilities/Data.php";
+require_once "utilities/Icon.php";
 ?>
 <div class="navigation">
   <div class="bar" id="navigation-bar">

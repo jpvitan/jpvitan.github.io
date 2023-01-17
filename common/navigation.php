@@ -1,15 +1,6 @@
 <?php
 require_once "utilities/Icon.php";
-require_once "utilities/Navigation.php";
-
-$navigationArray = array(
-  new Navigation(Icon::Home(), "Home", "https://jpvitan.com/"),
-  new Navigation(Icon::App(), "Apps", "https://jpvitan.com/apps"),
-  new Navigation(Icon::Blog(), "Blog", "https://jpvitan.com/blog"),
-  new Navigation(Icon::Resume(), "Resume", "https://drive.google.com/file/d/1CSINyY0zE48QMUpAPvxsUSSJfnGJ0Nk9/view?usp=sharing"),
-  new Navigation(Icon::Certificate(), "Certificates", "https://drive.google.com/drive/folders/1XhgPGvFUXtb_99ATdpOCHK0p0pUJ3NZz?usp=sharing"),
-  new Navigation(Icon::Message(), "Message", "mailto:business@jpvitan.com")
-)
+require_once "utilities/Data.php";
 ?>
 <div class="navigation">
   <div class="bar" id="navigation-bar">
@@ -34,7 +25,7 @@ $navigationArray = array(
       </div>
       <div class="control-panel row justify-content-center pt-lg-5 pb-5">
         <?php
-        foreach ($navigationArray as $navigation) {
+        foreach ($NAVIGATION as $navigation) {
           echo $navigation->generate();
         }
         ?>

@@ -44,7 +44,7 @@ $LIST_CARD = [
             "Comply with the standards imposed by the World Wide Web Consortium (W3C) and other similar organizations."
         ],
         Icon::Check(),
-        "background-color: #21D4FD; background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); height: 100%;"
+        "background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%); height: 100%;"
     ),
     new ListCard(
         Icon::Server(),
@@ -56,7 +56,7 @@ $LIST_CARD = [
             "Implement security measures to prevent or minimize cyberattacks (e.g., using prepared statements to guard against SQL injections)."
         ],
         Icon::Check(),
-        "background-color: #F4D03F; background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%); height: 100%;"
+        "background-color: #f4d03f; background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%); height: 100%;"
     )
 ];
 

@@ -3,20 +3,66 @@
 @use "./modules/icon";
 @use "./modules/position";
 @use "./modules/shape";
+@use "./modules/variable";
+
+// ** Home **
+
+.home {
+    h1 {
+        @include font.heading($font-size: calc(1.375rem + 1.5vw), $color: #fff, $breakpoint: variable.$breakpoint-xl, $breakpoint-font-size: 2.5rem);
+
+        margin-bottom: 0rem;
+    }
+
+    h2 {
+        @include font.heading($font-size: calc(1.375rem + 1.5vw), $color: #000, $breakpoint: variable.$breakpoint-xl, $breakpoint-font-size: 2.5rem);
+
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        @include font.heading($font-size: 1.4rem, $color: #636e72, $breakpoint: null, $breakpoint-font-size: null);
+
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        @include font.regular;
+    }
+
+    .title-card {
+        @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1673639335/jpvitan-website/bg-main-card_mn8m36.jpg", $background-size: cover);
+
+        border-radius: 20px;
+    }
+}
+
+// ** Navigation **
 
 .navigation {
+    button {
+        display: block;
+        padding: 0;
+
+        svg {
+            @include icon.svg($size: 20px, $color: var(--navigation-icon-color));
+        }
+    }
+
     .bar {
         @include position.fixed($left: 0, $right: 0, $top: 0);
-        @include background.blur($background-color: var(--navigation-background-color), $blur: var(--navigation-background-blur));
-
-        z-index: 1;
     }
 
     .menu {
         @include position.fixed($left: 0, $right: 0, $top: 0, $bottom: 0);
-        @include background.blur($background-color: var(--navigation-background-color), $blur: var(--navigation-background-blur));
 
         overflow-y: auto;
+    }
+
+    .bar,
+    .menu {
+        @include background.blur($background-color: var(--navigation-background-color), $blur: var(--navigation-background-blur));
+
         z-index: 1;
     }
 
@@ -45,21 +91,14 @@
             margin-bottom: 0;
         }
     }
-
-    .button-svg {
-        display: block;
-        padding: 0;
-
-        svg {
-            @include icon.svg($size: 20px, $color: var(--navigation-icon-color));
-        }
-    }
 }
+
+// ** ListCard **
 
 .list-card {
     border-radius: 0px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: variable.$breakpoint-md) {
         border-radius: 20px;
     }
 
@@ -70,8 +109,8 @@
     }
 
     .title-row {
-        h4 {
-            color: #fff;
+        p {
+            @include font.regular($font-weight: 700, $color: #fff);
         }
     }
 
@@ -85,41 +124,5 @@
 
             margin-bottom: 0;
         }
-    }
-}
-
-.home {
-    h1 {
-        @include font.heading($font-size: calc(1.375rem + 1.5vw), $breakpoint-font-size: 2.5rem, $color: #fff, $breakpoint: 1200px);
-
-        margin-bottom: 0;
-    }
-
-    h2 {
-        @include font.heading($font-size: calc(1.375rem + 1.5vw), $breakpoint-font-size: 2.5rem, $breakpoint: 1200px);
-    }
-
-    h3 {
-        @include font.heading($font-size: 1.2rem, $breakpoint-font-size: 1.4rem, $color: #636e72, $breakpoint: 767px);
-
-        margin-bottom: 1rem
-    }
-
-    h4 {
-        @include font.heading($font-size: 1rem, $breakpoint-font-size: null, $breakpoint: null);
-    }
-
-    p {
-        @include font.regular;
-    }
-
-    .content {
-        max-width: 50rem;
-    }
-
-    .main-card {
-        @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1673639335/jpvitan-website/bg-main-card_mn8m36.jpg", $background-size: cover);
-
-        border-radius: 20px;
     }
 }

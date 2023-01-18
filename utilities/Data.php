@@ -33,6 +33,17 @@ $LIST_CARD = [
         "background-color: #4158d0; background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%); height: 100%;"
     ),
     new ListCard(
+        Icon::App(),
+        "Progressive Web Applications (PWA)",
+        [
+            "Develop PWAs using modern web technologies.",
+            "Engineer PWAs to have near-native functionality and design.",
+            "Meet installability requirements of select browsers and operating systems."
+        ],
+        Icon::Check(),
+        "background-color: #f4d03f; background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%); height: 100%;"
+    ),
+    new ListCard(
         Icon::Grid(),
         "Front-End (Client)",
         [
@@ -54,6 +65,26 @@ $LIST_CARD = [
             "Work with relational (SQL) and non-relational (NoSQL) databases like MySQL and Firebase Realtime Database.",
             "Develop RESTful APIs with popular back-end frameworks (e.g., Django REST framework).",
             "Implement security measures to prevent or minimize cyberattacks (e.g., using prepared statements to guard against SQL injections)."
+        ],
+        Icon::Check(),
+        "background-color: #f4d03f; background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%); height: 100%;"
+    ),
+    new ListCard(
+        Icon::App(),
+        "Source Control Management",
+        [
+            "Use Git and its command-line interface for source code management.",
+            "Use GitHub as a Git repository hosting service.",
+            "Utilize common branch-based workflows such as GitHub flow."
+        ],
+        Icon::Check(),
+        "background-color: #f4d03f; background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%); height: 100%;"
+    ),
+    new ListCard(
+        Icon::App(),
+        "Package-Management Systems",
+        [
+            "Use package-management systems like npm and pip to handle dependencies."
         ],
         Icon::Check(),
         "background-color: #f4d03f; background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%); height: 100%;"

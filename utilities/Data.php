@@ -70,7 +70,7 @@ $LIST_CARD = [
         "background-color: #f4d03f; background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%); height: 100%;"
     ),
     new ListCard(
-        Icon::App(),
+        Icon::Git(),
         "Source Control Management",
         [
             "Use Git and its command-line interface for source code management.",
@@ -81,7 +81,7 @@ $LIST_CARD = [
         "background-color: #f4d03f; background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%); height: 100%;"
     ),
     new ListCard(
-        Icon::App(),
+        Icon::Package(),
         "Package-Management Systems",
         [
             "Use package-management systems like npm and pip to handle dependencies."

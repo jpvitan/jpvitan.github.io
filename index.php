@@ -59,11 +59,6 @@ $page = Page::findById(1);
                                 <?php echo $LIST_CARD[1]->generate(); ?>
                             </div>
                         </div>
-                        <div class="row g-0 g-md-4 mt-md-2">
-                            <div class="col">
-                                <?php echo $LIST_CARD[2]->generate(); ?>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

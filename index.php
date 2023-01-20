@@ -17,7 +17,7 @@ $page = Page::findById(1);
         <section>
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
-                    <div class="content col">
+                    <div class="content-sm col">
                         <div class="title-card card shadow-lg border-0 text-center px-5 py-5">
                             <h1 class="py-5">Justine Paul Vitan</h1>
                         </div>
@@ -28,7 +28,7 @@ $page = Page::findById(1);
         <section>
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
-                    <div class="content col">
+                    <div class="content-sm col">
                         <h2>Introduction</h2>
                         <h3>Tell Me About Yourself</h3>
                         <p>I'm Justine Paul Vitan, a mobile and web developer based in the Philippines. I've been building and designing mobile and web applications as a hobby and profession. For the past few years, I've published many applications to prove my competency in developing and designing software.</p>
@@ -41,7 +41,7 @@ $page = Page::findById(1);
         <section>
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
-                    <div class="content col">
+                    <div class="content-sm col">
                         <h2>Professional and Technical Background</h2>
                         <h3>What Are Your Mobile Development Skills?</h3>
                         <p>I can develop and publish top-quality Android and iOS apps that are compliant with the policies imposed by Google and Apple. I have written and published applications for both of these platforms to demonstrate my competency in mobile app development.</p>
@@ -50,7 +50,7 @@ $page = Page::findById(1);
             </div>
             <div class="container-fluid px-0 px-md-4 py-4">
                 <div class="row justify-content-center g-0">
-                    <div class="content col">
+                    <div class="content-sm col">
                         <div class="row g-0 g-md-4">
                             <div class="col-md">
                                 <?php echo $LIST_CARD[0]->generate(); ?>
@@ -64,14 +64,28 @@ $page = Page::findById(1);
             </div>
             <div class="container-fluid px-4 py-4 mt-md-5">
                 <div class="row justify-content-center">
-                    <div class="content col">
+                    <div class="content-sm col">
                         <h3>What Are Your Web Development Skills?</h3>
                         <p>I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web standards to ensure a smooth and comfortable web experience for everyone.</p>
                     </div>
                 </div>
-                <div class="row justify-content-center text-center mt-4">
+                <div class="row justify-content-center text-center my-4">
                     <div class="col">
                         <img class="img-fluid" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1674222170/jpvitan-website/earthquakeph-macbook_obwqqy.png" width="1366" height="786">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid px-0 px-md-4 py-4">
+                <div class="row justify-content-center g-0">
+                    <div class="content-md col">
+                        <div class="row g-0 g-md-4">
+                            <div class="col-md">
+                                <?php echo $LIST_CARD[3]->generate(); ?>
+                            </div>
+                            <div class="col-md">
+                                <?php echo $LIST_CARD[4]->generate(); ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

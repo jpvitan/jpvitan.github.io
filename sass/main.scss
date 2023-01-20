@@ -35,7 +35,7 @@
     }
 
     .title-card {
-        @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1673639335/jpvitan-website/bg-main-card_mn8m36.jpg", $background-size: cover);
+        @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1673639335/jpvitan-website/bg-title-card_mn8m36.jpg", $background-size: cover);
 
         border-radius: 20px;
     }

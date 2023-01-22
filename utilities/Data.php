@@ -2,6 +2,7 @@
 require_once "utilities/Icon.php";
 require_once "components/ListCard.php";
 require_once "components/Navigation.php";
+require_once "components/NoticeCard.php";
 
 $LIST_CARD = [
     new ListCard(
@@ -41,7 +42,7 @@ $LIST_CARD = [
             "Meet installability requirements of select browsers and operating systems."
         ],
         Icon::Check(),
-        "background-color: #f4d03f; background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%); height: 100%;"
+        "background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%); height: 100%;"
     ),
     new ListCard(
         Icon::Grid(),
@@ -98,4 +99,12 @@ $NAVIGATION = [
     new Navigation(Icon::Resume(), "Resume", "https://drive.google.com/file/d/1CSINyY0zE48QMUpAPvxsUSSJfnGJ0Nk9/view?usp=sharing"),
     new Navigation(Icon::Certificate(), "Certificates", "https://drive.google.com/drive/folders/1XhgPGvFUXtb_99ATdpOCHK0p0pUJ3NZz?usp=sharing"),
     new Navigation(Icon::Message(), "Message", "mailto:business@jpvitan.com")
+];
+
+$NOTICE_CARD = [
+    new NoticeCard(
+        Icon::Information(),
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        ""
+    )
 ];

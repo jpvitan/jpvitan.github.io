@@ -138,3 +138,20 @@
         }
     }
 }
+
+// ** NoticeCard **
+
+.notice-card {
+    background-color: #ecf0f1;
+    border-radius: 20px;
+
+    svg {
+        @include icon.svg($size: 15px, $color: #636e72);
+    }
+
+    p {
+        @include font.regular($color: #636e72);
+
+        margin-bottom: 0;
+    }
+}

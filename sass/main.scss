@@ -154,4 +154,8 @@
 
         margin-bottom: 0;
     }
+
+    a {
+        @include font.regular($color: #3498db);
+    }
 }

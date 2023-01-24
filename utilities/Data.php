@@ -104,7 +104,7 @@ $NAVIGATION = [
 $NOTICE_CARD = [
     new NoticeCard(
         Icon::Information(),
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "If you want to view a list of my published applications for Android, iOS, and the web, please click this <a href='https://jpvitan.com/apps'>link</a>.",
         ""
     )
 ];

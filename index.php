@@ -89,6 +89,13 @@ $page = Page::findById(1);
                     </div>
                 </div>
             </div>
+            <div class="container-fluid px-4 py-4">
+                <div class="row justify-content-center">
+                    <div class="content-sm col">
+                        <?php echo $NOTICE_CARD[0]->generate(); ?>
+                    </div>
+                </div>
+            </div>
             <div class="container-fluid px-4 py-4 mt-md-5">
                 <div class="row justify-content-center">
                     <div class="content-sm col">

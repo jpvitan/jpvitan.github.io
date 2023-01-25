@@ -36,6 +36,11 @@ $page = Page::findById(1);
                         <p>Moving forward, it is in my best interest to diversify, expand, and modernize my skill set to meet the demands of the industry. I'm always willing to learn and explore new things.</p>
                     </div>
                 </div>
+                <div class="row justify-content-center text-center my-4">
+                    <div class="col">
+                        <img class="introduction-image img-fluid shadow-lg" alt="Introduction Image" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1674597129/jpvitan-website/introduction-image_p5oybk.jpg" width="776" height="970">
+                    </div>
+                </div>
             </div>
         </section>
         <section>

@@ -7,53 +7,47 @@ require_once "components/NoticeCard.php";
 $LIST_CARD = [
     new ListCard(
         Icon::Android(),
-        "Android",
+        "Android (Native)",
         [
-            "Develop Android applications using Java and Kotlin.",
-            "Design responsive Android layouts using XML.",
-            "Publish Android applications that comply with Google Play's policies.",
+            "Develop Android applications using Java.",
+            "Design responsive interfaces using Android Studio's Layout Editor and XML.",
             "Use Android Studio as an integrated development environment for developing Android apps.",
+            "Use Gradle for handling and managing dependencies.",
+            "Integrate third-party Android SDKs, frameworks, and libraries such as AdMob, Mapbox, and Retrofit.",
             "Use RESTful APIs to connect with back-end services.",
-            "Integrate third-party Android SDKs such as AdMob, Firebase, and Mapbox."
+            "Publish Android applications that comply with Google Play's policies.",
+            "Follow the recommended software architecture for Android applications to maximize scalability and efficiency."
         ],
         Icon::Check(),
         "background-color: #0093e9; background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%); height: 100%;"
     ),
     new ListCard(
         Icon::Apple(),
-        "iOS",
+        "iOS (Native)",
         [
             "Develop iOS applications using Swift.",
-            "Design responsive iOS layouts using Xcode's Interface Builder.",
-            "Publish iOS applications that comply with App Store's policies.",
+            "Design responsive interfaces using Xcode's Interface Builder and storyboards.",
             "Use Xcode as an integrated development environment for developing iOS apps.",
+            "Use CocoaPods for handling and managing dependencies.",
+            "Integrate third-party iOS SDKs, frameworks, and libraries such as Mapbox, SwiftyJSON, and Alamofire.",
             "Use RESTful APIs to connect with back-end services.",
-            "Integrate third-party iOS SDKs."
+            "Publish iOS applications that comply with App Store's policies.",
+            "Follow the recommended software architecture for iOS applications to maximize scalability and efficiency."
         ],
         Icon::Check(),
         "background-color: #4158d0; background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%); height: 100%;"
     ),
     new ListCard(
-        Icon::App(),
-        "Progressive Web Applications (PWA)",
-        [
-            "Develop PWAs using modern web technologies.",
-            "Engineer PWAs to have near-native functionality and design.",
-            "Meet installability requirements of select browsers and operating systems."
-        ],
-        Icon::Check(),
-        "background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%); height: 100%;"
-    ),
-    new ListCard(
         Icon::Grid(),
         "Front-End (Client)",
         [
-            "Proficiently use core front-end technologies such as HTML, CSS, and JavaScript to create web pages.",
-            "Utilize popular front-end frameworks and libraries such as React, Angular, and Bootstrap.",
+            "Proficiently use core front-end technologies such as HTML, CSS, and JavaScript (ES6+) to create web pages.",
+            "Utilize popular front-end tools, frameworks, and libraries such as Sass (SCSS), Bootstrap, React, and Mapbox GL JS.",
+            "Build and deploy websites using modern (CI/CD) or traditional (FTP) tools and techniques.",
+            "Perform and write tests with Jest and other similar testing frameworks.",
             "Design websites to be accessible, responsive, and user-friendly.",
             "Improve page performance using proven tools and techniques (e.g., utilizing image CDNs to load images faster).",
-            "Ensure cross-browser compatibility for a unified and seamless experience across browsers.",
-            "Comply with the standards imposed by the World Wide Web Consortium (W3C) and other similar organizations."
+            "Ensure cross-browser compatibility for a unified and seamless experience across browsers."
         ],
         Icon::Check(),
         "background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%); height: 100%;"
@@ -62,30 +56,14 @@ $LIST_CARD = [
         Icon::Server(),
         "Back-End (Server)",
         [
-            "Work with PHP, Python, and other back-end languages to engineer back-end systems.",
-            "Work with relational (SQL) and non-relational (NoSQL) databases like MySQL and Firebase Realtime Database.",
-            "Develop RESTful APIs with popular back-end frameworks (e.g., Django REST framework).",
+            "Develop back-end applications with JavaScript (Node.js), PHP, and other back-end languages.",
+            "Utilize popular back-end tools, frameworks, and libraries such as Express and Passport.",
+            "Use npm for handling and managing dependencies.",
+            "Work with relational (SQL) and non-relational (NoSQL) databases like MySQL and MongoDB.",
+            "Use an Object Data Modeling (ODM) library like Mongoose.",
+            "Impose authentication and authorization processes in back-end systems.",
+            "Develop a well-designed REST API that follows modern standards.",
             "Implement security measures to prevent or minimize cyberattacks (e.g., using prepared statements to guard against SQL injections)."
-        ],
-        Icon::Check(),
-        "background-color: #f4d03f; background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%); height: 100%;"
-    ),
-    new ListCard(
-        Icon::Git(),
-        "Source Control Management",
-        [
-            "Use Git and its command-line interface for source code management.",
-            "Use GitHub as a Git repository hosting service.",
-            "Utilize common branch-based workflows such as GitHub flow."
-        ],
-        Icon::Check(),
-        "background-color: #f4d03f; background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%); height: 100%;"
-    ),
-    new ListCard(
-        Icon::Package(),
-        "Package-Management Systems",
-        [
-            "Use package-management systems like npm and pip to handle dependencies."
         ],
         Icon::Check(),
         "background-color: #f4d03f; background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%); height: 100%;"
@@ -105,6 +83,11 @@ $NOTICE_CARD = [
     new NoticeCard(
         Icon::Information(),
         "If you want to view a list of my published applications for Android, iOS, and the web, please click this <a href='https://jpvitan.com/apps'>link</a>.",
+        ""
+    ),
+    new NoticeCard(
+        Icon::Information(),
+        "You may verify my MTA certificates by entering the Credential Identification Code (as shown in the certificate) in <a href='https://portal.certiport.com/Portal/Pages/CredentialVerification.aspx'>verify.certiport.com</a>. If you want a complete list of my certificates, please click this <a href='https://drive.google.com/drive/folders/1XhgPGvFUXtb_99ATdpOCHK0p0pUJ3NZz'>link</a>.",
         ""
     )
 ];

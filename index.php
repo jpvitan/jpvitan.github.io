@@ -82,13 +82,13 @@ $page = Page::findById(1);
             </div>
             <div class="container-fluid px-0 px-md-4 py-4">
                 <div class="row justify-content-center g-0">
-                    <div class="content-md col">
+                    <div class="content-sm col">
                         <div class="row g-0 g-md-4">
                             <div class="col-md">
-                                <?php echo $LIST_CARD[3]->generate(); ?>
+                                <?php echo $LIST_CARD[2]->generate(); ?>
                             </div>
                             <div class="col-md">
-                                <?php echo $LIST_CARD[4]->generate(); ?>
+                                <?php echo $LIST_CARD[3]->generate(); ?>
                             </div>
                         </div>
                     </div>
@@ -111,6 +111,11 @@ $page = Page::findById(1);
                 <div class="row justify-content-center text-center my-4">
                     <div class="col">
                         <img class="certificate-frame img-fluid" alt="Exam 98-361: Software Development Fundamentals" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1648319314/faq/MTA_98-361_Software_Development_Fundamentals_zxbcp1.png" width="1584" height="1224">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="content-sm col">
+                        <?php echo $NOTICE_CARD[1]->generate(); ?>
                     </div>
                 </div>
             </div>

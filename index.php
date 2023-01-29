@@ -29,6 +29,7 @@ $page = Page::findById(1);
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
                     <div class="content-sm col">
+                        <img alt="Stars" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675020088/jpvitan-website/animated-icons/stars_nipmtb.gif" width="80" height="80">
                         <h2>Introduction</h2>
                         <h3>Tell Me About Yourself</h3>
                         <p>I'm Justine Paul Vitan, a mobile and web developer based in the Philippines. I've been building and designing mobile and web applications as a hobby and profession. For the past few years, I've published many applications to prove my competency in developing and designing software.</p>
@@ -47,6 +48,7 @@ $page = Page::findById(1);
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
                     <div class="content-sm col">
+                        <img alt="Wrench" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675020087/jpvitan-website/animated-icons/wrench_ebuzka.gif" width="80" height="80">
                         <h2>Professional and Technical Background</h2>
                         <h3>What Are Your Mobile Development Skills?</h3>
                         <p>I can develop and publish top-quality Android and iOS apps that are compliant with the policies imposed by Google and Apple. I have written and published applications for both of these platforms to demonstrate my competency in mobile app development.</p>

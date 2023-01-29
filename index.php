@@ -78,7 +78,7 @@ $page = Page::findById(1);
                 </div>
                 <div class="row justify-content-center text-center my-4">
                     <div class="col">
-                        <img class="img-fluid" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1674222170/jpvitan-website/earthquakeph-macbook_obwqqy.png" width="1366" height="786">
+                        <img class="img-fluid" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675031804/jpvitan-website/earthquakeph/macbook_hiiyhq.png" width="1366" height="786">
                     </div>
                 </div>
             </div>

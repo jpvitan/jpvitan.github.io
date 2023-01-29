@@ -63,7 +63,7 @@ $LIST_CARD = [
             "Use an Object Data Modeling (ODM) library like Mongoose.",
             "Impose authentication and authorization processes in back-end systems.",
             "Develop a well-designed REST API that follows modern standards.",
-            "Implement security measures to prevent or minimize cyberattacks (e.g., using prepared statements to guard against SQL injections)."
+            "Implement security measures to prevent or minimize cyberattacks."
         ],
         Icon::Check(),
         "background-color: #f4d03f; background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%); height: 100%;"

@@ -82,7 +82,7 @@ $NAVIGATION = [
 $NOTICE_CARD = [
     new NoticeCard(
         Icon::Information(),
-        "If you want to view a list of my published applications for Android, iOS, and the web, please click this <a href='https://jpvitan.com/apps'>link</a>. If you have any questions regarding the listed skills, feel free to ask by sending me an <a href='mailto:business@jpvitan.com'>email</a>.",
+        "If you want to view a list of my published applications for Android, iOS, and the web, please click this <a href='https://jpvitan.com/apps'>link</a>. If you have any questions regarding my listed skills, feel free to ask by sending me an <a href='mailto:business@jpvitan.com'>email</a>.",
         ""
     ),
     new NoticeCard(

@@ -121,6 +121,19 @@ $page = Page::findById(1);
                     </div>
                 </div>
             </div>
+            <div class="container-fluid px-4 py-4 mt-md-5">
+                <div class="row justify-content-center">
+                    <div class="content-sm col">
+                        <h3>Do You Participate in Programming Competitions?</h3>
+                        <p>Yes, I've participated in competitive programming competitions in the past. I won first place in a Java Programming Competition at De La Salle University–Dasmariñas and participated in Algolympics 2017 at UP Diliman.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center my-4">
+                    <div class="content-sm col">
+                        <img class="certificate-frame img-fluid" alt="Java Programming Competition" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675031579/jpvitan-website/certificates/java-programming-competition_f05s0b.jpg" width="1584" height="1137">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>

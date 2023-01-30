@@ -109,6 +109,33 @@
     }
 }
 
+// ** Footer **
+
+footer {
+    .icon-container {
+        @include shape.square($size: 30px, $border-radius: 10px);
+
+        background-color: var(--navigation-icon-background-color);
+
+        &:hover {
+            svg {
+                @include icon.svg($size: 18px, $color: var(--navigation-icon-hover-color));
+            }
+        }
+
+        svg {
+            @include position.relative($left: 50%, $top: 50%, $center: true);
+            @include icon.svg($size: 18px, $color: var(--navigation-icon-color));
+        }
+    }
+
+    p {
+        @include font.regular($font-size: 0.7rem);
+
+        margin-bottom: 0;
+    }
+}
+
 // ** ListCard **
 
 .list-card {

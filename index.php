@@ -136,6 +136,7 @@ $page = Page::findById(1);
             </div>
         </section>
     </main>
+    <?php require "common/footer.php"; ?>
 </body>
 
 </html>

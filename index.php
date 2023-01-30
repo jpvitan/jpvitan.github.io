@@ -39,7 +39,7 @@ $page = Page::findById(1);
                 </div>
                 <div class="row justify-content-center text-center my-4">
                     <div class="col">
-                        <img class="introduction-image img-fluid shadow-lg" alt="Introduction Image" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675032321/jpvitan-website/profile/introduction_llk6lc.jpg" width="776" height="970">
+                        <img class="frame img-fluid shadow-lg" alt="Introduction Image" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675032321/jpvitan-website/profile/introduction_llk6lc.jpg" width="776" height="970">
                     </div>
                 </div>
             </div>
@@ -112,7 +112,7 @@ $page = Page::findById(1);
                 </div>
                 <div class="row justify-content-center text-center my-4">
                     <div class="content-sm col">
-                        <img class="certificate-frame img-fluid" alt="Exam 98-361: Software Development Fundamentals" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675031580/jpvitan-website/certificates/mta-98-361_a8figc.png" width="1584" height="1224">
+                        <img class="frame img-fluid" alt="Exam 98-361: Software Development Fundamentals" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675031580/jpvitan-website/certificates/mta-98-361_a8figc.png" width="1584" height="1224">
                     </div>
                 </div>
                 <div class="row justify-content-center">

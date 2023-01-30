@@ -38,18 +38,14 @@
         max-width: 80rem;
     }
 
+    .frame {
+        border: 15px solid #ecf0f1;
+    }
+
     .title-card {
         @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118735/jpvitan-website/backgrounds/abstract_zbcyqk.jpg", $background-size: cover);
 
         border-radius: 20px;
-    }
-
-    .introduction-image {
-        border: 15px solid #ecf0f1;
-    }
-
-    .certificate-frame {
-        border: 15px solid #ecf0f1;
     }
 }
 

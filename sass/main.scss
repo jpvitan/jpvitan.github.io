@@ -46,14 +46,16 @@
         max-width: 80rem;
     }
 
-    .frame {
-        border: 15px solid #ecf0f1;
+    .background-abstract {
+        @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118735/jpvitan-website/backgrounds/abstract_zbcyqk.jpg", $background-size: cover);
     }
 
-    .title-card {
-        @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118735/jpvitan-website/backgrounds/abstract_zbcyqk.jpg", $background-size: cover);
+    .background-low-polygon-mountains {
+        @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118656/jpvitan-website/backgrounds/low-polygon-mountains_pfwc3i.jpg", $background-size: cover);
+    }
 
-        border-radius: 20px;
+    .frame {
+        border: 15px solid #ecf0f1;
     }
 }
 

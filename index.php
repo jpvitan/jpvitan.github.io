@@ -57,7 +57,7 @@ $page = Page::findById(1);
             </div>
             <div class="container-fluid px-0 px-md-4 py-4">
                 <div class="row justify-content-center g-0">
-                    <div class="content-md col">
+                    <div class="content-lg col">
                         <div class="row g-0 g-md-4">
                             <div class="col-md">
                                 <?php echo $LIST_CARD[0]->generate(); ?>
@@ -84,7 +84,7 @@ $page = Page::findById(1);
             </div>
             <div class="container-fluid px-0 px-md-4 py-4">
                 <div class="row justify-content-center g-0">
-                    <div class="content-md col">
+                    <div class="content-lg col">
                         <div class="row g-0 g-md-4">
                             <div class="col-md">
                                 <?php echo $LIST_CARD[2]->generate(); ?>

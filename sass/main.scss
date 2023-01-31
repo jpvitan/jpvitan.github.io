@@ -61,6 +61,19 @@
     .title-card {
         border-radius: 20px;
     }
+
+    .reach-card {
+        background-color: rgb(255 255 255 / 90%);
+        border-radius: 20px;
+
+        p {
+            @include font.regular($color: #636e72);
+        }
+
+        a {
+            @include font.regular($color: #3498db);
+        }
+    }
 }
 
 // ** Navigation **

@@ -121,6 +121,17 @@ $page = Page::findById(1);
                     </div>
                 </div>
             </div>
+            <div class="background-low-polygon-mountains container-fluid px-4 py-4 my-4">
+                <div class="row justify-content-center">
+                    <div class="content-xs col">
+                        <div class="reach-card card shadow-lg border-0 px-5 py-5 my-5">
+                            <img alt="Truck" src="https://res.cloudinary.com/dhv9gcew6/image/upload/v1675123312/jpvitan-website/icons/truck_onocha.gif" width="80" height="80">
+                            <h3>How Can I Reach You?</h3>
+                            <p>If you are a recruiter or a potential employer, the best way to reach me is through <a href="mailto:business@jpvitan.com">email</a>. I'll respond to your message or inquiry within a day if I don't have a busy schedule.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <?php require "common/footer.php"; ?>

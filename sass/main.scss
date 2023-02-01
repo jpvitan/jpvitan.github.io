@@ -108,18 +108,18 @@
 
     .bar {
         @include position.fixed($left: 0, $right: 0, $top: 0);
+        @include background.blur($background-color: var(--navigation-bar-background-color), $blur: var(--navigation-bar-background-blur));
     }
 
     .menu {
         @include position.fixed($left: 0, $right: 0, $top: 0, $bottom: 0);
+        @include background.blur($background-color: var(--navigation-menu-background-color), $blur: var(--navigation-menu-background-blur));
 
         overflow-y: auto;
     }
 
     .bar,
     .menu {
-        @include background.blur($background-color: var(--navigation-background-color), $blur: var(--navigation-background-blur));
-
         z-index: 1;
     }
 

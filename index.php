@@ -121,6 +121,8 @@ $page = Page::findById(1);
                     </div>
                 </div>
             </div>
+        </section>
+        <section>
             <div class="container-fluid px-0 px-md-4 py-4 mt-md-5">
                 <div class="row justify-content-center g-0 g-md-4">
                     <div class="content-lg col">

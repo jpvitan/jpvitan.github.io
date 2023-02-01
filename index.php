@@ -40,6 +40,27 @@ $page = Page::findById(1);
             </div>
         </section>
         <section>
+            <div class="container-fluid px-0 px-md-4 py-4">
+                <div class="row justify-content-center g-0 g-md-4">
+                    <div class="content-lg col">
+                        <div class="background-low-polygon-mountains reach-wrapper card shadow-lg border-0">
+                            <div class="container-fluid px-4 py-4">
+                                <div class="row justify-content-center">
+                                    <div class="content-xs col">
+                                        <div class="reach-card card shadow-lg border-0 px-5 py-5">
+                                            <img alt="Truck" src="https://res.cloudinary.com/dhv9gcew6/image/upload/v1675123312/jpvitan-website/icons/truck_onocha.gif" width="80" height="80">
+                                            <h3>How Can I Reach You?</h3>
+                                            <p>If you are a recruiter or a potential employer, the best way to reach me is through <a href="mailto:business@jpvitan.com">email</a>. I'll respond to your message or inquiry within a day if I don't have a busy schedule.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-md-5">
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
                     <div class="content-sm col">
@@ -65,15 +86,15 @@ $page = Page::findById(1);
                 </div>
             </div>
             <div class="container-fluid px-4 py-4 mt-md-5">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center text-center pb-4 pb-md-5">
+                    <div class="col">
+                        <img class="img-fluid" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675031804/jpvitan-website/earthquakeph/macbook_hiiyhq.png" width="1366" height="786">
+                    </div>
+                </div>
+                <div class="row justify-content-center pt-4 pt-md-5">
                     <div class="content-sm col">
                         <h3>What Are Your Web Development Skills?</h3>
                         <p>I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web standards to ensure a smooth and comfortable web experience for everyone.</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center text-center my-4">
-                    <div class="col">
-                        <img class="img-fluid" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675031804/jpvitan-website/earthquakeph/macbook_hiiyhq.png" width="1366" height="786">
                     </div>
                 </div>
             </div>
@@ -95,27 +116,6 @@ $page = Page::findById(1);
                 <div class="row justify-content-center">
                     <div class="content-sm col">
                         <?php echo $NOTICE_CARD[0]->generate(); ?>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container-fluid px-0 px-md-4 py-4 mt-md-5">
-                <div class="row justify-content-center g-0 g-md-4">
-                    <div class="content-lg col">
-                        <div class="background-low-polygon-mountains reach-wrapper card shadow-lg border-0">
-                            <div class="container-fluid px-4 py-4">
-                                <div class="row justify-content-center">
-                                    <div class="content-xs col">
-                                        <div class="reach-card card shadow-lg border-0 px-5 py-5">
-                                            <img alt="Truck" src="https://res.cloudinary.com/dhv9gcew6/image/upload/v1675123312/jpvitan-website/icons/truck_onocha.gif" width="80" height="80">
-                                            <h3>How Can I Reach You?</h3>
-                                            <p>If you are a recruiter or a potential employer, the best way to reach me is through <a href="mailto:business@jpvitan.com">email</a>. I'll respond to your message or inquiry within a day if I don't have a busy schedule.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -44,7 +44,7 @@ $page = Page::findById(1);
                 <div class="row justify-content-center">
                     <div class="content-sm col">
                         <img alt="Wrench" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675032003/jpvitan-website/icons/wrench_cdajdv.gif" width="80" height="80">
-                        <h2>Professional and Technical Background</h2>
+                        <h2>Skills</h2>
                         <h3>What Are Your Mobile Development Skills?</h3>
                         <p>I can develop and publish top-quality Android and iOS apps that are compliant with the policies imposed by Google and Apple. I have written and published applications for both of these platforms to demonstrate my competency in mobile app development.</p>
                     </div>

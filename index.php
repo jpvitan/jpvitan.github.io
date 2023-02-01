@@ -98,24 +98,6 @@ $page = Page::findById(1);
                     </div>
                 </div>
             </div>
-            <div class="container-fluid px-4 py-4 mt-md-5">
-                <div class="row justify-content-center">
-                    <div class="content-sm col">
-                        <h3>Are You Certified by Any Relevant Institution in Your Field?</h3>
-                        <p>Yes, I'm certified by Microsoft and other leading organizations in the software development industry. I've earned my title as a Microsoft Technology Associate (MTA) and a Certified Associate Programmer (CPA) from the C++ Institute, to name a few.</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center text-center my-4">
-                    <div class="content-sm col">
-                        <img class="frame img-fluid" alt="Exam 98-361: Software Development Fundamentals" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675031580/jpvitan-website/certificates/mta-98-361_a8figc.png" width="1584" height="1224">
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="content-sm col">
-                        <?php echo $NOTICE_CARD[1]->generate(); ?>
-                    </div>
-                </div>
-            </div>
         </section>
         <section>
             <div class="container-fluid px-0 px-md-4 py-4 mt-md-5">

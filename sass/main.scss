@@ -54,6 +54,10 @@
         @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118656/jpvitan-website/backgrounds/low-polygon-mountains_pfwc3i.jpg", $background-size: cover);
     }
 
+    .background-low-polygon-cave {
+        @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675393753/jpvitan-website/backgrounds/low-polygon-cave_c6octe.jpg", $background-size: cover);
+    }
+
     .frame {
         border: 15px solid #ecf0f1;
         border-radius: 30px;

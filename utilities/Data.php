@@ -87,7 +87,7 @@ $NOTICE_CARD = [
     ),
     new NoticeCard(
         Icon::Information(),
-        "You may verify my MTA certificates by entering the Credential Identification Code (as shown in the certificate) in <a href='https://portal.certiport.com/Portal/Pages/CredentialVerification.aspx'>verify.certiport.com</a>. If you want a complete list of my certificates, please click this <a href='https://drive.google.com/drive/folders/1XhgPGvFUXtb_99ATdpOCHK0p0pUJ3NZz'>link</a>.",
+        "You may verify my MTA certificates by entering the Credential Identification Code in <a href='https://portal.certiport.com/Portal/Pages/CredentialVerification.aspx'>verify.certiport.com</a>. If you want a complete list of my certificates, please click this <a href='https://drive.google.com/drive/folders/1XhgPGvFUXtb_99ATdpOCHK0p0pUJ3NZz'>link</a>.",
         ""
     )
 ];

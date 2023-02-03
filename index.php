@@ -120,6 +120,34 @@ $page = Page::findById(1);
                 </div>
             </div>
         </section>
+        <section class="mt-md-5">
+            <div class="container-fluid px-0 px-md-4 py-4">
+                <div class="row justify-content-center g-0 g-md-4">
+                    <div class="content-lg col">
+                        <div class="background-low-polygon-cave reach-wrapper card shadow-lg border-0">
+                            <div class="container-fluid px-4 py-4">
+                                <div class="row justify-content-center">
+                                    <div class="content-sm col">
+                                        <div class="reach-card card shadow-lg border-0 px-5 py-5">
+                                            <img alt="Layers" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675389822/jpvitan-website/icons/layers_xakdge.gif" width="80" height="80">
+                                            <h3>Are You Certified by Any Relevant Institution in Your Field?</h3>
+                                            <p>Yes, I'm certified by Microsoft and other leading organizations in the software development industry. I've earned my title as a Microsoft Technology Associate (MTA) and a Certified Associate Programmer (CPA) from the C++ Institute, to name a few.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid px-4 py-4">
+                <div class="row justify-content-center">
+                    <div class="content-sm col">
+                        <?php echo $NOTICE_CARD[1]->generate(); ?>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <?php require "common/footer.php"; ?>
 </body>

@@ -54,20 +54,11 @@
         @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118656/jpvitan-website/backgrounds/low-polygon-mountains_pfwc3i.jpg", $background-size: cover);
     }
 
-    .background-low-polygon-cave {
-        @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675393753/jpvitan-website/backgrounds/low-polygon-cave_c6octe.jpg", $background-size: cover);
-    }
-
     .frame {
-        border: 15px solid #ecf0f1;
-        border-radius: 30px;
+        border: 15px solid #f5f5f5;
     }
 
-    .title-card {
-        border-radius: 20px;
-    }
-
-    .reach-wrapper {
+    .image-card-wrapper {
         background-position: center;
         border-radius: 0px;
 
@@ -75,7 +66,15 @@
             border-radius: 40px;
         }
 
-        .reach-card {
+        p {
+            @include font.regular($color: #636e72);
+        }
+
+        a {
+            @include font.regular($color: #3498db);
+        }
+
+        .card {
             @include background.blur($background-color: rgb(255 255 255 / 90%), $blur: 15px);
 
             border-radius: 20px;
@@ -86,15 +85,11 @@
                 margin-top: 10rem;
                 margin-bottom: 10rem;
             }
-
-            p {
-                @include font.regular($color: #636e72);
-            }
-
-            a {
-                @include font.regular($color: #3498db);
-            }
         }
+    }
+
+    .title-card {
+        border-radius: 20px;
     }
 }
 

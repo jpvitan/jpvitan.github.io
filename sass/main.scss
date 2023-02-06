@@ -67,16 +67,11 @@
         }
 
         p {
-            @include font.regular($color: #636e72);
-        }
-
-        a {
-            @include font.regular($color: #3498db);
+            @include font.regular($font-weight: 700, $color: #fff);
         }
 
         .card {
-            @include background.blur($background-color: rgb(255 255 255 / 90%), $blur: 15px);
-
+            background: transparent;
             border-radius: 20px;
             margin-top: 3rem;
             margin-bottom: 3rem;

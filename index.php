@@ -14,6 +14,27 @@ $page = Page::findById(1);
 <body class="theme-light">
     <?php require "common/navigation.php"; ?>
     <main class="home">
+        <section>
+            <div class="container-fluid px-0 px-md-4 pb-4 py-md-4">
+                <div class="row justify-content-center g-0 g-md-4">
+                    <div class="content-lg col">
+                        <div class="background-low-polygon-mountains image-card-wrapper card shadow-lg border-0">
+                            <div class="container-fluid px-4 py-4">
+                                <div class="row justify-content-center">
+                                    <div class="content-xs col">
+                                        <div class="card border-0 text-center px-4 py-4">
+                                            <img class="rounded-circle shadow-lg mx-auto mb-4" alt="Selfie" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675296391/jpvitan-website/profile/selfie_zwuuz1.jpg" width="100" height="100">
+                                            <h1>Justine Paul Vitan</h1>
+                                            <p>Software Developer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- <section>
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
@@ -35,27 +56,6 @@ $page = Page::findById(1);
                         <p>I'm Justine Paul Vitan, a mobile and web developer based in the Philippines. I've been building and designing mobile and web applications as a hobby and profession. For the past few years, I've published many applications to prove my competency in developing and designing software.</p>
                         <p>Personality-wise, I love to describe myself as a tenacious person. I'm always insistent on finishing my goal, even if it gets to the point where I have to exhaust all my resources. This mindset allowed me to develop complex applications such as a satellite tracking app and a machine learning model that utilizes convolutional neural networks.</p>
                         <p>Moving forward, it is in my best interest to diversify, expand, and modernize my skill set to meet the demands of the industry. I'm always willing to learn and explore new things.</p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- <section>
-            <div class="container-fluid px-0 px-md-4 py-4">
-                <div class="row justify-content-center g-0 g-md-4">
-                    <div class="content-lg col">
-                        <div class="background-low-polygon-mountains image-card-wrapper card shadow-lg border-0">
-                            <div class="container-fluid px-4 py-4">
-                                <div class="row justify-content-center">
-                                    <div class="content-xs col">
-                                        <div class="card shadow-lg border-0 px-5 py-5">
-                                            <img class="rounded-circle shadow-lg mb-4" alt="Selfie" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675296391/jpvitan-website/profile/selfie_zwuuz1.jpg" width="70" height="70">
-                                            <h3>How Can I Reach You?</h3>
-                                            <p>If you are a recruiter or a potential employer, the best way to reach me is through <a href="mailto:business@jpvitan.com">email</a>. I'll respond to your message or inquiry within a day if I don't have a busy schedule.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -14,7 +14,7 @@ $page = Page::findById(1);
 <body class="theme-light">
     <?php require "common/navigation.php"; ?>
     <main class="home">
-        <section>
+        <!-- <section>
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
                     <div class="content-sm col">
@@ -24,8 +24,8 @@ $page = Page::findById(1);
                     </div>
                 </div>
             </div>
-        </section>
-        <section>
+        </section> -->
+        <!-- <section>
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
                     <div class="content-sm col">
@@ -38,8 +38,8 @@ $page = Page::findById(1);
                     </div>
                 </div>
             </div>
-        </section>
-        <section>
+        </section> -->
+        <!-- <section>
             <div class="container-fluid px-0 px-md-4 py-4">
                 <div class="row justify-content-center g-0 g-md-4">
                     <div class="content-lg col">
@@ -59,8 +59,8 @@ $page = Page::findById(1);
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="mt-md-5">
+        </section> -->
+        <!-- <section class="mt-md-5">
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
                     <div class="content-sm col">
@@ -119,8 +119,8 @@ $page = Page::findById(1);
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="mt-md-5">
+        </section> -->
+        <!-- <section class="mt-md-5">
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
                     <div class="content-sm col">
@@ -131,7 +131,7 @@ $page = Page::findById(1);
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
     <?php require "common/footer.php"; ?>
 </body>

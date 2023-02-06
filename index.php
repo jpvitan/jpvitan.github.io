@@ -35,6 +35,17 @@ $page = Page::findById(1);
                 </div>
             </div>
         </section>
+        <section>
+            <div class="container-fluid px-4 py-4">
+                <div class="row justify-content-center">
+                    <div class="content-sm col text-center">
+                        <h2>Introduction</h2>
+                        <h3>Tell Me About Yourself</h3>
+                        <p>I'm a mobile and web developer based in the Philippines. I've been building and designing mobile and web applications as a hobby and profession. For the past few years, I've published many applications to prove my competency in developing and designing software.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- <section>
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
@@ -42,20 +53,6 @@ $page = Page::findById(1);
                         <div class="title-card background-abstract card shadow-lg border-0 text-center px-5 py-5">
                             <h1 class="py-5">Justine Paul Vitan</h1>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- <section>
-            <div class="container-fluid px-4 py-4">
-                <div class="row justify-content-center">
-                    <div class="content-sm col">
-                        <img alt="Stars" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675032005/jpvitan-website/icons/stars_xhb4bm.gif" width="80" height="80">
-                        <h2>Introduction</h2>
-                        <h3>Tell Me About Yourself</h3>
-                        <p>I'm Justine Paul Vitan, a mobile and web developer based in the Philippines. I've been building and designing mobile and web applications as a hobby and profession. For the past few years, I've published many applications to prove my competency in developing and designing software.</p>
-                        <p>Personality-wise, I love to describe myself as a tenacious person. I'm always insistent on finishing my goal, even if it gets to the point where I have to exhaust all my resources. This mindset allowed me to develop complex applications such as a satellite tracking app and a machine learning model that utilizes convolutional neural networks.</p>
-                        <p>Moving forward, it is in my best interest to diversify, expand, and modernize my skill set to meet the demands of the industry. I'm always willing to learn and explore new things.</p>
                     </div>
                 </div>
             </div>

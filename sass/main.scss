@@ -57,30 +57,6 @@
     .frame {
         border: 15px solid #f5f5f5;
     }
-
-    .image-card-wrapper {
-        border-radius: 0px;
-
-        @media screen and (min-width: variable.$breakpoint-md) {
-            border-radius: 40px;
-        }
-
-        p {
-            @include font.regular($font-weight: 700, $color: #fff);
-        }
-
-        .card {
-            background: transparent;
-            border-radius: 20px;
-            margin-top: 3rem;
-            margin-bottom: 3rem;
-
-            @media screen and (min-width: variable.$breakpoint-md) {
-                margin-top: 10rem;
-                margin-bottom: 10rem;
-            }
-        }
-    }
 }
 
 // ** Navigation **
@@ -163,6 +139,32 @@ footer {
         @include font.regular($font-size: 0.7rem);
 
         margin-bottom: 0;
+    }
+}
+
+// ** ImageCard **
+
+.image-card {
+    border-radius: 0px;
+
+    @media screen and (min-width: variable.$breakpoint-md) {
+        border-radius: 40px;
+    }
+
+    p {
+        @include font.regular($font-weight: 700, $color: #fff);
+    }
+
+    .card {
+        background: transparent;
+        border-radius: 20px;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        @media screen and (min-width: variable.$breakpoint-md) {
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+        }
     }
 }
 

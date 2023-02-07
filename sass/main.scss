@@ -47,11 +47,11 @@
     }
 
     .background-abstract {
-        @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118735/jpvitan-website/backgrounds/abstract_zbcyqk.jpg", $background-size: cover);
+        @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118735/jpvitan-website/backgrounds/abstract_zbcyqk.jpg", $background-size: cover, $background-position: center);
     }
 
     .background-low-polygon-mountains {
-        @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118656/jpvitan-website/backgrounds/low-polygon-mountains_pfwc3i.jpg", $background-size: cover);
+        @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118656/jpvitan-website/backgrounds/low-polygon-mountains_pfwc3i.jpg", $background-size: cover, $background-position: center);
     }
 
     .frame {
@@ -59,7 +59,6 @@
     }
 
     .image-card-wrapper {
-        background-position: center;
         border-radius: 0px;
 
         @media screen and (min-width: variable.$breakpoint-md) {

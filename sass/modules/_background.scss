@@ -4,8 +4,9 @@
     -webkit-backdrop-filter: blur($blur);
 }
 
-@mixin image($url, $background-repeat: null, $background-size: null) {
+@mixin image($url, $background-repeat: null, $background-size: null, $background-position: null) {
     background-image: url($url);
     background-repeat: $background-repeat;
     background-size: $background-size;
+    background-position: $background-position;
 }

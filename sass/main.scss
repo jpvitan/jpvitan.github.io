@@ -166,6 +166,25 @@ footer {
     }
 }
 
+// ** BasicCard **
+
+.basic-card {
+    border-radius: 25px;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #fff;
+    }
+
+    p {
+        @include font.regular($font-weight: 500, $color: #fff);
+    }
+}
+
 // ** ListCard **
 
 .list-card {
@@ -204,7 +223,7 @@ footer {
 
 .notice-card {
     background-color: #ecf0f1;
-    border-radius: 20px;
+    border-radius: 25px;
 
     svg {
         @include icon.svg($size: 15px, $color: #636e72);

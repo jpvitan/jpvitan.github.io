@@ -5,7 +5,9 @@
 @use "./modules/shape";
 @use "./modules/variable";
 
-// ** Home **
+// ** Pages **
+
+// Home
 
 .home {
     h1 {
@@ -29,37 +31,11 @@
     p {
         @include font.regular;
     }
-
-    .content-xs {
-        max-width: 35rem;
-    }
-
-    .content-sm {
-        max-width: 50rem;
-    }
-
-    .content-md {
-        max-width: 65rem;
-    }
-
-    .content-lg {
-        max-width: 80rem;
-    }
-
-    .background-abstract {
-        @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118735/jpvitan-website/backgrounds/abstract_zbcyqk.jpg", $background-size: cover, $background-position: center);
-    }
-
-    .background-low-polygon-mountains {
-        @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118656/jpvitan-website/backgrounds/low-polygon-mountains_pfwc3i.jpg", $background-size: cover, $background-position: center);
-    }
-
-    .frame {
-        border: 15px solid #f5f5f5;
-    }
 }
 
-// ** Navigation **
+// ** Common **
+
+// Navigation
 
 .navigation {
     button {
@@ -115,7 +91,7 @@
     }
 }
 
-// ** Footer **
+// Footer
 
 footer {
     .icon-container {
@@ -142,7 +118,9 @@ footer {
     }
 }
 
-// ** ImageCard **
+// ** Cards **
+
+// ImageCard
 
 .image-card {
     border-radius: 0px;
@@ -168,7 +146,7 @@ footer {
     }
 }
 
-// ** BasicCard **
+// BasicCard
 
 .basic-card {
     border-radius: 25px;
@@ -187,7 +165,7 @@ footer {
     }
 }
 
-// ** ListCard **
+// ListCard
 
 .list-card {
     border-radius: 0px;
@@ -221,7 +199,7 @@ footer {
     }
 }
 
-// ** NoticeCard **
+// NoticeCard
 
 .notice-card {
     background-color: #ecf0f1;
@@ -240,4 +218,36 @@ footer {
     a {
         @include font.regular($color: #3498db);
     }
+}
+
+// ** Backgrounds **
+
+.background-abstract {
+    @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118735/jpvitan-website/backgrounds/abstract_zbcyqk.jpg", $background-size: cover, $background-position: center);
+}
+
+.background-low-polygon-mountains {
+    @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118656/jpvitan-website/backgrounds/low-polygon-mountains_pfwc3i.jpg", $background-size: cover, $background-position: center);
+}
+
+// ** Utilities **
+
+.content-xs {
+    max-width: 35rem;
+}
+
+.content-sm {
+    max-width: 50rem;
+}
+
+.content-md {
+    max-width: 65rem;
+}
+
+.content-lg {
+    max-width: 80rem;
+}
+
+.frame {
+    border: 15px solid #f5f5f5;
 }

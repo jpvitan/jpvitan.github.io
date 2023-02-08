@@ -79,6 +79,37 @@ $page = Page::findById(1);
                     </div>
                 </div>
             </div>
+            <div class="container-fluid px-4 py-3">
+                <div class="row justify-content-center">
+                    <div class="content-lg col">
+                        <div class="row">
+                            <div class="col-md">
+                                <div class="background-wavy-abstract basic-card card shadow-lg border-0 px-5 py-5">
+                                    <h3>What Are Your Web Development Skills?</h3>
+                                    <p>I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web practices and standards to ensure a smooth and comfortable web experience for everyone.</p>
+                                </div>
+                            </div>
+                            <div class="col-md">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid px-0 px-md-4 py-3">
+                <div class="row justify-content-center g-0">
+                    <div class="content-lg col">
+                        <div class="row g-0 g-md-4">
+                            <div class="col-md">
+                                <?php echo $LIST_CARD[2]->generate(); ?>
+                            </div>
+                            <div class="col-md">
+                                <?php echo $LIST_CARD[3]->generate(); ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- <section class="mt-md-5">
             <div class="container-fluid px-4 py-4">

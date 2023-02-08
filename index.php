@@ -53,7 +53,7 @@ $page = Page::findById(1);
                         <h2>Skills</h2>
                         <div class="row">
                             <div class="col-md">
-                                <div class="background-abstract basic-card card shadow-lg border-0 px-5 py-5">
+                                <div class="background-wavy-abstract basic-card card shadow-lg border-0 px-5 py-5">
                                     <h3>What Are Your Mobile Development Skills?</h3>
                                     <p>I can develop and publish top-quality Android and iOS apps that are compliant with the policies imposed by Google and Apple. I have written and published applications for both of these platforms to demonstrate my competency in mobile app development.</p>
                                 </div>

@@ -222,8 +222,8 @@ footer {
 
 // ** Backgrounds **
 
-.background-abstract {
-    @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118735/jpvitan-website/backgrounds/abstract_zbcyqk.jpg", $background-size: cover, $background-position: center);
+.background-wavy-abstract {
+    @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675852937/jpvitan-website/backgrounds/wavy-abstract_knmpgf.jpg", $background-size: cover, $background-position: center);
 }
 
 .background-low-polygon-mountains {

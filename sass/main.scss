@@ -231,8 +231,8 @@ footer {
     @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675852937/jpvitan-website/backgrounds/wavy-abstract_knmpgf.jpg", $background-size: cover, $background-position: center);
 }
 
-.background-gradient-waves {
-    @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675857226/jpvitan-website/backgrounds/gradient-waves_wbwitc.jpg", $background-size: cover, $background-position: center);
+.background-wavy-colorful {
+    @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675863220/jpvitan-website/backgrounds/wavy-colorful_km7bti.jpg", $background-size: cover, $background-position: center);
 }
 
 // ** Utilities **

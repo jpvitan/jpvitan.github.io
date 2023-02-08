@@ -87,7 +87,7 @@ $page = Page::findById(1);
                         <h2>Web</h2>
                         <div class="row">
                             <div class="col-md">
-                                <div class="background-wavy-abstract basic-card card shadow-lg border-0 px-5 py-5">
+                                <div class="background-wavy-colorful basic-card card shadow-lg border-0 px-5 py-5">
                                     <h3>What Are Your Web Development Skills?</h3>
                                     <p>I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web practices and standards to ensure a smooth and comfortable web experience for everyone.</p>
                                 </div>

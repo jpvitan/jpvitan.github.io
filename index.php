@@ -50,7 +50,7 @@ $page = Page::findById(1);
             <div class="container-fluid px-4 py-3">
                 <div class="row justify-content-center">
                     <div class="content-lg col">
-                        <h2>Skills</h2>
+                        <h2>Mobile</h2>
                         <div class="row">
                             <div class="col-md">
                                 <div class="background-wavy-abstract basic-card card shadow-lg border-0 px-5 py-5">
@@ -79,9 +79,12 @@ $page = Page::findById(1);
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="mt-md-5">
             <div class="container-fluid px-4 py-3">
                 <div class="row justify-content-center">
                     <div class="content-lg col">
+                        <h2>Web</h2>
                         <div class="row">
                             <div class="col-md">
                                 <div class="background-wavy-abstract basic-card card shadow-lg border-0 px-5 py-5">

@@ -235,6 +235,10 @@ footer {
     @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675863220/jpvitan-website/backgrounds/wavy-colorful_km7bti.jpg", $background-size: cover, $background-position: center);
 }
 
+.background-clouds {
+    background-color: #ecf0f1;
+}
+
 // ** Utilities **
 
 .content-xs {

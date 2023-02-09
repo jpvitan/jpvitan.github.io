@@ -120,66 +120,6 @@ $page = Page::findById(1);
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
                     <div class="content-sm col">
-                        <img alt="Wrench" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675032003/jpvitan-website/icons/wrench_cdajdv.gif" width="80" height="80">
-                        <h2>Skills</h2>
-                        <h3>What Are Your Mobile Development Skills?</h3>
-                        <p>I can develop and publish top-quality Android and iOS apps that are compliant with the policies imposed by Google and Apple. I have written and published applications for both of these platforms to demonstrate my competency in mobile app development.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid px-0 px-md-4 py-4">
-                <div class="row justify-content-center g-0">
-                    <div class="content-lg col">
-                        <div class="row g-0 g-md-4">
-                            <div class="col-md">
-                                <?php echo $LIST_CARD[0]->generate(); ?>
-                            </div>
-                            <div class="col-md">
-                                <?php echo $LIST_CARD[1]->generate(); ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid px-4 py-4 mt-md-5">
-                <div class="row justify-content-center text-center pb-4 pb-md-5">
-                    <div class="col">
-                        <img class="img-fluid" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675031804/jpvitan-website/earthquakeph/macbook_hiiyhq.png" width="1366" height="786">
-                    </div>
-                </div>
-                <div class="row justify-content-center pt-4 pt-md-5">
-                    <div class="content-sm col">
-                        <h3>What Are Your Web Development Skills?</h3>
-                        <p>I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web standards to ensure a smooth and comfortable web experience for everyone.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid px-0 px-md-4 py-4">
-                <div class="row justify-content-center g-0">
-                    <div class="content-lg col">
-                        <div class="row g-0 g-md-4">
-                            <div class="col-md">
-                                <?php echo $LIST_CARD[2]->generate(); ?>
-                            </div>
-                            <div class="col-md">
-                                <?php echo $LIST_CARD[3]->generate(); ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid px-4 py-4">
-                <div class="row justify-content-center">
-                    <div class="content-sm col">
-                        <?php echo $NOTICE_CARD[0]->generate(); ?>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- <section class="mt-md-5">
-            <div class="container-fluid px-4 py-4">
-                <div class="row justify-content-center">
-                    <div class="content-sm col">
                         <img alt="Layers" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675389822/jpvitan-website/icons/layers_xakdge.gif" width="80" height="80">
                         <h2>Certifications</h2>
                         <h3>Are You Certified by Any Relevant Institution in Your Field?</h3>

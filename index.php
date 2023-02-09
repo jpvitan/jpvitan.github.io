@@ -92,8 +92,10 @@ $page = Page::findById(1);
                                     <p>I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web practices and standards to ensure a smooth and comfortable web experience for everyone.</p>
                                 </div>
                             </div>
-                            <div class="col-md">
-
+                            <div class="col-md mt-3 mt-md-0">
+                                <div class="basic-card card shadow-lg border-0 px-5 py-5">
+                                    <img class="img-fluid" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675031804/jpvitan-website/earthquakeph/macbook_hiiyhq.png" width="1366" height="786">
+                                </div>
                             </div>
                         </div>
                     </div>

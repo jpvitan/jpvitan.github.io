@@ -66,7 +66,7 @@ $page = Page::findById(1);
                 </div>
             </div>
             <div class="container-fluid px-0 px-md-4 py-3">
-                <div class="row justify-content-center g-0">
+                <div class="row justify-content-center g-0 g-md-4">
                     <div class="content-lg col">
                         <div class="row g-0 g-md-4">
                             <div class="col-md">
@@ -100,7 +100,7 @@ $page = Page::findById(1);
                 </div>
             </div>
             <div class="container-fluid px-0 px-md-4 py-3">
-                <div class="row justify-content-center g-0">
+                <div class="row justify-content-center g-0 g-md-4">
                     <div class="content-lg col">
                         <div class="row g-0 g-md-4">
                             <div class="col-md">

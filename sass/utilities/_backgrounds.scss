@@ -1,17 +1,17 @@
 @use "../utilities/mixins/background";
 
-.background-clouds {
+.background-color-clouds {
     background-color: #ecf0f1;
 }
 
-.background-low-polygon-mountains {
+.background-image-low-polygon-mountains {
     @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118656/jpvitan-website/backgrounds/low-polygon-mountains_pfwc3i.jpg", $background-size: cover, $background-position: center);
 }
 
-.background-wavy-abstract {
+.background-image-wavy-abstract {
     @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675852937/jpvitan-website/backgrounds/wavy-abstract_knmpgf.jpg", $background-size: cover, $background-position: center);
 }
 
-.background-wavy-colorful {
+.background-image-wavy-colorful {
     @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675863220/jpvitan-website/backgrounds/wavy-colorful_km7bti.jpg", $background-size: cover, $background-position: center);
 }

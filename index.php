@@ -18,7 +18,7 @@ $page = Page::findById(1);
             <div class="container-fluid px-0 px-md-4 pb-4 py-md-4">
                 <div class="row justify-content-center g-0 g-md-4">
                     <div class="content-lg col">
-                        <div class="background-low-polygon-mountains image-card card shadow-lg border-0">
+                        <div class="background-image-low-polygon-mountains image-card card shadow-lg border-0">
                             <div class="container-fluid px-4 py-4">
                                 <div class="row justify-content-center">
                                     <div class="content-xs col">
@@ -53,13 +53,13 @@ $page = Page::findById(1);
                         <h2>Mobile</h2>
                         <div class="row">
                             <div class="col-md">
-                                <div class="background-wavy-abstract basic-card card shadow-lg border-0 px-5 py-5">
+                                <div class="background-image-wavy-abstract basic-card card shadow-lg border-0 px-5 py-5">
                                     <h3>What Are Your Mobile Development Skills?</h3>
                                     <p>I can develop and publish top-quality Android and iOS apps that are compliant with the policies imposed by Google and Apple. I have written and published applications for both of these platforms to demonstrate my competency in mobile app development.</p>
                                 </div>
                             </div>
                             <div class="col-md mt-3 mt-md-0">
-                                <div class="background-clouds basic-card card shadow-lg border-0 px-5 py-5">
+                                <div class="background-color-clouds basic-card card shadow-lg border-0 px-5 py-5">
                                     <img class="img-fluid" alt="Samsung" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675963744/jpvitan-website/sattrack-x/samsung_dgom4z.png" width="1840" height="3600">
                                 </div>
                             </div>
@@ -89,13 +89,13 @@ $page = Page::findById(1);
                         <h2>Web</h2>
                         <div class="row">
                             <div class="col-md">
-                                <div class="background-wavy-abstract basic-card card shadow-lg border-0 px-5 py-5">
+                                <div class="background-image-wavy-abstract basic-card card shadow-lg border-0 px-5 py-5">
                                     <h3>What Are Your Web Development Skills?</h3>
                                     <p>I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web practices and standards to ensure a smooth and comfortable web experience for everyone.</p>
                                 </div>
                             </div>
                             <div class="col-md mt-3 mt-md-0">
-                                <div class="background-clouds basic-card card shadow-lg border-0 px-5 py-5">
+                                <div class="background-color-clouds basic-card card shadow-lg border-0 px-5 py-5">
                                     <img class="img-fluid" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675967562/jpvitan-website/earthquakeph/macbook_iwbznj.png" width="3287" height="1884">
                                 </div>
                             </div>

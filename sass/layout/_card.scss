@@ -1,0 +1,99 @@
+@use "../utilities/mixins/background";
+@use "../utilities/mixins/font";
+@use "../utilities/mixins/icon";
+@use "../utilities/mixins/position";
+@use "../utilities/mixins/shape";
+@use "../utilities/variables";
+
+.image-card {
+    border-radius: 0px;
+
+    @media screen and (min-width: variables.$breakpoint-md) {
+        border-radius: 40px;
+    }
+
+    p {
+        @include font.regular($font-weight: 700, $color: #fff);
+    }
+
+    .card {
+        background: transparent;
+        border-radius: 20px;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        @media screen and (min-width: variables.$breakpoint-md) {
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+        }
+    }
+}
+
+.basic-card {
+    border-radius: 25px;
+    height: 100%;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #fff;
+    }
+
+    p {
+        @include font.regular($font-weight: 500, $color: #fff);
+    }
+}
+
+.list-card {
+    border-radius: 0px;
+
+    @media screen and (min-width: variables.$breakpoint-md) {
+        border-radius: 25px;
+    }
+
+    .icon-row {
+        svg {
+            @include icon.svg($size: 30px, $color: #fff);
+        }
+    }
+
+    .title-row {
+        p {
+            @include font.regular($font-weight: 700, $color: #fff);
+        }
+    }
+
+    .item-row {
+        svg {
+            @include icon.svg($size: 15px, $color: #fff);
+        }
+
+        p {
+            @include font.regular($font-weight: 500, $color: #fff);
+
+            margin-bottom: 0;
+        }
+    }
+}
+
+.notice-card {
+    background-color: #ecf0f1;
+    border-radius: 25px;
+
+    svg {
+        @include icon.svg($size: 15px, $color: #636e72);
+    }
+
+    p {
+        @include font.regular($color: #636e72);
+
+        margin-bottom: 0;
+    }
+
+    a {
+        @include font.regular($color: #3498db);
+    }
+}

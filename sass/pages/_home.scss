@@ -1,0 +1,30 @@
+@use "../utilities/mixins/background";
+@use "../utilities/mixins/font";
+@use "../utilities/mixins/icon";
+@use "../utilities/mixins/position";
+@use "../utilities/mixins/shape";
+@use "../utilities/variables";
+
+.home {
+    h1 {
+        @include font.heading($font-size: calc(1.375rem + 1.5vw), $color: #fff, $breakpoint: variables.$breakpoint-xl, $breakpoint-font-size: 2.5rem);
+
+        margin-bottom: 0rem;
+    }
+
+    h2 {
+        @include font.heading($font-size: calc(1.375rem + 1.5vw), $color: #000, $breakpoint: variables.$breakpoint-xl, $breakpoint-font-size: 2.5rem);
+
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        @include font.heading($font-size: 1.4rem, $color: #636e72, $breakpoint: null, $breakpoint-font-size: null);
+
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        @include font.regular;
+    }
+}

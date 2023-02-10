@@ -35,7 +35,7 @@ $page = Page::findById(1);
                 </div>
             </div>
         </section>
-        <section>
+        <section class="mt-5">
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
                     <div class="content-sm col text-center">
@@ -45,7 +45,7 @@ $page = Page::findById(1);
                 </div>
             </div>
         </section>
-        <section class="mt-md-5">
+        <section class="mt-5">
             <div class="container-fluid px-4 py-3">
                 <div class="row justify-content-center">
                     <div class="content-lg col">
@@ -81,7 +81,7 @@ $page = Page::findById(1);
                 </div>
             </div>
         </section>
-        <section class="mt-md-5">
+        <section class="mt-5">
             <div class="container-fluid px-4 py-3">
                 <div class="row justify-content-center">
                     <div class="content-lg col">

@@ -40,8 +40,7 @@ $page = Page::findById(1);
                 <div class="row justify-content-center">
                     <div class="content-sm col text-center">
                         <h2>Introduction</h2>
-                        <h3>Tell Me About Yourself</h3>
-                        <p>I'm a mobile and web developer based in the Philippines. I've been building and designing mobile and web applications as a hobby and profession. For the past few years, I've published many applications to prove my competency in developing and designing software.</p>
+                        <p>I'm a mobile and web developer who writes production-grade software that follows modern standards and best practices to ensure a smooth and comfortable mobile and web experience for everyone.</p>
                     </div>
                 </div>
             </div>

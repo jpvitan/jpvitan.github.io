@@ -60,7 +60,7 @@ $page = Page::findById(1);
                             </div>
                             <div class="col-md mt-3 mt-md-0">
                                 <div class="background-color-clouds basic-card card shadow-lg border-0 px-5 py-5">
-                                    <img class="img-fluid" alt="Samsung" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675963744/jpvitan-website/sattrack-x/samsung_dgom4z.png" width="1840" height="3600">
+                                    <img class="img-fluid mx-auto my-auto" alt="Samsung" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675963744/jpvitan-website/sattrack-x/samsung_dgom4z.png" width="1840" height="3600">
                                 </div>
                             </div>
                         </div>
@@ -96,7 +96,7 @@ $page = Page::findById(1);
                             </div>
                             <div class="col-md mt-3 mt-md-0">
                                 <div class="background-color-clouds basic-card card shadow-lg border-0 px-5 py-5">
-                                    <img class="img-fluid" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675967562/jpvitan-website/earthquakeph/macbook_iwbznj.png" width="3287" height="1884">
+                                    <img class="img-fluid mx-auto my-auto" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675967562/jpvitan-website/earthquakeph/macbook_iwbznj.png" width="3287" height="1884">
                                 </div>
                             </div>
                         </div>

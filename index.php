@@ -39,7 +39,7 @@ $page = Page::findById(1);
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
                     <div class="content-sm col text-center">
-                        <h2>Introduction</h2>
+                        <h2>Hello!</h2>
                         <p>I'm a mobile and web developer who writes production-grade software that follows modern standards and best practices to ensure a smooth and comfortable mobile and web experience for everyone.</p>
                     </div>
                 </div>

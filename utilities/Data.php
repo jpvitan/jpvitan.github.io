@@ -19,7 +19,7 @@ $LIST_CARD = [
             "Follow the recommended software architecture for Android applications to maximize scalability and efficiency."
         ],
         Icon::Check(),
-        "background-color: #0093e9; background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%); height: 100%;"
+        "background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%); height: 100%;"
     ),
     new ListCard(
         Icon::Apple(),
@@ -35,7 +35,7 @@ $LIST_CARD = [
             "Follow the recommended software architecture for iOS applications to maximize scalability and efficiency."
         ],
         Icon::Check(),
-        "background-color: #4158d0; background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%); height: 100%;"
+        "background-color: #f4d03f; background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%); height: 100%;"
     ),
     new ListCard(
         Icon::Grid(),

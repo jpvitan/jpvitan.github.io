@@ -30,17 +30,8 @@
     border-radius: 25px;
     height: 100%;
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: #fff;
-    }
-
     p {
-        @include font.regular($font-weight: 500, $color: #fff);
+        font-weight: 500;
     }
 }
 

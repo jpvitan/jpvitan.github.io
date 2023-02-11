@@ -61,13 +61,15 @@ $page = Page::findById(1);
                         <div class="row">
                             <div class="col-md">
                                 <div class="background-image-wavy-abstract basic-card card shadow-lg border-0 px-5 py-5">
-                                    <h3>What Are Your Mobile Development Skills?</h3>
-                                    <p>I can develop and publish top-quality Android and iOS apps that are compliant with the policies imposed by Google and Apple. I have written and published applications for both of these platforms to demonstrate my competency in mobile app development.</p>
+                                    <h3 class="text-light">What Are Your Mobile Development Skills?</h3>
+                                    <p class="text-light">I can develop and publish top-quality Android and iOS apps that are compliant with the policies imposed by Google and Apple. I have written and published applications for both of these platforms to demonstrate my competency in mobile app development.</p>
                                 </div>
                             </div>
                             <div class="col-md mt-3 mt-md-0">
-                                <div class="background-color-clouds basic-card card shadow-lg border-0 px-5 py-5">
-                                    <img class="img-fluid mx-auto my-auto" alt="Samsung" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675963744/jpvitan-website/sattrack-x/samsung_dgom4z.png" width="1840" height="3600">
+                                <div class="background-color-clouds basic-card card shadow-lg border-0 px-5 pt-5">
+                                    <h3 class="text-dark">SatTrack-X by Justine Paul Vitan</h3>
+                                    <p>Get ready to track satellites with SatTrack-X! Our app offers a wide variety of features that makes satellite tracking fun and simple. Whether you're a beginner or an expert in satellite tracking, our app has got you covered!</p>
+                                    <img class="img-fluid mx-auto mt-5" alt="Samsung" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676133708/jpvitan-website/sattrack-x/samsung_kpuoje.png" width="1527" height="2273">
                                 </div>
                             </div>
                         </div>

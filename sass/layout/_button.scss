@@ -1,0 +1,7 @@
+@use "../utilities/mixins/font";
+
+.standard-button {
+    @include font.regular($font-weight: 600, $color: null);
+
+    border-radius: 20px;
+}

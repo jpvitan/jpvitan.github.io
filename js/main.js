@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     setupNavigation()
+    AOS.init();
 })
 
 const setupNavigation = () => {

@@ -22,10 +22,10 @@ $page = Page::findById(1);
                             <div class="container-fluid px-4 py-4">
                                 <div class="row justify-content-center">
                                     <div class="content-xs col">
-                                        <div class="card border-0 text-center px-4 py-4">
+                                        <div class="background-transparent card border-0 text-center px-4 py-4">
                                             <img class="rounded-circle shadow-lg mx-auto mb-4" alt="Selfie" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675296391/jpvitan-website/profile/selfie_zwuuz1.jpg" width="100" height="100">
-                                            <h1>Justine Paul Vitan</h1>
-                                            <p>Software Developer</p>
+                                            <h1 class="font-color-white mb-0">Justine Paul Vitan</h1>
+                                            <p class="font-color-white fw-bold">Software Developer</p>
                                         </div>
                                     </div>
                                 </div>
@@ -43,10 +43,10 @@ $page = Page::findById(1);
                         <p>I'm a mobile and web developer who writes production-grade software that follows modern standards and best practices to ensure a smooth and comfortable mobile and web experience for everyone.</p>
                         <div class="row justify-content-center">
                             <div class="col-auto">
-                                <a class="standard-button background-color-peter-river font-color-white btn shadow-lg px-4 py-2 mt-4" href="mailto:business@jpvitan.com">Let's Talk</a>
+                                <a class="basic-button background-color-peter-river font-color-white btn shadow-lg px-4 py-2 mt-4" href="mailto:business@jpvitan.com">Let's Talk</a>
                             </div>
                             <div class="col-auto">
-                                <a class="standard-button font-color-peter-river btn px-4 py-2 mt-4" href="https://jpvitan.com/apps">View Apps</a>
+                                <a class="basic-button font-color-peter-river btn px-4 py-2 mt-4" href="https://jpvitan.com/apps">View Apps</a>
                             </div>
                         </div>
                     </div>
@@ -61,13 +61,13 @@ $page = Page::findById(1);
                         <div class="row">
                             <div class="col-md">
                                 <div class="background-image-wavy-abstract basic-card card shadow-lg border-0 px-5 py-5">
-                                    <h3 class="text-light">What Are Your Mobile Development Skills?</h3>
-                                    <p class="text-light">I can develop and publish top-quality Android and iOS apps that are compliant with the policies imposed by Google and Apple. I have written and published applications for both of these platforms to demonstrate my competency in mobile app development.</p>
+                                    <h3 class="font-color-white">What Are Your Mobile Development Skills?</h3>
+                                    <p class="font-color-white">I can develop and publish top-quality Android and iOS apps that are compliant with the policies imposed by Google and Apple. I have written and published applications for both of these platforms to demonstrate my competency in mobile app development.</p>
                                 </div>
                             </div>
                             <div class="col-md mt-3 mt-md-0">
                                 <div class="background-color-clouds basic-card card shadow-lg border-0 px-5 pt-5">
-                                    <h3 class="text-dark">SatTrack-X by Justine Paul Vitan</h3>
+                                    <h3>SatTrack-X by Justine Paul Vitan</h3>
                                     <p>Get ready to track satellites with SatTrack-X! Our app offers a wide variety of features that makes satellite tracking fun and simple. Whether you're a beginner or an expert in satellite tracking, our app has got you covered!</p>
                                     <img class="img-fluid mx-auto mt-5" alt="Samsung" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676133708/jpvitan-website/sattrack-x/samsung_kpuoje.png" width="1527" height="2273">
                                 </div>
@@ -99,8 +99,8 @@ $page = Page::findById(1);
                         <div class="row">
                             <div class="col-md">
                                 <div class="background-image-wavy-abstract basic-card card shadow-lg border-0 px-5 py-5">
-                                    <h3>What Are Your Web Development Skills?</h3>
-                                    <p>I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web practices and standards to ensure a smooth and comfortable web experience for everyone.</p>
+                                    <h3 class="font-color-white">What Are Your Web Development Skills?</h3>
+                                    <p class="font-color-white">I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web practices and standards to ensure a smooth and comfortable web experience for everyone.</p>
                                 </div>
                             </div>
                             <div class="col-md mt-3 mt-md-0">

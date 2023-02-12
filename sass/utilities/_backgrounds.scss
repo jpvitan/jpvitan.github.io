@@ -1,5 +1,9 @@
 @use "../utilities/mixins";
 
+.background-transparent {
+    background: transparent;
+}
+
 .background-color-clouds {
     background-color: #ecf0f1;
 }

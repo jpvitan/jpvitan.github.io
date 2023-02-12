@@ -62,12 +62,14 @@ $page = Page::findById(1);
                             <div class="col-md">
                                 <div class="background-image-wavy-abstract basic-card card shadow-lg border-0 px-5 py-5">
                                     <h3 class="font-color-white">What Are Your Mobile Development Skills?</h3>
+                                    <p class="fw-bold font-color-white">Android and iOS Development</p>
                                     <p class="font-color-white">I can develop and publish top-quality Android and iOS apps that are compliant with the policies imposed by Google and Apple. I have written and published applications for both of these platforms to demonstrate my competency in mobile app development.</p>
                                 </div>
                             </div>
                             <div class="col-md mt-3 mt-md-0">
                                 <div class="background-color-clouds basic-card card shadow-lg border-0 px-5 pt-5">
-                                    <h3>SatTrack-X by Justine Paul Vitan</h3>
+                                    <h3>Featured Mobile App</h3>
+                                    <p class="fw-bold">SatTrack-X by Justine Paul Vitan</p>
                                     <p>Get ready to track satellites with SatTrack-X! Our app offers a wide variety of features that makes satellite tracking fun and simple. Whether you're a beginner or an expert in satellite tracking, our app has got you covered!</p>
                                     <img class="img-fluid mx-auto mt-5" alt="Samsung" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676133708/jpvitan-website/sattrack-x/samsung_kpuoje.png" width="1527" height="2273">
                                 </div>
@@ -100,12 +102,16 @@ $page = Page::findById(1);
                             <div class="col-md">
                                 <div class="background-image-wavy-abstract basic-card card shadow-lg border-0 px-5 py-5">
                                     <h3 class="font-color-white">What Are Your Web Development Skills?</h3>
-                                    <p class="font-color-white">I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web practices and standards to ensure a smooth and comfortable web experience for everyone.</p>
+                                    <p class="fw-bold font-color-white">Front-End and Back-End Development</p>
+                                    <p class="font-color-white">I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web standards to ensure a smooth and comfortable web experience for everyone.</p>
                                 </div>
                             </div>
                             <div class="col-md mt-3 mt-md-0">
                                 <div class="background-color-clouds basic-card card shadow-lg border-0 px-5 py-5">
-                                    <img class="img-fluid mx-auto my-auto" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675967562/jpvitan-website/earthquakeph/macbook_iwbznj.png" width="3287" height="1884">
+                                    <h3>Featured Web App</h3>
+                                    <p class="fw-bold">EarthquakePH by Justine Paul Vitan</p>
+                                    <p>A highly customizable real-time and progressive web application that tracks and monitors the latest earthquake recorded by the United States Geological Survey within the Philippines and the world.</p>
+                                    <img class="img-fluid mx-auto mt-5" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675967562/jpvitan-website/earthquakeph/macbook_iwbznj.png" width="3287" height="1884">
                                 </div>
                             </div>
                         </div>

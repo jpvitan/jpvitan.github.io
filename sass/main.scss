@@ -1,7 +1,8 @@
 @use "./pages/home";
 
-@use "./layout/button";
-@use "./layout/card";
+@use "./components/button";
+@use "./components/card";
+
 @use "./layout/footer";
 @use "./layout/navigation";
 

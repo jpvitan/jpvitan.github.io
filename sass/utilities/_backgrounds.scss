@@ -1,4 +1,4 @@
-@use "../utilities/mixins/background";
+@use "../utilities/mixins";
 
 .background-color-clouds {
     background-color: #ecf0f1;
@@ -9,13 +9,13 @@
 }
 
 .background-image-low-polygon-mountains {
-    @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118656/jpvitan-website/backgrounds/low-polygon-mountains_pfwc3i.jpg", $background-size: cover, $background-position: center);
+    @include mixins.background-image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118656/jpvitan-website/backgrounds/low-polygon-mountains_pfwc3i.jpg");
 }
 
 .background-image-wavy-abstract {
-    @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675852937/jpvitan-website/backgrounds/wavy-abstract_knmpgf.jpg", $background-size: cover, $background-position: center);
+    @include mixins.background-image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675852937/jpvitan-website/backgrounds/wavy-abstract_knmpgf.jpg");
 }
 
 .background-image-wavy-colorful {
-    @include background.image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675863220/jpvitan-website/backgrounds/wavy-colorful_km7bti.jpg", $background-size: cover, $background-position: center);
+    @include mixins.background-image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675863220/jpvitan-website/backgrounds/wavy-colorful_km7bti.jpg");
 }

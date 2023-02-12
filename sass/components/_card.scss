@@ -1,0 +1,59 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+.basic-card {
+    border-radius: 25px;
+    height: 100%;
+}
+
+.image-card {
+    border-radius: 0px;
+
+    @media screen and (min-width: variables.$breakpoint-md) {
+        border-radius: 40px;
+    }
+
+    .card {
+        border-radius: 20px;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        @media screen and (min-width: variables.$breakpoint-md) {
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+        }
+    }
+}
+
+.list-card {
+    border-radius: 0px;
+
+    @media screen and (min-width: variables.$breakpoint-md) {
+        border-radius: 25px;
+    }
+
+    .icon-row {
+        svg {
+            @include mixins.icon-svg($size: 30px, $color: #fff);
+        }
+    }
+
+    .title-row {
+        p {
+            font-weight: 700;
+            color: #fff;
+        }
+    }
+
+    .item-row {
+        svg {
+            @include mixins.icon-svg($size: 15px, $color: #fff);
+        }
+
+        p {
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 0;
+        }
+    }
+}

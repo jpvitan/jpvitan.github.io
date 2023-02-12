@@ -1,8 +1,4 @@
-@use "../utilities/mixins/background";
-@use "../utilities/mixins/font";
-@use "../utilities/mixins/icon";
-@use "../utilities/mixins/position";
-@use "../utilities/mixins/shape";
+@use "../utilities/mixins";
 
 .navigation {
     button {
@@ -10,18 +6,18 @@
         padding: 0;
 
         svg {
-            @include icon.svg($size: 20px, $color: var(--navigation-icon-color));
+            @include mixins.icon-svg($size: 20px, $color: var(--navigation-icon-color));
         }
     }
 
     .bar {
-        @include position.fixed($left: 0, $right: 0, $top: 0);
-        @include background.blur($background-color: var(--navigation-bar-background-color), $blur: var(--navigation-bar-background-blur));
+        @include mixins.position-fixed($left: 0, $right: 0, $top: 0);
+        @include mixins.background-blur($background-color: var(--navigation-bar-background-color), $blur: var(--navigation-bar-background-blur));
     }
 
     .menu {
-        @include position.fixed($left: 0, $right: 0, $top: 0, $bottom: 0);
-        @include background.blur($background-color: var(--navigation-menu-background-color), $blur: var(--navigation-menu-background-blur));
+        @include mixins.position-fixed($left: 0, $right: 0, $top: 0, $bottom: 0);
+        @include mixins.background-blur($background-color: var(--navigation-menu-background-color), $blur: var(--navigation-menu-background-blur));
 
         overflow-y: auto;
     }
@@ -33,25 +29,23 @@
 
     .control-panel {
         .icon-container {
-            @include shape.square($size: 60px, $border-radius: 15px);
+            @include mixins.shape-square($size: 60px, $border-radius: 15px);
 
             background-color: var(--navigation-icon-background-color);
 
             &:hover {
                 svg {
-                    @include icon.svg($size: 30px, $color: var(--navigation-icon-hover-color));
+                    @include mixins.icon-svg($size: 30px, $color: var(--navigation-icon-hover-color));
                 }
             }
 
             svg {
-                @include position.relative($left: 50%, $top: 50%, $center: true);
-                @include icon.svg($size: 25px, $color: var(--navigation-icon-color));
+                @include mixins.position-relative($left: 50%, $top: 50%, $center: true);
+                @include mixins.icon-svg($size: 25px, $color: var(--navigation-icon-color));
             }
         }
 
         p {
-            @include font.regular;
-
             margin-top: 0.5rem;
             margin-bottom: 0;
         }

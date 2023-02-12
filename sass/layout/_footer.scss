@@ -1,29 +1,25 @@
-@use "../utilities/mixins/font";
-@use "../utilities/mixins/icon";
-@use "../utilities/mixins/position";
-@use "../utilities/mixins/shape";
+@use "../utilities/mixins";
 
 footer {
     .icon-container {
-        @include shape.square($size: 30px, $border-radius: 10px);
+        @include mixins.shape-square($size: 30px, $border-radius: 10px);
 
         background-color: var(--navigation-icon-background-color);
 
         &:hover {
             svg {
-                @include icon.svg($size: 18px, $color: var(--navigation-icon-hover-color));
+                @include mixins.icon-svg($size: 18px, $color: var(--navigation-icon-hover-color));
             }
         }
 
         svg {
-            @include position.relative($left: 50%, $top: 50%, $center: true);
-            @include icon.svg($size: 18px, $color: var(--navigation-icon-color));
+            @include mixins.position-relative($left: 50%, $top: 50%, $center: true);
+            @include mixins.icon-svg($size: 18px, $color: var(--navigation-icon-color));
         }
     }
 
     p {
-        @include font.regular($font-size: 0.7rem);
-
+        font-size: 0.7rem;
         margin-bottom: 0;
     }
 }

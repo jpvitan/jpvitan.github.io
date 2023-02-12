@@ -1,26 +1,41 @@
-@use "../utilities/mixins/font";
+@use "../utilities/mixins";
 @use "../utilities/variables";
 
-.home {
-    h1 {
-        @include font.heading($font-size: calc(1.375rem + 1.5vw), $color: #fff, $breakpoint: variables.$breakpoint-xl, $breakpoint-font-size: 2.5rem);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button {
+    font-family: var(--font-family);
+}
 
-        margin-bottom: 0rem;
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--heading-font-weight);
+    color: var(--heading-font-color);
+}
 
-    h2 {
-        @include font.heading($font-size: calc(1.375rem + 1.5vw), $color: #000, $breakpoint: variables.$breakpoint-xl, $breakpoint-font-size: 2.5rem);
+p {
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    color: var(--font-color);
+}
 
-        margin-bottom: 1rem;
-    }
+h1,
+h2 {
+    @include mixins.font-size-responsive($font-size: calc(1.375rem + 1.5vw), $breakpoint-font-size: 2.5rem, $breakpoint: variables.$breakpoint-xl);
+    margin-bottom: 1rem;
+}
 
-    h3 {
-        @include font.heading($font-size: 1.4rem, $color: #636e72, $breakpoint: null, $breakpoint-font-size: null);
-
-        margin-bottom: 0.5rem;
-    }
-
-    p {
-        @include font.regular;
-    }
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
 }

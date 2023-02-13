@@ -19,7 +19,3 @@
 .background-image-wavy-abstract {
     @include mixins.background-image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675852937/jpvitan-website/backgrounds/wavy-abstract_knmpgf.jpg");
 }
-
-.background-image-wavy-colorful {
-    @include mixins.background-image($url: "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675863220/jpvitan-website/backgrounds/wavy-colorful_km7bti.jpg");
-}

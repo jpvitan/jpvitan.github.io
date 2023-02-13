@@ -70,7 +70,7 @@ $page = Page::findById(1);
                                 <div class="background-color-clouds basic-card card shadow-lg border-0 px-5 pt-5">
                                     <h3>Featured Mobile App</h3>
                                     <p class="fw-bold">SatTrack-X by Justine Paul Vitan</p>
-                                    <p>Get ready to track satellites with SatTrack-X! Our app offers a wide variety of features that makes satellite tracking fun and simple. Whether you're a beginner or an expert in satellite tracking, our app has got you covered!</p>
+                                    <p>An Android application that lets you track over two thousand earth-orbiting satellites for free and without limits. It has a customizable and compact interface that users can easily pick up.</p>
                                     <img class="img-fluid mx-auto mt-5" alt="Samsung" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676133708/jpvitan-website/sattrack-x/samsung_kpuoje.png" width="1527" height="2273">
                                 </div>
                             </div>

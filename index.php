@@ -71,7 +71,9 @@ $page = Page::findById(1);
                                     <h3>Featured Mobile App</h3>
                                     <p class="fw-bold">SatTrack-X by Justine Paul Vitan</p>
                                     <p>An Android application that lets you track over two thousand earth-orbiting satellites for free and without limits. It has a customizable and compact interface that users can easily pick up.</p>
-                                    <img class="img-fluid mx-auto mt-5" alt="Samsung" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676133708/jpvitan-website/sattrack-x/samsung_kpuoje.png" width="1527" height="2273">
+                                    <a href="https://play.google.com/store/apps/details?id=com.jpv.sattrack">
+                                        <img class="img-fluid mx-auto mt-5" alt="Samsung" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676133708/jpvitan-website/sattrack-x/samsung_kpuoje.png" width="1527" height="2273">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +113,9 @@ $page = Page::findById(1);
                                     <h3>Featured Web App</h3>
                                     <p class="fw-bold">EarthquakePH by Justine Paul Vitan</p>
                                     <p>A highly customizable real-time and progressive web application that tracks and monitors the latest earthquake recorded by the United States Geological Survey within the Philippines and the world.</p>
-                                    <img class="img-fluid mx-auto mt-5" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675967562/jpvitan-website/earthquakeph/macbook_iwbznj.png" width="3287" height="1884">
+                                    <a href="https://earthquakeph.netlify.app/">
+                                        <img class="img-fluid mx-auto mt-5" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675967562/jpvitan-website/earthquakeph/macbook_iwbznj.png" width="3287" height="1884">
+                                    </a>
                                 </div>
                             </div>
                         </div>

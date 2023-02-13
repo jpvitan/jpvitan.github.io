@@ -63,7 +63,7 @@ $page = Page::findById(1);
                                 <div class="background-image-wavy-abstract basic-card card shadow-lg border-0 px-5 py-5">
                                     <h3 class="font-color-white">What Are Your Mobile Development Skills?</h3>
                                     <p class="fw-bold font-color-white">Android and iOS Development</p>
-                                    <p class="font-color-white">I can develop and publish top-quality Android and iOS apps that are compliant with the policies imposed by Google and Apple. I have written and published applications for both of these platforms to demonstrate my competency in mobile app development.</p>
+                                    <p class="font-color-white">I can develop, design, and publish apps using native tools and technologies for both Android and iOS. My knowledge of each ecosystem's policies and best practices gives me an edge in delivering reliable and performant apps.</p>
                                 </div>
                             </div>
                             <div class="col-md mt-3 mt-md-0">

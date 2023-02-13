@@ -71,8 +71,8 @@ $page = Page::findById(1);
                                     <h3>Featured Mobile App</h3>
                                     <p class="fw-bold">SatTrack-X by Justine Paul Vitan</p>
                                     <p>An Android application that lets you track over two thousand earth-orbiting satellites for free and without limits. It has a customizable and compact interface that users can easily pick up.</p>
-                                    <a href="https://play.google.com/store/apps/details?id=com.jpv.sattrack">
-                                        <img class="img-fluid mx-auto mt-5" alt="Samsung" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676133708/jpvitan-website/sattrack-x/samsung_kpuoje.png" width="1527" height="2273" data-aos="fade-up">
+                                    <a class="text-center" href="https://play.google.com/store/apps/details?id=com.jpv.sattrack">
+                                        <img class="img-fluid mt-5" alt="Samsung" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676133708/jpvitan-website/sattrack-x/samsung_kpuoje.png" width="1527" height="2273" data-aos="fade-up">
                                     </a>
                                 </div>
                             </div>
@@ -113,8 +113,8 @@ $page = Page::findById(1);
                                     <h3>Featured Web App</h3>
                                     <p class="fw-bold">EarthquakePH by Justine Paul Vitan</p>
                                     <p>A highly customizable real-time and progressive web application that tracks and monitors the latest earthquake recorded by the United States Geological Survey within the Philippines and the world.</p>
-                                    <a href="https://earthquakeph.netlify.app/">
-                                        <img class="img-fluid mx-auto mt-5" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675967562/jpvitan-website/earthquakeph/macbook_iwbznj.png" width="3287" height="1884" data-aos="zoom-in">
+                                    <a class="text-center" href="https://earthquakeph.netlify.app/">
+                                        <img class="img-fluid mt-5" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675967562/jpvitan-website/earthquakeph/macbook_iwbznj.png" width="3287" height="1884" data-aos="zoom-in">
                                     </a>
                                 </div>
                             </div>
@@ -131,6 +131,30 @@ $page = Page::findById(1);
                             </div>
                             <div class="col-md">
                                 <?php echo $LIST_CARD[3]->generate(); ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="container-fluid px-4 py-3">
+                <div class="row justify-content-center">
+                    <div class="content-lg col">
+                        <h2>Certificates</h2>
+                        <div class="row">
+                            <div class="col-md">
+                                <div class="background-color-clouds basic-card card shadow-lg border-0 px-5 py-5">
+                                    <h3>Microsoft Technology Associate</h3>
+                                    <p class="fw-bold">Exam 98-361: Software Development Fundamentals</p>
+                                    <p></p>
+                                    <a class="text-center" href="https://www.credly.com/badges/b97de60d-3b7c-436d-bc76-f271322f4211/public_url">
+                                        <img class="img-fluid mt-5" alt="Exam 98-361: Software Development Fundamentals" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676316116/jpvitan-website/badges/mta-software-development-fundamentals-2018_k6omov.png" width="300" height="300">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md mt-3 mt-md-0">
+
                             </div>
                         </div>
                     </div>

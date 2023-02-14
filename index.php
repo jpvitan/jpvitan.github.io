@@ -147,13 +147,14 @@ $page = Page::findById(1);
                                 <div class="background-color-clouds basic-card card shadow-lg border-0 px-5 py-5">
                                     <h3>Microsoft Technology Associate</h3>
                                     <p class="fw-bold">Exam 98-361: Software Development Fundamentals</p>
-                                    <p></p>
+                                    <p>Earners of the MTA: Software Development Fundamentals certification have demonstrated core software development skills. The MTA program provides an appropriate entry point to a future career in technology.</p>
+                                    <p>—Credly</p>
                                     <a class="text-center" href="https://www.credly.com/badges/b97de60d-3b7c-436d-bc76-f271322f4211/public_url">
                                         <img class="img-fluid my-5" alt="Exam 98-361: Software Development Fundamentals" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676316116/jpvitan-website/badges/mta-software-development-fundamentals-2018_k6omov.png" width="300" height="300">
                                     </a>
-                                    <div class="basic-progress progress">
+                                    <!-- <div class="basic-progress progress">
                                         <div class="progress-bar" style="width: 100%;" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="col-md mt-3 mt-md-0">

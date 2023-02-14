@@ -114,7 +114,7 @@ $page = Page::findById(1);
                                     <p class="fw-bold">EarthquakePH by Justine Paul Vitan</p>
                                     <p>A highly customizable real-time and progressive web application that tracks and monitors the latest earthquake recorded by the United States Geological Survey within the Philippines and the world.</p>
                                     <a class="text-center" href="https://earthquakeph.netlify.app/">
-                                        <img class="img-fluid mt-5" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675967562/jpvitan-website/earthquakeph/macbook_iwbznj.png" width="3287" height="1884" data-aos="zoom-in">
+                                        <img class="img-fluid mt-5" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675967562/jpvitan-website/earthquakeph/macbook_iwbznj.png" width="3287" height="1884" data-aos="zoom-in-up">
                                     </a>
                                 </div>
                             </div>
@@ -148,13 +148,50 @@ $page = Page::findById(1);
                                     <h3>Microsoft Technology Associate</h3>
                                     <p class="fw-bold">Exam 98-361: Software Development Fundamentals</p>
                                     <p>Earners of the MTA: Software Development Fundamentals certification have demonstrated core software development skills. The MTA program provides an appropriate entry point to a future career in technology.</p>
-                                    <p>—Credly</p>
-                                    <a class="text-center" href="https://www.credly.com/badges/b97de60d-3b7c-436d-bc76-f271322f4211/public_url">
-                                        <img class="img-fluid my-5" alt="Exam 98-361: Software Development Fundamentals" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676316116/jpvitan-website/badges/mta-software-development-fundamentals-2018_k6omov.png" width="300" height="300">
+                                    <p class="mb-0">—Credly</p>
+                                    <a class="text-center py-4 my-5" href="https://www.credly.com/badges/b97de60d-3b7c-436d-bc76-f271322f4211/public_url">
+                                        <img class="img-fluid" alt="Exam 98-361: Software Development Fundamentals" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676316116/jpvitan-website/badges/mta-software-development-fundamentals-2018_k6omov.png" width="300" height="300">
                                     </a>
-                                    <!-- <div class="basic-progress progress">
-                                        <div class="progress-bar" style="width: 100%;" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div> -->
+                                    <h4>Top Exam Scores</h4>
+                                    <div data-aos="zoom-out">
+                                        <p class="fw-bold mt-3 mb-0">Object-Oriented Programming</p>
+                                        <div class="row">
+                                            <div class="col my-auto">
+                                                <div class="basic-progress progress">
+                                                    <div class="progress-bar" style="width: 100%; background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto my-auto">
+                                                <p class="font-color-amethyst fw-bold my-auto" style="font-size: 1.4rem;">100%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-aos="zoom-out">
+                                        <p class="fw-bold mt-3 mb-0">Desktop Applications</p>
+                                        <div class="row">
+                                            <div class="col my-auto">
+                                                <div class="basic-progress progress">
+                                                    <div class="progress-bar" style="width: 100%; background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto my-auto">
+                                                <p class="font-color-amethyst fw-bold my-auto" style="font-size: 1.4rem;">100%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-aos="zoom-out">
+                                        <p class="fw-bold mt-3 mb-0">Web Applications</p>
+                                        <div class="row">
+                                            <div class="col my-auto">
+                                                <div class="basic-progress progress">
+                                                    <div class="progress-bar" style="width: 86%; background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto my-auto">
+                                                <p class="font-color-amethyst fw-bold my-auto" style="font-size: 1.4rem;">86%</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md mt-3 mt-md-0">

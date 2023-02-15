@@ -147,15 +147,15 @@ $page = Page::findById(1);
                                 <div class="background-color-black basic-card card shadow-lg border-0 text-center px-5 py-5">
                                     <div class="my-auto">
                                         <div data-aos="zoom-out">
-                                            <p class="font-color-amethyst fw-bold" style="font-size: 4rem;">4</p>
+                                            <p class="font-figure-big font-color-amethyst fw-bold">4</p>
                                             <p class="font-color-white fw-bold">Professional Certificates</p>
                                         </div>
                                         <div data-aos="zoom-out">
-                                            <p class="font-color-amethyst fw-bold mt-4" style="font-size: 4rem;">3</p>
+                                            <p class="font-figure-big font-color-amethyst fw-bold mt-4">3</p>
                                             <p class="font-color-white fw-bold">Programming Competitions</p>
                                         </div>
                                         <div data-aos="zoom-out">
-                                            <p class="font-color-amethyst fw-bold mt-4" style="font-size: 4rem;">2</p>
+                                            <p class="font-figure-big font-color-amethyst fw-bold mt-4">2</p>
                                             <p class="font-color-white fw-bold">Academic Awards</p>
                                         </div>
                                     </div>
@@ -168,7 +168,8 @@ $page = Page::findById(1);
                                     </a>
                                     <h3>Microsoft Technology Associate</h3>
                                     <p class="fw-bold">Exam 98-361: Software Development Fundamentals</p>
-                                    <p>“Earners of the MTA: Software Development Fundamentals certification have demonstrated core software development skills.” —Credly</p>
+                                    <p>Earners of the MTA: Software Development Fundamentals certification have demonstrated core software development skills.</p>
+                                    <p>—Credly</p>
                                     <div data-aos="zoom-out">
                                         <p class="fw-bold mt-3 mb-0">Object-Oriented Programming</p>
                                         <div class="row">
@@ -178,7 +179,7 @@ $page = Page::findById(1);
                                                 </div>
                                             </div>
                                             <div class="col-auto my-auto">
-                                                <p class="font-color-amethyst fw-bold my-auto" style="font-size: 1.4rem;">100%</p>
+                                                <p class="font-figure-small font-color-amethyst fw-bold my-auto">100%</p>
                                             </div>
                                         </div>
                                     </div>
@@ -191,7 +192,7 @@ $page = Page::findById(1);
                                                 </div>
                                             </div>
                                             <div class="col-auto my-auto">
-                                                <p class="font-color-amethyst fw-bold my-auto" style="font-size: 1.4rem;">100%</p>
+                                                <p class="font-figure-small font-color-amethyst fw-bold my-auto">100%</p>
                                             </div>
                                         </div>
                                     </div>
@@ -200,11 +201,11 @@ $page = Page::findById(1);
                                         <div class="row">
                                             <div class="col my-auto">
                                                 <div class="basic-progress progress">
-                                                    <div class="progress-bar" style="width: 89%; background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" style="width: 89%; background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                             </div>
                                             <div class="col-auto my-auto">
-                                                <p class="font-color-amethyst fw-bold my-auto" style="font-size: 1.4rem;">89%</p>
+                                                <p class="font-figure-small font-color-amethyst fw-bold my-auto">89%</p>
                                             </div>
                                         </div>
                                     </div>

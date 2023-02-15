@@ -144,6 +144,9 @@ $page = Page::findById(1);
                         <h2>Certificates</h2>
                         <div class="row">
                             <div class="col-md">
+
+                            </div>
+                            <div class="col-md mt-3 mt-md-0">
                                 <div class="background-color-clouds basic-card card shadow-lg border-0 px-5 py-5">
                                     <h3>Microsoft Technology Associate</h3>
                                     <p class="fw-bold">Exam 98-361: Software Development Fundamentals</p>
@@ -180,22 +183,19 @@ $page = Page::findById(1);
                                         </div>
                                     </div>
                                     <div data-aos="zoom-out">
-                                        <p class="fw-bold mt-3 mb-0">Web Applications</p>
+                                        <p class="fw-bold mt-3 mb-0">Core Programming</p>
                                         <div class="row">
                                             <div class="col my-auto">
                                                 <div class="basic-progress progress">
-                                                    <div class="progress-bar" style="width: 86%; background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" style="width: 89%; background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                             </div>
                                             <div class="col-auto my-auto">
-                                                <p class="font-color-amethyst fw-bold my-auto" style="font-size: 1.4rem;">86%</p>
+                                                <p class="font-color-amethyst fw-bold my-auto" style="font-size: 1.4rem;">89%</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md mt-3 mt-md-0">
-
                             </div>
                         </div>
                     </div>

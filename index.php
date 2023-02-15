@@ -144,18 +144,31 @@ $page = Page::findById(1);
                         <h2>Certificates</h2>
                         <div class="row">
                             <div class="col-md">
-
+                                <div class="background-color-black basic-card card shadow-lg border-0 text-center px-5 py-5">
+                                    <div class="my-auto">
+                                        <div data-aos="zoom-out">
+                                            <p class="font-color-amethyst fw-bold" style="font-size: 4rem;">4</p>
+                                            <p class="font-color-white fw-bold">Professional Certificates</p>
+                                        </div>
+                                        <div data-aos="zoom-out">
+                                            <p class="font-color-amethyst fw-bold mt-4" style="font-size: 4rem;">3</p>
+                                            <p class="font-color-white fw-bold">Programming Competitions</p>
+                                        </div>
+                                        <div data-aos="zoom-out">
+                                            <p class="font-color-amethyst fw-bold mt-4" style="font-size: 4rem;">2</p>
+                                            <p class="font-color-white fw-bold">Academic Awards</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-md mt-3 mt-md-0">
                                 <div class="background-color-clouds basic-card card shadow-lg border-0 px-5 py-5">
-                                    <h3>Microsoft Technology Associate</h3>
-                                    <p class="fw-bold">Exam 98-361: Software Development Fundamentals</p>
-                                    <p>Earners of the MTA: Software Development Fundamentals certification have demonstrated core software development skills. The MTA program provides an appropriate entry point to a future career in technology.</p>
-                                    <p class="mb-0">—Credly</p>
                                     <a class="text-center py-4 my-5" href="https://www.credly.com/badges/b97de60d-3b7c-436d-bc76-f271322f4211/public_url">
                                         <img class="img-fluid" alt="Exam 98-361: Software Development Fundamentals" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676316116/jpvitan-website/badges/mta-software-development-fundamentals-2018_k6omov.png" width="300" height="300">
                                     </a>
-                                    <h4>Top Exam Scores</h4>
+                                    <h3>Microsoft Technology Associate</h3>
+                                    <p class="fw-bold">Exam 98-361: Software Development Fundamentals</p>
+                                    <p>“Earners of the MTA: Software Development Fundamentals certification have demonstrated core software development skills.” —Credly</p>
                                     <div data-aos="zoom-out">
                                         <p class="fw-bold mt-3 mb-0">Object-Oriented Programming</p>
                                         <div class="row">

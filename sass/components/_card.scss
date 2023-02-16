@@ -8,21 +8,6 @@
 
 .image-card {
     border-radius: 0px;
-
-    @media screen and (min-width: variables.$breakpoint-md) {
-        border-radius: 40px;
-    }
-
-    .card {
-        border-radius: 20px;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-
-        @media screen and (min-width: variables.$breakpoint-md) {
-            margin-top: 10rem;
-            margin-bottom: 10rem;
-        }
-    }
 }
 
 .list-card {

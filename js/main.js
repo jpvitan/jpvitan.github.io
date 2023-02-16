@@ -13,7 +13,7 @@ const setupNavigation = () => {
     window.onscroll = () => {
         let currentScrollPosition = window.pageYOffset;
 
-        if (previousScrollPosition > currentScrollPosition) bar.classList.remove("d-none");
+        if (previousScrollPosition > currentScrollPosition && currentScrollPosition !== 0) bar.classList.remove("d-none");
         else bar.classList.add("d-none");
 
         previousScrollPosition = currentScrollPosition;

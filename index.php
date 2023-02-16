@@ -20,10 +20,12 @@ $page = Page::findById(1);
                     <img class="rounded-circle shadow-lg mx-auto mb-4" alt="Selfie" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675296391/jpvitan-website/profile/selfie_zwuuz1.jpg" width="100" height="100">
                     <h1 class="font-color-white mb-0">Justine Paul Vitan</h1>
                     <p class="font-color-white fw-bold">Software Developer</p>
+                    <img class="mt-4" alt="Arrow Down" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676559077/jpvitan-website/icons/arrow-down_f7nvlm.gif" width="30" height="30">
+                    <p class="font-color-white mt-2">Scroll down to learn more</p>
                 </div>
             </div>
         </section>
-        <section class="mt-5">
+        <section class="py-md-5 mt-5">
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
                     <div class="content-sm col text-center" data-aos="fade-up">

@@ -3,7 +3,7 @@ require_once "utilities/Data.php";
 require_once "utilities/Icon.php";
 ?>
 <div class="navigation">
-  <div class="bar" id="navigation-bar">
+  <div class="bar d-none" id="navigation-bar">
     <div class="container-fluid px-3 py-3">
       <div class="row">
         <div class="col-auto my-auto">

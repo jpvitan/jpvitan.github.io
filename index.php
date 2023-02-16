@@ -14,24 +14,12 @@ $page = Page::findById(1);
 <body class="theme-light">
     <?php require "common/navigation.php"; ?>
     <main class="home">
-        <section>
-            <div class="container-fluid px-0 px-md-4 pb-4 py-md-4">
-                <div class="row justify-content-center g-0 g-md-4">
-                    <div class="content-lg col">
-                        <div class="background-image-low-polygon-mountains image-card card shadow-lg border-0">
-                            <div class="container-fluid px-4 py-4">
-                                <div class="row justify-content-center">
-                                    <div class="content-xs col">
-                                        <div class="background-transparent card border-0 text-center px-4 py-4">
-                                            <img class="rounded-circle shadow-lg mx-auto mb-4" alt="Selfie" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675296391/jpvitan-website/profile/selfie_zwuuz1.jpg" width="100" height="100">
-                                            <h1 class="font-color-white mb-0">Justine Paul Vitan</h1>
-                                            <p class="font-color-white fw-bold">Software Developer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <section class="vh-100">
+            <div class="background-image-low-polygon-mountains image-card card shadow-lg border-0 text-center h-100">
+                <div class="my-auto">
+                    <img class="rounded-circle shadow-lg mx-auto mb-4" alt="Selfie" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675296391/jpvitan-website/profile/selfie_zwuuz1.jpg" width="100" height="100">
+                    <h1 class="font-color-white mb-0">Justine Paul Vitan</h1>
+                    <p class="font-color-white fw-bold">Software Developer</p>
                 </div>
             </div>
         </section>

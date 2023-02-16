@@ -24,6 +24,4 @@ const setupNavigation = () => {
     closeButton.onclick = () => {
         menu.classList.add("d-none")
     }
-
-    document.body.style.paddingTop = `${bar.offsetHeight}px`;
 }

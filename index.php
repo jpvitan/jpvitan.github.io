@@ -136,18 +136,20 @@ $page = Page::findById(1);
                             <div class="col-md">
                                 <div class="background-color-black basic-card card shadow-lg border-0 text-center px-5 py-5">
                                     <div class="my-auto">
-                                        <div data-aos="zoom-out">
-                                            <p class="font-figure-big font-color-amethyst fw-bold">4</p>
-                                            <p class="font-color-white fw-bold">Professional Certificates</p>
-                                        </div>
-                                        <div data-aos="zoom-out">
-                                            <p class="font-figure-big font-color-amethyst fw-bold mt-4">3</p>
-                                            <p class="font-color-white fw-bold">Programming Competitions</p>
-                                        </div>
-                                        <div data-aos="zoom-out">
-                                            <p class="font-figure-big font-color-amethyst fw-bold mt-4">2</p>
-                                            <p class="font-color-white fw-bold">Academic Awards</p>
-                                        </div>
+                                        <a href="https://drive.google.com/drive/folders/1XhgPGvFUXtb_99ATdpOCHK0p0pUJ3NZz">
+                                            <div data-aos="zoom-out">
+                                                <p class="font-figure-big font-color-amethyst fw-bold">4</p>
+                                                <p class="font-color-white fw-bold">Professional Certificates</p>
+                                            </div>
+                                            <div data-aos="zoom-out">
+                                                <p class="font-figure-big font-color-amethyst fw-bold mt-4">3</p>
+                                                <p class="font-color-white fw-bold">Programming Competitions</p>
+                                            </div>
+                                            <div data-aos="zoom-out">
+                                                <p class="font-figure-big font-color-amethyst fw-bold mt-4">2</p>
+                                                <p class="font-color-white fw-bold">Academic Awards</p>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

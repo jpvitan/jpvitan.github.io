@@ -25,7 +25,7 @@ $page = Page::findById(1);
                 </div>
             </div>
         </section>
-        <section class="py-md-5 mt-5">
+        <section class="py-5 mt-5">
             <div class="container-fluid px-4 py-4">
                 <div class="row justify-content-center">
                     <div class="content-sm col text-center" data-aos="fade-up">

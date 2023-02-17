@@ -44,7 +44,7 @@ $page = Page::findById(1);
             </div>
         </section>
         <section class="mt-5">
-            <div class="container-fluid px-4 py-3">
+            <div class="container-fluid px-3 px-md-4 py-3">
                 <div class="row justify-content-center">
                     <div class="content-lg col">
                         <h2>Mobile</h2>
@@ -86,7 +86,7 @@ $page = Page::findById(1);
             </div>
         </section>
         <section class="mt-5">
-            <div class="container-fluid px-4 py-3">
+            <div class="container-fluid px-3 px-md-4 py-3">
                 <div class="row justify-content-center">
                     <div class="content-lg col">
                         <h2>Web</h2>
@@ -128,7 +128,7 @@ $page = Page::findById(1);
             </div>
         </section>
         <section class="mt-5">
-            <div class="container-fluid px-4 py-3">
+            <div class="container-fluid px-3 px-md-4 py-3">
                 <div class="row justify-content-center">
                     <div class="content-lg col">
                         <h2>Certificates</h2>

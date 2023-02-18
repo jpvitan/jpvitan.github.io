@@ -1,12 +1,27 @@
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-    return new bootstrap.Tooltip(tooltipTriggerEl)
+document.addEventListener("DOMContentLoaded", () => {
+    setupNavigation()
+    AOS.init();
 })
 
-AOS.init();
+const setupNavigation = () => {
+    const bar = document.getElementById("navigation-bar")
+    const menu = document.getElementById("navigation-menu")
+    const menuButton = document.getElementById("navigation-menu-button")
+    const closeButton = document.getElementById("navigation-close-button")
+    let previousScrollPosition = window.pageYOffset;
 
-$(function () {
-    $("#menu").load("menu.html");
-    $("#navbar").load("navbar.html");
-    $("#footer").load("footer.html");
-});
+    window.onscroll = () => {
+        let currentScrollPosition = window.pageYOffset;
+
+        if (previousScrollPosition > currentScrollPosition && currentScrollPosition !== 0) bar.classList.remove("d-none");
+        else bar.classList.add("d-none");
+
+        previousScrollPosition = currentScrollPosition;
+    }
+    menuButton.onclick = () => {
+        menu.classList.remove("d-none")
+    }
+    closeButton.onclick = () => {
+        menu.classList.add("d-none")
+    }
+}

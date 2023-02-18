@@ -2,15 +2,9 @@
 class Database
 {
     private static $host = "localhost";
-    private static $dbname = "jpvitan-website";
-
-    /* Production */
-    // private static $username = "jpvitan1_master";
-    // private static $password = "!M,xxii*MKRR";
-
-    /* Development */
-    private static $username = "root";
-    private static $password = "";
+    private static $dbname = "jpvitan1_website";
+    private static $username = "jpvitan1_master";
+    private static $password = "!M,xxii*MKRR";
 
     public static function getConnection()
     {

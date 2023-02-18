@@ -2,7 +2,6 @@
 require_once "utilities/Icon.php";
 require_once "components/ListCard.php";
 require_once "components/Navigation.php";
-require_once "components/NoticeCard.php";
 
 $LIST_CARD = [
     new ListCard(
@@ -77,17 +76,4 @@ $NAVIGATION = [
     new Navigation(Icon::Resume(), "Resume", "https://drive.google.com/file/d/1CSINyY0zE48QMUpAPvxsUSSJfnGJ0Nk9/view?usp=sharing"),
     new Navigation(Icon::Certificate(), "Certificates", "https://drive.google.com/drive/folders/1XhgPGvFUXtb_99ATdpOCHK0p0pUJ3NZz?usp=sharing"),
     new Navigation(Icon::Message(), "Message", "mailto:business@jpvitan.com")
-];
-
-$NOTICE_CARD = [
-    new NoticeCard(
-        Icon::Information(),
-        "If you want to view a list of my published applications for Android, iOS, and the web, please click this <a href='https://jpvitan.com/apps'>link</a>. If you have any questions regarding my listed skills, feel free to ask by sending me an <a href='mailto:business@jpvitan.com'>email</a>.",
-        ""
-    ),
-    new NoticeCard(
-        Icon::Information(),
-        "You may verify my MTA certificates by entering the Credential Identification Code in <a href='https://portal.certiport.com/Portal/Pages/CredentialVerification.aspx'>verify.certiport.com</a>. If you want a complete list of my certificates, please click this <a href='https://drive.google.com/drive/folders/1XhgPGvFUXtb_99ATdpOCHK0p0pUJ3NZz'>link</a>.",
-        ""
-    )
 ];

@@ -166,7 +166,7 @@ $page = Page::findById(1);
                                         <div class="row">
                                             <div class="col my-auto">
                                                 <div class="basic-progress progress">
-                                                    <div class="progress-bar" style="width: 100%; background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" style="width: 100%; background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);" role="progressbar" aria-label="Object-Oriented Programming" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                             </div>
                                             <div class="col-auto my-auto">
@@ -179,7 +179,7 @@ $page = Page::findById(1);
                                         <div class="row">
                                             <div class="col my-auto">
                                                 <div class="basic-progress progress">
-                                                    <div class="progress-bar" style="width: 100%; background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" style="width: 100%; background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);" role="progressbar" aria-label="Desktop Applications" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                             </div>
                                             <div class="col-auto my-auto">
@@ -192,7 +192,7 @@ $page = Page::findById(1);
                                         <div class="row">
                                             <div class="col my-auto">
                                                 <div class="basic-progress progress">
-                                                    <div class="progress-bar" style="width: 89%; background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar" style="width: 89%; background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);" role="progressbar" aria-label="Core Programming" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                             </div>
                                             <div class="col-auto my-auto">

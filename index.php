@@ -36,7 +36,7 @@ $page = Page::findById(1);
                                 <a class="basic-button background-color-peter-river font-color-white btn shadow-lg px-4 py-2 mt-4" href="mailto:business@jpvitan.com">Let's Talk</a>
                             </div>
                             <div class="col-auto">
-                                <a class="basic-button font-color-peter-river btn px-4 py-2 mt-4" href="https://jpvitan.com/apps">View Apps</a>
+                                <a class="basic-button font-color-peter-river btn px-4 py-2 mt-4" href="https://github.com/jpvitan?tab=repositories">View Apps</a>
                             </div>
                         </div>
                     </div>

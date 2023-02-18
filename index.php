@@ -160,8 +160,7 @@ $page = Page::findById(1);
                                     </a>
                                     <h3>Microsoft Technology Associate</h3>
                                     <p class="fw-bold">Exam 98-361: Software Development Fundamentals</p>
-                                    <p>Earners of the MTA: Software Development Fundamentals certification have demonstrated core software development skills.</p>
-                                    <p>—Credly</p>
+                                    <p>“Earners of the MTA: Software Development Fundamentals certification have demonstrated core software development skills.” —Credly</p>
                                     <div data-aos="zoom-out">
                                         <p class="fw-bold mt-3 mb-0">Object-Oriented Programming</p>
                                         <div class="row">

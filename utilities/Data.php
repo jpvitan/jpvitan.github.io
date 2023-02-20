@@ -1,7 +1,19 @@
 <?php
 require_once "utilities/Icon.php";
+require_once "components/AppCard.php";
 require_once "components/ListCard.php";
 require_once "components/Navigation.php";
+
+$APP_CARD = [
+    new AppCard(
+        "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676913787/jpvitan-website/icons/apps/sattrack-x_ybxjva.png",
+        "SatTrack-X",
+        "Android",
+        "https://play.google.com/store/apps/details?id=com.jpv.sattrack",
+        "An Android application that lets you track over two thousand earth-orbiting satellites for free and without limits. It has a customizable and compact interface that users can easily pick up.",
+        ""
+    )
+];
 
 $LIST_CARD = [
     new ListCard(

@@ -12,6 +12,14 @@ $APP_CARD = [
         "https://play.google.com/store/apps/details?id=com.jpv.sattrack",
         "An Android application that lets you track over two thousand earth-orbiting satellites for free and without limits. It has a customizable and compact interface that users can easily pick up.",
         ""
+    ),
+    new AppCard(
+        "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676913787/jpvitan-website/icons/apps/earthquakeph_gvfx31.png",
+        "EarthquakePH",
+        "React",
+        "https://earthquakeph.netlify.app/",
+        "A highly customizable real-time and progressive web application that tracks and monitors the latest earthquake recorded by the United States Geological Survey within the Philippines and the world.",
+        ""
     )
 ];
 

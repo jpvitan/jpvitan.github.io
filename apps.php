@@ -34,7 +34,7 @@ $page = Page::findById(2);
                                 <?php echo $APP_CARD[0]->generate(); ?>
                             </div>
                             <div class="col-md mt-3 mt-md-0">
-                                <?php echo $APP_CARD[0]->generate(); ?>
+                                <?php echo $APP_CARD[1]->generate(); ?>
                             </div>
                         </div>
                     </div>

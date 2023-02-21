@@ -30,10 +30,18 @@ $page = Page::findById(2);
                 <div class="row justify-content-center">
                     <div class="content-lg col">
                         <div class="row">
-                            <div class="col-md mt-3 mt-md-0">
+                            <div class="col-md">
                                 <?php echo $APP_CARD[0]->generate(); ?>
                             </div>
-                            <div class="col-md mt-3 mt-md-0">
+                            <div class="col-md">
+                                <?php echo $APP_CARD[1]->generate(); ?>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md">
+                                <?php echo $APP_CARD[2]->generate(); ?>
+                            </div>
+                            <div class="col-md">
                                 <?php echo $APP_CARD[1]->generate(); ?>
                             </div>
                         </div>

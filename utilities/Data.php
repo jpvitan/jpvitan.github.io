@@ -28,6 +28,14 @@ $APP_CARD = [
         "https://earthquakeph.netlify.app/",
         "An informational website that serves as my online curriculum vitae. It has an accessible interface that's easy to navigate, even for people with visual impairments. A PSI audit on my website showed a perfect score on accessibility and best practices.",
         ""
+    ),
+    new AppCard(
+        "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1677002548/jpvitan-website/icons/apps/sattrack-node_nditxa.png",
+        "SatTrack-Node",
+        "Node.js",
+        "https://earthquakeph.netlify.app/",
+        "An informational website that serves as my online curriculum vitae. It has an accessible interface that's easy to navigate, even for people with visual impairments. A PSI audit on my website showed a perfect score on accessibility and best practices.",
+        ""
     )
 ];
 

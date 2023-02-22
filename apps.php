@@ -42,7 +42,7 @@ $page = Page::findById(2);
                                 <?php echo $APP_CARD[2]->generate(); ?>
                             </div>
                             <div class="col-md">
-                                <?php echo $APP_CARD[3]->generate(); ?>
+
                             </div>
                         </div>
                     </div>

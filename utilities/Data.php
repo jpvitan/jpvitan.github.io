@@ -1,7 +1,35 @@
 <?php
 require_once "utilities/Icon.php";
+require_once "components/AppCard.php";
 require_once "components/ListCard.php";
 require_once "components/Navigation.php";
+
+$APP_CARD = [
+    new AppCard(
+        "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676913787/jpvitan-website/icons/apps/sattrack-x_ybxjva.png",
+        "SatTrack-X",
+        "Android",
+        "https://play.google.com/store/apps/details?id=com.jpv.sattrack",
+        "An Android application that lets you track over two thousand earth-orbiting satellites for free and without limits. It has a customizable and compact interface that users can easily pick up.",
+        ""
+    ),
+    new AppCard(
+        "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676913787/jpvitan-website/icons/apps/earthquakeph_gvfx31.png",
+        "EarthquakePH",
+        "React",
+        "https://earthquakeph.netlify.app/",
+        "A highly customizable real-time and progressive web application that tracks and monitors the latest earthquake recorded by the United States Geological Survey within the Philippines and the world.",
+        ""
+    ),
+    new AppCard(
+        "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676983831/jpvitan-website/icons/apps/jpvitan-website_pcdgmh.png",
+        "Personal Website",
+        "PHP",
+        "https://jpvitan.com/",
+        "An informational website that serves as my online curriculum vitae. It has an accessible interface that's easy to navigate, even for people with visual impairments. A PSI audit on my website showed a perfect score on accessibility and best practices.",
+        ""
+    )
+];
 
 $LIST_CARD = [
     new ListCard(
@@ -71,8 +99,8 @@ $LIST_CARD = [
 
 $NAVIGATION = [
     new Navigation(Icon::Home(), "Home", "https://jpvitan.com/"),
-    new Navigation(Icon::App(), "Apps", "https://github.com/jpvitan?tab=repositories"),
-    new Navigation(Icon::Blog(), "Blog", "https://jpvitan.com/blog"),
+    new Navigation(Icon::App(), "Apps", "https://jpvitan.com/apps"),
+    new Navigation(Icon::Blog(), "Blog", "https://jpvitan.medium.com/"),
     new Navigation(Icon::Resume(), "Resume", "https://drive.google.com/file/d/1CSINyY0zE48QMUpAPvxsUSSJfnGJ0Nk9/view?usp=sharing"),
     new Navigation(Icon::Certificate(), "Certificates", "https://drive.google.com/drive/folders/1XhgPGvFUXtb_99ATdpOCHK0p0pUJ3NZz?usp=sharing"),
     new Navigation(Icon::Message(), "Message", "mailto:business@jpvitan.com")

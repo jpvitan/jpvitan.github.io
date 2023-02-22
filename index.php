@@ -36,7 +36,7 @@ $page = Page::findById(1);
                                 <a class="basic-button background-color-peter-river font-color-white btn shadow-lg px-4 py-2 mt-4" href="mailto:business@jpvitan.com">Let's Talk</a>
                             </div>
                             <div class="col-auto">
-                                <a class="basic-button font-color-peter-river btn px-4 py-2 mt-4" href="https://github.com/jpvitan?tab=repositories">View Apps</a>
+                                <a class="basic-button font-color-peter-river btn px-4 py-2 mt-4" href="https://jpvitan.com/apps">View Apps</a>
                             </div>
                         </div>
                     </div>
@@ -160,7 +160,6 @@ $page = Page::findById(1);
                                     </a>
                                     <h3>Microsoft Technology Associate</h3>
                                     <p class="fw-bold">Exam 98-361: Software Development Fundamentals</p>
-                                    <p>“Earners of the MTA: Software Development Fundamentals certification have demonstrated core software development skills.” —Credly</p>
                                     <div data-aos="zoom-out">
                                         <p class="fw-bold mt-3 mb-0">Object-Oriented Programming</p>
                                         <div class="row">

@@ -52,7 +52,7 @@ $page = Page::findById(1);
                             <div class="col-md">
                                 <div class="background-image-wavy-abstract card-basic card shadow-lg border-0 px-5 py-5">
                                     <h3 class="font-color-white">What Are Your Mobile Development Skills?</h3>
-                                    <p class="fw-bold font-color-white">Android and iOS Development</p>
+                                    <p class="font-color-white fw-bold">Android and iOS Development</p>
                                     <p class="font-color-white">I can develop, design, and publish apps using native tools and technologies for both Android and iOS. My knowledge of each ecosystem's policies and best practices gives me an edge in delivering reliable and performant apps.</p>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@ $page = Page::findById(1);
                             <div class="col-md">
                                 <div class="background-image-wavy-abstract card-basic card shadow-lg border-0 px-5 py-5">
                                     <h3 class="font-color-white">What Are Your Web Development Skills?</h3>
-                                    <p class="fw-bold font-color-white">Front-End and Back-End Development</p>
+                                    <p class="font-color-white fw-bold">Front-End and Back-End Development</p>
                                     <p class="font-color-white">I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web standards to ensure a smooth and comfortable web experience for everyone.</p>
                                 </div>
                             </div>

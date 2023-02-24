@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     setupNavigation()
-    AOS.init();
+    AOS.init()
 })
 
 const setupNavigation = () => {
@@ -8,15 +8,15 @@ const setupNavigation = () => {
     const menu = document.getElementById("navigation-menu")
     const menuButton = document.getElementById("navigation-menu-button")
     const closeButton = document.getElementById("navigation-close-button")
-    let previousScrollPosition = window.pageYOffset;
+    let previousScrollPosition = window.pageYOffset
 
     window.onscroll = () => {
-        let currentScrollPosition = window.pageYOffset;
+        let currentScrollPosition = window.pageYOffset
 
-        if (previousScrollPosition > currentScrollPosition && currentScrollPosition !== 0) bar.classList.remove("d-none");
-        else bar.classList.add("d-none");
+        if (previousScrollPosition > currentScrollPosition && currentScrollPosition !== 0) bar.classList.remove("d-none")
+        else bar.classList.add("d-none")
 
-        previousScrollPosition = currentScrollPosition;
+        previousScrollPosition = currentScrollPosition
     }
     menuButton.onclick = () => {
         menu.classList.remove("d-none")

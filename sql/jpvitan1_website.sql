@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 22, 2023 at 06:43 PM
+-- Generation Time: Feb 24, 2023 at 07:24 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -32,6 +32,7 @@ CREATE TABLE `page` (
   `url` text NOT NULL,
   `title` varchar(2048) NOT NULL,
   `description` text NOT NULL,
+  `color` varchar(7) NOT NULL,
   `image` text NOT NULL,
   `author` varchar(1024) NOT NULL,
   `twitter` varchar(1024) NOT NULL
@@ -41,9 +42,9 @@ CREATE TABLE `page` (
 -- Dumping data for table `page`
 --
 
-INSERT INTO `page` (`id`, `url`, `title`, `description`, `image`, `author`, `twitter`) VALUES
-(1, 'jpvitan.com', 'Justine Paul Vitan', 'Software developer who writes top-quality code to build mobile and web applications.', 'https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676731158/jpvitan-website/banners/banner_luawo6.png', 'Justine Paul Vitan', '@jpvitan_dev'),
-(2, 'jpvitan.com', 'Apps | Justine Paul Vitan', 'Discover apps that follow modern standards and best practices to ensure a smooth and comfortable mobile and web experience for everyone.', 'https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676731158/jpvitan-website/banners/banner_luawo6.png', 'Justine Paul Vitan', '@jpvitan_dev');
+INSERT INTO `page` (`id`, `url`, `title`, `description`, `color`, `image`, `author`, `twitter`) VALUES
+(1, 'jpvitan.com', 'Justine Paul Vitan', 'Software developer who writes top-quality code to build mobile and web applications.', '#392258', 'https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676731158/jpvitan-website/banners/banner_luawo6.png', 'Justine Paul Vitan', '@jpvitan_dev'),
+(2, 'jpvitan.com', 'Apps | Justine Paul Vitan', 'Discover apps that follow modern standards and best practices to ensure a smooth and comfortable mobile and web experience for everyone.', '#09012b', 'https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676731158/jpvitan-website/banners/banner_luawo6.png', 'Justine Paul Vitan', '@jpvitan_dev');
 
 --
 -- Indexes for dumped tables

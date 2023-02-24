@@ -1,6 +1,6 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="<?php echo $page->getColor(); ?>">
 <meta name="description" content="<?php echo $page->getDescription(); ?>">
 <meta name="author" content="<?php echo $page->getAuthor(); ?>">
 <!-- Favicon -->

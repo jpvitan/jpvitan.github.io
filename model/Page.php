@@ -7,6 +7,7 @@ class Page
     private $url;
     private $title;
     private $description;
+    private $color;
     private $image;
     private $author;
     private $twitter;
@@ -29,6 +30,11 @@ class Page
     function getDescription()
     {
         return $this->description;
+    }
+
+    function getColor()
+    {
+        return $this->color;
     }
 
     function getImage()
@@ -66,6 +72,11 @@ class Page
         return $this->description = $description;
     }
 
+    function setColor($color)
+    {
+        return $this->color = $color;
+    }
+
     function setImage($image)
     {
         return $this->image = $image;
@@ -88,13 +99,14 @@ class Page
         $mysqli = Database::getConnection();
         $statement = $mysqli->prepare("SELECT * FROM page");
         $statement->execute();
-        $statement->bind_result($id, $url, $title, $description, $image, $author, $twitter);
+        $statement->bind_result($id, $url, $title, $description, $color, $image, $author, $twitter);
         while ($statement->fetch()) {
             $page = new Page();
             $page->setId($id);
             $page->setURL($url);
             $page->setTitle($title);
             $page->setDescription($description);
+            $page->setColor($color);
             $page->setImage($image);
             $page->setAuthor($author);
             $page->setTwitter($twitter);
@@ -113,12 +125,13 @@ class Page
         $statement = $mysqli->prepare("SELECT * FROM page WHERE id=?");
         $statement->bind_param("i", $id);
         $statement->execute();
-        $statement->bind_result($id, $url, $title, $description, $image, $author, $twitter);
+        $statement->bind_result($id, $url, $title, $description, $color, $image, $author, $twitter);
         if ($statement->fetch()) {
             $page->setId($id);
             $page->setURL($url);
             $page->setTitle($title);
             $page->setDescription($description);
+            $page->setColor($color);
             $page->setImage($image);
             $page->setAuthor($author);
             $page->setTwitter($twitter);

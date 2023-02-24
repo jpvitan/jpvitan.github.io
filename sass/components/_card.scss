@@ -1,16 +1,16 @@
 @use "../utilities/mixins";
 @use "../utilities/variables";
 
-.basic-card {
+.card-basic {
     border-radius: 25px;
     height: 100%;
 }
 
-.image-card {
+.card-image {
     border-radius: 0px;
 }
 
-.list-card {
+.card-list {
     border-radius: 0px;
 
     @media screen and (min-width: variables.$breakpoint-md) {
@@ -42,7 +42,7 @@
     }
 }
 
-.app-card {
+.card-app {
     border-radius: 0px;
 
     a {

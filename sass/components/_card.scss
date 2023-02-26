@@ -8,6 +8,9 @@
 
 .card-image {
     border-radius: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .card-list {
@@ -67,4 +70,12 @@
 
 .card-color-seashell {
     background-color: #ecf0f1;
+}
+
+.card-image-mountain {
+    background-image: url("https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118656/jpvitan-website/backgrounds/low-polygon-mountains_pfwc3i.jpg");
+}
+
+.card-image-abstract {
+    background-image: url("https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675852937/jpvitan-website/backgrounds/wavy-abstract_knmpgf.jpg");
 }

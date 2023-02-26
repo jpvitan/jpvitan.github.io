@@ -15,7 +15,7 @@ $page = Page::findById(1);
     <?php require "common/navigation.php"; ?>
     <main class="home">
         <section class="vh-100">
-            <div class="background-image-low-polygon-mountains card-image card shadow-lg border-0 text-center h-100">
+            <div class="card-image card-image-mountain card shadow-lg border-0 text-center h-100">
                 <div class="my-auto">
                     <img class="rounded-circle shadow-lg mx-auto mb-4" alt="Selfie" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675296391/jpvitan-website/profile/selfie_zwuuz1.jpg" width="100" height="100">
                     <h1 class="font-color-white mb-0">Justine Paul Vitan</h1>
@@ -50,7 +50,7 @@ $page = Page::findById(1);
                         <h2>Mobile</h2>
                         <div class="row">
                             <div class="col-md">
-                                <div class="background-image-wavy-abstract card-basic card shadow-lg border-0 px-5 py-5">
+                                <div class="card-basic card-image-abstract card shadow-lg border-0 px-5 py-5">
                                     <h3 class="font-color-white">What Are Your Mobile Development Skills?</h3>
                                     <p class="font-color-white fw-bold">Android and iOS Development</p>
                                     <p class="font-color-white">I can develop, design, and publish apps using native tools and technologies for both Android and iOS. My knowledge of each ecosystem's policies and best practices gives me an edge in delivering reliable and performant apps.</p>
@@ -92,7 +92,7 @@ $page = Page::findById(1);
                         <h2>Web</h2>
                         <div class="row">
                             <div class="col-md">
-                                <div class="background-image-wavy-abstract card-basic card shadow-lg border-0 px-5 py-5">
+                                <div class="card-basic card-image-abstract card shadow-lg border-0 px-5 py-5">
                                     <h3 class="font-color-white">What Are Your Web Development Skills?</h3>
                                     <p class="font-color-white fw-bold">Front-End and Back-End Development</p>
                                     <p class="font-color-white">I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web standards to ensure a smooth and comfortable web experience for everyone.</p>

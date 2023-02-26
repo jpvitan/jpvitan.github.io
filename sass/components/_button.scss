@@ -3,7 +3,7 @@
     border-radius: 20px;
 }
 
-.button-peter-river {
+.button-color-blue {
     background-color: #3498db;
     color: #fff;
 
@@ -13,22 +13,22 @@
     }
 }
 
-.button-clouds {
+.button-color-white {
+    background-color: #fff;
+    color: #3498db;
+
+    &:hover {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+.button-color-seashell {
     background-color: #ecf0f1;
     color: #3498db;
 
     &:hover {
         background-color: #ecf0f1;
-        color: #000;
-    }
-}
-
-.button-transparent-peter-river {
-    background-color: transparent;
-    color: #3498db;
-
-    &:hover {
-        background-color: transparent;
         color: #000;
     }
 }

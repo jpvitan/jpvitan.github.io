@@ -20,6 +20,6 @@ class AppCard
 
     function generate()
     {
-        return "<div class='card-app card border-0 px-4 px-md-5 py-5' style='{$this->style}'><img class='icon shadow mb-4' alt='{$this->title}' src='{$this->icon}' width='70' height='70'><div class='row mb-3'><div class='col my-auto'><p class='title'>{$this->title}</p><p class='fw-bold mb-0'>{$this->platform}</p></div><div class='col-auto my-auto'><a class='button button-clouds btn' href='{$this->link}'>View</a></div></div><p>{$this->description}</p></div>";
+        return "<div class='card-app card border-0 px-4 px-md-5 py-5' style='{$this->style}'><img class='icon shadow mb-4' alt='{$this->title}' src='{$this->icon}' width='70' height='70'><div class='row mb-3'><div class='col my-auto'><p class='title'>{$this->title}</p><p class='fw-bold mb-0'>{$this->platform}</p></div><div class='col-auto my-auto'><a class='button button-color-seashell btn' href='{$this->link}'>View</a></div></div><p>{$this->description}</p></div>";
     }
 }

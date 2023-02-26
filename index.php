@@ -33,10 +33,10 @@ $page = Page::findById(1);
                         <p>I'm a mobile and web developer who writes production-grade software that follows modern standards and best practices to ensure a smooth and comfortable mobile and web experience for everyone.</p>
                         <div class="row justify-content-center">
                             <div class="col-auto">
-                                <a class="button button-peter-river btn shadow-lg px-4 py-2 mt-4" href="mailto:business@jpvitan.com">Let's Talk</a>
+                                <a class="button button-color-blue btn shadow-lg px-4 py-2 mt-4" href="mailto:business@jpvitan.com">Let's Talk</a>
                             </div>
                             <div class="col-auto">
-                                <a class="button button-transparent-peter-river btn px-4 py-2 mt-4" href="https://jpvitan.com/apps">View Apps</a>
+                                <a class="button button-color-white btn px-4 py-2 mt-4" href="https://jpvitan.com/apps">View Apps</a>
                             </div>
                         </div>
                     </div>

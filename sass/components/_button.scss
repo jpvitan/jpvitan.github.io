@@ -2,3 +2,33 @@
     font-weight: 600;
     border-radius: 20px;
 }
+
+.button-peter-river {
+    background-color: #3498db;
+    color: #fff;
+
+    &:hover {
+        background-color: #3498db;
+        color: #000;
+    }
+}
+
+.button-clouds {
+    background-color: #ecf0f1;
+    color: #3498db;
+
+    &:hover {
+        background-color: #ecf0f1;
+        color: #000;
+    }
+}
+
+.button-transparent-peter-river {
+    background-color: transparent;
+    color: #3498db;
+
+    &:hover {
+        background-color: transparent;
+        color: #000;
+    }
+}

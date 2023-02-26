@@ -57,7 +57,7 @@ $page = Page::findById(1);
                                 </div>
                             </div>
                             <div class="col-md mt-3 mt-md-0">
-                                <div class="background-color-clouds card-basic card shadow-lg border-0 px-5 pt-5">
+                                <div class="card-basic card-color-seashell card shadow-lg border-0 px-5 pt-5">
                                     <h3>Featured Mobile App</h3>
                                     <p class="fw-bold">SatTrack-X by Justine Paul Vitan</p>
                                     <p>An Android application that lets you track over two thousand earth-orbiting satellites for free and without limits. It has a customizable and compact interface that users can easily pick up.</p>
@@ -99,7 +99,7 @@ $page = Page::findById(1);
                                 </div>
                             </div>
                             <div class="col-md mt-3 mt-md-0">
-                                <div class="background-color-clouds card-basic card shadow-lg border-0 px-5 py-5">
+                                <div class="card-basic card-color-seashell card shadow-lg border-0 px-5 py-5">
                                     <h3>Featured Web App</h3>
                                     <p class="fw-bold">EarthquakePH by Justine Paul Vitan</p>
                                     <p>A highly customizable real-time and progressive web application that tracks and monitors the latest earthquake recorded by the United States Geological Survey within the Philippines and the world.</p>
@@ -134,7 +134,7 @@ $page = Page::findById(1);
                         <h2>Certificates</h2>
                         <div class="row">
                             <div class="col-md">
-                                <div class="background-color-black card-basic card shadow-lg border-0 text-center px-5 py-5" style="overflow-x: hidden;">
+                                <div class="card-basic card-color-black card shadow-lg border-0 text-center px-5 py-5" style="overflow-x: hidden;">
                                     <div class="my-auto">
                                         <a href="https://drive.google.com/drive/folders/1XhgPGvFUXtb_99ATdpOCHK0p0pUJ3NZz">
                                             <div data-aos="zoom-out">
@@ -154,7 +154,7 @@ $page = Page::findById(1);
                                 </div>
                             </div>
                             <div class="col-md mt-3 mt-md-0">
-                                <div class="background-color-clouds card-basic card shadow-lg border-0 px-5 py-5" style="overflow-x: hidden;">
+                                <div class="card-basic card-color-seashell card shadow-lg border-0 px-5 py-5" style="overflow-x: hidden;">
                                     <a class="text-center py-4 my-5" href="https://www.credly.com/badges/b97de60d-3b7c-436d-bc76-f271322f4211/public_url">
                                         <img class="img-fluid" alt="Exam 98-361: Software Development Fundamentals" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676316116/jpvitan-website/badges/mta-software-development-fundamentals-2018_k6omov.png" width="300" height="300">
                                     </a>

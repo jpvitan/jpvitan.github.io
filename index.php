@@ -164,7 +164,7 @@ $page = Page::findById(1);
                                         <p class="fw-bold mt-3 mb-0">Object-Oriented Programming</p>
                                         <div class="row">
                                             <div class="col my-auto">
-                                                <div class="progress-basic progress">
+                                                <div class="progress">
                                                     <div class="progress-bar" style="width: 100%; background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);" role="progressbar" aria-label="Object-Oriented Programming" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                             </div>
@@ -177,7 +177,7 @@ $page = Page::findById(1);
                                         <p class="fw-bold mt-3 mb-0">Desktop Applications</p>
                                         <div class="row">
                                             <div class="col my-auto">
-                                                <div class="progress-basic progress">
+                                                <div class="progress">
                                                     <div class="progress-bar" style="width: 100%; background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);" role="progressbar" aria-label="Desktop Applications" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                             </div>
@@ -190,7 +190,7 @@ $page = Page::findById(1);
                                         <p class="fw-bold mt-3 mb-0">Core Programming</p>
                                         <div class="row">
                                             <div class="col my-auto">
-                                                <div class="progress-basic progress">
+                                                <div class="progress">
                                                     <div class="progress-bar" style="width: 89%; background-color: #21d4fd; background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);" role="progressbar" aria-label="Core Programming" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                             </div>

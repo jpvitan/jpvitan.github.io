@@ -61,10 +61,3 @@
     backdrop-filter: blur($blur);
     -webkit-backdrop-filter: blur($blur);
 }
-
-@mixin background-image($url, $background-repeat: no-repeat, $background-size: cover, $background-position: center) {
-    background-image: url($url);
-    background-repeat: $background-repeat;
-    background-size: $background-size;
-    background-position: $background-position;
-}

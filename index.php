@@ -18,10 +18,10 @@ $page = Page::findById(1);
             <div class="card-feature card-image card-image-mountain card shadow-lg border-0 text-center h-100">
                 <div class="my-auto">
                     <img class="rounded-circle shadow-lg mx-auto mb-4" alt="Selfie" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675296391/jpvitan-website/profile/selfie_zwuuz1.jpg" width="100" height="100">
-                    <h1 class="font-color-white mb-0">Justine Paul Vitan</h1>
-                    <p class="font-color-white fw-bold">Software Developer</p>
+                    <h1 class="text-color-white mb-0">Justine Paul Vitan</h1>
+                    <p class="text-color-white fw-bold">Software Developer</p>
                     <img class="mt-4" alt="Arrow Down" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676559077/jpvitan-website/icons/arrow-down_f7nvlm.gif" width="25" height="25">
-                    <p class="font-notice-small font-color-white mt-2">Scroll Down</p>
+                    <p class="text-notice-small text-color-white mt-2">Scroll Down</p>
                 </div>
             </div>
         </section>
@@ -51,9 +51,9 @@ $page = Page::findById(1);
                         <div class="row">
                             <div class="col-md">
                                 <div class="card-basic card-image card-image-abstract card shadow-lg border-0 px-5 py-5">
-                                    <h3 class="font-color-white">What Are Your Mobile Development Skills?</h3>
-                                    <p class="font-color-white fw-bold">Android and iOS Development</p>
-                                    <p class="font-color-white">I can develop, design, and publish apps using native tools and technologies for both Android and iOS. My knowledge of each ecosystem's policies and best practices gives me an edge in delivering reliable and performant apps.</p>
+                                    <h3 class="text-color-white">What Are Your Mobile Development Skills?</h3>
+                                    <p class="text-color-white fw-bold">Android and iOS Development</p>
+                                    <p class="text-color-white">I can develop, design, and publish apps using native tools and technologies for both Android and iOS. My knowledge of each ecosystem's policies and best practices gives me an edge in delivering reliable and performant apps.</p>
                                 </div>
                             </div>
                             <div class="col-md mt-3 mt-md-0">
@@ -93,9 +93,9 @@ $page = Page::findById(1);
                         <div class="row">
                             <div class="col-md">
                                 <div class="card-basic card-image card-image-abstract card shadow-lg border-0 px-5 py-5">
-                                    <h3 class="font-color-white">What Are Your Web Development Skills?</h3>
-                                    <p class="font-color-white fw-bold">Front-End and Back-End Development</p>
-                                    <p class="font-color-white">I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web standards to ensure a smooth and comfortable web experience for everyone.</p>
+                                    <h3 class="text-color-white">What Are Your Web Development Skills?</h3>
+                                    <p class="text-color-white fw-bold">Front-End and Back-End Development</p>
+                                    <p class="text-color-white">I am capable of building, maintaining, and designing websites using popular front-end and back-end technologies. I create websites that strictly adhere to modern web standards to ensure a smooth and comfortable web experience for everyone.</p>
                                 </div>
                             </div>
                             <div class="col-md mt-3 mt-md-0">
@@ -138,16 +138,16 @@ $page = Page::findById(1);
                                     <div class="my-auto">
                                         <a href="https://drive.google.com/drive/folders/1XhgPGvFUXtb_99ATdpOCHK0p0pUJ3NZz">
                                             <div data-aos="zoom-out">
-                                                <p class="font-figure-big font-color-amethyst fw-bold">4</p>
-                                                <p class="font-color-white fw-bold">Professional Certificates</p>
+                                                <p class="text-figure-big text-color-amethyst fw-bold">4</p>
+                                                <p class="text-color-white fw-bold">Professional Certificates</p>
                                             </div>
                                             <div data-aos="zoom-out">
-                                                <p class="font-figure-big font-color-amethyst fw-bold mt-4">3</p>
-                                                <p class="font-color-white fw-bold">Programming Competitions</p>
+                                                <p class="text-figure-big text-color-amethyst fw-bold mt-4">3</p>
+                                                <p class="text-color-white fw-bold">Programming Competitions</p>
                                             </div>
                                             <div data-aos="zoom-out">
-                                                <p class="font-figure-big font-color-amethyst fw-bold mt-4">2</p>
-                                                <p class="font-color-white fw-bold">Academic Awards</p>
+                                                <p class="text-figure-big text-color-amethyst fw-bold mt-4">2</p>
+                                                <p class="text-color-white fw-bold">Academic Awards</p>
                                             </div>
                                         </a>
                                     </div>
@@ -169,7 +169,7 @@ $page = Page::findById(1);
                                                 </div>
                                             </div>
                                             <div class="col-auto my-auto">
-                                                <p class="font-figure-small font-color-amethyst fw-bold my-auto">100%</p>
+                                                <p class="text-figure-small text-color-amethyst fw-bold my-auto">100%</p>
                                             </div>
                                         </div>
                                     </div>
@@ -182,7 +182,7 @@ $page = Page::findById(1);
                                                 </div>
                                             </div>
                                             <div class="col-auto my-auto">
-                                                <p class="font-figure-small font-color-amethyst fw-bold my-auto">100%</p>
+                                                <p class="text-figure-small text-color-amethyst fw-bold my-auto">100%</p>
                                             </div>
                                         </div>
                                     </div>
@@ -195,7 +195,7 @@ $page = Page::findById(1);
                                                 </div>
                                             </div>
                                             <div class="col-auto my-auto">
-                                                <p class="font-figure-small font-color-amethyst fw-bold my-auto">89%</p>
+                                                <p class="text-figure-small text-color-amethyst fw-bold my-auto">89%</p>
                                             </div>
                                         </div>
                                     </div>

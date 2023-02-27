@@ -23,8 +23,8 @@
     }
 }
 
-// Font
-@mixin font-size-responsive($font-size, $breakpoint-font-size, $breakpoint) {
+// Text
+@mixin text-size-responsive($font-size, $breakpoint-font-size, $breakpoint) {
     font-size: $font-size;
 
     @media screen and (min-width: $breakpoint) {
@@ -60,11 +60,4 @@
     background-color: $background-color;
     backdrop-filter: blur($blur);
     -webkit-backdrop-filter: blur($blur);
-}
-
-@mixin background-image($url, $background-repeat: no-repeat, $background-size: cover, $background-position: center) {
-    background-image: url($url);
-    background-repeat: $background-repeat;
-    background-size: $background-size;
-    background-position: $background-position;
 }

@@ -3,11 +3,10 @@
 @use "./components/button";
 @use "./components/card";
 @use "./components/progress";
+@use "./components/text";
 
 @use "./layout/footer";
 @use "./layout/navigation";
 
-@use "./utilities/backgrounds";
-@use "./utilities/fonts";
 @use "./utilities/sizes";
 @use "./utilities/variables";

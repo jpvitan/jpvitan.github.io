@@ -6,7 +6,7 @@
     height: 100%;
 }
 
-.card-image {
+.card-feature {
     border-radius: 0px;
 }
 
@@ -59,4 +59,26 @@
         color: #000;
         margin-bottom: 0.5rem;
     }
+}
+
+.card-color-black {
+    background-color: #000;
+}
+
+.card-color-seashell {
+    background-color: #ecf0f1;
+}
+
+.card-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-image-mountain {
+    background-image: url("https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675118656/jpvitan-website/backgrounds/low-polygon-mountains_pfwc3i.jpg");
+}
+
+.card-image-abstract {
+    background-image: url("https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675852937/jpvitan-website/backgrounds/wavy-abstract_knmpgf.jpg");
 }

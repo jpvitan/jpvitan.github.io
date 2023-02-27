@@ -8,6 +8,6 @@ class Database
 
     public static function getConnection()
     {
-        return new mysqli(self::$host, self::$username, "", self::$dbname);
+        return new mysqli(self::$host, self::$username, self::$password, self::$dbname);
     }
 }

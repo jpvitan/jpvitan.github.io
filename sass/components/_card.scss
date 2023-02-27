@@ -6,11 +6,8 @@
     height: 100%;
 }
 
-.card-image {
+.card-feature {
     border-radius: 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .card-list {
@@ -70,6 +67,12 @@
 
 .card-color-seashell {
     background-color: #ecf0f1;
+}
+
+.card-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .card-image-mountain {

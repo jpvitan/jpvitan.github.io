@@ -23,8 +23,8 @@
     }
 }
 
-// Font
-@mixin font-size-responsive($font-size, $breakpoint-font-size, $breakpoint) {
+// Text
+@mixin text-size-responsive($font-size, $breakpoint-font-size, $breakpoint) {
     font-size: $font-size;
 
     @media screen and (min-width: $breakpoint) {

@@ -10,14 +10,26 @@
     color: #9b59b6;
 }
 
-.text-figure-small {
-    font-size: 1.4rem;
-}
-
-.text-figure-big {
+.text-size-figure {
     font-size: 4rem;
 }
 
-.text-notice-small {
+.text-size-xl {
+    font-size: 1.4rem;
+}
+
+.text-size-lg {
+    font-size: 1.2rem;
+}
+
+.text-size-md {
+    font-size: 1rem;
+}
+
+.text-size-sm {
     font-size: 0.8rem;
+}
+
+.text-size-xs {
+    font-size: 0.6rem;
 }

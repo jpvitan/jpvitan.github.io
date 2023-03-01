@@ -21,7 +21,7 @@ $page = Page::findById(1);
                     <h1 class="text-color-white mb-0">Justine Paul Vitan</h1>
                     <p class="text-color-white fw-bold">Software Developer</p>
                     <img class="mt-4" alt="Arrow Down" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676559077/jpvitan-website/icons/arrow-down_f7nvlm.gif" width="25" height="25">
-                    <p class="text-notice-small text-color-white mt-2">Scroll Down</p>
+                    <p class="text-size-sm text-color-white mt-2">Scroll Down</p>
                 </div>
             </div>
         </section>
@@ -138,15 +138,15 @@ $page = Page::findById(1);
                                     <div class="my-auto">
                                         <a href="https://drive.google.com/drive/folders/1XhgPGvFUXtb_99ATdpOCHK0p0pUJ3NZz">
                                             <div data-aos="zoom-out">
-                                                <p class="text-figure-big text-color-amethyst fw-bold">4</p>
+                                                <p class="text-size-figure text-color-amethyst fw-bold">4</p>
                                                 <p class="text-color-white fw-bold">Professional Certificates</p>
                                             </div>
                                             <div data-aos="zoom-out">
-                                                <p class="text-figure-big text-color-amethyst fw-bold mt-4">3</p>
+                                                <p class="text-size-figure text-color-amethyst fw-bold mt-4">3</p>
                                                 <p class="text-color-white fw-bold">Programming Competitions</p>
                                             </div>
                                             <div data-aos="zoom-out">
-                                                <p class="text-figure-big text-color-amethyst fw-bold mt-4">2</p>
+                                                <p class="text-size-figure text-color-amethyst fw-bold mt-4">2</p>
                                                 <p class="text-color-white fw-bold">Academic Awards</p>
                                             </div>
                                         </a>
@@ -169,7 +169,7 @@ $page = Page::findById(1);
                                                 </div>
                                             </div>
                                             <div class="col-auto my-auto">
-                                                <p class="text-figure-small text-color-amethyst fw-bold my-auto">100%</p>
+                                                <p class="text-size-xl text-color-amethyst fw-bold my-auto">100%</p>
                                             </div>
                                         </div>
                                     </div>
@@ -182,7 +182,7 @@ $page = Page::findById(1);
                                                 </div>
                                             </div>
                                             <div class="col-auto my-auto">
-                                                <p class="text-figure-small text-color-amethyst fw-bold my-auto">100%</p>
+                                                <p class="text-size-xl text-color-amethyst fw-bold my-auto">100%</p>
                                             </div>
                                         </div>
                                     </div>
@@ -195,7 +195,7 @@ $page = Page::findById(1);
                                                 </div>
                                             </div>
                                             <div class="col-auto my-auto">
-                                                <p class="text-figure-small text-color-amethyst fw-bold my-auto">89%</p>
+                                                <p class="text-size-xl text-color-amethyst fw-bold my-auto">89%</p>
                                             </div>
                                         </div>
                                     </div>

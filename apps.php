@@ -21,7 +21,7 @@ $page = Page::findById(2);
                     <h1 class="text-color-white mb-0">Apps</h1>
                     <p class="text-color-white fw-bold">Justine Paul Vitan</p>
                     <img class="mt-4" alt="Arrow Down" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676559077/jpvitan-website/icons/arrow-down_f7nvlm.gif" width="25" height="25">
-                    <p class="text-notice-small text-color-white mt-2">Scroll Down</p>
+                    <p class="text-size-sm text-color-white mt-2">Scroll Down</p>
                 </div>
             </div>
         </section>

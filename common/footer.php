@@ -7,7 +7,7 @@ require_once "utilities/Icon.php";
             <div class="col-auto my-auto">
                 <a href="https://github.com/jpvitan">
                     <div class="icon-container">
-                        <?php echo Icon::GitHub(); ?>
+                        <?php echo Icon::Git(); ?>
                     </div>
                 </a>
             </div>

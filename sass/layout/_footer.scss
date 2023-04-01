@@ -13,7 +13,6 @@ footer {
         }
 
         svg {
-            @include mixins.position-relative($left: 50%, $top: 50%, $center: true);
             @include mixins.icon-svg($size: 18px, $color: var(--navigation-icon-color));
         }
     }

@@ -6,21 +6,21 @@ require_once "utilities/Icon.php";
         <div class="row justify-content-center">
             <div class="col-auto my-auto">
                 <a href="https://github.com/jpvitan">
-                    <div class="icon-container">
+                    <div class="icon-container d-flex justify-content-center align-items-center">
                         <?php echo Icon::Git(); ?>
                     </div>
                 </a>
             </div>
             <div class="col-auto my-auto">
                 <a href="https://twitter.com/jpvitan_dev">
-                    <div class="icon-container">
+                    <div class="icon-container d-flex justify-content-center align-items-center">
                         <?php echo Icon::Twitter(); ?>
                     </div>
                 </a>
             </div>
             <div class="col-auto my-auto">
                 <a href="https://www.youtube.com/@jpvitan">
-                    <div class="icon-container">
+                    <div class="icon-container d-flex justify-content-center align-items-center">
                         <?php echo Icon::YouTube(); ?>
                     </div>
                 </a>

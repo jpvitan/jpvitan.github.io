@@ -40,7 +40,6 @@
             }
 
             svg {
-                @include mixins.position-relative($left: 50%, $top: 50%, $center: true);
                 @include mixins.icon-svg($size: 25px, $color: var(--navigation-icon-color));
             }
         }

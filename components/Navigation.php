@@ -14,6 +14,6 @@ class Navigation
 
     function generate()
     {
-        return "<div class='col-lg-auto text-center mt-5 px-5'><a href='{$this->link}'><div class='icon-container shadow mx-auto'>{$this->icon}</div></a><p>{$this->title}</p></div>";
+        return "<div class='col-lg-auto text-center mt-5 px-5'><a href='{$this->link}'><div class='icon-container shadow mx-auto d-flex justify-content-center align-items-center'>{$this->icon}</div></a><p>{$this->title}</p></div>";
     }
 }

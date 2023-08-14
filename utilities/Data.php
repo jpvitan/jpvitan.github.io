@@ -28,6 +28,14 @@ $APP_CARD = [
         "https://jpvitan.com/",
         "An informational website that serves as my online curriculum vitae. It has an accessible interface that's easy to navigate, even for people with visual impairments. A PSI audit on my website showed a perfect score on accessibility and best practices.",
         ""
+    ),
+    new AppCard(
+        "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1692028008/jpvitan-website/icons/apps/sattrack-arcturus_lmc1eq.png",
+        "SatTrack-Arcturus",
+        "Express",
+        "https://github.com/jpvitan/sattrack-arcturus",
+        "A RESTful API built with Node.js and Express that lets you retrieve useful satellite information by providing identifiers assigned by the North American Aerospace Defense Command (NORAD).",
+        ""
     )
 ];
 

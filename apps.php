@@ -15,9 +15,9 @@ $page = Page::findById(2);
     <?php require "common/navigation.php"; ?>
     <main class="home">
         <section class="vh-100">
-            <div class="card-feature card-image card-image-abstract card shadow-lg border-0 text-center h-100">
-                <div class="my-auto">
-                    <img class="rounded-circle shadow-lg mx-auto mb-4" alt="Selfie" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675296391/jpvitan-website/profile/selfie_zwuuz1.jpg" width="100" height="100">
+            <div class="card-feature card-image card-image-abstract card shadow-lg border-0 h-100 d-flex justify-content-center align-items-center">
+                <div class="text-center">
+                    <img class="rounded-circle shadow-lg mb-4" alt="Selfie" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675296391/jpvitan-website/profile/selfie_zwuuz1.jpg" width="100" height="100">
                     <h1 class="text-color-white mb-0">Apps</h1>
                     <p class="text-color-white fw-bold">Justine Paul Vitan</p>
                     <img class="mt-4" alt="Arrow Down" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676559077/jpvitan-website/icons/arrow-down_f7nvlm.gif" width="25" height="25">

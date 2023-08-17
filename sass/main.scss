@@ -1,12 +1,10 @@
-@use "./pages/general";
-
+@use "./components/background";
 @use "./components/button";
 @use "./components/card";
 @use "./components/progress";
 @use "./components/text";
-
 @use "./layout/footer";
 @use "./layout/navigation";
-
+@use "./pages/general";
 @use "./utilities/sizes";
 @use "./utilities/variables";

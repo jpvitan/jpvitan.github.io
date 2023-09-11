@@ -15,7 +15,7 @@ $page = Page::findById(2);
     <?php require "common/navigation.php"; ?>
     <main class="home">
         <section class="vh-100">
-            <div class="background-image background-image-abstract card-feature card shadow-lg border-0 h-100 d-flex justify-content-center align-items-center">
+            <div class="background-image background-image-abstract shadow-lg h-100 d-flex justify-content-center align-items-center">
                 <div class="text-center">
                     <img class="rounded-circle shadow-lg mb-4" alt="Selfie" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675296391/jpvitan-website/profile/selfie_zwuuz1.jpg" width="100" height="100">
                     <h1 class="text-color-white mb-0">Apps</h1>

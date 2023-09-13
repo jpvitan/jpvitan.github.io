@@ -19,7 +19,10 @@
 
     .icon-row {
         svg {
-            @include mixins.icon-svg($size: 30px, $color: #fff);
+            display: block;
+            width: 30px;
+            height: 30px;
+            color: #fff;
         }
     }
 
@@ -32,7 +35,10 @@
 
     .item-row {
         svg {
-            @include mixins.icon-svg($size: 15px, $color: #fff);
+            display: block;
+            width: 15x;
+            height: 15px;
+            color: #fff;
         }
 
         p {

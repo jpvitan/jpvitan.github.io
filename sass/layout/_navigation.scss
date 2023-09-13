@@ -31,12 +31,18 @@
 
             &:hover {
                 svg {
-                    @include mixins.icon-svg($size: 30px, $color: var(--navigation-icon-hover-color));
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    color: var(--navigation-icon-hover-color);
                 }
             }
 
             svg {
-                @include mixins.icon-svg($size: 25px, $color: var(--navigation-icon-color));
+                display: block;
+                width: 25px;
+                height: 25px;
+                color: var(--navigation-icon-color);
             }
         }
 

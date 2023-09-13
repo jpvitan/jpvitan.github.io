@@ -8,12 +8,18 @@ footer {
 
         &:hover {
             svg {
-                @include mixins.icon-svg($size: 18px, $color: var(--navigation-icon-hover-color));
+                display: block;
+                width: 18px;
+                height: 18px;
+                color: var(--navigation-icon-hover-color);
             }
         }
 
         svg {
-            @include mixins.icon-svg($size: 18px, $color: var(--navigation-icon-color));
+            display: block;
+            width: 18px;
+            height: 18px;
+            color: var(--navigation-icon-color);
         }
     }
 

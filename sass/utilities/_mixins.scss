@@ -32,14 +32,6 @@
     }
 }
 
-// Icon
-@mixin icon-svg($size, $color) {
-    display: block;
-    width: $size;
-    height: $size;
-    color: $color;
-}
-
 // Shape
 @mixin shape-circle($size: null, $background-color: null) {
     border-radius: 50%;

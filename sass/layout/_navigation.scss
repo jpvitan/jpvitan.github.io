@@ -12,13 +12,18 @@
 
     .bar {
         @include mixins.position-fixed($left: 0, $right: 0, $top: 0);
-        @include mixins.background-blur($background-color: var(--navigation-bar-background-color), $blur: var(--navigation-bar-background-blur));
+
+        background-color: var(--navigation-bar-background-color);
+        backdrop-filter: blur(var(--navigation-bar-background-blur));
+        -webkit-backdrop-filter: blur(var(--navigation-bar-background-blur));
     }
 
     .menu {
         @include mixins.position-fixed($left: 0, $right: 0, $top: 0, $bottom: 0);
-        @include mixins.background-blur($background-color: var(--navigation-menu-background-color), $blur: var(--navigation-menu-background-blur));
 
+        background-color: var(--navigation-menu-background-color);
+        backdrop-filter: blur(var(--navigation-menu-background-blur));
+        -webkit-backdrop-filter: blur(var(--navigation-menu-background-blur));
         overflow-y: auto;
     }
 

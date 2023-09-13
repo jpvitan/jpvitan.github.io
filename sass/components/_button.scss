@@ -1,5 +1,22 @@
 @use "../utilities/colors";
 
+.button-icon {
+    display: block;
+    padding: 0;
+
+    svg {
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.button-icon-black {
+    svg {
+        color: colors.$black;
+    }
+}
+
 .button-pill,
 .button-capsule,
 .button-plain {

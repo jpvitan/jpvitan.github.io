@@ -10,12 +10,11 @@
     }
 
     .menu {
-        @include mixins.position-fixed($left: 0, $right: 0, $top: 0, $bottom: 0);
+        @include mixins.page-regular;
 
         background-color: var(--navigation-menu-background-color);
         backdrop-filter: blur(var(--navigation-menu-background-blur));
         -webkit-backdrop-filter: blur(var(--navigation-menu-background-blur));
-        overflow-y: auto;
     }
 
     .bar,

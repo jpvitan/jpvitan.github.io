@@ -1,3 +1,13 @@
+@use "../utilities/colors";
+
+.background-color-black {
+    background-color: colors.$black;
+}
+
+.background-color-seashell {
+    background-color: colors.$seashell;
+}
+
 .background-image {
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,12 +20,4 @@
 
 .background-image-abstract {
     background-image: url("https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1675852937/jpvitan-website/backgrounds/wavy-abstract_knmpgf.jpg");
-}
-
-.background-color-black {
-    background-color: #000;
-}
-
-.background-color-seashell {
-    background-color: #ecf0f1;
 }

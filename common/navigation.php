@@ -7,7 +7,7 @@ require_once "utilities/Icon.php";
     <div class="container-fluid px-3 py-3">
       <div class="row">
         <div class="col-auto my-auto">
-          <button class="btn" id="navigation-menu-button" aria-label="Menu">
+          <button class="button-icon button-icon-black btn" id="navigation-menu-button" aria-label="Menu">
             <?php echo Icon::Menu(); ?>
           </button>
         </div>
@@ -18,7 +18,7 @@ require_once "utilities/Icon.php";
     <div class="container-fluid px-3 py-3">
       <div class="row">
         <div class="col-auto my-auto">
-          <button class="btn" id="navigation-close-button" aria-label="Close">
+          <button class="button-icon button-icon-black btn" id="navigation-close-button" aria-label="Close">
             <?php echo Icon::Close(); ?>
           </button>
         </div>

@@ -1,34 +1,57 @@
-.button {
+@use "../utilities/colors";
+
+.button-icon {
+    display: block;
+    padding: 0;
+
+    svg {
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.button-icon-black {
+    svg {
+        color: colors.$black;
+    }
+}
+
+.button-pill,
+.button-capsule,
+.button-plain {
     font-weight: 600;
+}
+
+.button-pill,
+.button-capsule {
     border-radius: 20px;
 }
 
-.button-color-blue {
-    background-color: #3498db;
-    color: #fff;
+.button-pill-blue {
+    background-color: colors.$blue;
+    color: colors.$white;
 
     &:hover {
-        background-color: #3498db;
-        color: #000;
+        background-color: colors.$blue;
+        color: colors.$black;
     }
 }
 
-.button-color-white {
-    background-color: #fff;
-    color: #3498db;
+.button-pill-seashell {
+    background-color: colors.$seashell;
+    color: colors.$blue;
 
     &:hover {
-        background-color: #fff;
-        color: #000;
+        background-color: colors.$seashell;
+        color: colors.$black;
     }
 }
 
-.button-color-seashell {
-    background-color: #ecf0f1;
-    color: #3498db;
+.button-plain-blue {
+    color: colors.$blue;
 
     &:hover {
-        background-color: #ecf0f1;
-        color: #000;
+        color: colors.$black
     }
 }

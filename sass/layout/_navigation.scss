@@ -1,25 +1,20 @@
 @use "../utilities/mixins";
 
 .navigation {
-    button {
-        display: block;
-        padding: 0;
-
-        svg {
-            @include mixins.icon-svg($size: 20px, $color: var(--navigation-icon-color));
-        }
-    }
-
     .bar {
         @include mixins.position-fixed($left: 0, $right: 0, $top: 0);
-        @include mixins.background-blur($background-color: var(--navigation-bar-background-color), $blur: var(--navigation-bar-background-blur));
+
+        background-color: var(--navigation-bar-background-color);
+        backdrop-filter: blur(var(--navigation-bar-background-blur));
+        -webkit-backdrop-filter: blur(var(--navigation-bar-background-blur));
     }
 
     .menu {
-        @include mixins.position-fixed($left: 0, $right: 0, $top: 0, $bottom: 0);
-        @include mixins.background-blur($background-color: var(--navigation-menu-background-color), $blur: var(--navigation-menu-background-blur));
+        @include mixins.page-regular;
 
-        overflow-y: auto;
+        background-color: var(--navigation-menu-background-color);
+        backdrop-filter: blur(var(--navigation-menu-background-blur));
+        -webkit-backdrop-filter: blur(var(--navigation-menu-background-blur));
     }
 
     .bar,
@@ -33,14 +28,20 @@
 
             background-color: var(--navigation-icon-background-color);
 
-            &:hover {
-                svg {
-                    @include mixins.icon-svg($size: 30px, $color: var(--navigation-icon-hover-color));
-                }
+            svg {
+                display: block;
+                width: 25px;
+                height: 25px;
+                color: var(--navigation-icon-color);
             }
 
-            svg {
-                @include mixins.icon-svg($size: 25px, $color: var(--navigation-icon-color));
+            &:hover {
+                svg {
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    color: var(--navigation-icon-hover-color);
+                }
             }
         }
 

@@ -6,12 +6,8 @@
     height: 100%;
 }
 
-.card-feature {
-    border-radius: 0px;
-}
-
 .card-list {
-    border-radius: 0px;
+    border-radius: 0;
 
     @media screen and (min-width: variables.$breakpoint-md) {
         border-radius: 25px;
@@ -19,7 +15,10 @@
 
     .icon-row {
         svg {
-            @include mixins.icon-svg($size: 30px, $color: #fff);
+            display: block;
+            width: 30px;
+            height: 30px;
+            color: #fff;
         }
     }
 
@@ -32,7 +31,10 @@
 
     .item-row {
         svg {
-            @include mixins.icon-svg($size: 15px, $color: #fff);
+            display: block;
+            width: 15px;
+            height: 15px;
+            color: #fff;
         }
 
         p {
@@ -43,7 +45,7 @@
 }
 
 .card-app {
-    border-radius: 0px;
+    border-radius: 0;
 
     a {
         font-size: 0.8rem;

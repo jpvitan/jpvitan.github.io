@@ -33,7 +33,7 @@ $APP_CARD = [
         "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1692028008/jpvitan-website/icons/apps/sattrack-arcturus_lmc1eq.png",
         "SatTrack-Arcturus",
         "Express",
-        "https://github.com/jpvitan/sattrack-arcturus",
+        "https://sattrack-arcturus.onrender.com",
         "A RESTful API built with Node.js and Express that lets you track and predict the orbit of artificial satellites through the use of the Simplified General Perturbations-4 (SGP4) model.",
         ""
     )

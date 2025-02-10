@@ -10,7 +10,7 @@ $APP_CARD = [
         "SatTrack-X",
         "Android",
         "https://play.google.com/store/apps/details?id=com.jpv.sattrack",
-        "An Android application that lets you track over two thousand earth-orbiting satellites for free and without limits. It has a customizable and compact interface that users can easily pick up.",
+        "A satellite tracking tool designed for enthusiasts of all skill levels. It features real-time tracking, detailed orbital paths, and an intuitive interface, making it easy to monitor satellites and explore space.",
         ""
     ),
     new AppCard(

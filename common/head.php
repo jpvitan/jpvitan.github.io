@@ -11,13 +11,6 @@
 <meta property="og:title" content="<?php echo $page->getTitle(); ?>" />
 <meta property="og:description" content="<?php echo $page->getDescription(); ?>" />
 <meta property="og:image" content="<?php echo $page->getImage(); ?>" />
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="<?php echo $page->getTwitter(); ?>">
-<meta name="twitter:creator" content="<?php echo $page->getTwitter(); ?>">
-<meta name="twitter:title" content="<?php echo $page->getTitle(); ?>">
-<meta name="twitter:description" content="<?php echo $page->getDescription(); ?>">
-<meta name="twitter:image" content="<?php echo $page->getImage(); ?>">
 <!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <!-- Google Fonts -->

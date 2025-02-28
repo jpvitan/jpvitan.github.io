@@ -10,7 +10,6 @@ class Page
     private $color;
     private $image;
     private $author;
-    private $twitter;
 
     function getId()
     {
@@ -45,11 +44,6 @@ class Page
     function getAuthor()
     {
         return $this->author;
-    }
-
-    function getTwitter()
-    {
-        return $this->twitter;
     }
 
     function setId($id)
@@ -87,11 +81,6 @@ class Page
         return $this->author = $author;
     }
 
-    function setTwitter($twitter)
-    {
-        return $this->twitter = $twitter;
-    }
-
     static function findAll()
     {
         $array = [];
@@ -99,7 +88,7 @@ class Page
         $mysqli = Database::getConnection();
         $statement = $mysqli->prepare("SELECT * FROM page");
         $statement->execute();
-        $statement->bind_result($id, $url, $title, $description, $color, $image, $author, $twitter);
+        $statement->bind_result($id, $url, $title, $description, $color, $image, $author);
         while ($statement->fetch()) {
             $page = new Page();
             $page->setId($id);
@@ -109,7 +98,6 @@ class Page
             $page->setColor($color);
             $page->setImage($image);
             $page->setAuthor($author);
-            $page->setTwitter($twitter);
             array_push($array, $page);
         }
         $mysqli->close();
@@ -125,7 +113,7 @@ class Page
         $statement = $mysqli->prepare("SELECT * FROM page WHERE id=?");
         $statement->bind_param("i", $id);
         $statement->execute();
-        $statement->bind_result($id, $url, $title, $description, $color, $image, $author, $twitter);
+        $statement->bind_result($id, $url, $title, $description, $color, $image, $author);
         if ($statement->fetch()) {
             $page->setId($id);
             $page->setURL($url);
@@ -134,7 +122,6 @@ class Page
             $page->setColor($color);
             $page->setImage($image);
             $page->setAuthor($author);
-            $page->setTwitter($twitter);
         }
         $mysqli->close();
 

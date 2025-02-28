@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Feb 27, 2023 at 05:08 PM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 8.0.12
+-- Host: localhost:8889
+-- Generation Time: Feb 10, 2025 at 06:32 PM
+-- Server version: 5.7.39
+-- PHP Version: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -34,17 +34,16 @@ CREATE TABLE `page` (
   `description` text NOT NULL,
   `color` varchar(7) NOT NULL,
   `image` text NOT NULL,
-  `author` varchar(1024) NOT NULL,
-  `twitter` varchar(1024) NOT NULL
+  `author` varchar(1024) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `page`
 --
 
-INSERT INTO `page` (`id`, `url`, `title`, `description`, `color`, `image`, `author`, `twitter`) VALUES
-(1, 'jpvitan.com', 'Justine Paul Vitan', 'Software developer who writes top-quality code to build mobile and web applications.', '#392258', 'https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676731158/jpvitan-website/banners/banner_luawo6.png', 'Justine Paul Vitan', '@jpvitan_dev'),
-(2, 'jpvitan.com', 'Apps | Justine Paul Vitan', 'Discover apps that follow modern standards and best practices to ensure a smooth and comfortable mobile and web experience for everyone.', '#09012b', 'https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676731158/jpvitan-website/banners/banner_luawo6.png', 'Justine Paul Vitan', '@jpvitan_dev');
+INSERT INTO `page` (`id`, `url`, `title`, `description`, `color`, `image`, `author`) VALUES
+(1, 'jpvitan.com', 'Justine Paul Vitan', 'Software developer who writes top-quality code to build mobile and web applications.', '#392258', 'https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676731158/jpvitan-website/banners/banner_luawo6.png', 'Justine Paul Vitan'),
+(2, 'jpvitan.com', 'Apps | Justine Paul Vitan', 'Discover apps that follow modern standards and best practices to ensure a smooth and comfortable mobile and web experience for everyone.', '#09012b', 'https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676731158/jpvitan-website/banners/banner_luawo6.png', 'Justine Paul Vitan');
 
 --
 -- Indexes for dumped tables

@@ -12,9 +12,9 @@ require_once "utilities/Icon.php";
                 </a>
             </div>
             <div class="col-auto my-auto">
-                <a href="https://twitter.com/jpvitan_dev" aria-label="Twitter">
+                <a href="https://www.linkedin.com/in/jpvitan/" aria-label="LinkedIn">
                     <div class="icon-container d-flex justify-content-center align-items-center">
-                        <?php echo Icon::Twitter(); ?>
+                        <?php echo Icon::LinkedIn(); ?>
                     </div>
                 </a>
             </div>

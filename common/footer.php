@@ -11,13 +11,6 @@ require_once "utilities/Icon.php";
                     </div>
                 </a>
             </div>
-            <div class="col-auto my-auto">
-                <a href="https://www.youtube.com/@jpvitan" aria-label="YouTube">
-                    <div class="icon-container d-flex justify-content-center align-items-center">
-                        <?php echo Icon::YouTube(); ?>
-                    </div>
-                </a>
-            </div>
         </div>
         <div class="row justify-content-center mt-3">
             <div class="col-auto my-auto">

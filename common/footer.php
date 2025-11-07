@@ -5,23 +5,9 @@ require_once "utilities/Icon.php";
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-auto my-auto">
-                <a href="https://github.com/jpvitan" aria-label="GitHub">
-                    <div class="icon-container d-flex justify-content-center align-items-center">
-                        <?php echo Icon::Git(); ?>
-                    </div>
-                </a>
-            </div>
-            <div class="col-auto my-auto">
                 <a href="https://www.linkedin.com/in/jpvitan/" aria-label="LinkedIn">
                     <div class="icon-container d-flex justify-content-center align-items-center">
                         <?php echo Icon::LinkedIn(); ?>
-                    </div>
-                </a>
-            </div>
-            <div class="col-auto my-auto">
-                <a href="https://www.youtube.com/@jpvitan" aria-label="YouTube">
-                    <div class="icon-container d-flex justify-content-center align-items-center">
-                        <?php echo Icon::YouTube(); ?>
                     </div>
                 </a>
             </div>

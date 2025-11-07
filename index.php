@@ -60,7 +60,7 @@ $page = Page::findById(1);
                                 <div class="background-color background-color-seashell card-basic card shadow-lg border-0 px-5 pt-5">
                                     <h3>Featured Mobile App</h3>
                                     <p class="fw-bold">SatTrack-X by Justine Paul Vitan</p>
-                                    <p>A satellite tracking tool designed for enthusiasts of all skill levels. It features real-time tracking, detailed orbital paths, and an intuitive interface, making it easy to monitor satellites and explore space.</p>
+                                    <p>A satellite tracking tool that uses the Simplified General Perturbations-4 (SGP4) model to track artificial satellites in real time with high-fidelity orbital modeling.</p>
                                     <a class="text-center" href="https://play.google.com/store/apps/details?id=com.jpv.sattrack">
                                         <img class="img-fluid mt-5" alt="Samsung" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676133708/jpvitan-website/sattrack-x/samsung_kpuoje.png" width="1527" height="2273" data-aos="fade-up">
                                     </a>

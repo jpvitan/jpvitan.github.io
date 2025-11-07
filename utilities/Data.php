@@ -10,7 +10,7 @@ $APP_CARD = [
         "SatTrack-X",
         "Android",
         "https://play.google.com/store/apps/details?id=com.jpv.sattrack",
-        "A satellite tracking tool designed for enthusiasts of all skill levels. It features real-time tracking, detailed orbital paths, and an intuitive interface, making it easy to monitor satellites and explore space.",
+        "A satellite tracking tool that uses the Simplified General Perturbations-4 (SGP4) model to track artificial satellites in real time with high-fidelity orbital modeling.",
         ""
     ),
     new AppCard(

@@ -25,30 +25,6 @@ $page = Page::findById(2);
                 </div>
             </div>
         </section>
-        <section class="mt-5">
-            <div class="container-fluid px-3 px-md-4 py-3">
-                <div class="row justify-content-center">
-                    <div class="content-lg col">
-                        <div class="row">
-                            <div class="col-md">
-                                <?php echo $APP_CARD[0]->generate(); ?>
-                            </div>
-                            <div class="col-md">
-                                <?php echo $APP_CARD[1]->generate(); ?>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md">
-                                <?php echo $APP_CARD[2]->generate(); ?>
-                            </div>
-                            <div class="col-md">
-                                <?php echo $APP_CARD[3]->generate(); ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
     <?php require "common/footer.php"; ?>
 </body>

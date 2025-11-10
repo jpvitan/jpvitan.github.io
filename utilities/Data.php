@@ -107,7 +107,6 @@ $LIST_CARD = [
 
 $NAVIGATION = [
     new Navigation(Icon::Home(), "Home", "https://jpvitan.com/"),
-    new Navigation(Icon::App(), "Apps", "https://jpvitan.com/apps"),
     new Navigation(Icon::Blog(), "Blog", "https://jpvitan.medium.com/"),
     new Navigation(Icon::Resume(), "Resume", ""),
     new Navigation(Icon::Certificate(), "Certificates", "https://drive.google.com/drive/folders/1LgoVQWbGlAtZKmyambedLStAIcFWx9tA?usp=share_link"),

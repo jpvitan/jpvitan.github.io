@@ -35,9 +35,6 @@ $page = Page::findById(1);
                             <div class="col-auto">
                                 <a class="button-pill button-pill-blue btn shadow-lg px-4 py-2 mt-4" href="mailto:business@jpvitan.com">Let's Talk</a>
                             </div>
-                            <div class="col-auto">
-                                <a class="button-plain button-plain-blue btn px-4 py-2 mt-4" href="https://jpvitan.com/apps">View Apps</a>
-                            </div>
                         </div>
                     </div>
                 </div>

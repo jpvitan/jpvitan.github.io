@@ -203,6 +203,30 @@ $page = Page::findById(1);
                 </div>
             </div>
         </section>
+        <section class="mt-5">
+            <div class="container-fluid px-3 px-md-4 py-3">
+                <div class="row justify-content-center">
+                    <div class="content-lg col">
+                        <h2>Projects</h2>
+                        <div class="row">
+                            <div class="col-md">
+                                <div class="background-image background-image-space card-basic card shadow-lg border-0 px-5 py-5">
+                                    <h3 class="text-color-white">SatTrack-Arcturus</h3>
+                                    <p class="text-color-white fw-bold">Express</p>
+                                    <p class="text-color-white">A RESTful API built with Node.js and Express that lets you track and predict the orbit of artificial satellites through the use of the Simplified General Perturbations-4 (SGP4) model.</p>
+                                    <a class="text-center" href="https://sattrack-arcturus.onrender.com">
+                                        <img class="img-fluid mt-5" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1757043307/sattrack-arcturus/screenshots/dashboard_fg9tv0.png" width="3287" height="1884">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md mt-3 mt-md-0">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <?php require "common/footer.php"; ?>
 </body>

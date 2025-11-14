@@ -1,11 +1,20 @@
 @use "../utilities/colors";
 
+.background-color {
+    --background-alpha: 1;
+}
+
 .background-color-black {
-    background-color: colors.$black;
+    background-color: rgba(colors.$black, var(--background-alpha));
 }
 
 .background-color-seashell {
-    background-color: colors.$seashell;
+    background-color: rgba(colors.$seashell, var(--background-alpha));
+}
+
+.background-color-frosted {
+    --background-alpha: 0.8;
+    backdrop-filter: blur(25px);
 }
 
 .background-image {

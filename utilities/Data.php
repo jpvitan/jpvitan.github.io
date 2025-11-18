@@ -1,43 +1,7 @@
 <?php
 require_once "utilities/Icon.php";
-require_once "components/AppCard.php";
 require_once "components/ListCard.php";
 require_once "components/Navigation.php";
-
-$APP_CARD = [
-    new AppCard(
-        "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676913787/jpvitan-website/icons/apps/sattrack-x_ybxjva.png",
-        "SatTrack-X",
-        "Android",
-        "https://play.google.com/store/apps/details?id=com.jpv.sattrack",
-        "A satellite tracking tool that uses the Simplified General Perturbations-4 (SGP4) model to track artificial satellites in real time with high-fidelity orbital modeling.",
-        ""
-    ),
-    new AppCard(
-        "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676913787/jpvitan-website/icons/apps/earthquakeph_gvfx31.png",
-        "EarthquakePH",
-        "React",
-        "https://earthquakeph.netlify.app/",
-        "A highly customizable real-time and progressive web application that tracks and monitors the latest earthquake recorded by the United States Geological Survey within the Philippines and the world.",
-        ""
-    ),
-    new AppCard(
-        "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676983831/jpvitan-website/icons/apps/jpvitan-website_pcdgmh.png",
-        "Personal Website",
-        "PHP",
-        "https://jpvitan.com/",
-        "An informational website that serves as my online curriculum vitae. It has an accessible interface that's easy to navigate, even for people with visual impairments. A PSI audit on my website showed a perfect score on accessibility and best practices.",
-        ""
-    ),
-    new AppCard(
-        "https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1692028008/jpvitan-website/icons/apps/sattrack-arcturus_lmc1eq.png",
-        "SatTrack-Arcturus",
-        "Express",
-        "https://sattrack-arcturus.onrender.com",
-        "A RESTful API built with Node.js and Express that lets you track and predict the orbit of artificial satellites through the use of the Simplified General Perturbations-4 (SGP4) model.",
-        ""
-    )
-];
 
 $LIST_CARD = [
     new ListCard(

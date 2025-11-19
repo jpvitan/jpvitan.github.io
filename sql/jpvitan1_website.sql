@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Feb 10, 2025 at 06:32 PM
+-- Generation Time: Nov 10, 2025 at 08:35 PM
 -- Server version: 5.7.39
 -- PHP Version: 8.2.0
 
@@ -42,8 +42,7 @@ CREATE TABLE `page` (
 --
 
 INSERT INTO `page` (`id`, `url`, `title`, `description`, `color`, `image`, `author`) VALUES
-(1, 'jpvitan.com', 'Justine Paul Vitan', 'Software developer who writes top-quality code to build mobile and web applications.', '#392258', 'https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676731158/jpvitan-website/banners/banner_luawo6.png', 'Justine Paul Vitan'),
-(2, 'jpvitan.com', 'Apps | Justine Paul Vitan', 'Discover apps that follow modern standards and best practices to ensure a smooth and comfortable mobile and web experience for everyone.', '#09012b', 'https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676731158/jpvitan-website/banners/banner_luawo6.png', 'Justine Paul Vitan');
+(1, 'jpvitan.com', 'Justine Paul Vitan', 'Software developer who writes top-quality code to build mobile and web applications.', '#392258', 'https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1676731158/jpvitan-website/banners/banner_luawo6.png', 'Justine Paul Vitan');
 
 --
 -- Indexes for dumped tables

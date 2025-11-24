@@ -4,7 +4,7 @@
 <meta name="description" content="<?php echo $page->getDescription(); ?>">
 <meta name="author" content="<?php echo $page->getAuthor(); ?>">
 <!-- Favicon -->
-<link rel="icon" href="https://jpvitan.com/favicon.ico">
+<link rel="icon" href="/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="https://jpvitan.com/apple-touch-icon.png">
 <!-- Open Graph -->
 <meta property="og:url" content="<?php echo $page->getURL(); ?>" />

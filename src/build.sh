@@ -6,3 +6,8 @@ BUILD=$($PHP build.php)
 
 cp -rv css "$BUILD"
 cp -rv js "$BUILD"
+
+for file in "$BUILD"/*.html; do
+    minify "$file" | sponge "$file"
+done
+

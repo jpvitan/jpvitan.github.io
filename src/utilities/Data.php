@@ -74,5 +74,5 @@ $NAVIGATION = [
     new Navigation(Icon::Blog(), "Blog", "https://jpvitan.medium.com/"),
     new Navigation(Icon::Resume(), "Resume", ""),
     new Navigation(Icon::Certificate(), "Certificates", "https://drive.google.com/drive/folders/1LgoVQWbGlAtZKmyambedLStAIcFWx9tA?usp=share_link"),
-    new Navigation(Icon::Message(), "Message", "mailto:business@jpvitan.com")
+    new Navigation(Icon::Message(), "Message", "mailto:jpvitanx@gmail.com")
 ];

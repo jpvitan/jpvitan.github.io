@@ -21,8 +21,8 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- CSS -->
-<link href="css/main.css" rel="stylesheet">
-<link href="css/theme.css" rel="stylesheet">
+<link href="./css/main.css" rel="stylesheet">
+<link href="./css/theme.css" rel="stylesheet">
 <!-- JavaScript -->
 <script src="js/main.js"></script>
 

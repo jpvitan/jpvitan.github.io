@@ -24,6 +24,6 @@
 <link href="./css/main.css" rel="stylesheet">
 <link href="./css/theme.css" rel="stylesheet">
 <!-- JavaScript -->
-<script src="js/main.js"></script>
+<script src="./js/main.js"></script>
 
 <title><?php echo $page->getTitle(); ?></title>

@@ -1,0 +1,16 @@
+{
+    "workbench.startupEditor": "none",
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "compressed",
+            "extensionName": ".css",
+            "savePath": "~/../css",
+            "savePathReplacementPairs": null
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "diffEditor.ignoreTrimWhitespace": false
+}

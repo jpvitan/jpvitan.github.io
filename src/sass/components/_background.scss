@@ -4,6 +4,10 @@
     --background-alpha: 1;
 }
 
+.background-color-white {
+    background-color: rgba(colors.$white, var(--background-alpha));
+}
+
 .background-color-black {
     background-color: rgba(colors.$black, var(--background-alpha));
 }

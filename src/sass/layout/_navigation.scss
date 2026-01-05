@@ -5,8 +5,6 @@
         @include mixins.position-fixed($left: 0, $right: 0, $top: 0);
 
         background-color: var(--navigation-bar-background-color);
-        backdrop-filter: blur(var(--navigation-bar-background-blur));
-        -webkit-backdrop-filter: blur(var(--navigation-bar-background-blur));
     }
 
     .menu {

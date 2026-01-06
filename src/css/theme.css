@@ -1,6 +1,7 @@
 .theme-light {
     --navigation-bar-background-color: transparent;
     --navigation-menu-background-color: rgb(255 255 255 / 80%);
+    --navigation-menu-background-blur: 80px;
     --navigation-icon-background-color: #ecf0f1;
     --navigation-icon-color: #000;
     --navigation-icon-hover-color: #3498db;

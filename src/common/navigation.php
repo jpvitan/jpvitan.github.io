@@ -14,7 +14,7 @@ require_once "utilities/Icon.php";
       </div>
     </div>
   </div>
-  <div class="menu d-none" id="navigation-menu">
+  <div class="menu d-none animation-fade" id="navigation-menu">
     <div class="container-fluid px-3 py-3">
       <div class="row">
         <div class="col-auto my-auto">

@@ -18,7 +18,7 @@ require_once "utilities/Icon.php";
     <div class="container-fluid px-3 py-3">
       <div class="row">
         <div class="col-auto my-auto">
-          <button class="button-icon button-icon-black btn" id="navigation-close-button" aria-label="Close">
+          <button class="button-icon button-icon-black background-color background-color-white background-color-frosted btn shadow-lg rounded-4 px-2 py-2" id="navigation-close-button" aria-label="Close">
             <?php echo Icon::Close(); ?>
           </button>
         </div>

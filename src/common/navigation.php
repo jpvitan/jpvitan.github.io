@@ -3,22 +3,22 @@ require_once "utilities/Data.php";
 require_once "utilities/Icon.php";
 ?>
 <div class="navigation">
-  <div class="bar d-none" id="navigation-bar">
+  <div class="bar d-none animation-fade" id="navigation-bar">
     <div class="container-fluid px-3 py-3">
       <div class="row">
         <div class="col-auto my-auto">
-          <button class="button-icon button-icon-black btn" id="navigation-menu-button" aria-label="Menu">
+          <button class="button-icon button-icon-black background-color background-color-white background-color-frosted btn shadow-lg rounded-4 px-2 py-2" id="navigation-menu-button" aria-label="Menu">
             <?php echo Icon::Menu(); ?>
           </button>
         </div>
       </div>
     </div>
   </div>
-  <div class="menu d-none" id="navigation-menu">
+  <div class="menu d-none animation-fade" id="navigation-menu">
     <div class="container-fluid px-3 py-3">
       <div class="row">
         <div class="col-auto my-auto">
-          <button class="button-icon button-icon-black btn" id="navigation-close-button" aria-label="Close">
+          <button class="button-icon button-icon-black background-color background-color-white background-color-frosted btn shadow-lg rounded-4 px-2 py-2" id="navigation-close-button" aria-label="Close">
             <?php echo Icon::Close(); ?>
           </button>
         </div>

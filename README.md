@@ -2,3 +2,7 @@
 
 
 A website presenting my professional portfolio with a clean, highly accessible design. A PSI audit verified a perfect score in both accessibility and best practices.
+
+
+![Badge](https://img.shields.io/github/license/jpvitan/jpvitan.github.io)
+

@@ -6,3 +6,7 @@ A website presenting my professional portfolio with a clean, highly accessible d
 
 ![Badge](https://img.shields.io/github/license/jpvitan/jpvitan.github.io)
 
+
+## 🛠️ Software
+
+

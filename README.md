@@ -10,3 +10,9 @@ A website presenting my professional portfolio with a clean, highly accessible d
 ## 🛠️ Software
 
 
+### Developer
+
+
+Built by [Justine Paul Vitan](https://jpvitan.com/) as a solo project to demonstrate his capabilities in building accessible, well-structured front-end applications. The source code of this project is open and available to the public via GitHub for transparency and open-source collaboration.
+
+

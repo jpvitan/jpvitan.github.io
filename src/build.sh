@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PHP=/Applications/MAMP/bin/php/php8.2.0/bin/php
+PHP=/Applications/MAMP/bin/php/php8.3.28/bin/php
 
 BUILD=$($PHP build.php)
 

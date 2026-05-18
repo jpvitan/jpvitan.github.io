@@ -99,7 +99,7 @@ $page = Page::findById(1);
                                 <div class="background-color background-color-seashell card-basic card shadow-lg border-0 px-5 py-5">
                                     <h3>Featured Web App</h3>
                                     <p class="fw-bold">EarthquakePH by Justine Paul Vitan</p>
-                                    <p>A highly customizable real-time and progressive web application that tracks and monitors the latest earthquake recorded by the United States Geological Survey within the Philippines and the world.</p>
+                                    <p>A highly customizable real-time and progressive web application that tracks and monitors the latest earthquake recorded by the United States Geological Survey within the world.</p>
                                     <a class="text-center" href="https://earthquakeph.netlify.app/">
                                         <img class="img-fluid mt-5" alt="MacBook" src="https://res.cloudinary.com/dhv9gcew6/image/upload/q_auto/v1680748482/jpvitan-website/earthquakeph/macbook_lf2osg.png" width="3287" height="1884" data-aos="zoom-in-up">
                                     </a>
